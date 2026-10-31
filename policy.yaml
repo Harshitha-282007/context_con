@@ -1,0 +1,53 @@
+# All thresholds are illustrative defaults, not industry standards.
+coverage:
+  min_people: 5            # coverage needs min(min_people, headcount_share * headcount) people found
+  headcount_share: 0.30
+  min_resolve_confidence: 0.8
+
+decision:
+  max_unverifiable: 3
+  escalate_min_hard: 2
+  escalate_hard_with_medium: 2   # >=1 hard and >=this many medium
+  # Hard flags in one group count as one independent signal. R1 and R2 both
+  # describe the sender's identity, so a lookalike sender who is also absent from
+  # the graph is one callback-worthy signal (HOLD), not two (ESCALATE).
+  correlated_hard_groups:
+    - [R1, R2]
+  key_rules: [R1, R2, R6]        # must be evaluated (not UNVERIFIABLE) to APPROVE
+
+r1:
+  max_edit_distance: 2
+
+r3:
+  recent_days: 90
+
+r4:
+  allowed_functions: [finance, accounting, operations, administrative, business operations, leadership, owner, founder, executive]
+
+r5:
+  free_mail_domains: [gmail.com, googlemail.com, yahoo.com, outlook.com, hotmail.com, live.com, icloud.com, aol.com, proton.me, protonmail.com, gmx.com, zoho.com, yandex.com, mail.com, rediffmail.com]
+
+r6:
+  hard_multiple: 0.5        # amount > 0.5x estimated annual revenue
+  soft_multiple: 0.1
+  hard_per_head: 50000      # USD per employee
+  soft_per_head: 15000
+
+r7:
+  tiny_headcount: 10
+  near_zero_monthly_visitors: 500
+  min_amount_usd: 10000     # R7a/R7b only apply at or above this amount
+
+r10:
+  phrases: [urgent, immediately, asap, do not call, "don't call", confidential, today only, wire today]
+
+# Illustrative conversion rates. An unlisted currency makes R6/R7 UNVERIFIABLE.
+fx_to_usd:
+  USD: 1.0
+  EUR: 1.08
+  GBP: 1.27
+  INR: 0.012
+
+credit_limit:               # Illustrative only; never presented as truth.
+  per_head_usd: 500
+  max_usd: 250000
