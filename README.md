@@ -52,6 +52,16 @@ To run on new emails, create a file named `.env` in the project root (Git ignore
 CRUSTDATA_API_KEY=your_key_here
 ```
 
+### Hosted demo on Vercel
+
+Vercel can't run Streamlit, because it needs a long-running server. So [site/index.html](site/index.html) is a static copy of the mailbox with saved results for the 12 sample emails, including the evidence and the simulated approval flow. It has no server or keys, and it can't check new mail or send anything. [vercel.json](vercel.json) serves only that page. To rebuild it after changing samples or rules:
+
+```bash
+.venv/bin/python scripts/build_site.py
+```
+
+The full product, with live checks and the mailbox, runs with the Streamlit commands above.
+
 ---
 
 ## How it works
@@ -494,6 +504,7 @@ Everything goes in `.env`, which Git ignores. Only the Crustdata key is needed f
 
 ```
 ├── app.py                  Streamlit mailbox UI
+├── site/index.html         Static demo for Vercel, built by scripts/build_site.py
 ├── cli.py                  Command line
 ├── policy.yaml             Every threshold and route
 ├── clearance/
@@ -530,7 +541,7 @@ Everything goes in `.env`, which Git ignores. Only the Crustdata key is needed f
 .venv/bin/python -m pytest -q
 ```
 
-244 tests, with no network calls. They cover:
+251 tests, with no network calls. They cover:
 
 | Area | Examples |
 |---|---|
