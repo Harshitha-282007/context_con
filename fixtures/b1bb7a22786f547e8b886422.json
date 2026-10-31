@@ -64,630 +64,279 @@
   "limit": 10
  },
  "response": {
-  "next_cursor": "H4sIABKE5WoC_xWMOw7DIBAFr2JRp4CF_ZCrRJG1gJGLKCg2LiLLdw955czoneZzLNt3XnVfzX0ytiYFKpVSIvCEmJ0w2rAEVqhOIKAVdoIxR804Br4gVy5FnK3W3Cazt62Pr4fjSCN8DtRb19ec2_H-G_TXD0XTF-h4AAAA",
   "profiles": [
    {
     "basic_profile": {
      "current_title": "Head of Revenue Accounting",
-     "name": "Samantha Forenza"
+     "name": "Harper Gorpelmor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 919347,
+    "crustdata_person_id": 90000045,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "name": "Gusto",
-        "position_id": 2159718378,
-        "professional_network_id": "2499210",
         "seniority_level": "Director",
         "start_date": "2023-04-01T00:00:00",
-        "title": "Head of Revenue Accounting",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "Head of Revenue Accounting"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/samantha-forenza-cpa-61516b43"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Platform Accounting Ops Lead",
-     "name": "Amanda Wong"
+     "name": "Harper Mornelgor"
     },
     "contact": {
      "has_business_email": false
     },
-    "crustdata_person_id": 1796612,
+    "crustdata_person_id": 90000046,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Operations",
         "is_default": true,
-        "name": "Gusto",
-        "position_id": 2424195106,
-        "professional_network_id": "2499210",
         "seniority_level": "Senior",
         "start_date": "2024-07-01T00:00:00",
-        "title": "Platform Accounting Ops Lead",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 2
+        "title": "Platform Accounting Ops Lead"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/-amandawong"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Procurement | Finance & Business Operations",
-     "name": "Tyrone Guillory Jr."
+     "name": "Alex Roshalmor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796644,
+    "crustdata_person_id": 90000047,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "Building a best-in-class global procurement organization through strategic sourcing, commercial negotiation, operational excellence, and AI-enabled transformation.\n\nCareer and Leadership Highlights\nEarned two promotions in 2025—January and July.\n\nAI Innovator creating new AI-enabled approaches, helping build Gusto’s AI Center of Excellence, and driving adoption across teams.\n\nDeveloping workflows that automate routine procurement activities, improve decision-making, and increase operational efficiency.\n\nLead, Black at Gusto Affinity Group, advancing community, professional development, representation, and \nbelonging.\n\nPartnering across Finance, Legal, Privacy, Security, and the business to manage risk, optimize spend, and deliver stronger outcomes.\n\nGusto is a modern, online people platform that helps small businesses take care of their teams. On top of full-service payroll, Gusto offers health insurance, 401(k)s, expert HR, and team management tools. Today, Gusto offices in Denver, San Francisco, and New York serve more than 500,000 businesses.",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "Gusto",
-        "position_id": 2118823601,
-        "professional_network_id": "2499210",
         "seniority_level": "Entry Level",
         "start_date": "2022-11-01T00:00:00",
-        "title": "Procurement | Finance & Business Operations",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "Procurement | Finance & Business Operations"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/tyrone-guillory-jr-78007538"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "US Platform Accounting Analyst",
-     "name": "Taha Bilici"
+     "name": "Gray Zanrosmor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796796,
+    "crustdata_person_id": 90000048,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "• Working closely with Collections, Fraud, Risk, Data & Analystic and Payment Engineers to improve reporting for all payments related processes.\n• Carrying out payment investigations and playing an active role in the process of controlling and stopping payments that cause losses to the company. (Profit-loss analysis)\n• Working on SEPA and Card-related issues, such as reconciliations, payment investigations, and payment support.\n• Managing to reconcile millions of dollars in payment transactions, including (ACH, Wire In, PNC Memo, Check, etc.)\n• Involving in building processes for Gusto's Payment Operations hub from scratch, and supporting US on Gusto's market launch.\n• Communicating with Gusto's payment infrastructure providers to escalate requests and track issues.\n• Ensuring Gusto's payments processes comply with EMI regulations.\n• Having a contact with Banking & Financial services to monitor, maintain, and improve risk and compliance with particular payment schemes (JP Morgan, PNC, Modern Treasury).\n• Conducting research, analysis, and interviews to gather insights and data necessary for problem-solving.\n•  Ensuring Gusto's daily cash management process are robust, payment flows are efficient and payment partners are delivering the best possible service.",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "location": {
-         "raw": "Eregli, Zonguldak, Turkey"
-        },
-        "name": "Gusto",
-        "position_id": 2272155896,
-        "professional_network_id": "2499210",
         "seniority_level": "Entry Level",
         "start_date": "2023-10-01T00:00:00",
-        "title": "US Platform Accounting Analyst",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "US Platform Accounting Analyst"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/taha-bilici"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Director - Platform Accounting & Operations",
-     "name": "Zhe He"
+     "name": "Gray Velmortor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796802,
+    "crustdata_person_id": 90000049,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "- Leading all payment solutions and payment processing implementation projects for Accounting.\n\n- Working with cross-functional teams (Product, Treasury, Risk, Operations etc) on medium and long \nterm planning for Platform Payment reporting systems and infrastructure design.\n\n- Leading payment process gap analysis to identify and rectify any process deficiencies.\n\n- Managing and building  Platform accounting teams, both in the US and offshore.",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Operations",
         "is_default": true,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "Gusto",
-        "position_id": 1874774373,
-        "professional_network_id": "2499210",
         "seniority_level": "Director",
         "start_date": "2021-11-01T00:00:00",
-        "title": "Director - Platform Accounting & Operations",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 4
+        "title": "Director - Platform Accounting & Operations"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/zhe-he1"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Finance, Business Operations & Strategy at Gusto",
-     "name": "Patrice Heriveaux"
+     "name": "Parker Lumjenmor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796823,
+    "crustdata_person_id": 90000050,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "name": "Gusto",
-        "position_id": 1838992188,
-        "professional_network_id": "2499210",
         "seniority_level": "Strategic",
         "start_date": "2021-09-01T00:00:00",
-        "title": "Finance, Business Operations & Strategy at Gusto",
-        "years_at_company": "6 to 10 years",
-        "years_at_company_raw": 5
+        "title": "Finance, Business Operations & Strategy at Gusto"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/patrice-heriveaux-08820498"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Platform Accounting and Operations Lead",
-     "name": "Cutler Halverson"
+     "name": "Marlo Corhalgor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796826,
+    "crustdata_person_id": 90000051,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "- Oversee Gusto's Customer Cash Reports\n- Develop a strong understanding of all aspects of a payment transaction, from architecture, execution, reconciliations, and error resolution.\n- Serve as an additional line of defense to catch and prevent payments errors.\n- Resolve payment, accounting and tax issues by managing Gusto’s operational payment systems.\n- Work directly with our FinTech product and engineering teams to implement new scalable processes and features.\n- Cooperate with internal teams from across the company to expertly field, diagnose and resolve payment related questions. \n- Collaborate directly with our accounting team to support Gusto’s financial reporting and audits. \n- Support Gusto cash reconciliations with any payment related exceptions.",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Operations",
         "is_default": true,
-        "location": {
-         "raw": "Denver, Colorado, United States"
-        },
-        "name": "Gusto",
-        "position_id": 2478029621,
-        "professional_network_id": "2499210",
         "seniority_level": "Senior",
         "start_date": "2024-07-01T00:00:00",
-        "title": "Platform Accounting and Operations Lead",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 2
+        "title": "Platform Accounting and Operations Lead"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/cutler-halverson"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Finance, Business Operations, and Strategy",
-     "name": "Mackenzie Gildner"
+     "name": "Quinn Korkorkor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796831,
+    "crustdata_person_id": 90000052,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "Finance, Business Operations and Strategy --- Risk, Payments, Treasury, and Payroll, Tax & Compliance Services",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "Denver, CO"
-        },
-        "name": "Gusto",
-        "position_id": 2096678595,
-        "professional_network_id": "2499210",
         "seniority_level": "Strategic",
         "start_date": "2023-01-01T00:00:00",
-        "title": "Finance, Business Operations, and Strategy",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "Finance, Business Operations, and Strategy"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/mackenziegildner"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Head of Payment Operations & Treasury",
-     "name": "John Murphy"
+     "name": "Kai Nelhalpel"
     },
     "contact": {
      "has_business_email": false
     },
-    "crustdata_person_id": 1796855,
+    "crustdata_person_id": 90000053,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "Empower Gusto's Payment Operations and Treasury teams.  Responsibilities include liquidity management, cash forecasting, debt facilities, portfolio management, bank relationships, payment processing and issue resolution.",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Operations",
         "is_default": true,
-        "location": {
-         "raw": "Denver, NC"
-        },
-        "name": "Gusto",
-        "position_id": 1853007943,
-        "professional_network_id": "2499210",
         "seniority_level": "Director",
         "start_date": "2021-08-01T00:00:00",
-        "title": "Head of Payment Operations & Treasury",
-        "years_at_company": "6 to 10 years",
-        "years_at_company_raw": 5
+        "title": "Head of Payment Operations & Treasury"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/murphy-john"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Accounts Payable Manager",
-     "name": "Diana Roig"
+     "name": "Nico Nelhalnel"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 1796859,
+    "crustdata_person_id": 90000054,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 4882,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.gusto.com",
         "crustdata_company_id": 634921,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "name": "Gusto",
-        "position_id": 1863245750,
-        "professional_network_id": "2499210",
         "seniority_level": "Entry Level Manager",
         "start_date": "2021-11-01T00:00:00",
-        "title": "Accounts Payable Manager",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 4
+        "title": "Accounts Payable Manager"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/diana-roig-ab6542a7"
-     }
     }
    }
   ],
-  "remarks": [],
-  "total_count": 53,
-  "total_count_relation": null
+  "total_count": 53
  },
  "retrieved_at": "2026-10-31T06:00:51.105628+00:00",
  "status": 200

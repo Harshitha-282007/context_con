@@ -52,186 +52,65 @@
   "limit": 5
  },
  "response": {
-  "next_cursor": null,
   "profiles": [
    {
     "basic_profile": {
      "current_title": "Head of Finance",
-     "name": "Michael Zheng"
+     "name": "Oakley Velrosros"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 289664,
+    "crustdata_person_id": 90000021,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 86,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/mintlify",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2b03488e03204545951cd5d493e149bc0a2edc8b2a0986d6460bb63119295382.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://mintlify.link/li",
         "crustdata_company_id": 810670,
-        "description": "Mintlify is an AI-native developer documentation platform helping software companies create, maintain, and scale high-quality developer experiences.\n\n1st Finance Leader responsible for building and scaling the Finance function.",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "Mintlify",
-        "position_id": 3042453937,
-        "professional_network_id": "79912175",
         "seniority_level": "Director",
         "start_date": "2026-09-01T00:00:00",
-        "title": "Head of Finance",
-        "years_at_company": "Less than 1 year",
-        "years_at_company_raw": 0
+        "title": "Head of Finance"
        },
        {
         "business_email_verified": true,
-        "company_headcount_latest": 108,
-        "company_headcount_range": "11-50",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Cambridge, Massachusetts, United States",
-        "company_hq_location_address_components": [
-         "Cambridge",
-         "Middlesex County",
-         "Massachusetts",
-         "United States"
-        ],
-        "company_industries": [
-         "Venture Capital and Private Equity Principals",
-         "Capital Markets",
-         "Financial Services"
-        ],
-        "company_professional_network_industry": "Venture Capital and Private Equity Principals",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/f-prime-capital-partners",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/cee04e4f1beb84fcc1c107b7e7b279766d7a5d6b7ca48971035e09993dfc5158.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://fprimecapital.com/",
         "crustdata_company_id": 806763,
-        "description": "Supporting innovative fintech & software companies on behalf of F-Prime Capital.",
-        "employment_type": "Part-time",
         "end_date": null,
         "function_category": "",
         "is_default": false,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "F-Prime",
-        "position_id": 2084075630,
-        "professional_network_id": "10223056",
         "seniority_level": "Owner / Partner",
         "start_date": "2022-12-01T00:00:00",
-        "title": "Operating Partner",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "Operating Partner"
        },
        {
         "business_email_verified": true,
-        "company_headcount_latest": 543,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Daly City, California, United States",
-        "company_hq_location_address_components": [
-         "Daly City",
-         "San Mateo County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Professional Organizations",
-         "Civic and Social Organizations",
-         "Consumer Services"
-        ],
-        "company_professional_network_industry": "Professional Organizations",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/the-operators-guild",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/37abe679183bc676bbd0862992adad36c652af38ca1a05c5e3937d6909791eb7.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://operators-guild.com",
         "crustdata_company_id": 1085363,
-        "description": "Operators Guild is an independent, invitation-only group of operations executives with 450+ members focused on professional development.\n\nScaling a company is hard. We are working together to share best practices, help one another solve similar problems, and invest in the operator community. We meet and connect regularly to support each other as we create the next generation of technology companies and company leaders.",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": false,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "Operators Guild",
-        "position_id": 1812914021,
-        "professional_network_id": "7972843",
         "seniority_level": "Entry Level",
         "start_date": "2021-02-01T00:00:00",
-        "title": "OG Member",
-        "years_at_company": "6 to 10 years",
-        "years_at_company_raw": 5
+        "title": "OG Member"
        },
        {
         "business_email_verified": false,
-        "company_headcount_latest": 1827,
-        "company_headcount_range": "myself only",
-        "company_headquarters_country": "",
-        "company_hq_location": "",
-        "company_hq_location_address_components": [],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/various-startups1",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5c6ee5a8c5a035bfd529dd445f7585f03739dd1b8a327baeaf9f8f78925434e9.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "",
         "crustdata_company_id": 6035190,
-        "description": "FinTech - Anrok, Assemble (acq by Deel), Basis (acq by Digits), Fundamental, Rillet, Plaid, etc\nAI - Anthropic, Niural, OpenEvidence, Replit, etc",
-        "employment_type": "Self-employed",
         "end_date": null,
         "function_category": "Consulting",
         "is_default": false,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "Various Startups",
-        "position_id": 2993944086,
-        "professional_network_id": "68353711",
         "seniority_level": "Entry Level",
         "start_date": "2018-08-01T00:00:00",
-        "title": "Angel Investor & Advisor",
-        "years_at_company": "6 to 10 years",
-        "years_at_company_raw": 8
+        "title": "Angel Investor & Advisor"
        }
       ]
      }
     }
    }
   ],
-  "remarks": [],
-  "total_count": 1,
-  "total_count_relation": null
+  "total_count": 1
  },
  "retrieved_at": "2026-10-31T05:43:58.589807+00:00",
  "status": 200

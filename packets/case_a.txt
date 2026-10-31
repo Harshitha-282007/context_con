@@ -1,4 +1,4 @@
-From: Luke Franklin <luke.franklin@retool.com>
+From: Harper Dunsenros <harper.dunsenros@retool.com>
 To: ap@ourcompany.example
 Subject: Invoice INV-20418 for October platform subscription
 
@@ -13,7 +13,7 @@ Total: $18,400.00
 Website: www.retool.com
 
 Regards,
-Luke Franklin
+Harper Dunsenros
 VP, Controller
 
 -- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

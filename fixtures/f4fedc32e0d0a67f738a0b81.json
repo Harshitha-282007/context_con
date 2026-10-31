@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIABuA5WoC_xXMMQ6DMAwF0KugzB3yiWNIr1JVyHEdMVSNCmFAFXeHrm94P_fdbNmnWdbZ3Tunmk1hnjNBLYRUIoOi-peOqmVkpMgi8KToWUrOKQDkDVL6TORunVvr0q7rAUIcnhe02uQ9ad0-fw88pOMEKwwQwHgAAAA=",
   "profiles": [
    {
     "basic_profile": {
-     "name": "Alex Kehayias"
+     "name": "Marlo Jengormor"
     },
-    "crustdata_person_id": 14157
+    "crustdata_person_id": 90000061
    }
   ],
-  "remarks": [],
-  "total_count": 3679,
-  "total_count_relation": null
+  "total_count": 3679
  },
  "retrieved_at": "2026-10-31T05:43:55.494189+00:00",
  "status": 200

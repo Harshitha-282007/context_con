@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIABSA5WoC_xXMMQ7CMAxA0atUmRliN24SroJQZTuOOiAi2nRAiLsTxv-G_3Gv0_b3uvGxuevkciAwKDNlyxUTiwRhgsJiNSgN8MpW1DKqR8kQaakRqyRIPIfoLpM72t7H6wZL8PfRvXV-rNrO558RIX5_mPoTiXcAAAA=",
   "profiles": [
    {
     "basic_profile": {
-     "name": "Samith Jagannath"
+     "name": "Blair Rosdunnel"
     },
-    "crustdata_person_id": 1640
+    "crustdata_person_id": 90000056
    }
   ],
-  "remarks": [],
-  "total_count": 2217,
-  "total_count_relation": null
+  "total_count": 2217
  },
  "retrieved_at": "2026-10-31T05:43:48.914802+00:00",
  "status": 200

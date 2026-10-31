@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIACOA5WoC_xXMMQ7CMAwAwK9UnhmSJnFsvoJQFTuxOiAi2nRAiL9T1hvuA6-jbe9lLfsK1wkiMaEmazhLTa24Gji7iMomLM5ZNcycBS1Q8knMVFEb1ZAsZGS4TLD3bZzXzUfy7n7C6KM8Fu3H8--z__4AjI86FXYAAAA=",
   "profiles": [
    {
     "basic_profile": {
-     "name": "Kristy Kim"
+     "name": "Oakley Dunsentor"
     },
-    "crustdata_person_id": 14810
+    "crustdata_person_id": 90000062
    }
   ],
-  "remarks": [],
-  "total_count": 21,
-  "total_count_relation": null
+  "total_count": 21
  },
  "retrieved_at": "2026-10-31T05:44:04.196151+00:00",
  "status": 200

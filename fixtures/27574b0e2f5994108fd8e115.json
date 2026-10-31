@@ -64,438 +64,191 @@
   "limit": 10
  },
  "response": {
-  "next_cursor": null,
   "profiles": [
    {
     "basic_profile": {
      "current_title": "Global Corporate Controller",
-     "name": "Corrine Herris"
+     "name": "Marlo Morfelgor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 3584323,
+    "crustdata_person_id": 90000015,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 454,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Los Angeles, California, United States",
-        "company_hq_location_address_components": [
-         "Los Angeles",
-         "Los Angeles County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/serverobotics",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.serverobotics.com/",
         "crustdata_company_id": 628895,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "name": "Serve Robotics",
-        "position_id": 2449856986,
-        "professional_network_id": "72049930",
         "seniority_level": "Entry Level",
         "start_date": "2024-08-01T00:00:00",
-        "title": "Global Corporate Controller",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 2
+        "title": "Global Corporate Controller"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/corrineherris"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Assistant Controller",
-     "name": "Krissy Bigelow"
+     "name": "Blair Dunfelcor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 77381772,
+    "crustdata_person_id": 90000016,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 454,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Los Angeles, California, United States",
-        "company_hq_location_address_components": [
-         "Los Angeles",
-         "Los Angeles County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/serverobotics",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.serverobotics.com/",
         "crustdata_company_id": 628895,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "name": "Serve Robotics",
-        "position_id": 2585598565,
-        "professional_network_id": "72049930",
         "seniority_level": "Entry Level",
         "start_date": "2024-12-01T00:00:00",
-        "title": "Assistant Controller",
-        "years_at_company": "1 to 2 years",
-        "years_at_company_raw": 1
+        "title": "Assistant Controller"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/krissy-bigelow-8b9b5580"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Accounting Manager",
-     "name": "Michael Daly-LaRose"
+     "name": "Alex Quordunhal"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 81911537,
+    "crustdata_person_id": 90000017,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 454,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Los Angeles, California, United States",
-        "company_hq_location_address_components": [
-         "Los Angeles",
-         "Los Angeles County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/serverobotics",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.serverobotics.com/",
         "crustdata_company_id": 628895,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "name": "Serve Robotics",
-        "position_id": 2881563526,
-        "professional_network_id": "72049930",
         "seniority_level": "Entry Level Manager",
         "start_date": "2026-04-01T00:00:00",
-        "title": "Accounting Manager",
-        "years_at_company": "Less than 1 year",
-        "years_at_company_raw": 0
+        "title": "Accounting Manager"
        },
        {
         "business_email_verified": false,
-        "company_headcount_latest": 0,
-        "company_headcount_range": "",
-        "company_headquarters_country": "",
-        "company_hq_location": "",
-        "company_hq_location_address_components": [],
-        "company_industries": [],
-        "company_professional_network_industry": "",
-        "company_professional_network_profile_url": "",
-        "company_profile_picture_permalink": "",
-        "company_status": null,
-        "company_type": "",
-        "company_website": "",
         "crustdata_company_id": 0,
-        "description": "Complete tax returns for over 400 customers and small businesses. Train employees to ensure the accuracy and total satisfaction of all clients. Provide both tax and financial guidance to clients under a variety of situations. Develop strong rapport with clients through intrapersonal skills and dedication to care of their financial well-being. Skilled in many accounting software programs such as Turbo-Tax, QuickBooks, and Microsoft Excel.",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": false,
-        "name": "Daly Taxes",
-        "position_id": 39411906,
-        "professional_network_id": null,
         "seniority_level": "Owner / Partner",
         "start_date": "2004-01-01T00:00:00",
-        "title": "Co-Owner",
-        "years_at_company": "More than 10 years",
-        "years_at_company_raw": 22
+        "title": "Co-Owner"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/mdl729"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Senior Accounts Payable Coordinator",
-     "name": "Meda Strawn"
+     "name": "Marlo Senzansen"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 159994364,
+    "crustdata_person_id": 90000018,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 454,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Los Angeles, California, United States",
-        "company_hq_location_address_components": [
-         "Los Angeles",
-         "Los Angeles County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/serverobotics",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.serverobotics.com/",
         "crustdata_company_id": 628895,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": false,
-        "name": "Serve Robotics",
-        "position_id": 2763196808,
-        "professional_network_id": "72049930",
         "seniority_level": "Senior",
         "start_date": "2025-11-01T00:00:00",
-        "title": "Senior Accounts Payable Coordinator",
-        "years_at_company": "Less than 1 year",
-        "years_at_company_raw": 0
+        "title": "Senior Accounts Payable Coordinator"
        },
        {
         "business_email_verified": false,
-        "company_headcount_latest": 29365,
-        "company_headcount_range": "10001+",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Menlo Park, California, United States",
-        "company_hq_location_address_components": [
-         "Menlo Park",
-         "San Mateo County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Staffing and Recruiting",
-         "Administrative and Support Services"
-        ],
-        "company_professional_network_industry": "Staffing and Recruiting",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/robert-half-international",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/981adf71161cfa3c42f04a8b4e57a3a6ae3834e5f57b50bc5f80a341bf83f3e1.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.roberthalf.com",
         "crustdata_company_id": 682420,
-        "description": "Accounting Consultant at one of the world's most prestigious Accounting and Staffing firms,  Robert Half",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": false,
-        "location": {
-         "raw": "United States"
-        },
-        "name": "Robert Half",
-        "position_id": 1978431569,
-        "professional_network_id": "1681",
         "seniority_level": "Entry Level",
         "start_date": "2022-06-01T00:00:00",
-        "title": "Accountant",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 4
+        "title": "Accountant"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/meda-strawn-4240513b"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Director, Strategic Finance",
-     "name": "Daniel Marques"
+     "name": "Tatum Lumfelyor"
     },
     "contact": {
      "has_business_email": false
     },
-    "crustdata_person_id": 172556589,
+    "crustdata_person_id": 90000019,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 454,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Los Angeles, California, United States",
-        "company_hq_location_address_components": [
-         "Los Angeles",
-         "Los Angeles County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/serverobotics",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.serverobotics.com/",
         "crustdata_company_id": 628895,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "Columbus, Ohio Metropolitan Area"
-        },
-        "name": "Serve Robotics",
-        "position_id": 2808716205,
-        "professional_network_id": "72049930",
         "seniority_level": "Director",
         "start_date": "2026-01-01T00:00:00",
-        "title": "Director, Strategic Finance",
-        "years_at_company": "Less than 1 year",
-        "years_at_company_raw": 0
+        "title": "Director, Strategic Finance"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/danmarques1120"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Director, SEC Reporting & Technical Accounting",
-     "name": "Lindsey Morse"
+     "name": "Oakley Roswenfel"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 192618913,
+    "crustdata_person_id": 90000020,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 454,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Los Angeles, California, United States",
-        "company_hq_location_address_components": [
-         "Los Angeles",
-         "Los Angeles County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Technology, Information and Internet",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/serverobotics",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
-        "company_status": "active",
-        "company_type": "Public Company",
-        "company_website": "https://www.serverobotics.com/",
         "crustdata_company_id": 628895,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "name": "Serve Robotics",
-        "position_id": 2880370857,
-        "professional_network_id": "72049930",
         "seniority_level": "Director",
         "start_date": "2026-04-01T00:00:00",
-        "title": "Director, SEC Reporting & Technical Accounting",
-        "years_at_company": "Less than 1 year",
-        "years_at_company_raw": 0
+        "title": "Director, SEC Reporting & Technical Accounting"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/lindsey-morse-cpa-a95449b5"
-     }
     }
    }
   ],
-  "remarks": [],
-  "total_count": 6,
-  "total_count_relation": null
+  "total_count": 6
  },
  "retrieved_at": "2026-10-31T05:50:33.786328+00:00",
  "status": 200

@@ -52,57 +52,28 @@
   "limit": 5
  },
  "response": {
-  "next_cursor": "H4sIABmA5WoC_xXMwQrCMAyA4VcZPXtIUqqpryIykjRhB7G4dQcR3915_T_4P-m1-_qeF9mWdJ2SV6aQJlJrVqQSGbz5hQsgaQNVF2vFA8KsqakKWXAmBRMOwHSa0tbXcbxuhIWRzng_2uhDHrP1_fkn_v4AvHEfIXgAAAA=",
   "profiles": [
    {
     "basic_profile": {
      "current_title": "Director, Revenue Accounting",
-     "name": "Jennifer Hill"
+     "name": "Reese Halroswen"
     },
     "contact": {
      "has_business_email": false
     },
-    "crustdata_person_id": 825400,
+    "crustdata_person_id": 90000057,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 413,
-        "company_headcount_range": "201-500",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/tryretool",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72f60d0ccad488216922fb784abc89890b49eeed8ab1eca1a0a12c72a68a0620.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://retool.com/",
         "crustdata_company_id": 633593,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "name": "Retool",
-        "position_id": 2020661322,
-        "professional_network_id": "11869260",
         "seniority_level": "Director",
         "start_date": "2022-08-01T00:00:00",
-        "title": "Director, Revenue Accounting",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 4
+        "title": "Director, Revenue Accounting"
        }
       ]
      }
@@ -111,52 +82,24 @@
    {
     "basic_profile": {
      "current_title": "VP, Controller",
-     "name": "Luke Franklin"
+     "name": "Harper Dunsenros"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 3246923,
+    "crustdata_person_id": 90000022,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 413,
-        "company_headcount_range": "201-500",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/tryretool",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72f60d0ccad488216922fb784abc89890b49eeed8ab1eca1a0a12c72a68a0620.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://retool.com/",
         "crustdata_company_id": 633593,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "name": "Retool",
-        "position_id": 2764347401,
-        "professional_network_id": "11869260",
         "seniority_level": "Vice President",
         "start_date": "2024-01-01T00:00:00",
-        "title": "VP, Controller",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 2
+        "title": "VP, Controller"
        }
       ]
      }
@@ -165,93 +108,34 @@
    {
     "basic_profile": {
      "current_title": "Corporate Finance Lead",
-     "name": "Melanie Reeves"
+     "name": "Nico Dunpelnel"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 3251349,
+    "crustdata_person_id": 90000058,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 413,
-        "company_headcount_range": "201-500",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/tryretool",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72f60d0ccad488216922fb784abc89890b49eeed8ab1eca1a0a12c72a68a0620.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://retool.com/",
         "crustdata_company_id": 633593,
-        "description": "",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "San Francisco, California, United States"
-        },
-        "name": "Retool",
-        "position_id": 2502391626,
-        "professional_network_id": "11869260",
         "seniority_level": "Senior",
         "start_date": "2024-10-01T00:00:00",
-        "title": "Corporate Finance Lead",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 2
+        "title": "Corporate Finance Lead"
        },
        {
         "business_email_verified": false,
-        "company_headcount_latest": 543,
-        "company_headcount_range": "51-200",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "Daly City, California, United States",
-        "company_hq_location_address_components": [
-         "Daly City",
-         "San Mateo County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Professional Organizations",
-         "Civic and Social Organizations",
-         "Consumer Services"
-        ],
-        "company_professional_network_industry": "Professional Organizations",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/the-operators-guild",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/37abe679183bc676bbd0862992adad36c652af38ca1a05c5e3937d6909791eb7.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://operators-guild.com",
         "crustdata_company_id": 1085363,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": false,
-        "name": "Operators Guild",
-        "position_id": 1817784595,
-        "professional_network_id": "7972843",
         "seniority_level": "Entry Level",
         "start_date": "2018-11-01T00:00:00",
-        "title": "Member",
-        "years_at_company": "6 to 10 years",
-        "years_at_company_raw": 7
+        "title": "Member"
        }
       ]
      }
@@ -260,55 +144,24 @@
    {
     "basic_profile": {
      "current_title": "Senior Corporate Accounting Manager",
-     "name": "Chris Shin"
+     "name": "Nico Quorbarwen"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 6947628,
+    "crustdata_person_id": 90000059,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 413,
-        "company_headcount_range": "201-500",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/tryretool",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72f60d0ccad488216922fb784abc89890b49eeed8ab1eca1a0a12c72a68a0620.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://retool.com/",
         "crustdata_company_id": 633593,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "location": {
-         "raw": "San Francisco Bay Area"
-        },
-        "name": "Retool",
-        "position_id": 2990074644,
-        "professional_network_id": "11869260",
         "seniority_level": "Entry Level Manager",
         "start_date": "2026-07-01T00:00:00",
-        "title": "Senior Corporate Accounting Manager",
-        "years_at_company": "Less than 1 year",
-        "years_at_company_raw": 0
+        "title": "Senior Corporate Accounting Manager"
        }
       ]
      }
@@ -317,61 +170,31 @@
    {
     "basic_profile": {
      "current_title": "Director, Corporate Accounting",
-     "name": "Chloe Lee"
+     "name": "Indigo Velzanwen"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 21581261,
+    "crustdata_person_id": 90000060,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 413,
-        "company_headcount_range": "201-500",
-        "company_headquarters_country": "United States",
-        "company_hq_location": "San Francisco, California, United States",
-        "company_hq_location_address_components": [
-         "San Francisco",
-         "San Francisco County",
-         "California",
-         "United States"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/tryretool",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72f60d0ccad488216922fb784abc89890b49eeed8ab1eca1a0a12c72a68a0620.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "https://retool.com/",
         "crustdata_company_id": 633593,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "name": "Retool",
-        "position_id": 2282519986,
-        "professional_network_id": "11869260",
         "seniority_level": "Director",
         "start_date": "2023-10-01T00:00:00",
-        "title": "Director, Corporate Accounting",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "Director, Corporate Accounting"
        }
       ]
      }
     }
    }
   ],
-  "remarks": [],
-  "total_count": 8,
-  "total_count_relation": null
+  "total_count": 8
  },
  "retrieved_at": "2026-10-31T05:43:53.784604+00:00",
  "status": 200

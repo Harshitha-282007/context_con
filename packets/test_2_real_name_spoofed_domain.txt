@@ -1,4 +1,4 @@
-From: Samantha Forenza <samantha.forenza@gust0.com>
+From: Harper Gorpelmor <harper.gorpelmor@gust0.com>
 To: payables@ourcompany.example
 Subject: Change of remittance details
 
@@ -13,7 +13,7 @@ New account number: 4400118822337
 Website: www.gusto.com
 
 Thanks,
-Samantha Forenza
+Harper Gorpelmor
 Head of Revenue Accounting
 
 -- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

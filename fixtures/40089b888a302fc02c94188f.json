@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIABKA5WoC_xXMQQ7CIBAF0Ks0rF2UPzADXsWYBgZIF0ZiSxfGeHfr9i3ex7yOur2XNe2ruU5Gi0QEjQ1COsOH4rk49mKz2pApJ1BpYKqOURkxELJoRpy1tqbmMpm9b-O8bhB2cj9h9JEei_bj-XdrBd8fKNoDBHgAAAA=",
   "profiles": [
    {
     "basic_profile": {
-     "name": "Krish Subramanian"
+     "name": "Harper Haldungor"
     },
-    "crustdata_person_id": 27647
+    "crustdata_person_id": 90000032
    }
   ],
-  "remarks": [],
-  "total_count": 1172,
-  "total_count_relation": null
+  "total_count": 1172
  },
  "retrieved_at": "2026-10-31T05:43:46.736698+00:00",
  "status": 200

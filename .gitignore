@@ -8,3 +8,5 @@ outputs/*
 !outputs/.gitkeep
 outbox/*
 !outbox/.gitkeep
+
+.private_fixtures/

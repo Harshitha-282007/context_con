@@ -29,11 +29,8 @@
   "limit": 5
  },
  "response": {
-  "next_cursor": null,
   "profiles": [],
-  "remarks": [],
-  "total_count": 0,
-  "total_count_relation": null
+  "total_count": 0
  },
  "retrieved_at": "2026-10-31T06:00:58.506284+00:00",
  "status": 200

@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIAB2A5WoC_xXMMQ7CMAwAwK9UnhkcnKQOX0Gosp1aHRARbTpUiL9T1hvuA-99Xo9pkW2B2wBkPLo4lsqMNV61FM3BkNnM0VAyzYpunqJhca0aUrEYLIt69BEuA2xt7ed150BEjxN66_KcrO2vv3P6_gByf5ZIdgAAAA==",
   "profiles": [
    {
     "basic_profile": {
-     "name": "Justin Torre"
+     "name": "Marlo Yorroslum"
     },
-    "crustdata_person_id": 81333
+    "crustdata_person_id": 90000042
    }
   ],
-  "remarks": [],
-  "total_count": 85,
-  "total_count_relation": null
+  "total_count": 85
  },
  "retrieved_at": "2026-10-31T05:43:58.150228+00:00",
  "status": 200

@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIABmA5WoC_xXMMQ7DIAxA0atEnjuAgRh6laqKjA3KUBU1IUNU9e4l05fe8L_wOcp2LivvK9wnQKdRTOGkwslmqYoUM1nKJYZUhcSHOo9o4oBEhavLBa1BUXZZ4DbB3rY-Xg_rgzfPAb11fi3SjvflLtHvD1kUVmV3AAAA",
   "profiles": [
    {
     "basic_profile": {
-     "name": "David Hsu"
+     "name": "Drew Gorsenwen"
     },
-    "crustdata_person_id": 14540
+    "crustdata_person_id": 90000055
    }
   ],
-  "remarks": [],
-  "total_count": 397,
-  "total_count_relation": null
+  "total_count": 397
  },
  "retrieved_at": "2026-10-31T05:43:53.315403+00:00",
  "status": 200

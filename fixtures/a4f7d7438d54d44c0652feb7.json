@@ -1,0 +1,65 @@
+{
+ "credits": 0.23,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current",
+   "experience.recently_changed_jobs",
+   "social_handles.professional_network_identifier.profile_url"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 633593
+    },
+    {
+     "field": "basic_profile.name",
+     "type": "(.)",
+     "value": "Harper Dunsenros"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "VP, Controller",
+     "name": "Harper Dunsenros"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 90000022,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "crustdata_company_id": 633593,
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "seniority_level": "Vice President",
+        "start_date": "2024-01-01T00:00:00",
+        "title": "VP, Controller"
+       }
+      ]
+     },
+     "recently_changed_jobs": false
+    }
+   }
+  ],
+  "total_count": 1
+ },
+ "retrieved_at": "2026-10-31T05:50:29.833277+00:00",
+ "status": 200
+}

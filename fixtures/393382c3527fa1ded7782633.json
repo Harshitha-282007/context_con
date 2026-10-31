@@ -64,531 +64,235 @@
   "limit": 10
  },
  "response": {
-  "next_cursor": null,
   "profiles": [
    {
     "basic_profile": {
      "current_title": "CFO",
-     "name": "Vikash Sureka"
+     "name": "Reese Zanzanmor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 2766267,
+    "crustdata_person_id": 90000000,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "Leading Finance, Tax, Legal, Corp Dev, IR, IT, Audit & Corp affairs",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "location": {
-         "raw": "Bengaluru, Karnataka, India"
-        },
-        "name": "BrowserStack",
-        "position_id": 2204554575,
-        "professional_network_id": "2553488",
         "seniority_level": "CXO",
         "start_date": "2023-04-01T00:00:00",
-        "title": "CFO",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 3
+        "title": "CFO"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/vikash-sureka-3086067"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Executive Assistant - Global Sales & Finance",
-     "name": "Aarti Castelino"
+     "name": "Kai Feltorzan"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 34434166,
+    "crustdata_person_id": 90000001,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "At BrowserStack - the world’s largest software testing platform, powering over two million tests everyday across 14 global data centres. \nIm responsible for acting as the point of contact among senior leaders, executives, employees, clients and other external partners. Managing information flow in a timely and accurate manner. Handling administrative and operational functions in people management.",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Sales",
         "is_default": true,
-        "location": {
-         "raw": "Mumbai, Maharashtra, India"
-        },
-        "name": "BrowserStack",
-        "position_id": 1809265594,
-        "professional_network_id": "2553488",
         "seniority_level": "Entry Level",
         "start_date": "2021-04-01T00:00:00",
-        "title": "Executive Assistant - Global Sales & Finance",
-        "years_at_company": "6 to 10 years",
-        "years_at_company_raw": 5
+        "title": "Executive Assistant - Global Sales & Finance"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/aarticastelinodsouza"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Finance Team",
-     "name": "Sudarshan Sarda"
+     "name": "Jordan Nelsenhal"
     },
     "contact": {
      "has_business_email": false
     },
-    "crustdata_person_id": 34442070,
+    "crustdata_person_id": 90000002,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "Managing and supervising Global Treasury operations AP, AR, Capex, month close and financial reporting",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "Mumbai, Maharashtra, India"
-        },
-        "name": "BrowserStack",
-        "position_id": 1916678590,
-        "professional_network_id": "2553488",
         "seniority_level": "Entry Level",
         "start_date": "2022-02-01T00:00:00",
-        "title": "Finance Team",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 4
+        "title": "Finance Team"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/sudarshan-sarda-82917645"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Senior Lead- Global Reporting Finance",
-     "name": "Aarushi Kothari"
+     "name": "Reese Zanwenkor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 34458872,
+    "crustdata_person_id": 90000003,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "",
-        "employment_type": "Full-time",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "Mumbai, Maharashtra, India"
-        },
-        "name": "BrowserStack",
-        "position_id": 2722600407,
-        "professional_network_id": "2553488",
         "seniority_level": "Senior",
         "start_date": "2024-10-01T00:00:00",
-        "title": "Senior Lead- Global Reporting Finance",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 2
+        "title": "Senior Lead- Global Reporting Finance"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/ca-aarushi-kothari-02188a191"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Sr. Billing & Accounting Specialist",
-     "name": "Bhavana Jobanputra"
+     "name": "Parker Nelnelcor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 34498210,
+    "crustdata_person_id": 90000004,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": true,
-        "name": "BrowserStack",
-        "position_id": 1928289862,
-        "professional_network_id": "2553488",
         "seniority_level": "Entry Level",
         "start_date": "2022-03-01T00:00:00",
-        "title": "Sr. Billing & Accounting Specialist",
-        "years_at_company": "3 to 5 years",
-        "years_at_company_raw": 4
+        "title": "Sr. Billing & Accounting Specialist"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/bhavana-jobanputra-54b52b22"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Finance Specialist",
-     "name": "Tanu Bansal"
+     "name": "Oakley Wenlumtor"
     },
     "contact": {
      "has_business_email": false
     },
-    "crustdata_person_id": 34531779,
+    "crustdata_person_id": 90000029,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": false,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "name": "BrowserStack",
-        "position_id": 2567007145,
-        "professional_network_id": "2553488",
         "seniority_level": "Entry Level",
         "start_date": null,
-        "title": "Finance Specialist",
-        "years_at_company": "",
-        "years_at_company_raw": 0
+        "title": "Finance Specialist"
        },
        {
         "business_email_verified": false,
-        "company_headcount_latest": 0,
-        "company_headcount_range": "",
-        "company_headquarters_country": "",
-        "company_hq_location": "",
-        "company_hq_location_address_components": [],
-        "company_industries": [],
-        "company_professional_network_industry": "",
-        "company_professional_network_profile_url": "",
-        "company_profile_picture_permalink": "",
-        "company_status": null,
-        "company_type": "",
-        "company_website": "",
         "crustdata_company_id": 0,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "",
         "is_default": false,
-        "name": "BrowserStack",
-        "position_id": 0,
-        "professional_network_id": null,
         "seniority_level": "Entry Level",
         "start_date": null,
-        "title": "",
-        "years_at_company": "",
-        "years_at_company_raw": 0
+        "title": ""
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/tanu-bansal-07277134a"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Global Finance Manager",
-     "name": "Aayush Heda"
+     "name": "Jordan Lumsengor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 35852632,
+    "crustdata_person_id": 90000030,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "Mumbai"
-        },
-        "name": "BrowserStack",
-        "position_id": 2691773030,
-        "professional_network_id": "2553488",
         "seniority_level": "Entry Level Manager",
         "start_date": "2025-07-01T00:00:00",
-        "title": "Global Finance Manager",
-        "years_at_company": "1 to 2 years",
-        "years_at_company_raw": 1
+        "title": "Global Finance Manager"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/ca-aayush-heda"
-     }
     }
    },
    {
     "basic_profile": {
      "current_title": "Group Finance Controller - Vice President",
-     "name": "Gaurav Sehgal"
+     "name": "Sage Gorroscor"
     },
     "contact": {
      "has_business_email": true
     },
-    "crustdata_person_id": 53432716,
+    "crustdata_person_id": 90000031,
     "experience": {
      "employment_details": {
       "current": [
        {
         "business_email_verified": true,
-        "company_headcount_latest": 1717,
-        "company_headcount_range": "1001-5000",
-        "company_headquarters_country": "Ireland",
-        "company_hq_location": "Dublin, County Dublin, Ireland",
-        "company_hq_location_address_components": [
-         "Dublin",
-         "County Dublin",
-         "Ireland"
-        ],
-        "company_industries": [
-         "Software Development",
-         "Technology, Information and Internet",
-         "Technology, Information and Media"
-        ],
-        "company_professional_network_industry": "Software Development",
-        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
-        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
-        "company_status": "active",
-        "company_type": "Privately Held",
-        "company_website": "http://www.browserstack.com",
         "crustdata_company_id": 5853,
-        "description": "•\tBuilding institutional-grade SOPs, policies, and governance frameworks to meet public market scrutiny.\n•\tArchitected BrowserStack's group restructure — a landmark group restructuring involving complex transactions and tax savings for the Group.\n•\tExecuted a $125M ESOP and share buyback programme spanning VCs and employees, and distributed dividends — managing all legal, regulatory, and cross-border workstreams.\n•\tManaging $300M+ Group treasury through leveraged and quantitative investment strategies — maintaining full liquidity while delivering superior risk-adjusted returns.\n•\tOverseeing global tax and transfer pricing strategy; leading a controllership team of 20 across the full finance cycle (O2C, P2P, R2R) across 10+ jurisdictions.\n•\tBuilding investor relationships — serving as the credible financial voice in all strategic conversations.",
-        "employment_type": "",
         "end_date": null,
         "function_category": "Finance",
         "is_default": true,
-        "location": {
-         "raw": "Mumbai"
-        },
-        "name": "BrowserStack",
-        "position_id": 2602008478,
-        "professional_network_id": "2553488",
         "seniority_level": "Vice President",
         "start_date": "2025-01-01T00:00:00",
-        "title": "Group Finance Controller - Vice President",
-        "years_at_company": "1 to 2 years",
-        "years_at_company_raw": 1
+        "title": "Group Finance Controller - Vice President"
        }
       ]
      },
      "recently_changed_jobs": false
-    },
-    "social_handles": {
-     "professional_network_identifier": {
-      "profile_url": "https://www.linkedin.com/in/gaurav-sehgal-00a56730"
-     }
     }
    }
   ],
-  "remarks": [],
-  "total_count": 8,
-  "total_count_relation": null
+  "total_count": 8
  },
  "retrieved_at": "2026-10-31T06:00:56.010837+00:00",
  "status": 200

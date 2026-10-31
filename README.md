@@ -47,6 +47,8 @@ Tests make no network calls:
 
 All packets are synthetic. Fraudster names and domains are fictional. Real companies appear only as the vendor being impersonated or checked, and a finding about one says nothing about that company's conduct.
 
+**Saved data is pseudonymized.** This repo is public, so people in `fixtures/` and the sample packets have made-up names and IDs, and unused profile fields are removed. Company data and the role data behind each person (title, function, dates) came from real API responses. The results for samples with an employee sender, such as `case_a`, `test_1` and `test_2`, are therefore replays of real role data under a made-up name: those names will not match anyone in a fresh lookup. To see a real match, paste a packet naming a real employee with offline replay off. Responses saved by your own runs are not anonymized, so review them before committing.
+
 ## How decisions are made
 
 The LLM only extracts; rules decide. Every rule is a pure function returning `PASS`, `FLAG` or `UNVERIFIABLE` with evidence ids, and missing data is never a PASS.

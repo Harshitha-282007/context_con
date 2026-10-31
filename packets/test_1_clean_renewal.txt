@@ -1,4 +1,4 @@
-From: Eric Li <eric.li@postman.com>
+From: Sage Rosvelfel <sage.rosvelfel@postman.com>
 To: payables@ourcompany.example
 Subject: Annual API platform renewal, invoice PM-88213
 
@@ -11,7 +11,7 @@ Total: $36,000.00
 Website: www.postman.com
 
 Regards,
-Eric Li
+Sage Rosvelfel
 Senior Accounting Manager
 
 -- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

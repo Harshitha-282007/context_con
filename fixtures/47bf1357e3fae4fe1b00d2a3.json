@@ -14,18 +14,15 @@
   "limit": 1
  },
  "response": {
-  "next_cursor": "H4sIACKA5WoC_xWMMQ7CMAwAv1JlZmgSx7X5CkKV4zjqgIho0wEh_k5Y7073ca_T9ve6ybG56-TEKlPNWNGTweKjppI0kVEEsTIH72lGXYogBS7ioVQWySwZICq7y-SOtvfxusGoA94H6a3LY9V2Pv8iwfcHT06yFHcAAAA=",
   "profiles": [
    {
     "basic_profile": {
-     "name": "Chris Pisarski"
+     "name": "Tatum Torjenfel"
     },
-    "crustdata_person_id": 402126
+    "crustdata_person_id": 90000035
    }
   ],
-  "remarks": [],
-  "total_count": 54,
-  "total_count_relation": null
+  "total_count": 54
  },
  "retrieved_at": "2026-10-31T05:44:02.181312+00:00",
  "status": 200

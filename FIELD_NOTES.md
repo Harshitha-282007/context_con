@@ -1,6 +1,6 @@
 # Crustdata field notes
 
-Confirmed by real calls on 31 Oct 2026 unless marked. Raw responses are in `fixtures/`.
+Confirmed by real calls on 31 Oct 2026 unless marked. Saved responses are in `fixtures/`, with people pseudonymized and unused profile fields removed by `scripts/anonymize_fixtures.py`, so they no longer show every field described below.
 
 ## Key access (`GET /account/endpoints`, free)
 
