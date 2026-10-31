@@ -1,0 +1,18 @@
+---------- Forwarded message ---------
+From: Asha Internal <asha@ourcompany.example>
+Subject: Fwd: pending BrowserStack dues
+
+can someone from AP check this before Friday?
+
+> From: "Tobin Madeup" <tobin.madeup.billing@gmail.com>
+> Subject: BrowserStack pending dues
+>
+> Company: BrowserStack
+> Invoice: BS/2291
+> Amount due: INR 9,75,000
+> Our account has changed, new account number: 50100998877665
+>
+> Thank you,
+> Tobin Madeup
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

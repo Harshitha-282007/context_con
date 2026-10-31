@@ -1,0 +1,101 @@
+{
+ "credits": 0.23,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current",
+   "experience.recently_changed_jobs",
+   "social_handles.professional_network_identifier.profile_url"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 634921
+    },
+    {
+     "field": "basic_profile.name",
+     "type": "(.)",
+     "value": "Samantha Forenza"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": null,
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "Head of Revenue Accounting",
+     "name": "Samantha Forenza"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 919347,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 4882,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "San Francisco, California, United States",
+        "company_hq_location_address_components": [
+         "San Francisco",
+         "San Francisco County",
+         "California",
+         "United States"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/gustohq",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "http://www.gusto.com",
+        "crustdata_company_id": 634921,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "",
+        "is_default": true,
+        "name": "Gusto",
+        "position_id": 2159718378,
+        "professional_network_id": "2499210",
+        "seniority_level": "Director",
+        "start_date": "2023-04-01T00:00:00",
+        "title": "Head of Revenue Accounting",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 3
+       }
+      ]
+     },
+     "recently_changed_jobs": false
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/samantha-forenza-cpa-61516b43"
+     }
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 1,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T06:00:50.406888+00:00",
+ "status": 200
+}

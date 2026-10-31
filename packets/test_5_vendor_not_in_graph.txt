@@ -1,0 +1,15 @@
+From: Rowan Imaginary <rowan@zyphorqa-dynamics.example>
+To: payables@ourcompany.example
+Subject: First invoice, new supplier onboarding
+
+Vendor: Zyphorqa Dynamics
+Invoice: ZD-0001
+Description: Consulting retainer
+Total: $15,000.00
+Website: www.zyphorqa-dynamics.example
+
+Regards,
+Rowan Imaginary
+Director
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

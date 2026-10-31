@@ -1,0 +1,175 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "BrowserStack"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "BrowserStack",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "browserstack.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 5853,
+       "description": "BrowserStack is the world’s leading software testing platform, powered by AI and trusted by over 50,000 teams, including Amazon, Microsoft, and NVIDIA, to deliver quality software at speed. With a community of over 9 million registered developers and testers, we power 3 million+ tests every day across 21 global data centers.Our platform provides instant access to 30,000+ real devices and browsers, eliminating the need for in-house test infrastructure. BrowserStack supports the entire testing lifecycle with scalable solutions for functional, visual, performance, and accessibility testing, alongside powerful test management and debugging tools. With AI Agents built into key workflows, teams can debug faster, automate smarter, and release with confidence.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "BrowserStack",
+       "primary_domain": "browserstack.com",
+       "professional_network_id": "2553488",
+       "professional_network_url": "https://www.linkedin.com/company/browserstack",
+       "profile_name": "BrowserStack",
+       "website": "http://www.browserstack.com",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 5853,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "browserstack.com"
+       ],
+       "company_type": "Nonprofit",
+       "crustdata_company_id": 32625444,
+       "description": "BrowserStack Community Indore is a local tech community focused on quality engineering and modern software development practices.The community brings together testers, developers, software professionals, and students to learn, share, and grow through meetups, knowledge sessions, and hands-on discussions around real world workflows, developer tools, and platform thinking.Powered by BrowserStack, the community aims to create a collaborative space where professionals can exchange insights, explore emerging trends like AI driven development & testing, explore career opportunities and build meaningful connections within the tech ecosystem.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/00b1b5abaa745972e4cd3f027eb78528ddc684f3115d9039c9b2f7134456e506.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "BrowserStack Community Indore",
+       "primary_domain": "browserstack.com",
+       "professional_network_id": "112171979",
+       "professional_network_url": "https://www.linkedin.com/company/browserstack-community-indore",
+       "profile_name": "BrowserStack Community Indore",
+       "website": "https://www.browserstack.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 32625444,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "birdeatsbug.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 825117,
+       "description": "Screen recording that automatically captures valuable engineering data. Create technical bug reports even without technical skills, right from your browser.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0cda237f2b869a45c97961f4fee1631596c9b3e80bdac5a94a8deae6f6c4d882.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Bird Eats Bug (acquired by BrowserStack)",
+       "primary_domain": "birdeatsbug.com",
+       "professional_network_id": "42769550",
+       "professional_network_url": "https://www.linkedin.com/company/bird-eats-bug",
+       "profile_name": "Bird Eats Bug (acquired by BrowserStack)",
+       "website": "https://birdeatsbug.com/?utm_source=linkedin&utm_medium=listing",
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 825117,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Nonprofit",
+       "crustdata_company_id": 17461112,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "BrowserStack QA meetup group Jaipur",
+       "primary_domain": null,
+       "professional_network_id": "104807718",
+       "professional_network_url": "https://www.linkedin.com/company/browserstack-qa-meetup-group-jaipur",
+       "profile_name": "BrowserStack QA meetup group Jaipur",
+       "website": "https://www.meetup.com/browserstack-qa-meetup-group-jaipur/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 17461112,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "browsertalk.ai"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 4343381,
+       "description": "Browsertalk ,Talk to all your website visitors without their phone number .",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Information Technology & Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8e26c8ae47711ccfae0dcc8970ef31a2b7ddb6c5f1f706834c237c3f1b36dfaf.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Browsertalk",
+       "primary_domain": "browsertalk.ai",
+       "professional_network_id": "14608196",
+       "professional_network_url": "https://www.linkedin.com/company/1browsertalk",
+       "profile_name": "Browsertalk",
+       "website": "http://browsertalk.ai",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 4343381,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T06:00:53.678336+00:00",
+ "status": 200
+}

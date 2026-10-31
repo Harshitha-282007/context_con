@@ -1,0 +1,15 @@
+From: Ellis Nonesuch <ellis.nonesuch@mintlify.com>
+To: payables@ourcompany.example
+Subject: Invoice MF-3007, enterprise documentation programme
+
+Vendor: Mintlify
+Invoice: MF-3007
+Description: Enterprise documentation programme, multi-year prepayment
+Total: $3,000,000.00
+Website: www.mintlify.com
+
+Regards,
+Ellis Nonesuch
+Finance Manager
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

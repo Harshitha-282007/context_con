@@ -82,7 +82,11 @@ def resolve_vendor(client: CrustdataClient, ledger: Ledger, claim: Claim, policy
     exact = [c for c in cands if normalize_company(c.name) == target]
     if len(exact) == 1 and (exact[0].confidence or 0) >= min_conf:
         return Resolution(status="RESOLVED", reason="unique exact name match", company=exact[0], candidates=cands[:5], evidence_ids=evidence)
-    pool = exact or cands
+    # Identify pads results with partial word overlaps, for example "Zyphorqa Dynamics"
+    # returning General Dynamics at 0.6. Those are not candidates for this vendor.
+    pool = exact or [c for c in cands if (c.confidence or 0) >= min_conf]
+    if not pool:
+        return Resolution(status="NOT_FOUND", reason=f"no close match for {claim.vendor_name!r} in the graph", candidates=[], evidence_ids=evidence)
     return Resolution(status="AMBIGUOUS", reason=f"{len(pool)} plausible match(es) for {claim.vendor_name!r}, none certain; none picked", candidates=pool[:5], evidence_ids=evidence)
 
 

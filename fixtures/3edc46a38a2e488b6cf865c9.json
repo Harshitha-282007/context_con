@@ -1,0 +1,813 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Zyphorqa Dynamics"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Zyphorqa Dynamics",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "generaldynamics.com",
+        "gd.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682569,
+       "description": "From Gulfstream business jets and combat vehicles to nuclear-powered submarines and communications systems, people around the world depend on our products and services for their safety and security.General Dynamics is headquartered in Reston, Virginia, and employs over 100,000 people in 43 countries around the world. At the heart of our company are our employees. We rely on their intimate knowledge of customer requirements and a unique blend of skill and innovation to develop and produce the best possible products and services.The driver that makes our company agile, and ensures our continued performance, is our culture of continuous improvement. This culture enforces a shared commitment to consistently look toward the future and to embrace change. It’s a priority at all levels of our company, with every employee engaged in finding new ways to do things faster, better and more cost-effectively, and push the boundaries of our potential.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ca27ab1693f767964d396cf43b4b520fccf9e593a2abac6b097ed5f742d2145a.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "General Dynamics",
+       "primary_domain": "gd.com",
+       "professional_network_id": "1904",
+       "professional_network_url": "https://www.linkedin.com/company/general-dynamics",
+       "profile_name": "General Dynamics",
+       "website": "http://www.generaldynamics.com",
+       "year_founded": 1952
+      },
+      "crustdata_company_id": 682569,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdit.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 890982,
+       "description": "GDIT is a global technology and professional services company that delivers solutions, technology and mission services to every major agency across the U.S. government, defense and intelligence community.Our 26,000 experts extract the power of technology to create immediate value and deliver solutions at the edge of innovation. We operate across 50+ countries worldwide, offering leading capabilities in digital modernization, AI, cyber, and software development. GDIT is part of General Dynamics, a global aerospace and defense company. We have shared our customers’ sense of purpose for over half a century and have a unique understanding of their missions, complex environments, and a rapidly changing world. Together with our customers, we strive to create a safer, smarter world by harnessing the power of deep expertise and advanced technology.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "IT System Data Services",
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9ada6bf948f9b047923e894213b43bfbd4e46c94e096d19a22c20bf144e32a26.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Information Technology",
+       "primary_domain": "gdit.com",
+       "professional_network_id": "1905",
+       "professional_network_url": "https://www.linkedin.com/company/gdit",
+       "profile_name": "General Dynamics Information Technology",
+       "website": "https://www.gdit.com",
+       "year_founded": 1999
+      },
+      "crustdata_company_id": 890982,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "bostondynamics.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 628914,
+       "description": "Boston Dynamics builds advanced mobile manipulation robots with remarkable mobility, dexterity perception and agility.  We use sensor-based controls and computation to unlock the potential of complex mechanisms. Our world-class development teams develop prototypes for wild new concepts, do build-test-build engineering and field testing and transform successful designs into robot products.  Our goal is to change your idea of what robots can do.",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Automation Machinery Manufacturing",
+        "Machinery Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b6022cf09d0709abe22de41c6d0f7c2d1cc3dfb055ffc362f763686cc0de1133.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Boston Dynamics",
+       "primary_domain": "bostondynamics.com",
+       "professional_network_id": "45918",
+       "professional_network_url": "https://www.linkedin.com/company/boston-dynamics",
+       "profile_name": "Boston Dynamics",
+       "website": "http://www.bostondynamics.com",
+       "year_founded": 1992
+      },
+      "crustdata_company_id": 628914,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "bitly.com",
+        "griddynamics.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 662793,
+       "description": "Grid Dynamics (Nasdaq: GDYN) is an AI-first digital engineering services and technology consulting company. Founded in Silicon Valley in 2006, we transform Fortune 1000 enterprises through advanced generative, agentic, and physical AI, data platforms, and cloud-native engineering. With approximately 5,000 technical professionals across 19 countries, we provide the personal touch of a boutique partner backed by the engineering muscle of a global powerhouse.With nine years of leadership in enterprise AI, we fuse technical vision with business acumen to solve the most complex challenges. Our approach combines co-innovation with global delivery to turn your vision into scalable, revenue-driving results. We don’t just keep up with innovation; we set the pace.Grid Dynamics is headquartered in Silicon Valley with a global footprint (Americas, Europe, and India) and a follow-the-sun delivery model bolstered by engineering talent driven by innovation, technical mastery, and resulting in transformational business outcomes.",
+       "employee_count_range": "5001-10000",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c9d8564b3d81dd9859dff56902101d1b6088c194693d60c3bfbeb1418b43036b.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Grid Dynamics",
+       "primary_domain": "griddynamics.com",
+       "professional_network_id": "250774",
+       "professional_network_url": "https://www.linkedin.com/company/grid-dynamics",
+       "profile_name": "Grid Dynamics",
+       "website": "https://bit.ly/4m3bnUN",
+       "year_founded": 2006
+      },
+      "crustdata_company_id": 662793,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdls.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1300949,
+       "description": "We create the Power to WinGeneral Dynamics Land Systems is the global leader in the design, development, production, support and enhancement of tracked and wheeled military vehicles. Our focus is partnering with those who protect our freedom to ensure their readiness for tomorrow. We have a strong foundation of delivering innovative engineering and production capabilities to our clients across the spectrum of military vehicles. Our team is focused on continuous improvements in process and productivity to provide our clients with solutions while reducing costs and delivering urgent requirements. The Abrams Main Battle Tank, the Stryker and LAV family of vehicles, specialty wheeled vehicles and the AJAX armoured fighting vehicles allow our customers to defend freedom around the world. For more information about General Dynamics Land Systems, visit www.gdls.com.",
+       "employee_count_range": "5001-10000",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9e3d066d366923d67f801dc715598bf3aac5ab2e05ed0784c303c04ad4be4cfd.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Land Systems",
+       "primary_domain": "gdls.com",
+       "professional_network_id": "1906",
+       "professional_network_url": "https://www.linkedin.com/company/generaldynamicslandsystems",
+       "profile_name": "General Dynamics Land Systems",
+       "website": "http://www.gdls.com",
+       "year_founded": 1982
+      },
+      "crustdata_company_id": 1300949,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gpssource.com",
+        "gdmissionsystems.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 6037281,
+       "description": "At General Dynamics Mission Systems, a business unit of General Dynamics, we develop mission critical C4ISR solutions across the land, sea, air, space and cyber domains, but that doesn’t tell our whole story.When downed pilots are isolated in enemy territory, our equipment gives them a lifeline to call home. When a student opens a textbook to learn about the universe, they’re looking at data and pictures sent using our technology. When the government needs to share crucial top-secret information, our products help them keep this information out of the wrong hands. When sailors need to locate underwater mines, our technology allows them to find explosives with unmanned underwater vehicles.Delivering C4ISR technology is what we do but we think why we do it is more important.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b26be9e082718077f4b7edb21fd3c2f98cfa04ff3a76bb2b77a54f3dde0d1c95.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Mission Systems",
+       "primary_domain": "gdmissionsystems.com",
+       "professional_network_id": "1908",
+       "professional_network_url": "https://www.linkedin.com/company/gdms",
+       "profile_name": "General Dynamics Mission Systems",
+       "website": "https://gdmissionsystems.com",
+       "year_founded": 1952
+      },
+      "crustdata_company_id": 6037281,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "bdl-india.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 643,
+       "description": "Bharat Dynamics Limited (BDL), A Government of India Enterprise under the administrative control of the Ministry of Defence (MoD), was established in the year 1970 to be a manufacturing base for guided weapon systems.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Industrial Machinery Manufacturing",
+        "Machinery Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/98a9037f0a16e477a2c8938930ab9135f126e0f19c26f624891ccbe970c16d67.jpg",
+       "markets": [
+        "NSE",
+        "BSE"
+       ],
+       "name": "Bharat Dynamics Limited",
+       "primary_domain": "bdl-india.com",
+       "professional_network_id": "13361603",
+       "professional_network_url": "https://www.linkedin.com/company/bharat-dynamics-limited-official-site",
+       "profile_name": "Bharat Dynamics Limited",
+       "website": "http://www.bdl-india.com",
+       "year_founded": 1970
+      },
+      "crustdata_company_id": 643,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "steeldynamics.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682895,
+       "description": "Steel Dynamics is one of the largest domestic steel producers and metals recyclers in the United States, based on estimated annual steelmaking and metals recycling capability, with facilities located throughout the United States, and in Mexico. Steel Dynamics produces steel products, including hot roll, cold roll, and coated sheet steel, structural steel beams and shapes, rail, engineered special-bar-quality steel, cold finished steel, merchant bar products, specialty steel sections and steel joists and deck. In addition, the company produces liquid pig iron and processes and sells ferrous and nonferrous scrap.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/676e3dae91eda91bd1e8307a627732973d5139732a8caaad7e1acc5811e0089a.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Steel Dynamics, Inc",
+       "primary_domain": "steeldynamics.com",
+       "professional_network_id": "319091",
+       "professional_network_url": "https://www.linkedin.com/company/steel-dynamics-inc",
+       "profile_name": "Steel Dynamics, Inc",
+       "website": "http://www.steeldynamics.com",
+       "year_founded": 1993
+      },
+      "crustdata_company_id": 682895,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdmissionsystems.ca",
+        "gdmissionsystems.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1041197,
+       "description": "As one of Canada’s largest, most established defence and security technology companies, General Dynamics Mission Systems–Canada is a force in the business community, developing and utilizing the skills of Canadian suppliers, building Canada’s manufacturing base, and supporting research and development, while providing a flexible and innovation-driven workplace for over 1,200 employees across the country.For more than 70 years, we have been a trusted partner to militaries worldwide. We are proud of the work we do to develop cutting-edge solutions and through continuous engagement, we have built a critical understanding of user needs across land, sea, air and cyber domains. Community involvement is at the core of our mission. We are dedicated to supporting our communities and giving back to them in the same way that they give to us. We are proud to support Canada Army Run; thrilled to continue our patron sponsorship for Women in Defence and Security (WiDS); support STEAM initiatives including FIRST Robotics teams; and offer support to Team Rubicon Canada as they engage veterans in continued service through disaster response. We firmly believe that diversity of talent, thought, experience and perspective produce a high level of creativity and innovation that deliver results to our customers in Canada and around the world.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dd9ea90bd6c9264d7d23e800d95540ef2bd4323c94418bab8df7814537c6b76c.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Mission Systems–Canada",
+       "primary_domain": "gdmissionsystems.ca",
+       "professional_network_id": "218068",
+       "professional_network_url": "https://www.linkedin.com/company/gdms-c",
+       "profile_name": "General Dynamics Mission Systems–Canada",
+       "website": "https://gdmissionsystems.ca/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 1041197,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdeb.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1127990,
+       "description": "General Dynamics Electric Boat is a business unit of General Dynamics with headquarters in Groton, CT. The world’s first and finest submarine builder, Electric Boat was established in 1899 to complete the U.S. Navy’s first modern commissioned submarine, USS Holland. Designed and built by Electric Boat, USS Nautilus, the world’s first nuclear-powered submarine, was launched in 1954. Electric Boat has designed and delivered 17 of the U.S. Navy’s 20 classes of nuclear submarines. Now in its second centennial of submarine building, EB is the design yard and prime contractor for the Virginia-class submarine program, currently in production.  EB is also designing and developing the Columbia-class ballistic-missile submarine which will replace the current Ohio class beginning in 2027.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6177ddc20820e2e64ed9518b8a6a4d62f9422773fcb96b8523da1df2a3f60ff4.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Electric Boat",
+       "primary_domain": "gdeb.com",
+       "professional_network_id": "12643",
+       "professional_network_url": "https://www.linkedin.com/company/electric-boat",
+       "profile_name": "General Dynamics Electric Boat",
+       "website": "https://www.gdeb.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 1127990,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "xldynamics.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1132080,
+       "description": "Established in 2002 and incorporated in 2005, XL Dynamics India Pvt. Ltd. is privately held corporation providing IT, audit and quality control outsourcing solutions to a defined clientele in the US mortgage industry.We have proven expertise to provide comprehensive solutions to a defined clientele in the US mortgage industry, including but not limited to:• IT solutions• Expert analysis and risk assessment audit of complex financial products• Inspection of executed financial trades• Documentation of policies, processes and guidelines• Quality control services, Operations and Servicing quality control• Trading and hedging strategy and support• Regulatory compliance and audit services• Securitization of loan instruments study",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/569a3b0fd03557718ea88e6bb6d0185668de660e363dbff9d8dd7162bb9eabdf.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "XL Dynamics India Pvt. Ltd.",
+       "primary_domain": "xldynamics.com",
+       "professional_network_id": "7969406",
+       "professional_network_url": "https://www.linkedin.com/company/xl-dynamics-india-pvt.-ltd.",
+       "profile_name": "XL Dynamics India Pvt. Ltd.",
+       "website": "http://www.xldynamics.com",
+       "year_founded": 2002
+      },
+      "crustdata_company_id": 1132080,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "nassco.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1689264,
+       "description": "General Dynamics NASSCO traces its beginnings to the working waterfront of beautiful and historic San Diego Bay. The company has been designing and building ships in San Diego’s industrial heart since 1960 and is the only full service shipyard on the West Coast of the United States.Today, General Dynamics NASSCO has locations on the West and East Coasts. We specialize in the design and construction of auxiliary and support ships for the U.S. Navy, and oil tankers and dry cargo carriers for commercial markets. NASSCO is also a major provider of repair services for the U.S. Navy’s global force for good, with capabilities in San Diego, Norfolk, Mayport and Bremerton.Interested in joining our team? Get to know our corporate culture:WHO WE AREHighly dedicated professionals anchored in teamwork and propelled by innovationHOW WE WORKOne Team, one NASSCO, better every dayOUR COMMITMENTSPerform – We maintain a focus on safety, quality and ownership in all aspects of our work.Learn – We encourage and trust one another to grow and learn while holding ourselves and each other accountable for our collective results.Improve – We acknowledge our mistakes and act on opportunities to continuously improve.Sustain – We are good stewards of our business, our community and our environment.View openings and apply for jobs at https://jobs.nassco.com.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Shipbuilding",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9634470f2d6f2109ac2889f040dcafa2688c7150bcc19d798f40bfac1e94ed0b.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics NASSCO",
+       "primary_domain": "nassco.com",
+       "professional_network_id": "27013",
+       "professional_network_url": "https://www.linkedin.com/company/nassco",
+       "profile_name": "General Dynamics NASSCO",
+       "website": "https://jobs.nassco.com",
+       "year_founded": 1959
+      },
+      "crustdata_company_id": 1689264,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "hiredynamics.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1699123,
+       "description": "Opportunities. Fulfilled. Built with the mission to be the #1 staffing company you'd refer to a friend, Hire Dynamics was founded in 2001 to create a different kind of staffing business, one that puts people first and builds partnerships that help both businesses and individuals reach their goals. Since 2001, Hire Dynamics has experienced thoughtful, accelerated growth that is fueled by our commitment to providing opportunities for our employees, clients, talent & communities.Hire Dynamics specializes in Contact Centers, E-Comm/Logistics,  Manufacturing and Office Support, and our performance is measured best by the loyalty of our clients, talent and employees. Our Net Promoter Score (a national satisfaction rating) for clients is rated as world-class & 2.5 times the industry average, and for talent is 3.5 times higher. We have received ClearlyRated's \"Best of Staffing\" awards recognizing the top 1% of the 20,000+ staffing companies in the U.S. based on client and talent perceptions of service quality each year since 2010. We are one of only a handful that have been honored for both client and talent satisfaction every year. We take great pride in our ability to provide Talent on Demand. Please contact us if you are looking for an opportunity or seeking ‘A’ players for your organization.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9bbf0aad61979d43f46a2628d768470bc1b4ec1db02aff46ec2641df69cf026f.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Hire Dynamics",
+       "primary_domain": "hiredynamics.com",
+       "professional_network_id": "20889",
+       "professional_network_url": "https://www.linkedin.com/company/hire-dynamics",
+       "profile_name": "Hire Dynamics",
+       "website": "http://www.hiredynamics.com",
+       "year_founded": 2001
+      },
+      "crustdata_company_id": 1699123,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gd-ots.com",
+        "gdots.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1945280,
+       "description": "General Dynamics Ordnance and Tactical Systems provides the U.S. military and its allies around the world, an extensive range of weapons systems needed at all levels of strategic and tactical operations. For ground forces, we manufacture heavy machine guns, grenade launchers, crew-served weapons and munitions of all calibers. As well as family of lightweight vehicles for expeditionary and special forces. We produce weapons systems and ammunition for U.S. Navy shipboard applications. For airborne platforms, we produce weapons for fighter aircraft, including high-speed Gatling guns for all U.S. fixed-wing and rotary military aircraft. Our munitions portfolio covers the full breadth of naval, air and ground forces applications across all calibers and weapons platforms.We have 6,000 employees and 26 facilities spread across the United States and Canada.For more information on General Dynamics Ordnance and Tactical Systems go to www.gdots.com.",
+       "employee_count_range": "5001-10000",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6ea7cdea63d9fde6ebac18c0ceb2c07f3a1405fd5e6ab130525d6841458ae900.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Ordnance and Tactical Systems",
+       "primary_domain": "gdots.com",
+       "professional_network_id": "744959",
+       "professional_network_url": "https://www.linkedin.com/company/general-dynamics-ordnance-and-tactical-systems",
+       "profile_name": "General Dynamics Ordnance and Tactical Systems",
+       "website": "http://www.gdots.com",
+       "year_founded": 1996
+      },
+      "crustdata_company_id": 1945280,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdbiw.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 2150476,
+       "description": "\"Bath Built Is Best Built\" Part of General Dynamics Marine Systems, Bath Iron Works is a full service shipyard specializing in the design, building and support of complex surface combatants for the U.S. Navy.Our MissionDesign, build and support the highest-quality surface combatants for the United States. Our VisionAn exceptional maritime company that safely provides shipbuilding, component manufacturing and specialized services with a world-class team and facilities.",
+       "employee_count_range": "5001-10000",
+       "industries": [
+        "Shipbuilding",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/83eadcf34bc62ea6d9119862561616e091acc4b86006838a0d77a78c0de6c898.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics - Bath Iron Works",
+       "primary_domain": "gdbiw.com",
+       "professional_network_id": "22476",
+       "professional_network_url": "https://www.linkedin.com/company/bath-iron-works",
+       "profile_name": "General Dynamics - Bath Iron Works",
+       "website": "https://gdbiw.com/careers/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 2150476,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "usu.edu"
+       ],
+       "company_type": "Nonprofit",
+       "crustdata_company_id": 6102854,
+       "description": "The Utah State University Space Dynamics Laboratory is a nonprofit UARC with over 65 years of mission success. We’re committed to providing innovative sensor systems, satellites, and supporting technologies to address the nation’s scientific and technical challenges. Our talented workforce includes engineers, scientists, and business professionals dedicated to providing solutions that support all mission phases, from concept to completion.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/035ad0b6cbc67162b4908a3e8cf65bb28c19b1aa007fed2253341ecb6d5ba1dd.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Space Dynamics Laboratory",
+       "primary_domain": "usu.edu",
+       "professional_network_id": "7813",
+       "professional_network_url": "https://www.linkedin.com/company/space-dynamics-laboratory",
+       "profile_name": "Space Dynamics Laboratory",
+       "website": "https://www.sdl.usu.edu/",
+       "year_founded": 1959
+      },
+      "crustdata_company_id": 6102854,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "csdautismservices.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1109941,
+       "description": "Center for Social Dynamics (CSD) is an organization providing services to those with developmental delays, including autism, in the state of California, Oregon, Washington, Colorado, and Hawaii. Founded in 2012, CSD is focused on expanding and continuing to deliver personalized, family-based and culturally sensitive treatment, and on achieving evidence-based positive outcomes for autism patients in our home communities and beyond. Our multidisciplinary team, incorporating behavior analysis, occupational, speech, and psychological therapies, is committed to providing individualized and cutting-edge diagnostic and therapy services.Our VisionTo open a world of possibilities for those with Autism and other developmental needs through science, compassion, and humility.Our MissionDeliver the best and most innovative solutions possible for children and their families affected by autism or other disabilities and foster a strong culture of community participation and inclusion.Our ValuesWe are grounded in these four core TRUE values which guide our work:TRANSPARENCY through humility, courage, & responsibility for our actions.RESPECT through collaborating, supporting, & valuing our peers.UNDERSTANDING through tolerance, empathy, & curiosity in our work.EXCELLENCE through drive, passion, & commitment to our goals.Disclaimer: The testimonials, statements, reviews, and opinions presented on our LinkedIn page are unsolicited. Testimonials are not scripted or influenced by CSD in any manner.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/af54e1df928f3018a897d1932e3fcdc0625238ff8eab1c5af0b932ca0cefa05a.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Center for Social Dynamics",
+       "primary_domain": "csdautismservices.com",
+       "professional_network_id": "5034592",
+       "professional_network_url": "https://www.linkedin.com/company/center-for-social-dynamics",
+       "profile_name": "Center for Social Dynamics",
+       "website": "https://csdautismservices.com/",
+       "year_founded": 2012
+      },
+      "crustdata_company_id": 1109941,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "eurodyn.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1051582,
+       "description": "EUROPEAN DYNAMICS is a leading Information Technologies service provider and software developer in the field of eGovernment, operating internationally as a group of companies headquartered in Luxembourg. With a staff of c. 1,200 across 7 main international operating subsidiaries, the Company works with c. 100 clients globally including Federal Governments, European Institutions & International Organisations in more than 30 countries and 4 continents. The group generates annual revenues in excess of €100 million, with double digit annual growth and an industry leading EBITDA margin. Customers include government institutions, multinational corporations, public administrations and multinational companies, research and academic institutes.The group designs, develops, supports and operates complex IT systems and has also developed and commercialises a suite of market leading software products specifically tailored to core e-Government activities (notably in the fields of customs, taxation, procurement, financial markets and IP management), using state-of-the-art technologies.EUROPEAN DYNAMICS adheres to the General Data Protection Regulation principles by applying its Privacy Policy as published in www.eurodyn.com/privacy. By submitting an application to this position and by sharing your personal data with ED, you acknowledge and accept its Policy and authorise ED to process your personal data for the purposes of the company's recruitment opportunities, in line to the Policy.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bbedfb019310ea4a9cd421111dcc1cf652d8fb90535d52f7c5d69d8f1fabfeeb.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "EUROPEAN DYNAMICS",
+       "primary_domain": "eurodyn.com",
+       "professional_network_id": "10726",
+       "professional_network_url": "https://www.linkedin.com/company/european-dynamics",
+       "profile_name": "EUROPEAN DYNAMICS",
+       "website": "http://www.eurodyn.com",
+       "year_founded": 1993
+      },
+      "crustdata_company_id": 1051582,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "jato.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 821143,
+       "description": "JATO is the global leader in automotive data, analysis, and intelligence. We deliver fast, accurate information that informs and supports critical decision making.Forty years ago, we transformed automotive outcomes by delivering a transparent view of the market. Today, global mobility leaders rely on our trusted network of data, insights, and automotive expertise to unlock competitive opportunities.",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Information Services",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f8191b72c19d1d61b702a284173f6751eb91e7a31b96f4e51d5a6d5f99fcbde6.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "JATO Dynamics",
+       "primary_domain": "jato.com",
+       "professional_network_id": "18387",
+       "professional_network_url": "https://www.linkedin.com/company/jato-dynamics",
+       "profile_name": "JATO Dynamics",
+       "website": "http://www.jato.com",
+       "year_founded": 1984
+      },
+      "crustdata_company_id": 821143,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "infodynamic.net"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1071705,
+       "description": "Information Dynamics is a Global Software Solution provider for Shipping & Logistics, Tours & Travel, Airlines, Retail, Warehousing & Distribution Industries with presence across India, UAE, Saudi Arabia, Oman, South Africa, Egypt, and Kenya. With the endeavor to simplify the processes in a complex industry, we have developed simple, easy to use products for efficient management of your business and get assured ROI. With a team of four hundred plus highly driven professionals, possessing both technology and business expertise, we provide end-to-end solutions to your unique challenges using state-of-the-art technologies in Automation, Data Science, Mobility Solutions space. With its 1000+ happy customers across the globe, Information Dynamics is at the fore front of supporting the Industry!",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Information Technology & Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/889a180d13ba056689f5c84fd9dc2a54b5957b768eea171710e7af93476be74a.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Information Dynamics",
+       "primary_domain": "infodynamic.net",
+       "professional_network_id": "532552",
+       "professional_network_url": "https://www.linkedin.com/company/infodynamicsoff",
+       "profile_name": "Information Dynamics",
+       "website": "http://www.infodynamic.net",
+       "year_founded": 1995
+      },
+      "crustdata_company_id": 1071705,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "leggettdynamics.com",
+        "leggett.com",
+        "leggett-automotive.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1154060,
+       "description": "Leggett Dynamics is the brand representing the automotive businesses of Leggett & Platt, Incorporated. Under the Leggett Dynamics brand, these businesses deliver eMotion and Comfort solutions for automotive seating, liftgates, doors, sunroofs, and more.  Leggett Dynamics businesses operate globally, with a footprint spanning 28 locations across 12 countries, and employing more than 6,200 people, with key locations in Detroit, Nuremberg, and Shanghai. As a strategic partner to more than 140 customers worldwide, Leggett Dynamics offers a Comfort Systems Platform (massage, lumbar, bolster and suspension), Motion Systems Platform (motors, actuators and cables), Software & Integration Platform, and Innovation Services, including advanced engineering co-development and human factors studies. Leggett Dynamics is a brand within Leggett & Platt, Inc., a manufacturer of residential, industrial, and furniture products that has been engineering comfort for over 140 years across the places where people sleep, work, live, and move.",
+       "employee_count_range": "5001-10000",
+       "industries": [
+        "Automotive"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0f3553907b29a6999c875be0178665904563fd3e582d31e827025a02c0ae3967.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Leggett Dynamics",
+       "primary_domain": "leggettdynamics.com",
+       "professional_network_id": "9362272",
+       "professional_network_url": "https://www.linkedin.com/company/leggettdynamics",
+       "profile_name": "Leggett Dynamics",
+       "website": "https://leggettdynamics.com/",
+       "year_founded": 1988
+      },
+      "crustdata_company_id": 1154060,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "shipldi.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1239272,
+       "description": "LDi Logistic Dynamics is a $500M freight brokerage focused on providing reliable, multi-modal transportation solutions across North America. We operate on a 1099 independent agent model, which means our customers work directly with seasoned, professional agents who run their own books. For shippers, this delivers responsive service and deep expertise. For agents, it offers the freedom to build their business with industry-leading back-office support and tech behind them. For carriers, it means consistent, quality freight. We handle the infrastructure, you handle the road.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e8b25d3751ccee9679890d41076ae6adbff4fd8535bc367843c2a0988cac5aa3.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Logistic Dynamics",
+       "primary_domain": "shipldi.com",
+       "professional_network_id": "276550",
+       "professional_network_url": "https://www.linkedin.com/company/logistic-dynamics",
+       "profile_name": "Logistic Dynamics",
+       "website": "https://shipldi.com/",
+       "year_founded": 2003
+      },
+      "crustdata_company_id": 1239272,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdlscanada.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 2056982,
+       "description": "General Dynamics Land Systems-Canada is a global leader in providing land and amphibious combat vehicle solutions. Based in London, Ontario, our employees are driven by the need to develop new technologies used to provide our customers with innovative cutting-edge platform solutions. Our specialists are among Canada’s finest in the defence industry, exceling in the areas of machining, materials, electronics, software development, prototyping, logistic support, and systems integration.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8a78df63541b2130d23642a38472dffdb99b208a3988c79ecac7f57e87dc2ecc.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics Land Systems–Canada",
+       "primary_domain": "gdlscanada.com",
+       "professional_network_id": "80127523",
+       "professional_network_url": "https://www.linkedin.com/company/generaldynamicslandsystemscanada",
+       "profile_name": "General Dynamics Land Systems–Canada",
+       "website": "https://gdlscanada.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 2056982,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gdels.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 2074350,
+       "description": "General Dynamics European Land Systems is a Europe based business unit of General Dynamics Corporation. Headquartered in Madrid, Spain, General Dynamics European Land Systems is led by Antonio Bueno. We employ some 3.000 highly skilled and motivated people and we are at home at our sites in Austria, Germany, Romania, Spain and Switzerland. Our products range from wheeled armored and tracked combat vehicles to amphibious bridges and ferry systems, with people all around the world relying on our systems and services.At the heart of our company are our employees. With their different origins, nationalities and cultures, we are inspired by team work and close cooperation across frontiers. We rely on their intimate knowledge of customer requirements and their unique blend of skill and innovation to develop and produce world-class products and services.What makes our company agile and ensures our continual good performance is our culture of partnership and continuous improvement. This culture embraces a shared commitment to consistently look to the future and the flexibility to take on changes. Our priority is to engage employees in finding new ways to do things faster, better and more cost-effectively, to push the boundaries of our potential.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Defense and Space Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ac3c652271e609cac150a88f0f3f7f479f5f9fa56ebc4452d7653fe5e4412ae9.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "General Dynamics European Land Systems",
+       "primary_domain": "gdels.com",
+       "professional_network_id": "18083467",
+       "professional_network_url": "https://www.linkedin.com/company/gdels",
+       "profile_name": "General Dynamics European Land Systems",
+       "website": "https://www.gdels.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 2074350,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "acdc.co.za"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2603435,
+       "description": "ACDC Dynamics was founded in 1984 and is a market leader in the manufacture, import, and distribution of quality products in the electrical, lighting, solar power, pumps, alarm, security, and surveillance systems and tools industries. Our product ranges include some of the premium international brands in low voltage switchgear, power tools, enclosures, and accessories. ACDC Dynamics is a family-owned business with Mario Maio as the managing member.We offer a wide variety of products including alarms and alarm systems, hygiene, industrial and domestic automation, telemetry systems, pumps, switchgear and instrumentation, energy management and power factor correction solutions, solar and wind generators, tools, wire, adhesives and consumables, cable and wire management products, and the most comprehensive range of lighting, making use of new innovative technologies in energy-saving solutions using CFL, Inductive and LED technologies. Truly leading edge.Our head office is in Edenvale, Johannesburg and we have branches in Germiston, Cape Town and Durban.",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Appliances, Electrical, and Electronics Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a8e4d7fd3c47d05de4ef246cb234787c887936e11f33c7fd4359f4915ed94091.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ACDC Dynamics",
+       "primary_domain": "acdc.co.za",
+       "professional_network_id": "2883484",
+       "professional_network_url": "https://www.linkedin.com/company/acdcdynamics",
+       "profile_name": "ACDC Dynamics",
+       "website": "https://www.acdc.co.za/",
+       "year_founded": 1984
+      },
+      "crustdata_company_id": 2603435,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T06:01:03.087249+00:00",
+ "status": 200
+}

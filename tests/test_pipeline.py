@@ -113,3 +113,28 @@ def test_legal_suffix_is_stripped_for_name_lookup():
     assert strip_legal_suffix("Chargebee, Inc.") == "Chargebee"
     assert strip_legal_suffix("Acme Pvt. Ltd.") == "Acme"
     assert strip_legal_suffix("Company") == "Company"
+
+
+@pytest.mark.parametrize("name,outcome", [
+    ("test_1_clean_renewal", "APPROVE"),
+    ("test_2_real_name_spoofed_domain", "HOLD"),
+    ("test_3_forwarded_gmail_inr", "HOLD"),
+    ("test_4_oversized_invoice", "ESCALATE"),
+    ("test_5_vendor_not_in_graph", "HOLD"),
+    ("test_6_injection_unknown_currency", "HOLD"),
+    ("test_7_almost_empty", "HOLD"),
+])
+def test_extra_packets_offline(name, outcome, tmp_path):
+    r = replay((ROOT / "packets" / f"{name}.txt").read_text(), tmp_path)
+    assert r.decision.outcome == outcome and r.chain_ok and not r.dropped_statements
+
+
+def test_spoofed_real_name_is_caught_by_domain(tmp_path):
+    r = replay((ROOT / "packets" / "test_2_real_name_spoofed_domain.txt").read_text(), tmp_path)
+    by_rule = {f.rule_id: f for f in r.findings}
+    assert by_rule["R2"].status == "PASS" and by_rule["R1"].severity == "hard"
+
+
+def test_weak_name_overlaps_are_not_candidates(tmp_path):
+    r = replay((ROOT / "packets" / "test_5_vendor_not_in_graph.txt").read_text(), tmp_path)
+    assert r.resolution.status == "NOT_FOUND" and not r.resolution.candidates and r.document_requests

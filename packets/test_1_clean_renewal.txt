@@ -1,0 +1,17 @@
+From: Eric Li <eric.li@postman.com>
+To: payables@ourcompany.example
+Subject: Annual API platform renewal, invoice PM-88213
+
+Hello, our annual renewal invoice is below. Payment details are unchanged.
+
+Vendor: Postman
+Invoice: PM-88213
+Description: API platform annual licence
+Total: $36,000.00
+Website: www.postman.com
+
+Regards,
+Eric Li
+Senior Accounting Manager
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --
