@@ -10,3 +10,4 @@ outbox/*
 !outbox/.gitkeep
 
 .private_fixtures/
+.streamlit/secrets.toml

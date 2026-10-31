@@ -68,9 +68,11 @@ class CrustdataClient:
         max_retries: int = 3,
         session: Any = None,
         sleep: Callable[[float], None] = time.sleep,
+        replay_dirs: tuple[Path, ...] = (),
     ):
         self._api_key = api_key
         self.fixtures_dir = Path(fixtures_dir)
+        self.replay_dirs = tuple(Path(d) for d in replay_dirs)  # read-only extra caches
         self.offline = offline
         self.credit_cap = credit_cap
         self.timeout = timeout
@@ -169,8 +171,8 @@ class CrustdataClient:
         return self.fixtures_dir / f"{key}.json"
 
     def _read_fixture(self, key: str) -> Optional[ApiResult]:
-        path = self._fixture_path(key)
-        if not path.exists():
+        path = next((p for p in (self._fixture_path(key), *(d / f"{key}.json" for d in self.replay_dirs)) if p.exists()), None)
+        if path is None:
             return None
         try:
             rec = json.loads(path.read_text())

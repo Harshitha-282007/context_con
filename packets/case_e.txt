@@ -1,6 +1,6 @@
 From: Marlow Testerson <marlow.testerson@serverobotlcs.com>
 To: ap@ourcompany.example
-Subject: URGENT: updated bank details for invoice INV-7731
+Subject: Revised remittance for invoice INV-7731
 
 Hello,
 

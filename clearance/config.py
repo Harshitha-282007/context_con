@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES_DIR = ROOT / "fixtures"
+PRIVATE_FIXTURES_DIR = ROOT / ".private_fixtures"  # git-ignored: uploads, pastes and real mail
 OUTBOX_DIR = ROOT / "outbox"
 OUTPUTS_DIR = ROOT / "outputs"
 

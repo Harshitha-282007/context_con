@@ -31,6 +31,20 @@ Drop `--offline` to call the live API. For the UI:
 .venv/bin/python -m streamlit run app.py
 ```
 
+The app opens as a mailbox with the sample emails loaded. Press **Scan** to check them all: samples replay offline and spend no credits. You can also upload PDF, TXT or EML files, or paste text. Uploaded, pasted and mailbox mail always runs live.
+
+### Connect a real mailbox (optional)
+
+Add these to `.env` and restart. For Gmail, turn on 2-step verification and use an app password, not your account password.
+
+```
+IMAP_HOST=imap.gmail.com
+IMAP_USER=you@example.com
+IMAP_PASSWORD=your_app_password
+```
+
+Then press **Sync payment emails**. The connection is read-only: the folder opens read-only and messages are fetched without marking them read, so nothing is sent, moved, deleted or changed. Only payment-related mail from the newest 200 messages is imported, up to 25, and no credits are spent until you run a check. Checks send the sender's name and domain and the vendor's name to Crustdata, and send the full email text to Anthropic only if `ANTHROPIC_API_KEY` is set. Responses are saved to the git-ignored `.private_fixtures/` folder.
+
 Tests make no network calls:
 
 ```bash
@@ -76,6 +90,8 @@ The LLM only extracts; rules decide. Every rule is a pure function returning `PA
 ## Limits
 
 - Bank accounts, tax IDs and registry filings are **not** verified. This is the layer before the callback.
+- PDFs are read for their text layer only. Scanned PDFs get a warning, because there is no OCR. A PDF alone has no sender, so sender checks stay UNVERIFIABLE and the result is HOLD; upload the `.eml` to check the sender too.
+- A forged `From` header is not detected, because SPF, DKIM and DMARC results are not checked yet.
 - Profile data can lag: a recent leaver may still appear, and a new hire may be missing or trigger R3.
 - `/person/contact/enrich` is disabled on the event key, so drafts name a graph-sourced person, but the address must come from your own vendor records.
 - Zero web traffic in the data may mean untracked rather than truly none, which is why R7b is only a medium flag.
