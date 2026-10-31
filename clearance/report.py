@@ -74,7 +74,7 @@ def to_markdown(result: CaseResult, masked: bool = False) -> str:
         lines += ["## Documents to request", *[f"- {r}" for r in result.document_requests], ""]
     for draft in result.drafts:
         lines += [f"## Draft ({draft.status}, never sent)", f"To: {', '.join(r.name for r in draft.recipients)} (address from your own vendor records)",
-                  f"Subject: {draft.subject}", "", draft.body, "",
+                  f"Subject: {draft.subject}", f"Wording: {draft.drafted_by}", "", draft.body, "",
                   *[f"- {'pass' if c['passed'] else 'FAIL'}: {c['check']}" for c in draft.checks], ""]
     fc = result.finance_case
     if fc:

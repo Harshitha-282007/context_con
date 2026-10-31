@@ -63,6 +63,8 @@ Leave both out to keep sending off, which is what the event rules require for re
 
 **Simulated verification:** on a flagged email with a verified draft, **Send verification (simulated)** delivers that draft to an address in `SEND_ALLOWLIST`, labelled with the person Crustdata identified. The vendor contact is never emailed: the event rules forbid it, and `/person/contact/enrich` is not enabled on the event key, so the graph gives a name and role but no address.
 
+**Better draft wording (optional):** add `GROQ_API_KEY` to `.env` to reword verification drafts with Groq (`GROQ_MODEL` changes the model). Rules still make every decision. Groq only sees the vendor name from the graph, a strict-format reference, the amount and the last four account digits, never the email text or anyone's name. Its wording must keep every fact and add no new number, and any failure falls back to the fixed template. Offline replay always uses the template.
+
 ### Storage
 
 Mail and verdicts are saved so they survive a refresh. By default they go to a git-ignored SQLite file in `data/`. To use Supabase instead, run [supabase/schema.sql](supabase/schema.sql) once in the Supabase SQL editor and add these to `.env`:

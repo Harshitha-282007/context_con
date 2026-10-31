@@ -139,6 +139,7 @@ class Draft(BaseModel):
     body: str = ""
     checks: list[dict[str, Any]] = Field(default_factory=list)
     status: Literal["DRAFT_ONLY", "BLOCKED"] = "DRAFT_ONLY"
+    drafted_by: str = "Fixed template"
 
 
 class FinanceFlag(BaseModel):

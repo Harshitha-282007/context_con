@@ -338,7 +338,8 @@ def render_result(result: CaseResult) -> None:
             for r in result.document_requests:
                 st.markdown(f"- {r}")
         for draft in result.drafts:
-            st.markdown(f"**Draft: {draft.status}, never sent**")
+            st.markdown(f"**Draft: {draft.status}**")
+            st.caption(f"Wording: {draft.drafted_by}")
             text = f"To: {', '.join(r.name for r in draft.recipients)}\nSubject: {draft.subject}\n\n{draft.body}"
             st.code(mask(text, names) if masked else text, language=None, wrap_lines=True)
             for c in draft.checks:

@@ -8,6 +8,7 @@ from typing import Callable, Optional
 from .config import OUTBOX_DIR
 from .crustdata import CrustdataClient
 from .decide import decide
+from .draft_llm import polish
 from .extract import extract
 from .handoff import build_case, verify_case, write_case
 from .fieldmap import COMPANY_ENRICH_FIELDS, COMPANY_PATHS, company_profile, match_rows
@@ -184,7 +185,10 @@ def run_case(
             emit("contacts", f"{len(result.contacts)} graph-sourced callback contact(s)")
             draft = compose(claim, company, result.contacts, case_id)
             if draft:
-                draft = verify_draft(draft, claim, packet_text or "")
+                # Offline replay stays fully deterministic, so it keeps the template wording.
+                worded = draft if client.offline else polish(draft, claim, company)
+                checked = verify_draft(worded, claim, packet_text or "")
+                draft = checked if checked.status == "DRAFT_ONLY" else verify_draft(draft, claim, packet_text or "")
                 write_outbox(draft, outbox)
                 result.drafts = [draft]
                 emit("draft", f"{draft.status}: {sum(c['passed'] for c in draft.checks)}/{len(draft.checks)} checks passed")
