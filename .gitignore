@@ -11,3 +11,4 @@ outbox/*
 
 .private_fixtures/
 .streamlit/secrets.toml
+data/

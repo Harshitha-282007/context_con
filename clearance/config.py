@@ -15,6 +15,19 @@ OUTPUTS_DIR = ROOT / "outputs"
 load_dotenv(ROOT / ".env")
 
 
+def data_dir() -> Path:
+    return Path(os.environ.get("CLEARANCE_DATA_DIR") or ROOT / "data")
+
+
+def supabase_settings() -> dict | None:
+    url, key = os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_SERVICE_KEY")
+    return {"url": url, "key": key} if url and key else None
+
+
+def daily_credit_limit() -> float:
+    return float(os.environ.get("CLEARANCE_DAILY_CREDIT_LIMIT") or 100)
+
+
 def load_policy(path: Path | None = None) -> dict:
     with open(path or ROOT / "policy.yaml") as f:
         return yaml.safe_load(f)

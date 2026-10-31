@@ -10,6 +10,8 @@ import io
 from dataclasses import dataclass, field
 from email import policy as email_policy
 from email.message import EmailMessage
+from email.utils import parsedate_to_datetime
+from datetime import timezone
 from html.parser import HTMLParser
 from pathlib import PurePath
 
@@ -29,6 +31,7 @@ class Intake:
     warnings: list[str] = field(default_factory=list)
     sender: str = ""
     subject: str = ""
+    received: str = ""
 
 
 class _TextOnly(HTMLParser):
@@ -106,6 +109,13 @@ def _content(part: EmailMessage) -> str:
     return content if isinstance(content, str) else ""
 
 
+def _received(msg: EmailMessage) -> str:
+    try:
+        return parsedate_to_datetime(_safe_header(msg, "Date")).astimezone(timezone.utc).isoformat()
+    except (ValueError, TypeError, IndexError, OverflowError):
+        return ""
+
+
 def message_to_intake(msg: EmailMessage) -> Intake:
     sender, subject = _safe_header(msg, "From"), _safe_header(msg, "Subject")
     plain, html, warnings, attachments = [], [], [], []
@@ -133,7 +143,7 @@ def message_to_intake(msg: EmailMessage) -> Intake:
     body = "\n".join(p for p in plain if p.strip()) or "\n".join(h for h in html if h.strip())
     head = [f"{label}: {value}" for label, value in (("From", sender), ("Subject", subject)) if value]
     text = "\n".join(head) + "\n\n" + body + ("\n\n" + "\n\n".join(attachments) if attachments else "")
-    return Intake(text=text.strip()[:MAX_TEXT_CHARS], warnings=warnings, sender=sender, subject=subject)
+    return Intake(text=text.strip()[:MAX_TEXT_CHARS], warnings=warnings, sender=sender, subject=subject, received=_received(msg))
 
 
 def read_upload(filename: str, data: bytes) -> Intake:

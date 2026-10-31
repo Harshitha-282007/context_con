@@ -26,6 +26,9 @@ EMAIL = r"[A-Za-z0-9._%+\-]+@[^\s<>,;:()\"']+\.[^\s<>,;:()\"']+"
 BANK_WORDS = re.compile(r"(new|updated?|change[ds]?|changing)\b.{0,60}\b(bank|account|remit|payment|wire)|(bank|account|remit|payment|wire)\b.{0,60}\b(new|updated?|change[ds]?|changing)", re.I | re.S)
 PRESSURE = ["urgent", "immediately", "asap", "do not call", "don't call", "confidential", "today only", "wire today"]
 CURRENCY_SIGNS = {"$": "USD", "€": "EUR", "£": "GBP", "₹": "INR"}
+FORWARD = re.compile(r"^[ \t>*]*(?:-{2,}\s*forwarded message\s*-{2,}|begin forwarded message:?|(?:subject[ \t]*:[ \t]*)?fwd?[ \t]*:)", re.I | re.M)
+REPLY = re.compile(r"^[ \t>*]*(?:-{2,}\s*original message\s*-{2,}|on .{5,200}\bwrote:[ \t]*$)", re.I | re.M)
+QUOTED_HEADER = re.compile(r"^[ \t>*]*from[ \t]*:.*\n[ \t>*]*(?:sent|date)[ \t]*:", re.I | re.M)
 SIGNOFF = re.compile(r"^(regards|best regards|kind regards|thanks|thank you|sincerely|cheers)\b[,.! ]*$", re.I)
 
 
@@ -37,15 +40,39 @@ def _field(text: str, *labels: str) -> Optional[str]:
     return None
 
 
+def _is_forward(text: str) -> bool:
+    return bool(FORWARD.search(text))
+
+
+def current_section(text: str) -> str:
+    """Drops older quoted messages, so a reply is judged on its newest message only."""
+    if _is_forward(text):
+        last_forward = [m.end() for m in FORWARD.finditer(text)][-1]
+        quoted = REPLY.search(text, last_forward)
+        return text[:quoted.start()] if quoted else text
+    first_from = re.search(r"^[ \t>*]*from[ \t]*:", text, re.I | re.M)
+    cuts = [m.start() for m in REPLY.finditer(text)]
+    if first_from:  # Outlook quotes older mail as a From/Sent block with no other marker.
+        cuts += [m.start() for m in QUOTED_HEADER.finditer(text) if m.start() > first_from.start()]
+    return text[:min(cuts)] if cuts else text
+
+
+def sender_line(text: str) -> Optional[str]:
+    """The real sender: the top header, or the innermost one when the mail is a forward."""
+    froms = re.findall(r"^[ \t>*]*from[ \t]*:[ \t]*(.+?)[ \t]*$", current_section(text), re.I | re.M)
+    with_address = [line for line in froms if re.search(EMAIL, line)]
+    if not with_address:
+        return None
+    return with_address[-1] if _is_forward(text) else with_address[0]
+
+
 def _sender(text: str) -> tuple[Optional[str], Optional[str]]:
-    """The innermost From header is the real sender of a forwarded chain."""
-    froms = re.findall(r"^[ \t>*]*from[ \t]*:[ \t]*(.+?)[ \t]*$", text, re.I | re.M)
-    for line in reversed(froms):
-        email = re.search(EMAIL, line)
-        if email:
-            name = re.sub(r"[<>\"'()\[\]]", " ", line.replace(email.group(0), " ")).strip(" ,")
-            return (name or None), email.group(0).rstrip(".").lower()
-    return None, None
+    line = sender_line(text)
+    if not line:
+        return None, None
+    email = re.search(EMAIL, line)
+    name = re.sub(r"[<>\"'()\[\]]", " ", line.replace(email.group(0), " ")).strip(" ,")
+    return (name or None), email.group(0).rstrip(".").lower()
 
 
 def _signature(text: str) -> tuple[Optional[str], Optional[str]]:
@@ -93,6 +120,7 @@ def _bank_last4(text: str) -> Optional[str]:
 
 
 def extract_regex(text: str) -> Claim:
+    text = current_section(text)
     sender_name, sender_email = _sender(text)
     signature_name, signature_title = _signature(text)
     amount, currency = _amount(text)

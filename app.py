@@ -6,19 +6,22 @@ Runs from this UI save responses to the git-ignored private folder, never to pub
 from __future__ import annotations
 
 import re
-from datetime import date
+import time
+from datetime import date, datetime
 
 import streamlit as st
 
-from clearance.config import FIXTURES_DIR, OUTBOX_DIR, PRIVATE_FIXTURES_DIR, ROOT, credit_cap, crustdata_api_key, load_policy
+from clearance.config import FIXTURES_DIR, OUTBOX_DIR, PRIVATE_FIXTURES_DIR, ROOT, credit_cap, crustdata_api_key, daily_credit_limit, load_policy
 from clearance.crustdata import CrustdataClient
 from clearance.extract import extract_regex
 from clearance.handoff import ACTIONS, apply_action, write_case
 from clearance.intake import read_upload
-from clearance.mailbox import MailItem, fetch_mailbox, item_from_text, mailbox_settings, sample_inbox
+from clearance.live import SyncReport, sync_and_scan
+from clearance.mailbox import MailItem, item_from_text, mailbox_settings, sample_inbox
 from clearance.pipeline import run_case
 from clearance.report import mask, offline_warning, person_names, to_markdown
 from clearance.schemas import CaseResult
+from clearance.store import make_store
 
 STATUS_ICON = {"PASS": "✅", "FLAG": "🚩", "UNVERIFIABLE": "❔"}
 OUTCOME_ICON = {"APPROVE": "🟢", "HOLD": "🟡", "ESCALATE": "🔴"}
@@ -38,15 +41,22 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+SYNC_SECONDS = 60
 state = st.session_state
-if "items" not in state:
-    state["items"] = {item.id: item for item in sample_inbox(ROOT / "packets")}
-    state["results"] = {}
-    state["selected"] = next(iter(state["items"]), None)
+if "store" not in state:
+    try:
+        state["store"] = make_store()
+        state["store"].sync_samples(sample_inbox(ROOT / "packets"))
+    except Exception as e:  # Any backend failure. The type alone is shown, because a message can echo keys or URLs.
+        del state["store"]
+        st.error(f"Could not open storage ({type(e).__name__}). Check the SUPABASE settings in .env and that supabase/schema.sql has been run.")
+        st.stop()
+store = state["store"]
+state.setdefault("selected", None)
 
 
 def add_item(item: MailItem) -> None:
-    state["items"] = {item.id: item, **{k: v for k, v in state["items"].items() if k != item.id}}
+    store.add(item)
     state["selected"] = item.id
 
 
@@ -81,10 +91,35 @@ def check(item: MailItem, replay_samples: bool) -> CaseResult:
 
 
 def view_of(item: MailItem) -> str:
-    result = state["results"].get(item.id)
+    result = results.get(item.id)
     if not result:
         return "Not scanned"
     return {"APPROVE": "Approved", "HOLD": "Needs review", "ESCALATE": "Escalated"}[result.decision.outcome]
+
+
+def run_cycle(settings: dict, auto_scan: bool) -> SyncReport:
+    try:
+        report = sync_and_scan(store, settings, lambda mail: check(mail, False), auto_scan, daily_credit_limit())
+    except Exception as e:  # Storage or network. The type alone is shown, because a message can echo keys.
+        report = SyncReport(error=f"The sync stopped ({type(e).__name__}). It will try again.")
+    state["last_sync"] = time.time()
+    state["last_report"] = report
+    return report
+
+
+@st.fragment(run_every=f"{SYNC_SECONDS}s")
+def live_status(settings: dict, auto_scan: bool) -> None:
+    """Runs on a timer while this page is open. There is no background worker yet."""
+    if time.time() - state.get("last_sync", 0) >= SYNC_SECONDS - 5:
+        if run_cycle(settings, auto_scan).changed:
+            st.rerun(scope="app")
+    report = state.get("last_report")
+    if report:
+        st.caption(f"Last checked {datetime.fromtimestamp(state['last_sync']):%H:%M:%S}. Checks every {SYNC_SECONDS} seconds while this page is open.")
+        if report.error:
+            st.error(report.error)
+        if report.limit_reached:
+            st.warning(f"Daily credit limit of {daily_credit_limit():g} reached. New mail is still imported but not scanned.")
 
 
 with st.sidebar:
@@ -94,21 +129,25 @@ with st.sidebar:
     masked = st.toggle("Mask people's names", value=True)
 
     st.divider()
-    st.markdown("**Mailbox**")
+    st.markdown("**Inbox**")
     settings = mailbox_settings()
+    mode = "Samples"
     if settings:
-        st.caption(f"Read-only connection to {plain(settings['folder'])}. Nothing is sent, moved or marked as read.")
-        if st.button("Sync payment emails", width="stretch"):
-            with st.spinner("Reading mailbox…"):
-                fetched, error = fetch_mailbox(settings)
-            if error:
-                st.error(error)
-            else:
-                for item in reversed(fetched):
-                    add_item(item)
-                st.success(f"Added {len(fetched)} payment-related email(s).")
+        mode = st.radio("Inbox", ["Live mailbox", "Samples"], horizontal=True, label_visibility="collapsed")
     else:
-        st.caption("Not connected. Add IMAP_HOST, IMAP_USER and IMAP_PASSWORD to .env and restart. Gmail needs an app password.")
+        st.caption("Showing samples. Add IMAP_HOST, IMAP_USER and IMAP_PASSWORD to .env and restart for a live mailbox. Gmail needs an app password.")
+    if mode == "Live mailbox":
+        st.caption(f"Read-only connection to {plain(settings['folder'])}. Nothing is sent, moved or marked as read.")
+        auto_scan = st.toggle("Auto-scan new mail", value=True, help=f"Scans new payment emails automatically, up to {daily_credit_limit():g} credits a day.")
+        live_status(settings, auto_scan)
+        if st.button("Sync now", width="stretch"):
+            with st.spinner("Reading mailbox…"):
+                run_cycle(settings, auto_scan)
+            st.rerun()
+    elif st.button("Reset samples", width="stretch", help="Clears the sample verdicts so you can scan them again."):
+        store.reset_samples()
+        st.rerun()
+    st.caption(f"Storage: {store.backend}")
 
     st.divider()
     st.markdown("**Add a document**")
@@ -129,28 +168,34 @@ with st.sidebar:
         if st.button("Add to inbox", width="stretch", disabled=not pasted.strip()):
             add_item(item_from_text(pasted, "paste", "Pasted text"))
 
-items: dict[str, MailItem] = state["items"]
-results: dict[str, CaseResult] = state["results"]
+origins = ("mailbox", "upload", "paste") if mode == "Live mailbox" else ("sample", "upload", "paste")
+try:
+    items: dict[str, MailItem] = store.items(origins)
+    results: dict[str, CaseResult] = store.results()
+except Exception as e:  # The type alone is shown, because a message can echo keys or URLs.
+    st.error(f"Could not read storage ({type(e).__name__}). Your mail is unchanged. Refresh to try again.")
+    st.stop()
+if state["selected"] not in items:
+    state["selected"] = next(iter(items), None)
 
 count = {v: sum(view_of(i) == v for i in items.values()) for v in VIEWS[1:]}
 metrics = st.columns([1, 1, 1, 1, 1.4])
 metrics[0].metric("Needs review", count["Needs review"])
 metrics[1].metric("Escalated", count["Escalated"])
 metrics[2].metric("Approved", count["Approved"])
-metrics[3].metric("Credits spent", f"{sum(r.credits_used for r in results.values()):g}")
+metrics[3].metric("Credits today", f"{store.credits_on():g}")
 with metrics[4]:
     pending = [i for i in items.values() if i.id not in results]
     live_pending = [i for i in pending if not (i.origin == "sample" and replay)]
     note = f" ({len(live_pending)} live)" if live_pending else ""
     if st.button(f"Scan {len(pending)} email(s){note}", type="primary", width="stretch", disabled=not pending):
         bar = st.progress(0.0, "Scanning…")
-        spent = 0.0
         for n, item in enumerate(pending, 1):
-            if spent >= credit_cap():
-                st.warning("Stopped: the credit cap was reached. Remaining emails were not scanned.")
+            if store.credits_on() >= daily_credit_limit():
+                st.warning("Stopped: the daily credit limit was reached. Remaining emails were not scanned.")
+                time.sleep(2)
                 break
-            results[item.id] = check(item, replay)
-            spent += results[item.id].credits_used
+            store.save_result(item.id, check(item, replay))
             bar.progress(n / len(pending), f"Scanned {n} of {len(pending)}")
         bar.empty()
         st.rerun()
@@ -186,6 +231,7 @@ def render_result(result: CaseResult) -> None:
                 if column.button(action, key=f"{case.id}-{action}", disabled=case.resolution is not None, width="stretch"):
                     apply_action(case, action)
                     write_case(case, OUTBOX_DIR)
+                    store.save_result(state["selected"], result)
                     st.rerun()
             if case.resolution:
                 st.info(f"Recorded: {case.resolution}. Payment: {case.payment_status}.")
@@ -267,11 +313,15 @@ with pane:
         result = results.get(item.id)
         if result:
             render_result(result)
+            if st.button("Check again", help="Runs a fresh check. A live check may spend credits."):
+                with st.spinner("Checking again…"):
+                    store.recheck_result(item.id, check(item, replay))
+                st.rerun()
         else:
             live = not (item.origin == "sample" and replay)
             if st.button("Check this email" + (" (live, spends credits)" if live else ""), type="primary"):
                 with st.spinner("Checking the sender against the graph…"):
-                    results[item.id] = check(item, replay)
+                    store.save_result(item.id, check(item, replay))
                 st.rerun()
         with st.expander("Original email", expanded=result is None):
             st.code(safe(item.text), language=None, wrap_lines=True)

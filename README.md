@@ -43,7 +43,24 @@ IMAP_USER=you@example.com
 IMAP_PASSWORD=your_app_password
 ```
 
-Then press **Sync payment emails**. The connection is read-only: the folder opens read-only and messages are fetched without marking them read, so nothing is sent, moved, deleted or changed. Only payment-related mail from the newest 200 messages is imported, up to 25, and no credits are spent until you run a check. Checks send the sender's name and domain and the vendor's name to Crustdata, and send the full email text to Anthropic only if `ANTHROPIC_API_KEY` is set. Responses are saved to the git-ignored `.private_fixtures/` folder.
+Choose **Live mailbox** in the sidebar. While the page is open, the app checks for new mail every 60 seconds, imports payment-related messages and scans them automatically, up to `CLEARANCE_DAILY_CREDIT_LIMIT` credits a day (default 100). Samples are hidden in this mode. Turn off **Auto-scan new mail** to review before spending credits.
+
+The connection is read-only: the folder opens read-only and messages are fetched without marking them read, so nothing is sent, moved, deleted or changed. The first sync looks back over the newest 200 messages and imports up to 25 payment-related ones. Checks send the sender's name and domain and the vendor's name to Crustdata, and send the full email text to Anthropic only if `ANTHROPIC_API_KEY` is set.
+
+To feed it company mail, use a dedicated mailbox and forward to it. In Microsoft 365, use a **Redirect** rule, because **Forward** makes your employee look like the sender.
+
+### Storage
+
+Mail and verdicts are saved so they survive a refresh. By default they go to a git-ignored SQLite file in `data/`. To use Supabase instead, run [supabase/schema.sql](supabase/schema.sql) once in the Supabase SQL editor and add these to `.env`:
+
+```
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_KEY=your_service_role_key
+```
+
+The service key bypasses row level security, so keep it on the server and never put it in a browser or in Git. The tables have row level security on with no policies, so the public anon key cannot read them. They can contain real email, so treat the project as sensitive.
+
+**Not production-ready yet:** the app has no login, so do not host it publicly with a real mailbox connected, and syncing only runs while the page is open.
 
 Tests make no network calls:
 

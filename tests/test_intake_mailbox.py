@@ -104,13 +104,14 @@ class FakeImap:
         self.calls.append(("select", readonly))
         return "OK", [b"3"]
 
-    def search(self, charset, criteria):
-        return "OK", [b"1 2 3"]
-
-    def fetch(self, number, parts):
-        self.calls.append(("fetch", parts))
+    def uid(self, command, *args):
+        if command == "SEARCH":
+            self.calls.append(("search", args[1]))
+            return "OK", [b"1 2 3"]
+        assert command == "FETCH", f"Mailbox must stay read-only, but sent {command}"
+        self.calls.append(("fetch", args[1]))
         bodies = {b"1": make_eml(), b"2": b"From: friend@x.example\nSubject: lunch?\n\nsee you", b"3": make_eml(html=True)}
-        return "OK", [(b"header", bodies[number])]
+        return "OK", [(b"header", bodies[args[0]])]
 
     def logout(self):
         self.calls.append(("logout",))
@@ -124,15 +125,15 @@ SETTINGS = {"host": "imap.example", "user": "u", "password": "SECRET", "folder":
 
 def test_mailbox_is_read_only_and_keeps_only_payment_mail(monkeypatch):
     monkeypatch.setattr(FakeImap, "login_error", False)
-    items, error = fetch_mailbox(SETTINGS, imap_class=FakeImap)
-    assert error is None and len(items) == 2 and all("lunch" not in i.subject for i in items)
+    items, error, newest = fetch_mailbox(SETTINGS, imap_class=FakeImap)
+    assert newest == 3 and error is None and len(items) == 2 and all("lunch" not in i.subject for i in items)
     assert ("select", True) in FakeImap.last.calls
     assert all("PEEK" in c[1] for c in FakeImap.last.calls if c[0] == "fetch")
 
 
 def test_mailbox_login_failure_never_shows_server_text(monkeypatch):
     monkeypatch.setattr(FakeImap, "login_error", True)
-    items, error = fetch_mailbox(SETTINGS, imap_class=FakeImap)
+    items, error, _ = fetch_mailbox(SETTINGS, imap_class=FakeImap)
     assert items == [] and "SECRET" not in error and "app password" in error
 
 
@@ -165,7 +166,7 @@ def test_sample_inbox_reads_every_packet():
 
 
 def test_forwarded_item_shows_the_innermost_sender():
-    item = item_from_text("From: clerk@o.example\n> From: real@v.example\nSubject: x", "paste")
+    item = item_from_text("From: clerk@o.example\nSubject: Fwd: x\n> From: real@v.example", "paste")
     assert item.sender == "real@v.example"
 
 
@@ -179,9 +180,10 @@ def test_private_runs_replay_public_data_but_write_privately(tmp_path):
 
 
 @pytest.fixture
-def app(monkeypatch):
-    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD"):
+def app(monkeypatch, tmp_path):
+    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY"):
         monkeypatch.delenv(key, raising=False)
+    monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
     return AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
 
 
@@ -200,4 +202,17 @@ def test_app_scans_the_sample_inbox_without_credits(app):
     labels = [b.label for b in app.button if b.key and b.key.startswith("mail-")]
     assert all(l[0] != "⚪" for l in labels)
     assert any(l[0] == "🔴" for l in labels) and any(l[0] == "🟡" for l in labels) and any(l[0] == "🟢" for l in labels)
-    assert [m.value for m in app.metric if m.label == "Credits spent"] == ["0"]
+    assert [m.value for m in app.metric if m.label == "Credits today"] == ["0"]
+
+
+def test_verdicts_survive_a_new_session(app):
+    label_button(app, "Scan").click().run()
+    again = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
+    labels = [b.label for b in again.button if b.key and b.key.startswith("mail-")]
+    assert not again.exception and all(l[0] != "⚪" for l in labels)
+
+
+def test_reset_samples_clears_verdicts_for_a_fresh_scan(app):
+    label_button(app, "Scan").click().run()
+    label_button(app, "Reset samples").click().run()
+    assert all(b.label[0] == "⚪" for b in app.button if b.key and b.key.startswith("mail-"))

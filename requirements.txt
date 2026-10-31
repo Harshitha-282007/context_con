@@ -6,3 +6,4 @@ anthropic>=0.40
 pytest>=8.0
 streamlit>=1.38
 pypdf>=4.0
+supabase>=2.0

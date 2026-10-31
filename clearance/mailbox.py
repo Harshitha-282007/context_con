@@ -16,6 +16,7 @@ from dataclasses import dataclass, field
 from email import policy as email_policy
 from pathlib import Path
 
+from .extract import sender_line
 from .intake import message_to_intake
 
 PAYMENT_WORDS = ("invoice", "payment", "remit", "bank details", "bank account", "wire", "purchase order", "amount due", "overdue", "receipt", "billing")
@@ -30,22 +31,23 @@ class MailItem:
     text: str
     origin: str  # "sample", "upload" or "mailbox"
     warnings: list[str] = field(default_factory=list)
+    received: str = ""
 
 
 def _item_id(*parts: str) -> str:
     return hashlib.sha256("|".join(parts).encode("utf-8", "replace")).hexdigest()[:12]
 
 
-def _header(text: str, name: str) -> str:
-    matches = re.findall(rf"^[ \t>*]*{name}[ \t]*:[ \t]*(.+?)[ \t]*$", text, re.I | re.M)
-    return matches[-1] if matches else ""
+def _subject(text: str) -> str:
+    match = re.search(r"^[ \t>*]*subject[ \t]*:[ \t]*(.+?)[ \t]*$", text, re.I | re.M)
+    return match.group(1) if match else ""
 
 
 def item_from_text(text: str, origin: str, label: str = "", warnings: list[str] | None = None) -> MailItem:
-    sender = _header(text, "from")
+    sender = sender_line(text)
     return MailItem(
         id=_item_id(origin, label, text), sender=sender or "Unknown sender",
-        subject=_header(text, "subject") or label or "(no subject)", text=text, origin=origin, warnings=warnings or [],
+        subject=_subject(text) or label or "(no subject)", text=text, origin=origin, warnings=warnings or [],
     )
 
 
@@ -65,21 +67,29 @@ def mailbox_settings() -> dict | None:
     return {"host": host, "user": user, "password": password, "folder": os.environ.get("IMAP_FOLDER") or "INBOX"}
 
 
-def fetch_mailbox(settings: dict, limit: int = 25, imap_class=imaplib.IMAP4_SSL) -> tuple[list[MailItem], str | None]:
-    """Newest payment-related messages, plus an error to show. Never raises for mail or login failures."""
+def fetch_mailbox(
+    settings: dict, limit: int = 25, last_uid: int = 0, imap_class=imaplib.IMAP4_SSL,
+) -> tuple[list[MailItem], str | None, int]:
+    """New payment-related mail, newest first, an error to show, and the newest UID seen.
+
+    Never raises for mail or login failures. The first sync looks back over FETCH_LIMIT messages.
+    """
     conn = None
     try:
         conn = imap_class(settings["host"], timeout=20)
         conn.login(settings["user"], settings["password"])
         status, _ = conn.select(settings["folder"], readonly=True)
         if status != "OK":
-            return [], f"Could not open the folder {settings['folder']}."
-        status, data = conn.search(None, "ALL")
+            return [], f"Could not open the folder {settings['folder']}.", last_uid
+        status, data = conn.uid("SEARCH", None, f"UID {last_uid + 1}:*" if last_uid else "ALL")
         if status != "OK" or not data or not data[0]:
-            return [], None
+            return [], None, last_uid
+        # "n:*" always returns the newest message, even when it is older than n.
+        uids = [u for u in data[0].split() if int(u) > last_uid]
+        newest = max((int(u) for u in uids), default=last_uid)
         items: list[MailItem] = []
-        for number in reversed(data[0].split()[-FETCH_LIMIT:]):
-            status, parts = conn.fetch(number, "(BODY.PEEK[])")
+        for uid in reversed(uids[-FETCH_LIMIT:]):
+            status, parts = conn.uid("FETCH", uid, "(BODY.PEEK[])")
             raw = next((p[1] for p in parts if isinstance(p, tuple)), None) if status == "OK" else None
             if not raw:
                 continue
@@ -87,17 +97,18 @@ def fetch_mailbox(settings: dict, limit: int = 25, imap_class=imaplib.IMAP4_SSL)
             if not looks_payment_related(intake.subject, intake.text):
                 continue
             items.append(MailItem(
-                id=_item_id("mailbox", intake.sender, intake.subject, intake.text), sender=intake.sender or "Unknown sender",
+                id=_item_id("mailbox", settings["folder"], str(int(uid))), sender=intake.sender or "Unknown sender",  # Identical re-sends stay separate.
                 subject=intake.subject or "(no subject)", text=intake.text, origin="mailbox", warnings=intake.warnings,
+                received=intake.received,
             ))
             if len(items) >= limit:
                 break
-        return items, None
+        return items, None, newest
     except imaplib.IMAP4.error:
         # The server's text can echo account details, so it is not shown.
-        return [], "The mail server refused the login or request. Check IMAP_USER and IMAP_PASSWORD; Gmail needs an app password."
+        return [], "The mail server refused the login or request. Check IMAP_USER and IMAP_PASSWORD; Gmail needs an app password.", last_uid
     except (OSError, socket.timeout, imaplib.IMAP4.abort):
-        return [], "Could not reach the mail server. Check IMAP_HOST and your connection."
+        return [], "Could not reach the mail server. Check IMAP_HOST and your connection.", last_uid
     finally:
         if conn is not None:
             try:
