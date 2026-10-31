@@ -141,6 +141,36 @@ class Draft(BaseModel):
     status: Literal["DRAFT_ONLY", "BLOCKED"] = "DRAFT_ONLY"
 
 
+class FinanceFlag(BaseModel):
+    rule_id: str
+    severity: Severity
+    message: str
+    evidence_ids: list[str] = Field(default_factory=list)
+
+
+class FinanceCase(BaseModel):
+    id: str
+    status: Literal["SIMULATED_NOT_SENT"] = "SIMULATED_NOT_SENT"
+    outcome: Outcome
+    route_to: str
+    respond_within_hours: int
+    release_requires: str
+    approvals_needed: int
+    vendor: str
+    amount: Optional[str] = None
+    reference: Optional[str] = None
+    bank_change: bool = False
+    account: Optional[str] = None
+    flags: list[FinanceFlag] = Field(default_factory=list)
+    unverified: list[str] = Field(default_factory=list)
+    call_list: list[str] = Field(default_factory=list)
+    document_requests: list[str] = Field(default_factory=list)
+    data_incomplete: bool = False
+    payment_status: str
+    resolution: Optional[str] = None
+    checks: list[dict[str, Any]] = Field(default_factory=list)
+
+
 class Statement(BaseModel):
     text: str
     evidence_ids: list[str] = Field(default_factory=list)
@@ -166,3 +196,4 @@ class CaseResult(BaseModel):
     extraction_method: str = "regex"
     contact_search_error: Optional[str] = None
     offline_misses: int = 0
+    finance_case: Optional[FinanceCase] = None

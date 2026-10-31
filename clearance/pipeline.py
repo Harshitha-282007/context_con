@@ -9,6 +9,7 @@ from .config import OUTBOX_DIR
 from .crustdata import CrustdataClient
 from .decide import decide
 from .extract import extract
+from .handoff import build_case, verify_case, write_case
 from .fieldmap import COMPANY_ENRICH_FIELDS, COMPANY_PATHS, company_profile, match_rows
 from .ledger import Ledger
 from .outreach import compose, verify_draft, write_outbox
@@ -189,6 +190,12 @@ def run_case(
                 emit("draft", f"{draft.status}: {sum(c['passed'] for c in draft.checks)}/{len(draft.checks)} checks passed")
 
     result.offline_misses = client.offline_misses
+    case = build_case(result, policy, case_id)
+    if case:
+        case = verify_case(case, packet_text or "")
+        write_case(case, outbox)
+        result.finance_case = case
+        emit("handoff", f"{case.status}: {case.route_to}; payment {case.payment_status}")
     result.credits_used = round(client.credits_spent, 2)
     result.credits_replayed = round(client.credits_replayed, 2)
     statements = _statements(result, ledger, policy) + result.callback_pack

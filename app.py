@@ -6,9 +6,10 @@ from pathlib import Path
 
 import streamlit as st
 
-from clearance.config import FIXTURES_DIR, ROOT, credit_cap, crustdata_api_key, load_policy
+from clearance.config import FIXTURES_DIR, OUTBOX_DIR, ROOT, credit_cap, crustdata_api_key, load_policy
 from clearance.crustdata import CrustdataClient
 from clearance.extract import extract_regex
+from clearance.handoff import ACTIONS, apply_action, write_case
 from clearance.pipeline import run_case
 from clearance.report import mask, offline_warning, person_names, to_markdown
 
@@ -65,6 +66,34 @@ if result:
     cols[1].metric("Evidence records", len(result.ledger))
     cols[2].metric("Hash chain", "verified" if result.chain_ok else "BROKEN")
     cols[3].metric("Messages sent", 0)
+
+    case = result.finance_case
+    if case:
+        st.subheader("Finance handoff (simulated, not sent)")
+        with st.container(border=True):
+            top = st.columns(3)
+            top[0].markdown(f"**Route to**\n\n{case.route_to}")
+            top[1].markdown(f"**Respond within**\n\n{case.respond_within_hours} hours")
+            top[2].markdown(f"**Payment**\n\n{case.payment_status}")
+            st.caption(f"Release requires: {case.release_requires}")
+            if case.bank_change:
+                st.write(f"Bank change requested{', account ' + case.account if case.account else ''}.")
+            for f in case.flags:
+                st.markdown(f"- **{f.rule_id}** ({f.severity}): {show(f.message)}")
+            if case.unverified:
+                st.caption(f"Could not verify: {', '.join(case.unverified)}")
+            st.write("Record the outcome of the callback:")
+            buttons = st.columns(len(ACTIONS))
+            for column, action in zip(buttons, ACTIONS):
+                if column.button(action, key=f"{case.id}-{action}", disabled=case.resolution is not None):
+                    apply_action(case, action)
+                    write_case(case, OUTBOX_DIR)
+                    st.rerun()
+            if case.resolution:
+                st.info(f"Recorded: {case.resolution}. Payment: {case.payment_status}.")
+            st.caption(f"No message was sent and no payment system was touched. Saved to outbox/{case.id}.md.")
+    elif d.outcome == "APPROVE":
+        st.caption("No finance handoff: the payment continues, with this evidence attached (simulated).")
 
     ledger = {e.id: e for e in result.ledger}
     left, right = st.columns(2)

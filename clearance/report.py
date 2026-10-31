@@ -76,6 +76,11 @@ def to_markdown(result: CaseResult, masked: bool = False) -> str:
         lines += [f"## Draft ({draft.status}, never sent)", f"To: {', '.join(r.name for r in draft.recipients)} (address from your own vendor records)",
                   f"Subject: {draft.subject}", "", draft.body, "",
                   *[f"- {'pass' if c['passed'] else 'FAIL'}: {c['check']}" for c in draft.checks], ""]
+    fc = result.finance_case
+    if fc:
+        lines += [f"## Finance handoff (simulated, not sent)", f"- Route to: {fc.route_to}, within {fc.respond_within_hours} hours",
+                  f"- Payment: {fc.payment_status}", f"- Release requires: {fc.release_requires}",
+                  f"- Case file: outbox/{fc.id}.md", ""]
     if d.outcome != "APPROVE" and not result.drafts and result.contacts:
         lines += ["## Draft", "- No draft: no contact has a business email on file. Use the callback pack instead.", ""]
     lines += ["## What evidence would change this decision?", f"- {d.what_would_change_this}", ""]

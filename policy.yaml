@@ -46,6 +46,19 @@ r7:
 r10:
   phrases: [urgent, immediately, asap, do not call, "don't call", confidential, today only, wire today]
 
+# Simulated finance handoff. Nothing is sent; these describe who would receive the case.
+routing:
+  hold:
+    route_to: AP review queue
+    respond_within_hours: 24
+    release_requires: One AP specialist, after recording the callback result
+    approvals_needed: 1
+  escalate:
+    route_to: Finance controller and security
+    respond_within_hours: 4
+    release_requires: Two people, one of them the finance controller
+    approvals_needed: 2
+
 # Illustrative conversion rates. An unlisted currency makes R6/R7 UNVERIFIABLE.
 fx_to_usd:
   USD: 1.0
