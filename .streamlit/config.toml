@@ -1,0 +1,7 @@
+# The app has no login and can show real mail, so it only listens on this laptop.
+[server]
+address = "localhost"
+headless = true
+
+[browser]
+gatherUsageStats = false
