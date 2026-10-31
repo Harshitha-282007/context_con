@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from typing import Optional
 
-from .crustdata import ApiResult, CrustdataClient
+from .crustdata import ApiResult, CrustdataClient, describe_error
 from .fieldmap import company_candidate, match_rows
 from .ledger import Ledger
 from .rules import sender_domain
@@ -57,7 +57,7 @@ def resolve_vendor(client: CrustdataClient, ledger: Ledger, claim: Claim, policy
         result = client.post("/company/identify", {"domains": [domain], "exact_match": True})
         evidence.append(_record(ledger, result, domain))
         if not result.ok and result.status != 404:
-            failures.append(f"domain lookup: {result.error}")
+            failures.append(f"domain lookup: {describe_error(result.error)}")
             continue
         cands = _with_evidence([company_candidate(m) for m in match_rows(result.data)], evidence[-1])
         agreeing = [c for c in cands if not claim.vendor_name or _names_agree(claim.vendor_name, c.name)]
@@ -74,7 +74,7 @@ def resolve_vendor(client: CrustdataClient, ledger: Ledger, claim: Claim, policy
     result = client.post("/company/identify", {"names": [query]})
     evidence.append(_record(ledger, result, query))
     if not result.ok and result.status != 404:
-        return Resolution(status="UNVERIFIABLE", reason=f"name lookup: {result.error}", evidence_ids=evidence)
+        return Resolution(status="UNVERIFIABLE", reason=f"name lookup: {describe_error(result.error)}", evidence_ids=evidence)
     cands = _with_evidence([company_candidate(m) for m in match_rows(result.data)], evidence[-1])
     if not cands:
         return Resolution(status="NOT_FOUND", reason=f"no company named {claim.vendor_name!r} in the graph", evidence_ids=evidence)

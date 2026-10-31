@@ -10,7 +10,7 @@ from clearance.config import FIXTURES_DIR, ROOT, credit_cap, crustdata_api_key, 
 from clearance.crustdata import CrustdataClient
 from clearance.extract import extract_regex
 from clearance.pipeline import run_case
-from clearance.report import mask, person_names, to_markdown
+from clearance.report import mask, offline_warning, person_names, to_markdown
 
 STATUS_ICON = {"PASS": "✅", "FLAG": "🚩", "UNVERIFIABLE": "❔"}
 OUTCOME_STYLE = {"APPROVE": st.success, "HOLD": st.warning, "ESCALATE": st.error}
@@ -22,7 +22,8 @@ st.caption("Is the person asking for this payment real, and who should you call 
 packets = sorted((ROOT / "packets").glob("*.txt"))
 with st.sidebar:
     choice = st.selectbox("Sample packet", [p.name for p in packets] + ["Paste my own"])
-    offline = st.toggle("Offline replay", value=True, help="Serve saved responses and make no network calls.")
+    # A pasted packet has no saved responses, so it defaults to a live run.
+    offline = st.toggle("Offline replay", value=choice != "Paste my own", help="Serve saved responses and make no network calls. New packets need this off.")
     masked = st.toggle("Mask people's names", value=True)
 
 default = "" if choice == "Paste my own" else (ROOT / "packets" / choice).read_text()
@@ -55,6 +56,8 @@ if result:
     names = person_names(result) if masked else []
     show = (lambda s: mask(s, names)) if masked else (lambda s: s)
     d = result.decision
+    if result.offline_misses:
+        st.error(offline_warning(result))
     OUTCOME_STYLE[d.outcome](f"### {d.outcome}\n\n" + "\n\n".join(show(r) for r in d.reasons))
 
     cols = st.columns(4)
@@ -76,15 +79,18 @@ if result:
                      "value": show(str(ledger[i].value))[:120], "hash": ledger[i].hash[:12]}
                     for i in f.evidence_ids if i in ledger
                 ]
-                st.dataframe(rows, hide_index=True, use_container_width=True)
+                st.dataframe(rows, hide_index=True, width="stretch")
     with right:
+        if result.contact_search_error:
+            st.subheader("Who to call instead")
+            st.write(f"The contact search could not run: {result.contact_search_error}. Use your own vendor records.")
         if result.callback_pack:
             st.subheader("Who to call instead")
             for s in result.callback_pack:
                 st.markdown(f"- {show(s.text)} `{' '.join(s.evidence_ids[:3])}`")
         if result.resolution and result.resolution.status == "AMBIGUOUS":
             st.subheader("Candidates (none picked)")
-            st.dataframe([c.model_dump(exclude={"evidence_ids"}) for c in result.resolution.candidates], hide_index=True, use_container_width=True)
+            st.dataframe([c.model_dump(exclude={"evidence_ids"}) for c in result.resolution.candidates], hide_index=True, width="stretch")
         if result.document_requests:
             st.subheader("Documents to request")
             for r in result.document_requests:
@@ -103,6 +109,6 @@ if result:
         st.dataframe(
             [{"id": e.id, "source": e.source, "endpoint": e.endpoint, "field": e.field_path, "value": show(str(e.value))[:120],
               "credits": e.credits, "prev_hash": e.prev_hash[:12], "hash": e.hash[:12]} for e in result.ledger],
-            hide_index=True, use_container_width=True,
+            hide_index=True, width="stretch",
         )
     st.caption("Bank accounts are not verified. Profile data can lag. These are risk findings, not accusations. The callback is a human step.")

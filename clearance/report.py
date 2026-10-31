@@ -7,6 +7,15 @@ from pathlib import Path
 
 from .schemas import CaseResult, Statement
 
+def offline_warning(result: CaseResult) -> str:
+    if not result.offline_misses:
+        return ""
+    return (
+        f"Incomplete offline run: {result.offline_misses} lookup(s) had no saved response, so this decision "
+        "reflects missing data, not a finding about the vendor or sender. Turn off offline replay to run it live."
+    )
+
+
 LIMITS = (
     "Limits: bank accounts are not verified, profile data can lag, and small-vendor coverage may be thin. "
     "These are risk findings, not accusations. The callback is a human step. No message was sent."
@@ -44,6 +53,8 @@ def to_markdown(result: CaseResult, masked: bool = False) -> str:
     d = result.decision
     pack_texts = {s.text for s in result.callback_pack}
     lines = [f"# Clearance report: {d.outcome}", ""]
+    if result.offline_misses:
+        lines += [f"> **{offline_warning(result)}**", ""]
     lines += ["## Reasons", *[f"- {r}" for r in d.reasons], ""]
     lines += ["## Evidence", *[_line(s) for s in result.statements if s.text not in pack_texts], ""]
     lines += ["## Rule trace", *[
@@ -54,7 +65,11 @@ def to_markdown(result: CaseResult, masked: bool = False) -> str:
     if kept_pack:
         lines += ["## Callback pack", *[_line(s) for s in kept_pack], ""]
     elif d.outcome != "APPROVE" and result.company:
-        lines += ["## Callback pack", "- No independent contact was found in the graph. Use your own vendor records.", ""]
+        why = (
+            f"The contact search could not run: {result.contact_search_error}."
+            if result.contact_search_error else "No independent contact was found in the graph."
+        )
+        lines += ["## Callback pack", f"- {why} Use your own vendor records.", ""]
     if result.document_requests:
         lines += ["## Documents to request", *[f"- {r}" for r in result.document_requests], ""]
     for draft in result.drafts:

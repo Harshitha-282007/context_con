@@ -174,7 +174,7 @@ def run_case(
     if decision.outcome != "APPROVE":
         result.document_requests = _document_requests(result)
         if resolution.status == "RESOLVED" and company:
-            result.contacts = find_contacts(client, ledger, claim, company.crustdata_company_id, company.headcount, packet_text or "")
+            result.contacts, result.contact_search_error = find_contacts(client, ledger, claim, company.crustdata_company_id, company.headcount, packet_text or "")
             result.callback_pack = _callback_pack(result.contacts, company, ledger)
             emit("contacts", f"{len(result.contacts)} graph-sourced callback contact(s)")
             draft = compose(claim, company, result.contacts, case_id)
@@ -184,6 +184,7 @@ def run_case(
                 result.drafts = [draft]
                 emit("draft", f"{draft.status}: {sum(c['passed'] for c in draft.checks)}/{len(draft.checks)} checks passed")
 
+    result.offline_misses = client.offline_misses
     result.credits_used = round(client.credits_spent, 2)
     result.credits_replayed = round(client.credits_replayed, 2)
     statements = _statements(result, ledger, policy) + result.callback_pack

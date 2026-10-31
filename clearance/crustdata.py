@@ -20,6 +20,21 @@ API_VERSION = "2025-11-01"
 RETRYABLE = {429, 500, 502, 503, 504}
 
 
+ERROR_TEXT = {
+    "offline_no_fixture": "no saved response for this lookup; turn off offline replay to run it live",
+    "missing_api_key": "no Crustdata API key is configured",
+    "credit_cap_reached": "the per-run credit cap was reached",
+    "http_401": "the API key was rejected",
+    "http_403": "this endpoint is not enabled on the API key",
+    "http_404": "no data was found",
+    "http_429": "the API rate limit was still exceeded after retries",
+}
+
+
+def describe_error(error: Optional[str]) -> str:
+    return ERROR_TEXT.get(error or "", f"the lookup failed ({error})")
+
+
 @dataclass
 class ApiResult:
     ok: bool
@@ -64,6 +79,7 @@ class CrustdataClient:
         self._sleep = sleep
         self.credits_spent = 0.0     # charged by live calls in this run
         self.credits_replayed = 0.0  # originally charged for responses served from cache
+        self.offline_misses = 0      # lookups offline replay could not answer
 
     def post(self, endpoint: str, body: dict) -> ApiResult:
         return self._call("POST", endpoint, body)
@@ -80,6 +96,7 @@ class CrustdataClient:
             self.credits_replayed += cached.credits
             return cached
         if self.offline:
+            self.offline_misses += 1
             return ApiResult(False, 0, error="offline_no_fixture", endpoint=endpoint, fixture_key=key)
         if not self._api_key:
             return ApiResult(False, 0, error="missing_api_key", endpoint=endpoint, fixture_key=key)

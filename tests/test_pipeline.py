@@ -138,3 +138,20 @@ def test_spoofed_real_name_is_caught_by_domain(tmp_path):
 def test_weak_name_overlaps_are_not_candidates(tmp_path):
     r = replay((ROOT / "packets" / "test_5_vendor_not_in_graph.txt").read_text(), tmp_path)
     assert r.resolution.status == "NOT_FOUND" and not r.resolution.candidates and r.document_requests
+
+
+def test_offline_miss_is_reported_as_missing_data_not_a_finding(tmp_path):
+    text = packet("a").replace(extract_regex(packet("a")).sender_name, "Zed Unseenname")
+    r = replay(text, tmp_path)
+    assert r.decision.outcome == "HOLD" and r.offline_misses > 0
+    assert r.person_check.status == "UNVERIFIABLE"
+    md = to_markdown(r)
+    assert "Incomplete offline run" in md and "turn off offline replay" in md.lower()
+    assert "offline_no_fixture" not in md
+    assert r.contact_search_error and "No independent contact was found" not in md
+
+
+def test_complete_replay_has_no_offline_warning(tmp_path):
+    r = replay(packet("b"), tmp_path)
+    assert r.offline_misses == 0 and r.contact_search_error is None
+    assert "Incomplete offline run" not in to_markdown(r)

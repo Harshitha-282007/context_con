@@ -5,7 +5,7 @@ import re
 import unicodedata
 from typing import Optional
 
-from .crustdata import ApiResult, CrustdataClient
+from .crustdata import ApiResult, CrustdataClient, describe_error
 from .fieldmap import (
     FILTER_CURRENT_COMPANY, FILTER_CURRENT_TITLE, FILTER_NAME, PERSON_PATHS, PERSON_SEARCH_FIELDS,
     match_rows, person_profile, search_profiles, search_total,
@@ -107,14 +107,14 @@ def verify_sender(client: CrustdataClient, ledger: Ledger, claim: Claim, company
     full = _search(client, company_id, {"field": FILTER_NAME, "type": "(.)", "value": name}, 5)
     evidence.append(_record_search(ledger, full, company_id, "sender full-name search"))
     if not full.ok:
-        return PersonCheck(status="UNVERIFIABLE", reason=f"name search failed: {full.error}", evidence_ids=evidence, **base)
+        return PersonCheck(status="UNVERIFIABLE", reason=f"name search failed: {describe_error(full.error)}", evidence_ids=evidence, **base)
     hits = [p for p in search_profiles(full.data) if names_match(name, person_profile(p).name)]
 
     if not hits:  # Surname only, which also catches nicknames and transliteration.
         surname = _search(client, company_id, {"field": FILTER_NAME, "type": "(.)", "value": tokens[-1]}, 10)
         evidence.append(_record_search(ledger, surname, company_id, "sender surname search"))
         if not surname.ok:
-            return PersonCheck(status="UNVERIFIABLE", reason=f"surname search failed: {surname.error}", evidence_ids=evidence, **base)
+            return PersonCheck(status="UNVERIFIABLE", reason=f"surname search failed: {describe_error(surname.error)}", evidence_ids=evidence, **base)
         hits = [p for p in search_profiles(surname.data) if names_match(name, person_profile(p).name)]
 
     base["name_search_ran"] = True
@@ -142,15 +142,22 @@ def _title_query(titles: list[str]) -> dict:
 def find_contacts(
     client: CrustdataClient, ledger: Ledger, claim: Claim, company_id: int,
     headcount: Optional[int], packet_text: str,
-) -> list[PersonProfile]:
-    """Ranked callback contacts, excluding the sender and anyone named in the thread."""
+) -> tuple[list[PersonProfile], Optional[str]]:
+    """Ranked callback contacts, excluding the sender and anyone named in the thread.
+
+    The second value is why a search could not run. "Nobody found" and "could not
+    look" are different answers, and the report must not confuse them.
+    """
     small = headcount is not None and headcount < SMALL_COMPANY
     queries = ([LEADER_TITLES] if small else [FINANCE_TITLES, LEADER_TITLES])
     lowered = packet_text.lower()
     excluded = [n for n in (claim.sender_name, claim.signature_name) if n]
+    failure = None
     for titles in queries:
         result = _search(client, company_id, _title_query(titles), 10)
         _record_search(ledger, result, company_id, "callback contact search")
+        if not result.ok:
+            failure = describe_error(result.error)
         people = [person_profile(p, company_id) for p in search_profiles(result.data)] if result.ok else []
         clean = [
             p for p in people
@@ -162,5 +169,5 @@ def find_contacts(
             senior = [p for p in ranked[1:] if p.seniority in {"CXO", "Vice President", "Director", "Owner / Partner"}]
             if senior and not small:
                 picks.append(senior[0])
-            return [record_person(ledger, p) for p in picks]
-    return []
+            return [record_person(ledger, p) for p in picks], None
+    return [], failure

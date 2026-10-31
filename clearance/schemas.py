@@ -155,3 +155,5 @@ class CaseResult(BaseModel):
     callback_pack: list[Statement] = Field(default_factory=list)
     document_requests: list[str] = Field(default_factory=list)
     extraction_method: str = "regex"
+    contact_search_error: Optional[str] = None
+    offline_misses: int = 0
