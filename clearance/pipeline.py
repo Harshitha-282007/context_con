@@ -147,6 +147,8 @@ def run_case(
     result = CaseResult(claim=claim, extraction_method=method)
 
     resolution = resolve_vendor(client, ledger, claim, policy)
+    if not resolution.evidence_ids:  # No lookup ran, so the gap itself is what gets recorded.
+        resolution.evidence_ids = [ledger.add({"status": resolution.status, "reason": resolution.reason}, source="system", field_path="resolution")]
     result.resolution = resolution
     emit("resolve", f"{resolution.status}: {resolution.reason}")
 
