@@ -39,6 +39,7 @@ class Evidence(BaseModel):
     credits: float = 0.0
     prev_hash: str
     hash: str
+    raw_ref: Optional[str] = None  # saved raw response this came from
 
 
 class Finding(BaseModel):

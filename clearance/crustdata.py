@@ -30,6 +30,7 @@ ERROR_TEXT = {
     "http_403": "this endpoint is not enabled on the API key",
     "http_404": "no data was found",
     "http_429": "the API rate limit was still exceeded after retries",
+    "bad_response": "the API returned something unreadable",
 }
 
 
@@ -52,6 +53,27 @@ class ApiResult:
 
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _shape_ok(endpoint: str, data: Any) -> bool:
+    """A garbled reply must fail, never read as 'no company' or 'no such person'."""
+    if endpoint == "/person/search":
+        return isinstance(data, dict) and isinstance(data.get("profiles"), list)
+    if endpoint in ("/company/identify", "/company/enrich", "/person/identify", "/person/enrich"):
+        return isinstance(data, list) and all(isinstance(row, dict) and isinstance(row.get("matches"), list) for row in data)
+    return True
+
+
+def read_saved(key: str, *dirs: Path) -> Optional[dict]:
+    """A saved raw response, for showing where a fact came from."""
+    for folder in dirs:
+        path = Path(folder) / f"{key}.json"
+        if path.exists():
+            try:
+                return json.loads(path.read_text())
+            except ValueError:
+                return None
+    return None
 
 
 def cache_key(method: str, endpoint: str, body: Any) -> str:
@@ -145,6 +167,8 @@ class CrustdataClient:
             data = {"unparsed_body": resp.text[:2000]}
         retrieved_at = _now()
         ok = 200 <= status < 300
+        if ok and not _shape_ok(endpoint, data):
+            return ApiResult(False, status, data, credits, error="bad_response", endpoint=endpoint, retrieved_at=retrieved_at, fixture_key=key)
         # 400, 403 and 404 are stable answers, so they replay offline too. Account calls
         # are never saved: they describe the account, not a vendor.
         if (ok or status in (400, 403, 404)) and not endpoint.startswith("/account/"):

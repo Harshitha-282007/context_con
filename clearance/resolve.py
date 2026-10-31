@@ -31,7 +31,8 @@ def _record(ledger: Ledger, result: ApiResult, entity: str) -> str:
     cands = [company_candidate(m).model_dump(exclude={"evidence_ids"}) for m in match_rows(result.data)]
     value = {"status": result.status, "error": result.error, "candidates": cands[:5], "candidate_count": len(cands)}
     return ledger.add(value, endpoint=result.endpoint or "/company/identify", entity_id=entity,
-                      field_path="[].matches[].company_data.basic_info", credits=result.credits, retrieved_at=result.retrieved_at or None)
+                      field_path="[].matches[].company_data.basic_info", credits=result.credits, retrieved_at=result.retrieved_at or None,
+                      raw_ref=result.fixture_key)
 
 
 def _names_agree(vendor: str, candidate: Optional[str]) -> bool:

@@ -33,6 +33,7 @@ class Ledger:
         field_path: Optional[str] = None,
         credits: float = 0.0,
         retrieved_at: Optional[str] = None,
+        raw_ref: Optional[str] = None,
     ) -> str:
         prev = self.records[-1].hash if self.records else GENESIS
         ev = Evidence(
@@ -46,6 +47,7 @@ class Ledger:
             credits=credits,
             prev_hash=prev,
             hash="",
+            raw_ref=raw_ref,
         )
         ev.hash = _digest(_body(ev))
         self.records.append(ev)

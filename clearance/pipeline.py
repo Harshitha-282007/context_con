@@ -9,7 +9,7 @@ from .config import OUTBOX_DIR
 from .crustdata import CrustdataClient
 from .decide import decide
 from .draft_llm import polish
-from .extract import extract
+from .extract import extract, extract_regex
 from .handoff import build_case, verify_case, write_case
 from .fieldmap import COMPANY_ENRICH_FIELDS, COMPANY_PATHS, company_profile, match_rows
 from .ledger import Ledger
@@ -39,7 +39,7 @@ def _enrich(client: CrustdataClient, ledger: Ledger, resolution: Resolution) -> 
     candidate = resolution.company
     result = client.post("/company/enrich", {"crustdata_company_ids": [candidate.crustdata_company_id], "fields": COMPANY_ENRICH_FIELDS})
     ledger.add({"status": result.status, "error": result.error}, endpoint="/company/enrich", entity_id=candidate.crustdata_company_id,
-               field_path="[].matches[].company_data", credits=result.credits, retrieved_at=result.retrieved_at or None)
+               field_path="[].matches[].company_data", credits=result.credits, retrieved_at=result.retrieved_at or None, raw_ref=result.fixture_key)
     rows = match_rows(result.data) if result.ok else []
     if rows:
         profile = company_profile(rows[0].get("company_data"))
@@ -55,7 +55,7 @@ def _enrich(client: CrustdataClient, ledger: Ledger, resolution: Resolution) -> 
         value = getattr(profile, field)
         if value not in (None, []):
             profile.evidence[field] = ledger.add(value, endpoint=source, entity_id=profile.crustdata_company_id, field_path=path,
-                                                 retrieved_at=result.retrieved_at or None)
+                                                 retrieved_at=result.retrieved_at or None, raw_ref=result.fixture_key)
     return profile
 
 
@@ -138,12 +138,51 @@ def run_case(
     packet_text: str, client: CrustdataClient, policy: dict, as_of: date, case_id: str = "case",
     emit: Emit = lambda stage, message: None, outbox: Path = OUTBOX_DIR,
 ) -> CaseResult:
+    """Never raises. If anything unexpected breaks mid-run, the payment stays on HOLD."""
     ledger = Ledger()
+    try:
+        return _run(ledger, packet_text, client, policy, as_of, case_id, emit, outbox)
+    except Exception as error:  # The type alone is recorded, because a message can echo private data.
+        emit("error", f"the check did not finish ({type(error).__name__}); failing closed")
+        return _fail_closed(ledger, packet_text, client, policy, as_of, case_id, outbox, type(error).__name__)
+
+
+def _fail_closed(
+    ledger: Ledger, packet_text: str, client: CrustdataClient, policy: dict, as_of: date, case_id: str, outbox: Path, error: str,
+) -> CaseResult:
+    """Keeps the evidence gathered so far and returns HOLD with every unfinished check UNVERIFIABLE."""
+    try:
+        claim = extract_regex(packet_text or "")
+    except Exception:
+        claim = Claim()
+    ev = ledger.add({"error": error, "note": "the check did not finish"}, source="system", field_path="run")
+    resolution = Resolution(status="UNVERIFIABLE", reason=f"the check did not finish ({error})", evidence_ids=[ev])
+    findings = run_rules(RuleContext(claim=claim, as_of=as_of, resolution=resolution), policy)
+    _ensure_cited(findings, ledger)
+    result = CaseResult(claim=claim, resolution=resolution, findings=findings, extraction_method="regex (run did not finish)")
+    result.decision = decide(findings, resolution, policy)
+    result.document_requests = _document_requests(result)
+    result.offline_misses = client.offline_misses
+    result.credits_used = round(client.credits_spent, 2)
+    result.credits_replayed = round(client.credits_replayed, 2)
+    case = build_case(result, policy, case_id)
+    if case:
+        result.finance_case = verify_case(case, packet_text or "")
+        write_case(result.finance_case, outbox)
+    kept, dropped, chain_ok = cite_or_drop(_statements(result, ledger, policy), ledger.records)
+    result.statements, result.dropped_statements, result.chain_ok = kept, dropped, chain_ok
+    result.ledger = ledger.records
+    return result
+
+
+def _run(
+    ledger: Ledger, packet_text: str, client: CrustdataClient, policy: dict, as_of: date, case_id: str, emit: Emit, outbox: Path,
+) -> CaseResult:
     if len((packet_text or "").strip()) < MIN_PACKET_CHARS:
         emit("extract", "packet is empty or too short")
         claim, method = Claim(), "none (insufficient packet)"
     else:
-        claim, method = extract(packet_text)
+        claim, method = extract(packet_text, use_llm=not client.offline)
         emit("extract", f"{method}: vendor={claim.vendor_name!r} amount={claim.amount} {claim.currency or ''} bank_change={claim.bank_change}")
     claim_ev = _record_claim(ledger, claim)
     result = CaseResult(claim=claim, extraction_method=method)

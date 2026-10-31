@@ -102,7 +102,7 @@ flowchart TD
 | # | Step | What happens | Why it matters |
 |---|---|---|---|
 | 1 | **Intake** | Reads a mailbox, PDF text, `.eml` files (with PDF attachments), text or pastes | Real packets are messy and arrive in many forms |
-| 2 | **Extract** | Pulls out a structured claim. Missing fields stay empty | Everything after this works on checked fields rather than raw email text |
+| 2 | **Extract** | Pulls out a structured claim. Regex values win, Groq fills gaps, and each value must appear in the email. Missing fields stay empty | Everything after this works on checked fields rather than raw email text |
 | 3 | **Resolve** | Finds the vendor by domain, then by name | A domain only counts if its company matches the vendor the email names, because the email can lie |
 | 4 | **Enrich** | Reads the company's size and footprint | Provides the facts for the plausibility rules |
 | 5 | **Verify sender** | Counts employees, then searches by full name, surname and past roles | "Not found" only means something when the graph knows the company well |
@@ -381,7 +381,7 @@ Packet text can contain instructions aimed at an AI. Clearance limits what that 
 
 ```mermaid
 flowchart LR
-    P["Untrusted email text"] --> X["Extraction<br/>schema-validated fields only"]
+    P["Untrusted email text"] --> X["Extraction<br/>regex wins, LLM fills gaps,<br/>values must appear in the email"]
     X --> R["Rules and decision<br/>no LLM involved"]
     X --> F["Reply and draft prompts<br/>cleaned, checked fields only"]
     F --> L[Groq]
@@ -391,7 +391,7 @@ flowchart LR
     T --> D
 ```
 
-Injected text can't reach the rules or the decision, because no LLM is involved there. Groq only sees checked fields, and whatever it returns must pass the wording checks and a person's review.
+Injected text can't reach the rules or the decision, because no LLM is involved there. An LLM can read the email during extraction, but it can't override values from real headers or add anything that isn't in the email. Drafting only sees checked fields, and whatever it returns must pass the wording checks and a person's review.
 
 ---
 
@@ -440,7 +440,7 @@ sequenceDiagram
 
 **Using company mail:** forward to a dedicated mailbox. In Microsoft 365 use a **Redirect** rule, because **Forward** makes your employee look like the sender. Many companies need an admin to allow auto-forwarding, and Microsoft work accounts may refuse password logins.
 
-**What leaves your machine:** checks send the sender's name and domain and the vendor's name to Crustdata. Groq receives the checked fields described above. Full email text goes to Anthropic only if you set that key, and full text is stored in your database.
+**What leaves your machine:** checks send the sender's name and domain and the vendor's name to Crustdata. With a Groq key, the email text goes to Groq for extraction, and only checked fields go to it for drafting. Full text is stored in your database.
 
 ### Credits
 
@@ -492,8 +492,7 @@ Everything goes in `.env`, which Git ignores. Only the Crustdata key is needed f
 | `SEND_TO_SENDER` | Allow replies to the sender | Off |
 | `SMTP_HOST`, `SMTP_PORT` | Mail server for sending | Gmail, port 465 |
 | `SUPABASE_URL`, `SUPABASE_SERVICE_KEY` | Use Supabase | Local SQLite |
-| `GROQ_API_KEY` (or `GROQ_API`), `GROQ_MODEL` | Draft and reply wording | Fixed templates; model `openai/gpt-oss-120b` |
-| `ANTHROPIC_API_KEY` | LLM extraction | Regex extraction |
+| `GROQ_API_KEY` (or `GROQ_API`), `GROQ_MODEL` | Fills extraction gaps, and words drafts and replies | Regex and fixed templates; model `openai/gpt-oss-120b` |
 | `CLEARANCE_CREDIT_CAP` | Credits per run | 150 |
 | `CLEARANCE_DAILY_CREDIT_LIMIT` | Credits per day for scanning | 100 |
 | `CLEARANCE_DATA_DIR` | Where SQLite is stored | `data/` |
@@ -541,12 +540,12 @@ Everything goes in `.env`, which Git ignores. Only the Crustdata key is needed f
 .venv/bin/python -m pytest -q
 ```
 
-251 tests, with no network calls. They cover:
+Over 270 tests, with no network calls. They cover:
 
 | Area | Examples |
 |---|---|
 | **Rules and decisions** | Missing data is never PASS, a hard R2 is impossible when the coverage gate fails, an ambiguous vendor never gets APPROVE |
-| **Failure paths** | Bad key, timeouts, 429 and 5xx responses, credit cap, corrupt responses |
+| **Failure paths** | Bad key, timeouts, 429 and 5xx responses, credit cap, garbled responses, a crash midway that fails closed on HOLD |
 | **Evidence** | Tampering breaks the chain, and every finding and statement is cited |
 | **Security** | Injection text can't change findings or reach the finance case, and the mailbox stays read-only |
 | **Sender detection** | Reply threads, forwards, quoted older messages |
@@ -565,8 +564,8 @@ Everything goes in `.env`, which Git ignores. Only the Crustdata key is needed f
 | Supabase | ✅ Real project: writes, reads and credit tracking |
 | Groq wording | ✅ Real calls, though some wording fails the checks and falls back to the template |
 | Fresh install from GitHub | ✅ Clean clone installs, tests pass and the app opens on the same Python version |
-| Anthropic extraction | ⚠️ **Never run.** The code exists, but all results above used regex extraction |
-| Real invoice formats | ⚠️ Only lightly tested on real mail. The regex expects labels such as `Total:` |
+| Groq extraction | ✅ Real calls on plain-sentence and unlabelled requests |
+| Real invoice formats | ⚠️ Tested on real emails and messy samples, but not at volume |
 | Other Python versions or operating systems | ⚠️ Not tested |
 
 ---

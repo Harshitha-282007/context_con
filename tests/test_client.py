@@ -37,7 +37,7 @@ def client(tmp_path, *responses, **kw):
 
 
 def test_sends_required_headers_and_caches(tmp_path):
-    c = client(tmp_path, FakeResp(200, [{"ok": 1}], {"x-credits-used": "2"}))
+    c = client(tmp_path, FakeResp(200, [{"matches": []}], {"x-credits-used": "2"}))
     first = c.post("/company/enrich", {"domains": ["a.com"]})
     second = c.post("/company/enrich", {"domains": ["a.com"]})
     assert first.ok and first.credits == 2 and second.from_cache

@@ -14,6 +14,7 @@ from typing import Optional
 
 import requests
 
+from . import config  # noqa: F401  Loads .env, so the key is found however this module is reached.
 from .outreach import ACCUSATORY
 from .schemas import Claim, CompanyProfile, Draft
 

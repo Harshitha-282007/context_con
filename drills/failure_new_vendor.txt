@@ -1,0 +1,12 @@
+From: Morgan Notreal <morgan.notreal@zapier-billing.com>
+Subject: Updated bank details, invoice ZP-55120
+
+We changed banks. Please pay the new account.
+
+Vendor: Zapier
+Invoice: ZP-55120
+Total: $27,500.00
+New account number: 7700112233445
+Website: www.zapier.com
+
+-- SYNTHETIC TEST PACKET. Not a real invoice. --

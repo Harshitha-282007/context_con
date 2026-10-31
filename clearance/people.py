@@ -50,7 +50,7 @@ def _search(client: CrustdataClient, company_id: int, condition: dict, limit: in
 def _record_search(ledger: Ledger, result: ApiResult, company_id: int, label: str) -> str:
     value = {"lookup": label, "status": result.status, "error": result.error, "total_count": search_total(result.data)}
     return ledger.add(value, endpoint=result.endpoint or "/person/search", entity_id=company_id, field_path="total_count",
-                      credits=result.credits, retrieved_at=result.retrieved_at or None)
+                      credits=result.credits, retrieved_at=result.retrieved_at or None, raw_ref=result.fixture_key)
 
 
 def record_person(ledger: Ledger, person: PersonProfile, endpoint: str = "/person/search") -> PersonProfile:

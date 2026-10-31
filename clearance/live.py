@@ -18,6 +18,7 @@ class SyncReport:
     scanned: int = 0
     error: Optional[str] = None
     limit_reached: bool = False
+    failed: int = 0
 
     @property
     def changed(self) -> bool:
@@ -40,6 +41,9 @@ def sync_and_scan(
             if store.credits_on() >= daily_limit:
                 report.limit_reached = True
                 break
-            store.save_result(item.id, check(item))
-            report.scanned += 1
+            try:
+                store.save_result(item.id, check(item))
+                report.scanned += 1
+            except Exception:  # One bad email must not stop the rest. It stays unscanned for a retry.
+                report.failed += 1
     return report

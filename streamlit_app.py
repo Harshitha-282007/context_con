@@ -7,12 +7,13 @@ from __future__ import annotations
 
 import re
 import time
+import json
 from datetime import date, datetime
 
 import streamlit as st
 
 from clearance.config import FIXTURES_DIR, OUTBOX_DIR, PRIVATE_FIXTURES_DIR, ROOT, credit_cap, crustdata_api_key, daily_credit_limit, load_policy
-from clearance.crustdata import CrustdataClient
+from clearance.crustdata import CrustdataClient, read_saved
 from clearance.draft_llm import contextual_reply
 from clearance.extract import extract_regex
 from clearance.handoff import ACTIONS, apply_action, write_case
@@ -255,6 +256,35 @@ def render_compose(item: MailItem, result: CaseResult | None) -> None:
             st.caption(f"Sent to {shown} at {entry['at'][:16].replace('T', ' ')} UTC: {plain(entry['subject'], 80)}")
 
 
+PERSON_FIELDS = {"name", "headline", "summary", "description", "profile_url", "professional_network_profile_url", "urn_url"}
+
+
+def redact(node):
+    """Masks people in a raw response. Facts such as titles and dates stay visible."""
+    if isinstance(node, dict):
+        return {k: "***" if k in PERSON_FIELDS and isinstance(v, str) else redact(v) for k, v in node.items()}
+    return [redact(v) for v in node] if isinstance(node, list) else node
+
+
+def render_raw_sources(ledger: dict) -> None:
+    refs = {}
+    for record in ledger.values():
+        if record.raw_ref and record.endpoint:
+            refs.setdefault(record.raw_ref, record)
+    if not refs:
+        return
+    st.markdown("**Where did this come from?**")
+    key = st.selectbox("Open a raw API response", list(refs), format_func=lambda k: f"{refs[k].endpoint}, retrieved {refs[k].retrieved_at[:16].replace('T', ' ')} UTC")
+    saved = read_saved(key, PRIVATE_FIXTURES_DIR, FIXTURES_DIR)
+    if not saved:
+        st.caption("This response was not saved, for example because the call failed.")
+        return
+    is_person = str(saved.get("endpoint", "")).startswith("/person/")
+    shown = {"endpoint": saved.get("endpoint"), "request": saved.get("request"), "status": saved.get("status"), "credits": saved.get("credits"), "retrieved_at": saved.get("retrieved_at"), "response": saved.get("response")}
+    text = json.dumps(redact(shown) if masked and is_person else shown, indent=1, ensure_ascii=False)
+    st.code(text[:8000] + ("\n… shortened" if len(text) > 8000 else ""), language="json", wrap_lines=True)
+
+
 def render_simulated_send(draft, names: list[str]) -> None:
     """Delivers the draft to a test address only, to show the flow without contacting a vendor."""
     allowed = send_allowlist()
@@ -340,6 +370,7 @@ def render_result(result: CaseResult) -> None:
                     for i in f.evidence_ids if i in ledger
                 ]
                 st.dataframe(rows, hide_index=True, width="stretch")
+        render_raw_sources(ledger)
         st.markdown("**What would change this decision?**")
         st.write(show(d.what_would_change_this))
         with st.expander("Full report"):

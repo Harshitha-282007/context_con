@@ -37,9 +37,5 @@ def crustdata_api_key() -> str | None:
     return os.environ.get("CRUSTDATA_API_KEY") or None
 
 
-def anthropic_api_key() -> str | None:
-    return os.environ.get("ANTHROPIC_API_KEY") or None
-
-
 def credit_cap() -> float:
     return float(os.environ.get("CLEARANCE_CREDIT_CAP") or 150)

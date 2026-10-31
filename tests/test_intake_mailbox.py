@@ -294,3 +294,14 @@ def test_two_person_approval_in_the_app(app):
     label_button(app, "Confirmed legitimate").click().run()
     assert not app.exception and any("RELEASED by two approvers" in i.value for i in app.info)
     assert not any(b.label == "Confirmed legitimate" for b in app.button)
+
+
+def test_raw_source_view_opens_and_masks_people(app):
+    open_hero_email(app)
+    assert not app.exception
+    box = next(s for s in app.selectbox if s.label == "Open a raw API response")
+    person = next(o for o in box.options if "/person/search" in o)
+    box.select(person).run()
+    assert not app.exception
+    shown = " ".join(c.value for c in app.code)
+    assert '"request"' in shown or "/person/search" in shown
