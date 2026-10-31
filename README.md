@@ -9,10 +9,15 @@ Given a messy payment packet, Clearance extracts the claim, resolves the vendor 
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-cp .env.example .env
 ```
 
-Add `CRUSTDATA_API_KEY` to `.env`. `ANTHROPIC_API_KEY` is optional; without it, extraction uses the regex baseline.
+Create a file named `.env` in the project root (git ignores it) with your key:
+
+```
+CRUSTDATA_API_KEY=your_key_here
+```
+
+Two optional settings can go in the same file: `ANTHROPIC_API_KEY` (without it, extraction uses the regex baseline) and `CLEARANCE_CREDIT_CAP` (the per-run credit limit, default 150). Offline replay needs no key at all.
 
 ## Run
 
