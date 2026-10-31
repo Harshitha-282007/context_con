@@ -45,9 +45,19 @@ IMAP_PASSWORD=your_app_password
 
 Choose **Live mailbox** in the sidebar. While the page is open, the app checks for new mail every 60 seconds, imports payment-related messages and scans them automatically, up to `CLEARANCE_DAILY_CREDIT_LIMIT` credits a day (default 100). Samples are hidden in this mode. Turn off **Auto-scan new mail** to review before spending credits.
 
-The connection is read-only: the folder opens read-only and messages are fetched without marking them read, so nothing is sent, moved, deleted or changed. The first sync looks back over the newest 200 messages and imports up to 25 payment-related ones. Checks send the sender's name and domain and the vendor's name to Crustdata, and send the full email text to Anthropic only if `ANTHROPIC_API_KEY` is set.
+The connection is read-only: the folder opens read-only and messages are fetched without marking them read, so reading it should not change anything in the mailbox. The first sync looks back over the newest 200 messages and imports up to 25 payment-related ones. Checks send the sender's name and domain and the vendor's name to Crustdata, and send the full email text to Anthropic only if `ANTHROPIC_API_KEY` is set.
 
 To feed it company mail, use a dedicated mailbox and forward to it. In Microsoft 365, use a **Redirect** rule, because **Forward** makes your employee look like the sender.
+
+### Send from the portal (off by default)
+
+The agent never sends anything. A person can send an email from the **Reply or send from Clearance** panel, but only to addresses listed here, and only after confirming each message:
+
+```
+SEND_ALLOWLIST=your.test.address@example.com,second.test@example.com
+```
+
+Leave it out to keep sending off, which is what the event rules require for real outside people. Mail goes out through Gmail's SMTP server using the same app password; set `SMTP_HOST` and `SMTP_PORT` for other providers. Do not reply to the sender of a held request: reach the vendor through your own records. Replies are new messages with a `Re:` subject, so they may not join the original thread.
 
 ### Storage
 

@@ -18,7 +18,7 @@ def offline_warning(result: CaseResult) -> str:
 
 LIMITS = (
     "Limits: bank accounts are not verified, profile data can lag, and small-vendor coverage may be thin. "
-    "These are risk findings, not accusations. The callback is a human step. No message was sent."
+    "These are risk findings, not accusations. The callback is a human step. The agent sent no message."
 )
 
 
@@ -89,7 +89,7 @@ def to_markdown(result: CaseResult, masked: bool = False) -> str:
     lines += ["## Run", f"- Extraction: {result.extraction_method}",
               f"- Credits: {result.credits_used} spent live, {result.credits_replayed} replayed from cache",
               f"- Evidence ledger: {len(result.ledger)} records; hash chain {'verified' if result.chain_ok else 'BROKEN'}",
-              f"- Messages sent: 0", "", LIMITS, ""]
+              "- Messages sent by the agent: 0", "", LIMITS, ""]
     text = "\n".join(lines)
     return mask(text, person_names(result)) if masked else text
 

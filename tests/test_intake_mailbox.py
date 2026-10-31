@@ -181,7 +181,7 @@ def test_private_runs_replay_public_data_but_write_privately(tmp_path):
 
 @pytest.fixture
 def app(monkeypatch, tmp_path):
-    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY"):
+    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY", "SEND_ALLOWLIST"):
         monkeypatch.delenv(key, raising=False)
     monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
     return AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
@@ -216,3 +216,9 @@ def test_reset_samples_clears_verdicts_for_a_fresh_scan(app):
     label_button(app, "Scan").click().run()
     label_button(app, "Reset samples").click().run()
     assert all(b.label[0] == "⚪" for b in app.button if b.key and b.key.startswith("mail-"))
+
+
+def test_sending_is_off_without_an_allowlist(app):
+    assert not app.exception
+    assert not any(b.label == "Send email" for b in app.button)
+    assert any("Sending is off" in c.value for c in app.caption)

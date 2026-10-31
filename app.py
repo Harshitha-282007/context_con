@@ -18,6 +18,7 @@ from clearance.handoff import ACTIONS, apply_action, write_case
 from clearance.intake import read_upload
 from clearance.live import SyncReport, sync_and_scan
 from clearance.mailbox import MailItem, item_from_text, mailbox_settings, sample_inbox
+from clearance.outbound import record_sent, send_allowlist, send_mail, sent_log, smtp_settings
 from clearance.pipeline import run_case
 from clearance.report import mask, offline_warning, person_names, to_markdown
 from clearance.schemas import CaseResult
@@ -137,7 +138,7 @@ with st.sidebar:
     else:
         st.caption("Showing samples. Add IMAP_HOST, IMAP_USER and IMAP_PASSWORD to .env and restart for a live mailbox. Gmail needs an app password.")
     if mode == "Live mailbox":
-        st.caption(f"Read-only connection to {plain(settings['folder'])}. Nothing is sent, moved or marked as read.")
+        st.caption(f"Reads {plain(settings['folder'])} over a read-only connection. Email only goes out when a person sends it below.")
         auto_scan = st.toggle("Auto-scan new mail", value=True, help=f"Scans new payment emails automatically, up to {daily_credit_limit():g} credits a day.")
         live_status(settings, auto_scan)
         if st.button("Sync now", width="stretch"):
@@ -201,6 +202,39 @@ with metrics[4]:
         st.rerun()
 
 
+def reply_body(result: CaseResult | None) -> str:
+    """Starts from the verified draft, without a recipient name, so masking cannot alter what is sent."""
+    if result and result.drafts and result.drafts[0].status == "DRAFT_ONLY":
+        return "Hello,\n" + result.drafts[0].body.split("\n", 1)[1]
+    return ""
+
+
+def render_compose(item: MailItem, result: CaseResult | None) -> None:
+    allowed = send_allowlist()
+    log = sent_log(store, item.id)
+    with st.expander(f"Reply or send from Clearance ({len(log)} sent)" if log else "Reply or send from Clearance"):
+        if not allowed:
+            st.caption("Sending is off. To turn it on, add SEND_ALLOWLIST with your own test addresses to .env and restart. The event rules do not allow messages to real outside people.")
+            return
+        if result and result.decision.outcome != "APPROVE":
+            st.warning("This request is on hold. Do not reply to the original sender: use your own vendor records to reach the vendor. Only addresses in your allowlist can be chosen here.")
+        with st.form(f"compose-{item.id}", clear_on_submit=False):
+            to = st.selectbox("To (from SEND_ALLOWLIST)", allowed)
+            subject = st.text_input("Subject", value=f"Re: {plain(item.subject, 120)}")
+            body = st.text_area("Message", value=reply_body(result), height=220)
+            confirmed = st.checkbox("I checked the recipient and message, and I am sending this myself.")
+            sent = st.form_submit_button("Send email", type="primary")
+        if sent:
+            outcome = send_mail(smtp_settings(), allowed, to, subject, body, confirmed)
+            if outcome.ok:
+                record_sent(store, item.id, to, subject)
+                st.success(f"Sent to {to}.")
+            else:
+                st.error(outcome.error)
+        for entry in sent_log(store, item.id):
+            st.caption(f"Sent to {entry['to']} at {entry['at'][:16].replace('T', ' ')} UTC: {plain(entry['subject'], 80)}")
+
+
 def render_result(result: CaseResult) -> None:
     names = person_names(result) if masked else []
     show = (lambda s: escaped(mask(s, names))) if masked else escaped
@@ -213,7 +247,7 @@ def render_result(result: CaseResult) -> None:
     with verdict:
         case = result.finance_case
         if case:
-            st.caption("Simulated: no message was sent and no payment system was touched.")
+            st.caption("Simulated: finance was not contacted and no payment system was touched.")
             top = st.columns(3)
             top[0].markdown(f"**Route to**\n\n{case.route_to}")
             top[1].markdown(f"**Respond within**\n\n{case.respond_within_hours} hours")
@@ -241,7 +275,7 @@ def render_result(result: CaseResult) -> None:
         cols[0].metric("Credits", f"{result.credits_used:g}")
         cols[1].metric("Evidence records", len(result.ledger))
         cols[2].metric("Hash chain", "verified" if result.chain_ok else "BROKEN")
-        cols[3].metric("Messages sent", 0)
+        cols[3].metric("Sent by the agent", 0)
     with evidence:
         ledger = {e.id: e for e in result.ledger}
         for f in result.findings:
@@ -323,6 +357,7 @@ with pane:
                 with st.spinner("Checking the sender against the graph…"):
                     store.save_result(item.id, check(item, replay))
                 st.rerun()
+        render_compose(item, result)
         with st.expander("Original email", expanded=result is None):
             st.code(safe(item.text), language=None, wrap_lines=True)
             st.caption("Shown as plain text. Links in this message are not clickable.")
