@@ -162,3 +162,9 @@ def test_reply_needs_no_call_without_a_key(monkeypatch):
     def must_not_run(*a, **k):
         raise AssertionError("called Groq without a key")
     assert contextual_reply(CLAIM, "x", must_not_run) is None
+
+
+def test_lookalike_spaces_and_hyphens_do_not_fail_the_fact_checks():
+    text = GOOD.replace("USD 48,750.00", "USD\u00a048,750.00").replace("INV-77", "INV\u201177")
+    assert not wording_is_safe(text, FACTS)
+    assert wording_is_safe(reword(FACTS, "k", fake_post(text)), FACTS)

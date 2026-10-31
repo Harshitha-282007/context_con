@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import unicodedata
 from typing import Optional
 
 import requests
@@ -74,6 +75,12 @@ def wording_is_safe(text: str, facts: dict) -> bool:
     return all(number in known for number in re.findall(r"\d[\d,.]*\d|\d", text))
 
 
+def _normalize(text: str) -> str:
+    """Models often use lookalike spaces and hyphens, which would fail exact fact checks."""
+    text = unicodedata.normalize("NFKC", text)
+    return re.sub("[\u2010\u2011\u2012]", "-", text).strip()
+
+
 def _clean(text: Optional[str], limit: int = 100) -> Optional[str]:
     """Packet text reduced to plain words before it can reach a prompt."""
     cleaned = " ".join(re.sub(r"https?://\S+|www\.\S+|\S+@\S+|[^\w .,:/&'\-–]", " ", text or "").split())
@@ -134,7 +141,7 @@ def reword(facts: dict, key: str, post=requests.post, system: str = SYSTEM) -> O
         )
         if response.status_code != 200:
             return None
-        return (response.json()["choices"][0]["message"]["content"] or "").strip()
+        return _normalize(response.json()["choices"][0]["message"]["content"] or "")
     except (requests.RequestException, ValueError, KeyError, IndexError, TypeError):
         return None
 
