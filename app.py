@@ -18,7 +18,10 @@ from clearance.handoff import ACTIONS, apply_action, write_case
 from clearance.intake import read_upload
 from clearance.live import SyncReport, sync_and_scan
 from clearance.mailbox import MailItem, item_from_text, mailbox_settings, sample_inbox
-from clearance.outbound import record_sent, send_allowlist, send_mail, sent_log, smtp_settings
+from clearance.outbound import (
+    detected_sender, needs_hold_acknowledgement, record_sent, recipients_for, reply_to_sender_enabled,
+    send_allowlist, send_mail, sent_log, smtp_settings,
+)
 from clearance.pipeline import run_case
 from clearance.report import mask, offline_warning, person_names, to_markdown
 from clearance.schemas import CaseResult
@@ -210,29 +213,38 @@ def reply_body(result: CaseResult | None) -> str:
 
 
 def render_compose(item: MailItem, result: CaseResult | None) -> None:
-    allowed = send_allowlist()
+    reply_enabled = reply_to_sender_enabled()
+    sender = detected_sender(item.origin, item.text) if reply_enabled else None
+    allowed = recipients_for(item.origin, item.text, send_allowlist(), reply_enabled)
+    outcome_now = result.decision.outcome if result else None
     log = sent_log(store, item.id)
     with st.expander(f"Reply or send from Clearance ({len(log)} sent)" if log else "Reply or send from Clearance"):
         if not allowed:
-            st.caption("Sending is off. To turn it on, add SEND_ALLOWLIST with your own test addresses to .env and restart. The event rules do not allow messages to real outside people.")
+            st.caption("Sending is off for this email. To turn it on, add SEND_TO_SENDER=true or SEND_ALLOWLIST to .env and restart. Replies to senders only work for live mailbox mail. The event rules do not allow messages to real outside people.")
             return
-        if result and result.decision.outcome != "APPROVE":
-            st.warning("This request is on hold. Do not reply to the original sender: use your own vendor records to reach the vendor. Only addresses in your allowlist can be chosen here.")
+        if sender and outcome_now != "APPROVE":
+            st.warning("This sender is not verified. If this is fraud, a reply tells them they were noticed. To confirm a request, use the phone number in your own vendor records.")
         with st.form(f"compose-{item.id}", clear_on_submit=False):
-            to = st.selectbox("To (from SEND_ALLOWLIST)", allowed)
+            labels = lambda a: (mask(a, []) if masked else a) + (" (sender)" if a == sender else "")
+            to = st.selectbox("To", allowed, format_func=labels)
             subject = st.text_input("Subject", value=f"Re: {plain(item.subject, 120)}")
             body = st.text_area("Message", value=reply_body(result), height=220)
             confirmed = st.checkbox("I checked the recipient and message, and I am sending this myself.")
+            held_ok = True
+            if sender and outcome_now != "APPROVE":
+                held_ok = st.checkbox("If sending to the sender: I understand this person has not been verified.")
             sent = st.form_submit_button("Send email", type="primary")
         if sent:
-            outcome = send_mail(smtp_settings(), allowed, to, subject, body, confirmed)
+            ready = confirmed and (held_ok or not needs_hold_acknowledgement(to, sender, outcome_now))
+            outcome = send_mail(smtp_settings(), allowed, to, subject, body, ready)
             if outcome.ok:
                 record_sent(store, item.id, to, subject)
-                st.success(f"Sent to {to}.")
+                st.success(f"Sent to {mask(to, []) if masked else to}.")
             else:
                 st.error(outcome.error)
         for entry in sent_log(store, item.id):
-            st.caption(f"Sent to {entry['to']} at {entry['at'][:16].replace('T', ' ')} UTC: {plain(entry['subject'], 80)}")
+            shown = mask(entry["to"], []) if masked else entry["to"]
+            st.caption(f"Sent to {shown} at {entry['at'][:16].replace('T', ' ')} UTC: {plain(entry['subject'], 80)}")
 
 
 def render_result(result: CaseResult) -> None:

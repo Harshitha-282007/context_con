@@ -181,7 +181,7 @@ def test_private_runs_replay_public_data_but_write_privately(tmp_path):
 
 @pytest.fixture
 def app(monkeypatch, tmp_path):
-    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY", "SEND_ALLOWLIST"):
+    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY", "SEND_ALLOWLIST", "SEND_TO_SENDER"):
         monkeypatch.delenv(key, raising=False)
     monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
     return AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()

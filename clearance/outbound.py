@@ -1,7 +1,8 @@
 """Person-initiated email from the portal. The agent itself never calls this.
 
-Sending is off unless SEND_ALLOWLIST lists recipients, and a recipient outside that list is
-refused here rather than only hidden in the UI. Each send needs a person to confirm it.
+Sending is off unless SEND_ALLOWLIST lists recipients or SEND_TO_SENDER=true allows replies to
+the sender of real mailbox mail. Any other recipient is refused here rather than only hidden in
+the UI. Each send needs a person to confirm it, and a held email needs a second confirmation.
 """
 from __future__ import annotations
 
@@ -14,6 +15,7 @@ from datetime import datetime, timezone
 from email.message import EmailMessage
 from typing import Optional
 
+from .extract import extract_regex
 from .store import Store
 
 ADDRESS = re.compile(r"[^@\s,;<>]+@[^@\s,;<>]+\.[^@\s,;<>]+")
@@ -31,6 +33,29 @@ def send_allowlist() -> list[str]:
     return [a.strip().lower() for a in raw.split(",") if ADDRESS.fullmatch(a.strip())]
 
 
+def reply_to_sender_enabled() -> bool:
+    return (os.environ.get("SEND_TO_SENDER") or "").strip().lower() == "true"
+
+
+def detected_sender(origin: str, text: str) -> Optional[str]:
+    """The sender of real mailbox mail only. Samples, uploads and pasted text can name anyone."""
+    if origin != "mailbox":
+        return None
+    email = extract_regex(text).sender_email
+    return email if email and ADDRESS.fullmatch(email) else None
+
+
+def recipients_for(origin: str, text: str, allowlist: list[str], reply_enabled: bool) -> list[str]:
+    """Who this email may be answered to, with the detected sender first."""
+    sender = detected_sender(origin, text) if reply_enabled else None
+    return ([sender] if sender else []) + [a for a in allowlist if a != sender]
+
+
+def needs_hold_acknowledgement(to: str, sender: Optional[str], outcome: Optional[str]) -> bool:
+    """Writing to the sender of unchecked or held mail needs its own confirmation."""
+    return bool(sender) and to == sender and outcome != "APPROVE"
+
+
 def smtp_settings() -> Optional[dict]:
     user, password = os.environ.get("IMAP_USER"), os.environ.get("IMAP_PASSWORD")
     if not (user and password):
@@ -44,7 +69,7 @@ def send_mail(settings: Optional[dict], allowlist: list[str], to: str, subject: 
     if not confirmed:
         return SendResult(False, "Confirm the recipient and message before sending.")
     if not ADDRESS.fullmatch(to or "") or to.lower() not in allowlist:
-        return SendResult(False, "This recipient is not in SEND_ALLOWLIST, so the message was not sent.")
+        return SendResult(False, "This recipient is not allowed for this email, so the message was not sent.")
     if not subject.strip() or not body.strip():
         return SendResult(False, "Add a subject and a message.")
     if len(body) > MAX_BODY_CHARS:

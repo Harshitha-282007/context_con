@@ -51,13 +51,15 @@ To feed it company mail, use a dedicated mailbox and forward to it. In Microsoft
 
 ### Send from the portal (off by default)
 
-The agent never sends anything. A person can send an email from the **Reply or send from Clearance** panel, but only to addresses listed here, and only after confirming each message:
+The agent never sends anything. A person can send an email from the **Reply or send from Clearance** panel, but only to allowed addresses, and only after confirming each message:
 
 ```
 SEND_ALLOWLIST=your.test.address@example.com,second.test@example.com
 ```
 
-Leave it out to keep sending off, which is what the event rules require for real outside people. Mail goes out through Gmail's SMTP server using the same app password; set `SMTP_HOST` and `SMTP_PORT` for other providers. Do not reply to the sender of a held request: reach the vendor through your own records. Replies are new messages with a `Re:` subject, so they may not join the original thread.
+To allow replies to whoever emailed the mailbox, add `SEND_TO_SENDER=true`. The sender is read from the email's `From` header, and is only added for live mailbox mail, for that one email. If the email was not approved, sending to its sender needs a second confirmation, because a reply tells a fraudster they were noticed.
+
+Leave both out to keep sending off, which is what the event rules require for real outside people. Mail goes out through Gmail's SMTP server using the same app password; set `SMTP_HOST` and `SMTP_PORT` for other providers. To verify a held request, call the vendor using your own records instead of replying. Replies are new messages with a `Re:` subject, so they may not join the original thread.
 
 ### Storage
 
