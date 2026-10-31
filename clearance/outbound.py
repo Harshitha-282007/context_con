@@ -86,6 +86,8 @@ def send_mail(settings: Optional[dict], allowlist: list[str], to: str, subject: 
             server.send_message(msg, to_addrs=[to])
     except smtplib.SMTPAuthenticationError:
         return SendResult(False, "The mail server refused the login. Check IMAP_USER and IMAP_PASSWORD.")
+    except TimeoutError:
+        return SendResult(False, "Could not reach the mail server in time. This network may block outgoing mail, so try another network such as a phone hotspot.")
     except (smtplib.SMTPException, OSError):  # Server text can echo account details, so it is not shown.
         return SendResult(False, "The message could not be sent. Check your connection and SMTP settings.")
     return SendResult(True)

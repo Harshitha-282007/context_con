@@ -157,3 +157,9 @@ def test_reply_to_sender_is_off_by_default(monkeypatch):
     assert not reply_to_sender_enabled()
     monkeypatch.setenv("SEND_TO_SENDER", "true")
     assert reply_to_sender_enabled()
+
+
+def test_blocked_network_says_so():
+    FakeSmtp.fail = TimeoutError("timed out")
+    result = send()
+    assert not result.ok and "network" in result.error and FakeSmtp.sent == []
