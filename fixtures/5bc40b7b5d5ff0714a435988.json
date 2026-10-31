@@ -1,0 +1,20 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "gust0.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "gust0.com",
+   "matches": []
+  }
+ ],
+ "retrieved_at": "2026-10-31T06:49:13.263226+00:00",
+ "status": 200
+}

@@ -8,7 +8,7 @@ from .crustdata import ApiResult, CrustdataClient, describe_error
 from .fieldmap import company_candidate, match_rows
 from .ledger import Ledger
 from .rules import sender_domain
-from .schemas import Claim, CompanyCandidate, Resolution
+from .schemas import Claim, CompanyCandidate, Resolution, SenderDomainCheck
 
 SUFFIXES = {"inc", "incorporated", "llc", "ltd", "limited", "corp", "corporation", "co", "company", "pvt", "private", "gmbh", "plc", "llp", "pte", "sa", "bv"}
 
@@ -88,6 +88,25 @@ def resolve_vendor(client: CrustdataClient, ledger: Ledger, claim: Claim, policy
     if not pool:
         return Resolution(status="NOT_FOUND", reason=f"no close match for {claim.vendor_name!r} in the graph", candidates=[], evidence_ids=evidence)
     return Resolution(status="AMBIGUOUS", reason=f"{len(pool)} plausible match(es) for {claim.vendor_name!r}, none certain; none picked", candidates=pool[:5], evidence_ids=evidence)
+
+
+def check_sender_domain(client: CrustdataClient, ledger: Ledger, claim: Claim, known_domains: list[str], policy: dict) -> SenderDomainCheck | None:
+    """Independent evidence for R1: who does the graph say owns the sender's domain?
+
+    Returns None when there is nothing to ask or the lookup failed, so a failure claims nothing.
+    """
+    domain = sender_domain(claim.sender_email)
+    known = [d.lower() for d in known_domains]
+    if not domain or domain in policy["r5"]["free_mail_domains"] or any(domain == d or domain.endswith("." + d) for d in known):
+        return None
+    result = client.post("/company/identify", {"domains": [domain], "exact_match": True})
+    ev = _record(ledger, result, domain)
+    if not result.ok and result.status != 404:
+        return None
+    cands = [company_candidate(m) for m in match_rows(result.data)]
+    owner = cands[0] if len(cands) == 1 else None
+    return SenderDomainCheck(domain=domain, company_id=owner.crustdata_company_id if owner else None,
+                             company_name=owner.name if owner else None, evidence_ids=[ev])
 
 
 def _with_evidence(cands: list[CompanyCandidate], evidence_id: str) -> list[CompanyCandidate]:

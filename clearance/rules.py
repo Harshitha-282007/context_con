@@ -10,7 +10,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Optional
 
-from .schemas import Claim, CompanyProfile, Finding, PersonCheck, Resolution
+from .schemas import Claim, CompanyProfile, Finding, PersonCheck, Resolution, SenderDomainCheck
 
 
 @dataclass
@@ -21,6 +21,7 @@ class RuleContext:
     company: Optional[CompanyProfile] = None
     person_check: Optional[PersonCheck] = None
     claim_evidence: dict[str, str] = field(default_factory=dict)  # Claim field -> evidence id
+    sender_domain_check: Optional[SenderDomainCheck] = None
 
 
 # --- helpers ---
@@ -143,12 +144,27 @@ def r1_domain(ctx: RuleContext, policy: dict) -> Finding:
     known = {primary, *(d.lower() for d in ctx.company.all_domains)}
     if any(sender == d or sender.endswith("." + d) for d in known):
         return _pass("R1", f"Sender domain {sender} belongs to the vendor ({primary}).", ev)
+    check = ctx.sender_domain_check
+    if check and check.domain == sender and check.company_id is not None and check.company_id == ctx.company.crustdata_company_id:
+        return _pass("R1", f"The graph lists {sender} under the vendor, alongside {primary}.", _ids(ev, check.evidence_ids))
     close = (
         edit_distance(sender, primary) <= policy["r1"]["max_edit_distance"]
         or homoglyph_skeleton(sender) == homoglyph_skeleton(primary)
     )
     kind = "is a lookalike of" if close else "differs from"
-    return _flag("R1", "hard", f"Sender domain {sender} {kind} the vendor's primary domain {primary}.", ev)
+    owner = ""
+    if check and check.domain == sender:
+        ev = _ids(ev, check.evidence_ids)
+        owner = f" The graph lists it under {check.company_name}, not the vendor." if check.company_name else " The graph lists no company at that domain."
+    return _flag("R1", "hard", f"Sender domain {sender} {kind} the vendor's primary domain {primary}.{owner}", ev)
+
+
+def _former_note(pc: PersonCheck) -> str:
+    if not (pc.former_role or pc.former_until):
+        return ""
+    role = f" as {pc.former_role}" if pc.former_role else ""
+    until = f" until {pc.former_until:%b %Y}" if pc.former_until else ""
+    return f" A person of this name is listed as having worked there{role}{until}; profile data can lag."
 
 
 def r2_person_found(ctx: RuleContext, policy: dict) -> Finding:
@@ -165,9 +181,10 @@ def r2_person_found(ctx: RuleContext, policy: dict) -> Finding:
         return _unverifiable("R2", "Sender not found, but a lookup failed or did not run, so absence proves nothing.", ev)
     adequate, why = coverage_adequate(ctx, policy)
     if not adequate:
-        return _unverifiable("R2", f"Sender not found, but coverage is too thin to conclude anything: {why}.", ev)
+        return _unverifiable("R2", f"Sender not found, but coverage is too thin to conclude anything: {why}.{_former_note(pc)}", ev)
+    former = _former_note(pc)
     how = "by email or name" if pc.email_lookup_ran else "by full name or surname (email lookup is not available on this API key)"
-    return _flag("R2", "hard", f"Sender not found at this company {how}; {why}.", _ids(ev, _company_ev(ctx, "headcount")))
+    return _flag("R2", "hard", f"Sender not found at this company {how}; {why}.{former}", _ids(ev, _company_ev(ctx, "headcount")))
 
 
 def r3_recent_start(ctx: RuleContext, policy: dict) -> Finding:

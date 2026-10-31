@@ -1,0 +1,20 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "zyphorqa-dynamics.example"
+  ],
+  "exact_match": true
+ },
+ "response": {
+  "error": {
+   "message": "Invalid company domains: zyphorqa-dynamics.example",
+   "metadata": [],
+   "type": "invalid_request"
+  }
+ },
+ "retrieved_at": "2026-10-31T06:50:19.481792+00:00",
+ "status": 400
+}

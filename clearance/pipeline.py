@@ -13,7 +13,7 @@ from .fieldmap import COMPANY_ENRICH_FIELDS, COMPANY_PATHS, company_profile, mat
 from .ledger import Ledger
 from .outreach import compose, verify_draft, write_outbox
 from .people import find_contacts, verify_sender
-from .resolve import resolve_vendor
+from .resolve import check_sender_domain, resolve_vendor
 from .rules import RuleContext, coverage_adequate, run_rules
 from .schemas import CaseResult, Claim, CompanyProfile, Finding, PersonProfile, Resolution, Statement
 from .verify import cite_or_drop
@@ -152,15 +152,19 @@ def run_case(
     result.resolution = resolution
     emit("resolve", f"{resolution.status}: {resolution.reason}")
 
-    company, person_check = None, None
+    company, person_check, domain_check = None, None, None
     if resolution.status == "RESOLVED":
         company = _enrich(client, ledger, resolution)
         emit("enrich", f"{company.name}: headcount={company.headcount} visitors={company.monthly_visitors} revenue_upper={company.revenue_upper_usd}")
+        known = [d for d in [company.primary_domain, *company.all_domains] if d]
+        domain_check = check_sender_domain(client, ledger, claim, known, policy)
+        if domain_check:
+            emit("domain", f"{domain_check.domain} in the graph: {domain_check.company_name or 'no company'}")
         person_check = verify_sender(client, ledger, claim, company.crustdata_company_id)
         emit("person", f"sender {person_check.status}; graph lists {person_check.employees_found} current employees")
     result.company, result.person_check = company, person_check
 
-    ctx = RuleContext(claim=claim, as_of=as_of, resolution=resolution, company=company, person_check=person_check, claim_evidence=claim_ev)
+    ctx = RuleContext(claim=claim, as_of=as_of, resolution=resolution, company=company, person_check=person_check, claim_evidence=claim_ev, sender_domain_check=domain_check)
     findings = run_rules(ctx, policy)
     _ensure_cited(findings, ledger)
     result.findings = findings

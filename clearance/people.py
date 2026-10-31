@@ -7,8 +7,8 @@ from typing import Optional
 
 from .crustdata import ApiResult, CrustdataClient, describe_error
 from .fieldmap import (
-    FILTER_CURRENT_COMPANY, FILTER_CURRENT_TITLE, FILTER_NAME, PERSON_PATHS, PERSON_SEARCH_FIELDS,
-    match_rows, person_profile, search_profiles, search_total,
+    FILTER_CURRENT_COMPANY, FILTER_CURRENT_TITLE, FILTER_NAME, FILTER_PAST_COMPANY, PERSON_PATHS, PERSON_SEARCH_FIELDS,
+    match_rows, past_role, person_profile, search_profiles, search_total,
 )
 from .ledger import Ledger
 from .rules import edit_distance
@@ -89,6 +89,30 @@ def _email_lookup(client: CrustdataClient, ledger: Ledger, email: str) -> tuple[
     return True, False, name, ev
 
 
+def _former_role(client: CrustdataClient, ledger: Ledger, name: str, surname: str, company_id: int):
+    """Did this person work here before? Returns (title, end_date, evidence_id).
+
+    A failed or ambiguous search claims nothing: the sender simply stays not found.
+    """
+    result = client.post("/person/search", {
+        "filters": {"op": "and", "conditions": [
+            {"field": FILTER_PAST_COMPANY, "type": "=", "value": company_id},
+            {"field": FILTER_NAME, "type": "(.)", "value": surname},
+        ]},
+        "limit": 5,
+        "fields": ["basic_profile.name", "experience.employment_details.past"],
+    })
+    ev = _record_search(ledger, result, company_id, "sender past-employer search")
+    hits = [p for p in search_profiles(result.data) if names_match(name, person_profile(p).name)] if result.ok else []
+    if len(hits) != 1:
+        return None, None, ev
+    title, until = past_role(hits[0], company_id)
+    if title or until:
+        ev = ledger.add({"title": title, "until": until}, endpoint="/person/search", entity_id=company_id,
+                        field_path="experience.employment_details.past[]")
+    return title, until, ev
+
+
 def verify_sender(client: CrustdataClient, ledger: Ledger, claim: Claim, company_id: int) -> PersonCheck:
     employees, count_ev = count_employees(client, ledger, company_id)
     evidence = [count_ev] if count_ev else []
@@ -119,7 +143,13 @@ def verify_sender(client: CrustdataClient, ledger: Ledger, claim: Claim, company
 
     base["name_search_ran"] = True
     if not hits:
-        return PersonCheck(status="NOT_FOUND", reason="no current employee matches the sender's name", evidence_ids=evidence, **base)
+        title, until, ev = _former_role(client, ledger, name, tokens[-1], company_id) if len(tokens) > 1 else (None, None, None)
+        if ev:
+            evidence.append(ev)
+        reason = "no current employee matches the sender's name"
+        if title or until:
+            reason += "; a past role at this company matches it"
+        return PersonCheck(status="NOT_FOUND", reason=reason, former_role=title, former_until=until, evidence_ids=evidence, **base)
     people = [person_profile(p, company_id) for p in hits]
     if len(people) > 1 or len(tokens) == 1:
         return PersonCheck(status="AMBIGUOUS", reason=f"{len(people)} plausible people match; none picked", candidates=people[:5], evidence_ids=evidence, **base)

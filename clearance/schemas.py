@@ -96,6 +96,13 @@ class PersonProfile(BaseModel):
     evidence: dict[str, str] = Field(default_factory=dict)
 
 
+class SenderDomainCheck(BaseModel):
+    domain: str
+    company_id: Optional[int] = None
+    company_name: Optional[str] = None
+    evidence_ids: list[str] = Field(default_factory=list)
+
+
 class PersonCheck(BaseModel):
     status: Literal["FOUND", "NOT_FOUND", "AMBIGUOUS", "UNVERIFIABLE"]
     reason: str = ""
@@ -105,6 +112,8 @@ class PersonCheck(BaseModel):
     person: Optional[PersonProfile] = None
     candidates: list[PersonProfile] = Field(default_factory=list)
     employees_found: Optional[int] = None  # graph count of current employees at the vendor
+    former_role: Optional[str] = None  # set when the only match is a past role at the vendor
+    former_until: Optional[date] = None
     evidence_ids: list[str] = Field(default_factory=list)
 
 

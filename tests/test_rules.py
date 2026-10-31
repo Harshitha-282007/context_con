@@ -7,7 +7,7 @@ from clearance.config import load_policy
 from clearance.decide import decide
 from clearance.ledger import Ledger, verify_chain
 from clearance.rules import RuleContext, coverage_adequate, r1_domain, r2_person_found, r6_amount_vs_size, run_rules
-from clearance.schemas import Claim, CompanyCandidate, CompanyProfile, Finding, PersonCheck, PersonProfile, Resolution
+from clearance.schemas import Claim, CompanyCandidate, CompanyProfile, Finding, PersonCheck, PersonProfile, Resolution, SenderDomainCheck
 
 POLICY = load_policy()
 AS_OF = date(2026, 10, 31)
@@ -177,3 +177,36 @@ def test_ledger_chain_detects_tampering():
     assert verify_chain(led.records)
     led.records[0].value = {"a": 999}
     assert not verify_chain(led.records)
+
+
+def domain_check(**kw):
+    return SenderDomainCheck(domain="acrne.com", evidence_ids=["E9"], **kw)
+
+
+def test_r1_says_when_graph_has_no_company_at_sender_domain():
+    f = r1_domain(ctx(claim=claim(sender_email="ana@acrne.com"), sender_domain_check=domain_check()), POLICY)
+    assert f.severity == "hard" and "no company at that domain" in f.message and "E9" in f.evidence_ids
+
+
+def test_r1_names_a_different_owner_of_sender_domain():
+    f = r1_domain(ctx(claim=claim(sender_email="ana@acrne.com"), sender_domain_check=domain_check(company_id=2, company_name="Other Co")), POLICY)
+    assert f.severity == "hard" and "Other Co" in f.message
+
+
+def test_r1_passes_when_graph_maps_sender_domain_to_the_vendor():
+    f = r1_domain(ctx(claim=claim(sender_email="ana@acrne.com"), sender_domain_check=domain_check(company_id=1, company_name="Acme")), POLICY)
+    assert f.status == "PASS"
+
+
+def test_r2_mentions_a_former_role_without_changing_the_outcome():
+    pc = not_found()
+    pc.former_role, pc.former_until = "Accountant", date(2024, 3, 1)
+    f = r2_person_found(ctx(person_check=pc), POLICY)
+    assert f.status == "FLAG" and f.severity == "hard" and "Accountant" in f.message and "can lag" in f.message
+
+
+def test_former_role_does_not_bypass_the_coverage_gate():
+    pc = not_found(employees=1)
+    pc.former_role = "Accountant"
+    f = r2_person_found(ctx(person_check=pc), POLICY)
+    assert f.status == "UNVERIFIABLE" and "Accountant" in f.message

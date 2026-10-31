@@ -1,0 +1,36 @@
+{
+ "credits": 0.0,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "experience.employment_details.past"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.past.company_id",
+     "type": "=",
+     "value": 5853
+    },
+    {
+     "field": "basic_profile.name",
+     "type": "(.)",
+     "value": "madeup"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": null,
+  "profiles": [],
+  "remarks": [],
+  "total_count": 0,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T06:49:16.284166+00:00",
+ "status": 200
+}

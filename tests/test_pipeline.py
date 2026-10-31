@@ -39,6 +39,7 @@ def test_demo_cases_offline(case, outcome, tmp_path):
     assert all(f.evidence_ids and set(f.evidence_ids) <= ids for f in r.findings)
     assert all(s.evidence_ids and set(s.evidence_ids) <= ids for s in r.statements)
     assert not r.dropped_statements
+    assert r.offline_misses == 0
 
 
 def test_injection_changes_nothing(tmp_path):
@@ -127,6 +128,7 @@ def test_legal_suffix_is_stripped_for_name_lookup():
 def test_extra_packets_offline(name, outcome, tmp_path):
     r = replay((ROOT / "packets" / f"{name}.txt").read_text(), tmp_path)
     assert r.decision.outcome == outcome and r.chain_ok and not r.dropped_statements
+    assert r.offline_misses == 0
 
 
 def test_spoofed_real_name_is_caught_by_domain(tmp_path):
@@ -155,3 +157,14 @@ def test_complete_replay_has_no_offline_warning(tmp_path):
     r = replay(packet("b"), tmp_path)
     assert r.offline_misses == 0 and r.contact_search_error is None
     assert "Incomplete offline run" not in to_markdown(r)
+
+
+def test_past_role_uses_the_latest_role_at_this_company():
+    from clearance.fieldmap import past_role
+    profile = {"experience": {"employment_details": {"past": [
+        {"crustdata_company_id": 1, "title": "Analyst", "end_date": "2019-01-01T00:00:00+00:00"},
+        {"crustdata_company_id": 1, "title": "Manager", "end_date": "2022-06-01T00:00:00+00:00"},
+        {"crustdata_company_id": 2, "title": "Other", "end_date": "2025-01-01T00:00:00+00:00"},
+    ]}}}
+    assert past_role(profile, 1) == ("Manager", date(2022, 6, 1))
+    assert past_role({}, 1) == (None, None)

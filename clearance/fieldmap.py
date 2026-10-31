@@ -35,6 +35,7 @@ PERSON_SEARCH_FIELDS = [
 ]
 COMPANY_ENRICH_FIELDS = ["basic_info", "headcount", "revenue", "web_traffic", "locations"]
 FILTER_CURRENT_COMPANY = "experience.employment_details.current.company_id"
+FILTER_PAST_COMPANY = "experience.employment_details.past.company_id"
 FILTER_CURRENT_TITLE = "experience.employment_details.current.title"
 FILTER_NAME = "basic_profile.name"
 
@@ -151,6 +152,16 @@ def person_profile(profile: Any, company_id: Optional[int] = None) -> PersonProf
         business_email_verified=verified if isinstance(verified, bool) else None,
         profile_url=_text(dig(profile, "social_handles", "professional_network_identifier", "profile_url")),
     )
+
+
+def past_role(profile: Any, company_id: int) -> tuple[Optional[str], Optional[date]]:
+    """The most recent past role at this company, as (title, end date)."""
+    roles = dig(profile, "experience", "employment_details", "past")
+    roles = [r for r in roles if isinstance(r, dict) and r.get("crustdata_company_id") == company_id] if isinstance(roles, list) else []
+    if not roles:
+        return None, None
+    latest = max(roles, key=lambda r: _date(r.get("end_date")) or date.min)
+    return _text(latest.get("title")), _date(latest.get("end_date"))
 
 
 def search_profiles(data: Any) -> list[dict]:
