@@ -1,4 +1,4 @@
-"""Streamlit mailbox UI: python -m streamlit run app.py
+"""Streamlit mailbox UI: python -m streamlit run streamlit_app.py
 
 All mail content is untrusted, so it is shown as plain text and links are never clickable.
 Runs from this UI save responses to the git-ignored private folder, never to public fixtures.

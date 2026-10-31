@@ -51,4 +51,4 @@ def test_vercel_only_serves_the_static_site():
     config = json.loads((ROOT / "vercel.json").read_text())
     assert config["builds"] == [{"src": "site/**", "use": "@vercel/static"}]
     ignored = (ROOT / ".vercelignore").read_text()
-    assert "app.py" in ignored and "fixtures/" in ignored
+    assert "streamlit_app.py" in ignored and "fixtures/" in ignored

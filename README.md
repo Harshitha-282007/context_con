@@ -35,7 +35,7 @@ No keys are needed to try it. Offline replay uses saved responses and spends no 
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-.venv/bin/python -m streamlit run app.py
+.venv/bin/python -m streamlit run streamlit_app.py
 ```
 
 Then open <http://localhost:8501> and press **Scan**. The inbox fills with green, yellow and red verdicts.
@@ -138,7 +138,7 @@ Contact details in the email are never trusted for verification. Callback contac
 
 ```mermaid
 flowchart TB
-    UI["app.py<br/>Streamlit mailbox"]
+    UI["streamlit_app.py<br/>Streamlit mailbox"]
     CLI["cli.py"]
 
     UI --> PIPE
@@ -503,7 +503,7 @@ Everything goes in `.env`, which Git ignores. Only the Crustdata key is needed f
 ## Project layout
 
 ```
-├── app.py                  Streamlit mailbox UI
+├── streamlit_app.py                  Streamlit mailbox UI
 ├── site/index.html         Static demo for Vercel, built by scripts/build_site.py
 ├── cli.py                  Command line
 ├── policy.yaml             Every threshold and route

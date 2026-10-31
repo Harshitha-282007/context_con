@@ -1,5 +1,5 @@
 # Vercel hosts only the static demo in site/. It cannot run the Streamlit app.
-app.py
+streamlit_app.py
 cli.py
 clearance/
 scripts/

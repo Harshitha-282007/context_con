@@ -184,7 +184,7 @@ def app(monkeypatch, tmp_path):
     for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY", "SEND_ALLOWLIST", "SEND_TO_SENDER"):
         monkeypatch.delenv(key, raising=False)
     monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
-    return AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
+    return AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=60).run()
 
 
 def label_button(app, start):
@@ -207,7 +207,7 @@ def test_app_scans_the_sample_inbox_without_credits(app):
 
 def test_verdicts_survive_a_new_session(app):
     label_button(app, "Scan").click().run()
-    again = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
+    again = AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=60).run()
     labels = [b.label for b in again.button if b.key and b.key.startswith("mail-")]
     assert not again.exception and all(l[0] != "⚪" for l in labels)
 
@@ -241,7 +241,7 @@ def test_simulated_send_appears_with_a_test_address(monkeypatch, tmp_path):
         monkeypatch.delenv(key, raising=False)
     monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
     monkeypatch.setenv("SEND_ALLOWLIST", "test@x.example")
-    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
+    app = AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=60).run()
     open_hero_email(app)
     assert not app.exception
     assert any(b.label == "Send verification (simulated)" for b in app.button)
