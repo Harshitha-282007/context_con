@@ -305,3 +305,23 @@ def test_raw_source_view_opens_and_masks_people(app):
     assert not app.exception
     shown = " ".join(c.value for c in app.code)
     assert '"request"' in shown or "/person/search" in shown
+
+
+@pytest.mark.parametrize("masking", [True, False])
+@pytest.mark.parametrize("allowlist", ["", "test@x.example"])
+def test_every_email_renders_in_every_mode(monkeypatch, tmp_path, masking, allowlist):
+    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY"):
+        monkeypatch.delenv(key, raising=False)
+    monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SEND_ALLOWLIST", allowlist)
+    monkeypatch.setenv("SEND_TO_SENDER", "true")
+    app = AppTest.from_file(str(ROOT / "streamlit_app.py"), default_timeout=60).run()
+    next(t for t in app.toggle if t.label == "Mask people's names").set_value(masking).run()
+    assert not app.exception
+    label_button(app, "Scan").click().run()
+    assert not app.exception
+    keys = [b.key for b in app.button if b.key and b.key.startswith("mail-")]
+    assert len(keys) == 12
+    for key in keys:
+        next(b for b in app.button if b.key == key).click().run()
+        assert not app.exception, key

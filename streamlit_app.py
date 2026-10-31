@@ -295,7 +295,7 @@ def render_simulated_send(draft, names: list[str]) -> None:
     if not allowed:
         st.caption("Add SEND_ALLOWLIST with your test address to .env and restart to deliver this draft to yourself. No vendor is contacted.")
         return
-    to = st.selectbox("Test address", allowed, key=f"sim-to-{draft.id}", format_func=(lambda a: mask(a, [])) if masked else None)
+    to = st.selectbox("Test address", allowed, key=f"sim-to-{draft.id}", format_func=(lambda a: mask(a, [])) if masked else str)
     st.caption("Goes only to this test address, labelled as simulated. The vendor contact is not emailed, because the event rules do not allow it and this key has no contact addresses.")
     if st.button("Send verification (simulated)", key=f"sim-{draft.id}"):
         subject, body = simulated_verification(draft, (lambda s: mask(s, names)) if masked else (lambda s: s))
