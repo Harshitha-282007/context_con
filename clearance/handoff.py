@@ -8,6 +8,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -99,19 +100,39 @@ def _body_text(case: FinanceCase) -> str:
     return "\n".join(parts)
 
 
-def apply_action(case: FinanceCase, action: str) -> FinanceCase:
-    """A person's simulated decision. Anything short of confirmation keeps the payment blocked."""
+def _same_person(a: str, b: str) -> bool:
+    return " ".join(a.split()).casefold() == " ".join(b.split()).casefold()
+
+
+def apply_action(case: FinanceCase, action: str, approver: str) -> FinanceCase:
+    """A person's simulated decision. Anything short of enough distinct approvals keeps the payment blocked.
+
+    Names are typed, not logged in, so this demonstrates the rule without proving identity.
+    Raises ValueError for anything the rule refuses, leaving the case unchanged.
+    """
     if action not in ACTIONS:
         raise ValueError(f"Unknown action: {action}")
+    name = " ".join((approver or "").split())[:80]
+    if not name:
+        raise ValueError("Enter your name before recording an action.")
+    if case.closed:
+        raise ValueError("This case is closed, so it cannot be changed.")
+    confirmed = [a["name"] for a in case.approvals if a["action"] == "Confirmed legitimate"]
+    if action == "Confirmed legitimate" and any(_same_person(name, n) for n in confirmed):
+        raise ValueError("You already approved this. A different person must give the second approval.")
+    case.approvals.append({"name": name, "action": action, "at": datetime.now(timezone.utc).isoformat()})
     case.resolution = action
     if action == "Confirmed fraud":
         case.payment_status = "BLOCKED, reported to security (simulated)"
+        case.closed = True
     elif action == "Can't reach vendor":
         case.payment_status = "BLOCKED, callback still needed (simulated)"
-    elif case.approvals_needed > 1:
-        case.payment_status = "BLOCKED, second approver needed (simulated)"
+    elif len(confirmed) + 1 >= case.approvals_needed:
+        who = "two approvers" if case.approvals_needed > 1 else "AP"
+        case.payment_status = f"RELEASED by {who} after callback (simulated)"
+        case.closed = True
     else:
-        case.payment_status = "RELEASED by AP after callback (simulated)"
+        case.payment_status = "BLOCKED, second approver needed (simulated)"
     return case
 
 
@@ -130,8 +151,8 @@ def to_markdown(case: FinanceCase) -> str:
         lines.append(f"- **Reference:** {case.reference}")
     if case.bank_change:
         lines.append(f"- **Bank change requested:** yes{', account ' + case.account if case.account else ''}")
-    if case.resolution:
-        lines.append(f"- **Recorded action:** {case.resolution}")
+    for entry in case.approvals:
+        lines.append(f"- **Recorded:** {entry['action']}, by {entry['name']} (typed name), {entry['at'][:16].replace('T', ' ')} UTC")
     if case.data_incomplete:
         lines += ["", "**Data incomplete:** some lookups did not run, so this reflects missing data rather than a finding."]
     if case.flags:

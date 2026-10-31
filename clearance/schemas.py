@@ -169,6 +169,8 @@ class FinanceCase(BaseModel):
     data_incomplete: bool = False
     payment_status: str
     resolution: Optional[str] = None
+    approvals: list[dict[str, str]] = Field(default_factory=list)  # who recorded what, and when
+    closed: bool = False  # released or reported: no further action can change it
     checks: list[dict[str, Any]] = Field(default_factory=list)
 
 

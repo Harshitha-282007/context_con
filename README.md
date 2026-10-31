@@ -114,6 +114,8 @@ The LLM only extracts; rules decide. Every rule is a pure function returning `PA
 
 **Decision order:** ESCALATE on two independent hard flags, or one hard plus two medium. HOLD on one hard flag, an ambiguous vendor, too many unverifiable checks, or any other flag. APPROVE only with no flags and with R1, R2 and R6 all evaluated. All thresholds are in [policy.yaml](policy.yaml) and are illustrative defaults.
 
+**After a decision (simulated):** HOLD and ESCALATE create a finance case and mark the payment as blocked. A HOLD needs one person's confirmation to release. An ESCALATE needs two different people. Any "Confirmed fraud" closes the case and overrides earlier approvals. Names are typed rather than logged in, so this demonstrates the rule without proving identity.
+
 **Coverage gate:** "not found" only counts when the vendor resolved confidently, headcount is known, and the graph lists at least `min(5, 30% of headcount)` current employees. Otherwise R2 is UNVERIFIABLE.
 
 **Design choices to know about:**

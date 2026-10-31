@@ -300,16 +300,27 @@ def render_result(result: CaseResult) -> None:
                 st.markdown(f"- **{f.rule_id}** ({f.severity}): {show(f.message)}")
             if case.unverified:
                 st.caption(f"Could not verify: {', '.join(case.unverified)}")
-            st.write("Record the outcome of the callback:")
-            buttons = st.columns(len(ACTIONS))
-            for column, action in zip(buttons, ACTIONS):
-                if column.button(action, key=f"{case.id}-{action}", disabled=case.resolution is not None, width="stretch"):
-                    apply_action(case, action)
-                    write_case(case, OUTBOX_DIR)
-                    store.save_result(state["selected"], result)
-                    st.rerun()
-            if case.resolution:
-                st.info(f"Recorded: {case.resolution}. Payment: {case.payment_status}.")
+            for entry in case.approvals:
+                shown = mask(entry["name"], [entry["name"]]) if masked else entry["name"]
+                st.caption(f"{plain(entry['action'])}, by {plain(shown, 60)}, {entry['at'][:16].replace('T', ' ')} UTC")
+            if case.closed:
+                st.info(f"Closed. Payment: {case.payment_status}.")
+            else:
+                st.write("Record the outcome of the callback:")
+                approver = st.text_input("Your name", key=f"{case.id}-approver", help="Typed for this demo. Production would use a login, so names could not be faked.")
+                buttons = st.columns(len(ACTIONS))
+                for column, action in zip(buttons, ACTIONS):
+                    if column.button(action, key=f"{case.id}-{action}", width="stretch"):
+                        try:
+                            apply_action(case, action, approver)
+                        except ValueError as refused:
+                            st.error(str(refused))
+                        else:
+                            write_case(case, OUTBOX_DIR)
+                            store.save_result(state["selected"], result)
+                            st.rerun()
+                if case.resolution:
+                    st.info(f"Recorded: {case.resolution}. Payment: {case.payment_status}.")
         else:
             st.write("No finance handoff is needed: the payment continues, with this evidence attached (simulated).")
         cols = st.columns(4)

@@ -278,3 +278,19 @@ def test_old_answers_expire_for_live_checks(tmp_path):
     assert CrustdataClient(None, tmp_path).post("/person/search", {}).data == "saved"
     _saved(tmp_path, "/company/enrich", (now - timedelta(days=3)).isoformat())
     assert CrustdataClient(None, tmp_path, expire=True).post("/company/enrich", {}).data == "saved"
+
+
+def test_two_person_approval_in_the_app(app):
+    label_button(app, "Scan").click().run()
+    next(b for b in app.button if b.key and b.key.startswith("mail-") and "AL-5520" in b.label).click().run()
+    approver = next(t for t in app.text_input if t.label == "Your name")
+    approver.set_value("Asha").run()
+    label_button(app, "Confirmed legitimate").click().run()
+    assert not app.exception and any("second approver" in i.value for i in app.info)
+    next(t for t in app.text_input if t.label == "Your name").set_value("asha").run()
+    label_button(app, "Confirmed legitimate").click().run()
+    assert any("different person" in e.value for e in app.error)
+    next(t for t in app.text_input if t.label == "Your name").set_value("Ravi").run()
+    label_button(app, "Confirmed legitimate").click().run()
+    assert not app.exception and any("RELEASED by two approvers" in i.value for i in app.info)
+    assert not any(b.label == "Confirmed legitimate" for b in app.button)
