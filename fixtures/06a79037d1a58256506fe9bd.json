@@ -1,0 +1,824 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Chargebee, Inc."
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Chargebee, Inc.",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebee.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 622925,
+       "description": "Over a decade ago, four friends set out to tackle the growing complexities of SaaS billing. What began as a shared dream quickly evolved into a mission to address the biggest hurdles facing businesses: billing complexity, revenue leakage, and missing or disconnected data to inform pricing decisions.As the world shifted from one-time transactions to ongoing customer relationships, Chargebee emerged as a flexible, agile, and elegant solution to help businesses manage recurring customer relationships and accelerate growth.Today, Chargebee is the billing and monetization platform built for the AI economy.From fast-scaling startups to global enterprises, we help companies capture, optimize, and scale revenue — no matter their GTM strategy or pricing model. Whether you’re experimenting with usage-based pricing, launching AI-powered products, or expanding globally, Chargebee gives you the flexibility and automation to grow with confidence.As the age of AI reshapes how companies deliver and charge for value, we’re excited to shape the future of monetization — one billing breakthrough at a time.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebee",
+       "primary_domain": "chargebee.com",
+       "professional_network_id": "2277385",
+       "professional_network_url": "https://www.linkedin.com/company/chargebee",
+       "profile_name": "Chargebee",
+       "website": "https://www.chargebee.com/",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 622925,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681040,
+       "description": "Lowe’s Companies, Inc. (NYSE: LOW) is a FORTUNE® 50 home improvement company serving approximately 20 million customers a week in the United States. Lowe’s and its related businesses operate or service more than 2,200 home improvement and hardware stores and employ over 300,000 associates. Based in Mooresville, N.C., Lowe’s supports the communities it serves through programs focused on creating safe, affordable housing and helping to develop the next generation of skilled trade experts. For more information, visit Lowes.com.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Retail"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/377b837ec040992033551bc0de60a87d02eea5c5f3cde7e39e075dd59b49c9e1.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Lowe's Companies, Inc.",
+       "primary_domain": null,
+       "professional_network_id": "4128",
+       "professional_network_url": "https://www.linkedin.com/company/lowe%27s-home-improvement",
+       "profile_name": "Lowe's Companies, Inc.",
+       "website": "https://talent.lowes.com",
+       "year_founded": 1921
+      },
+      "crustdata_company_id": 681040,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "baxterhealthcare.ie",
+        "baxterhealthcare.com.au",
+        "baxter.cl",
+        "baxter.fr",
+        "welchallyn.com",
+        "hillrom.com",
+        "baxterhealthcare.co.uk",
+        "baxter.in",
+        "baxter.se",
+        "baxter.com",
+        "baxter.pt",
+        "baxter.cz"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681028,
+       "description": "For nearly a century, we have delivered on our commitment to saving and sustaining the lives of patients, working alongside clinicians and providers around the world. We believe every person — regardless of who they are or where they are from — deserves a chance to live a healthy life, free from illness and full of possibility. At the intersection of progress and purpose is where we are redefining what it means to be a global medtech leader. It is where we are relentlessly pursuing healthcare transformation, fueled by our compassion for patients and providers and the challenges they face. It is where bold ideas meet the promise for meaningful change in the world around us. We are there, at every step of the journey, to help clinicians deliver the best care possible.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Medical Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0de8bdf90951b2157e10b816c88db96587e117700542fe4ebf32b1f25fdca3d7.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Baxter International Inc.",
+       "primary_domain": "baxter.com",
+       "professional_network_id": "2371",
+       "professional_network_url": "https://www.linkedin.com/company/baxter-healthcare",
+       "profile_name": "Baxter International Inc.",
+       "website": "http://www.baxter.com",
+       "year_founded": 1931
+      },
+      "crustdata_company_id": 681028,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "cummins.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681079,
+       "description": "At Cummins, we empower everyone to grow their careers through meaningful work, building inclusive and equitable teams, coaching, development and opportunities to make a difference. Across our entire organization, you'll find engineers, developers, and technicians who are innovating, designing, testing, and building. You'll also find accountants, marketers, as well as manufacturing, quality and supply chain specialists who are working with technology that's just as innovative and advanced. From your first day at Cummins, we’re focused on understanding your talents, current skills and future goals – and creating a plan to get you there. Your journey begins with planning your development and connecting to diverse experiences designed to spur innovation. From our internships to our senior leadership roles, we attract, hire and reward the best and brightest from around the world and look to them for new ideas and fresh perspectives. Learn more about #LifeAtCummins at cummins.com/careers.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Motor Vehicle Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a5a27e5d7213635292a320f2d2efcc0e627046774af8ca4d20c4ca1b6a7f54c5.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Cummins Inc.",
+       "primary_domain": "cummins.com",
+       "professional_network_id": "3625",
+       "professional_network_url": "https://www.linkedin.com/company/cummins-inc",
+       "profile_name": "Cummins Inc.",
+       "website": "http://www.cummins.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 681079,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "cat.com",
+        "catfinancial.com",
+        "caterpillar.com",
+        "hiltnercombustionsystems.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681626,
+       "description": "For 100 years, we’ve been helping customers build a better, more sustainable world. Our innovative products and services, backed by our global dealer network, provide exceptional value that helps customers succeed. With 2024 sales and revenues of $64.8 billion, Caterpillar Inc. is the world’s leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives. Caterpillar does business on every continent, principally operating through three primary segments – Construction Industries, Resource Industries and Energy & Transportation – and provides financing and related services through our Financial Products segment.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Machinery Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/739d98f2e519614ef399bff03008bdc5f99a9927536cb85f90c74d76633bcf40.jpg",
+       "markets": [
+        "NYSE",
+        "EPA"
+       ],
+       "name": "Caterpillar Inc.",
+       "primary_domain": "cat.com",
+       "professional_network_id": "2622",
+       "professional_network_url": "https://www.linkedin.com/company/caterpillar-inc",
+       "profile_name": "Caterpillar Inc.",
+       "website": "https://www.caterpillar.com",
+       "year_founded": 1925
+      },
+      "crustdata_company_id": 681626,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "elcompanies.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682590,
+       "description": "The Estée Lauder Companies Inc. is one of the world’s leading manufacturers, marketers, and sellers of quality skin care, makeup, fragrance, and hair care products, and is a steward of outstanding luxury and prestige brands globally. The company’s products are sold in approximately 150 countries and territories under brand names including: Estée Lauder, Aramis, Clinique, Lab Series, Origins, M·A·C, La Mer, Bobbi Brown Cosmetics, Aveda, Jo Malone London, Bumble and bumble, Darphin Paris, TOM FORD, Smashbox, AERIN Beauty, Le Labo, Editions de Parfums Frédéric Malle, GLAMGLOW, KILIAN PARIS, Too Faced, Dr.Jart+, the DECIEM family of brands, including The Ordinary and NIOD, and BALMAIN Beauty.To explore our current job openings, go to www.elcompanies.com",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Personal Care Product Manufacturing",
+        "Chemical Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/33baf249b6cb5c8bfefa79d5453a2d3fa24907329405cb45935cff7ec0276fe8.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "The Estée Lauder Companies Inc.",
+       "primary_domain": "elcompanies.com",
+       "professional_network_id": "4059",
+       "professional_network_url": "https://www.linkedin.com/company/the-estee-lauder-companies-inc",
+       "profile_name": "The Estée Lauder Companies Inc.",
+       "website": "http://www.elcompanies.com",
+       "year_founded": 1946
+      },
+      "crustdata_company_id": 682590,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "global.ntt",
+        "nttdata.com",
+        "dimensiondata.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1182613,
+       "description": "NTT DATA, Inc. is a trusted global innovator of business and technology services. We're committed to helping clients innovate, optimize and transform for long-term success. Our R&D investments help organizations and society move confidently and sustainably into the digital future. As a Global Top Employer, we have diverse experts in more than 50 countries and a robust partner ecosystem of established and start-up companies. Our services include business and technology consulting, data and artificial intelligence, industry solutions, as well as the development, implementation and management of applications, infrastructure, and connectivity.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/df200689d791468e088ea3e76731ee9b970c1e7aaf612a4e2be5cfc05c7ef1aa.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NTT DATA, Inc.",
+       "primary_domain": "dimensiondata.com",
+       "professional_network_id": "19126858",
+       "professional_network_url": "https://www.linkedin.com/company/ntt-data-inc",
+       "profile_name": "NTT DATA, Inc.",
+       "website": "https://services.global.ntt/",
+       "year_founded": 1998
+      },
+      "crustdata_company_id": 1182613,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "synopsys.com",
+        "powerlineelectric.biz"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 7161,
+       "description": "Synopsys is the leader in engineering solutions from silicon to systems, enabling customers to rapidly innovate AI-powered products. We deliver industry-leading silicon design, IP, simulation and analysis solutions, and design services.  We partner closely with our customers across a wide range of industries to maximize their R&D capability and productivity, powering innovation today that ignites the ingenuity of tomorrow.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/427856b492791d67262f0cebefd596e14dc169f517a56f445d954b58c9f909ae.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Synopsys Inc",
+       "primary_domain": "synopsys.com",
+       "professional_network_id": "2457",
+       "professional_network_url": "https://www.linkedin.com/company/synopsys",
+       "profile_name": "Synopsys Inc",
+       "website": "http://www.synopsys.com",
+       "year_founded": 1986
+      },
+      "crustdata_company_id": 7161,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "corning.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681057,
+       "description": "Corning is one of the world's leading innovators in materials science, with a 170+ year track record of life-changing inventions. Corning applies its unparalleled expertise in glass science, ceramics science, and optical physics along with its deep manufacturing and engineering capabilities to develop category-defining products that transform industries and enhance people's lives. Corning succeeds through sustained investment in RD&E, a unique combination of material and process innovation, and deep, trust-based relationships with customers who are global leaders in their industries. Corning's capabilities are versatile and synergistic, which allows the company to evolve to meet changing market needs, while also helping our customers capture new opportunities in dynamic industries. Today, Corning's markets include optical communications, mobile consumer electronics, display technology, automotive, and life sciences vessels. Corning's industry-leading products include damage-resistant cover glass for mobile devices; precision glass for advanced displays; optical fiber, wireless technologies, and connectivity solutions for state-of-the-art communications networks; trusted products to accelerate drug discovery and delivery; and clean-air technologies for cars and trucks.Terms of Use: http://ow.ly/ObPiI",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Glass, Ceramics and Concrete Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d8e42e980864b45c212173764cde8292e136931a7064f1233ae5b256a6ff3c87.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Corning Incorporated",
+       "primary_domain": "corning.com",
+       "professional_network_id": "3678",
+       "professional_network_url": "https://www.linkedin.com/company/corning-incorporated",
+       "profile_name": "Corning Incorporated",
+       "website": "https://www.corning.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 681057,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "keurigdrpepper.com",
+        "drpeppersnapplegroup.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681110,
+       "description": "Keurig Dr Pepper (KDP) is a leading beverage company in North America, with annual revenue in excess of $14.1 billion and nearly 28,000 employees. KDP holds leadership positions in soft drinks, specialty coffee and tea, water, juice and juice drinks and mixers, and markets the #1 single serve coffee brewing system in the U.S. and Canada. The Company’s portfolio of more than 125 owned, licensed and partner brands is designed to satisfy virtually any consumer need, any time, and includes Keurig®, Dr Pepper®, Green Mountain Coffee Roasters®, Canada Dry®, Snapple®, Bai®, Mott's®, CORE® and The Original Donut Shop®. Through its powerful sales and distribution network, KDP can deliver its portfolio of hot and cold beverages to nearly every point of purchase for consumers.  The Company is committed to sourcing, producing and distributing its beverages responsibly through its Drink Well. Do Good. corporate responsibility platform, including efforts around circular packaging, efficient natural resource use and supply chain sustainability.  For more information, visit, www.keurigdrpepper.com.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Food and Beverage Services",
+        "Accommodation and Food Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/41e350fa5b75397defe1dbf8206520223ff5e7539309883560c182504c93f06c.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Keurig Dr Pepper Inc.",
+       "primary_domain": "keurigdrpepper.com",
+       "professional_network_id": "11777511",
+       "professional_network_url": "https://www.linkedin.com/company/keurig-dr-pepper-inc",
+       "profile_name": "Keurig Dr Pepper Inc.",
+       "website": "http://www.keurigdrpepper.com",
+       "year_founded": 1981
+      },
+      "crustdata_company_id": 681110,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "wingstop.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681184,
+       "description": "Sure, we’re The Wing Experts, but it’s our flavor that defines us. You taste it in our 12 signature sauces, you see it through our bold TV commercials, and you feel it when you walk through our doors. It’s what we like to call a flavor experience, and since the opening of our first restaurant in 1994 in Garland, Texas,  it’s been our mission to Serve the World Flavor.Fast forward over 30 years and we’ve done just that. With more than 3000 locations globally, we’ve established ourselves as one of the fastest growing restaurant brands in the industry. Our fresh wings satisfy your hunger in a way nothing else can, and we’d like to think our workplace is just as unique as our made-from-scratch ranch dressing. We’ve got the opportunity you’ve been craving whether you’re looking for something at our restaurant support center in Dallas, or in the field supporting our team members in-restaurant. For people who demand flavor in everything from their food to their career, Wingstop is the answer.We’re a brand that can’t be duplicated, with a momentum that can’t be slowed – let us show you what Team Wing is all about! Visit www.wingstop.com/careers for more information and follow our page to stay updated with all things Wingstop.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Restaurants",
+        "Food and Beverage Services",
+        "Accommodation and Food Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e67f78a40136ad94d375f92a04281d243d6a74ec976c900c6f04232aaac56166.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Wingstop Restaurants Inc.",
+       "primary_domain": "wingstop.com",
+       "professional_network_id": "156440",
+       "professional_network_url": "https://www.linkedin.com/company/wingstop-restaurants-inc-",
+       "profile_name": "Wingstop Restaurants Inc.",
+       "website": "https://www.wingstop.com/careers",
+       "year_founded": 1994
+      },
+      "crustdata_company_id": 681184,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "nexteraenergy.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681256,
+       "description": "NextEra Energy, Inc. (NYSE: NEE) is one of the largest electric power and energy infrastructure companies in North America and is a leading provider of electricity to American homes and businesses. Headquartered in Juno Beach, Florida, NextEra Energy is a Fortune 200 company that owns Florida Power & Light Company, America’s largest electric utility, which provides reliable electricity to approximately 12 million people across Florida. NextEra Energy also owns one of the largest energy infrastructure development companies in the U.S., NextEra Energy Resources, LLC. NextEra Energy and its affiliated entities are meeting America’s growing energy needs with a diverse mix of energy sources, including natural gas, nuclear, renewable energy and battery storage. For more information about NextEra Energy companies, visit these websites: www.NextEraEnergy.com, www.FPL.com, www.NextEraEnergyResources.com.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Utilities"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/eac07403278927484ffaa94fbfa5dfe3121b932cc56c52051e1e04e84357510e.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "NextEra Energy, Inc.",
+       "primary_domain": "nexteraenergy.com",
+       "professional_network_id": "10357210",
+       "professional_network_url": "https://www.linkedin.com/company/nextera-energy-inc",
+       "profile_name": "NextEra Energy, Inc.",
+       "website": "http://www.nexteraenergy.com",
+       "year_founded": 1985
+      },
+      "crustdata_company_id": 681256,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "microsemi.com",
+        "microchip.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681352,
+       "description": "Microchip Technology Inc. is a leading semiconductor supplier of smart, connected and secure embedded control solutions. Its easy-to-use development tools and comprehensive product portfolio enable customers to create optimal designs which reduce risk while lowering total system cost and time to market. The company’s solutions serve more than 125,000 customers across the industrial, automotive, consumer, aerospace and defense, communications and computing markets. Headquartered in Chandler, Arizona, Microchip offers outstanding technical support along with dependable delivery and quality. For more information, visit the Microchip website at www.microchip.com.The content on our LinkedIn page may contain AI-generated imagery, performers and/or audio.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Semiconductor Manufacturing",
+        "Computers and Electronics Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d44a31a237e7e066b7c41fabc026338bfa2b59e46bab0335799958850668a3dd.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Microchip Technology Inc.",
+       "primary_domain": "microchip.com",
+       "professional_network_id": "6481",
+       "professional_network_url": "https://www.linkedin.com/company/microchip-technology",
+       "profile_name": "Microchip Technology Inc.",
+       "website": "http://www.microchip.com/",
+       "year_founded": 1989
+      },
+      "crustdata_company_id": 681352,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "williams-sonomainc.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681355,
+       "description": "Founded in 1956, Williams-Sonoma, Inc. is the premier specialty retailer of high-quality products for the home.  Our family of brands includes Williams Sonoma, Pottery Barn, Pottery Barn Kids, Pottery Barn Teen, West Elm, Williams-Sonoma Home, Rejuvenation, Mark & Graham, GreenRow, and Dormify.  These brands are among the best known and most respected in the industry.  We offer beautifully-designed, stylish and functional products for every area of the home, including the kitchen, living room, bedroom, home office, closet, laundry room, and even outdoor spaces.  We've seen some big changes since our first brick-and-mortar store opened more than half of a century ago.  What hasn't changed is our passion for high-quality products, functional design, outstanding customer service, and enhancing the lives of our customers and the communities where we operate. Today, we're a multi-brand, multi-channel, global enterprise supported by state-of-the-art technology and some of the most talented teams in retailing - and we're always looking for new energy and ideas.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Retail"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/91d07fda720772a491f5e1ecf74fc1b8f0dd9069b0289a803e6e025bacaf5420.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Williams-Sonoma, Inc.",
+       "primary_domain": "williams-sonomainc.com",
+       "professional_network_id": "4123",
+       "professional_network_url": "https://www.linkedin.com/company/williams-sonoma-inc-",
+       "profile_name": "Williams-Sonoma, Inc.",
+       "website": "http://www.williams-sonomainc.com",
+       "year_founded": 1956
+      },
+      "crustdata_company_id": 681355,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "sketchup.com",
+        "trimble.com",
+        "agileassets.com",
+        "tekla.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681934,
+       "description": "Trimble is a global technology company that connects the physical and digital worlds, transforming the ways work gets done. With relentless innovation in precise positioning, modeling and data analytics, Trimble enables essential industries including construction, geospatial and transportation. Whether it's helping customers build and maintain infrastructure, design and construct buildings, optimize global supply chains or map the world, Trimble is at the forefront, driving productivity and progress. For more information about Trimble (Nasdaq: TRMB), visit: www.trimble.com.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/50bea72794eeeb3de7e16bb78b593042011f5f804c1da0a1295527af3940efa5.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Trimble Inc.",
+       "primary_domain": "trimble.com",
+       "professional_network_id": "5160",
+       "professional_network_url": "https://www.linkedin.com/company/trimble",
+       "profile_name": "Trimble Inc.",
+       "website": "https://www.trimble.com",
+       "year_founded": 1978
+      },
+      "crustdata_company_id": 681934,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "dewalt.com",
+        "stanleyblackanddecker.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 681962,
+       "description": "For the builders and protectors, for the makers and explorers, for those shaping and reshaping our world through hard work and inspiration, Stanley Black & Decker provides the tools and innovative solutions you can trust to get the job done—and we have since 1843.You repair your home and car with the tools we provide. Your car and your phone are secured with our fasteners.  And the roads you drive on, the bridges you cross, the energy you consume, all of these most likely came to you via one of our infrastructure systems.We join forces to bring together the best of the best to create practical, meaningful products and services that make life easier—empowering people to do better, safer, more significant work. Innovation and excellence have powered our success, but we know there’s more we can do for the world and those who make it. Across our businesses, we’re investing in breakthrough innovation and digital excellence, striving for outperformance and increasing our focus on social responsibility.We define success as: delivering value to our customers, colleagues and communities. Our commitment to quality, safety and sustainability helps us on our path to becoming the type of uniquely human-centered global industrial company that keeps every stakeholder in mind, while helping to make the world better.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/48012d6f076be7c06b0f255530425022d3d032b3e080e7d097f80887731799cc.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Stanley Black & Decker, Inc.",
+       "primary_domain": "stanleyblackanddecker.com",
+       "professional_network_id": "884316",
+       "professional_network_url": "https://www.linkedin.com/company/stanley-black-decker-inc",
+       "profile_name": "Stanley Black & Decker, Inc.",
+       "website": "http://www.stanleyblackanddecker.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 681962,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gxo.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682093,
+       "description": "Game-changing opportunities for our customers, employees and investors. Advanced automation that achieves logistics at full potential.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a94af3a09af9e6fa00ac5f764da142c7dc761b1d7f90c7f165d710efdc6e9cdf.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "GXO Logistics, Inc.",
+       "primary_domain": "gxo.com",
+       "professional_network_id": "76440728",
+       "professional_network_url": "https://www.linkedin.com/company/gxologistics",
+       "profile_name": "GXO Logistics, Inc.",
+       "website": "https://www.gxo.com",
+       "year_founded": 2021
+      },
+      "crustdata_company_id": 682093,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "sgt-inc.com",
+        "energoeng.com",
+        "wylelabs.us",
+        "tdkc.com",
+        "kbr.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682263,
+       "description": "At KBR, we deliver science, technology and engineering solutions that are helping governments and companies around the world take on the great challenges of our time. Follow @KBRCareers for opportunities, updates and a closer look at how We do things that matter.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/04741139a137da8dafdbe1285e6ca57a52074a5cf6b7abcf95b5e10bcd0f7836.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "KBR, Inc.",
+       "primary_domain": "kbr.com",
+       "professional_network_id": "2219",
+       "professional_network_url": "https://www.linkedin.com/company/kbr-inc",
+       "profile_name": "KBR, Inc.",
+       "website": "http://careers.kbr.com",
+       "year_founded": 1919
+      },
+      "crustdata_company_id": 682263,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "trueblue.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682353,
+       "description": "TrueBlue (NYSE: TBI) is a leading provider of specialized workforce solutions. As The People Company®, we put people first—advancing our mission to connect people and work while delivering smart, scalable solutions that help businesses grow and communities thrive. Since our founding, TrueBlue has connected more than 10 million people with work and served over 3 million clients across a variety of industries. Powered by proprietary, digitally enabled platforms and decades of expertise, our brands—PeopleReady, PeopleScout, Staff Management | SMX, Centerline, SIMOS, and Healthcare Staffing Professionals—provide a full spectrum of flexible staffing, workforce management, and recruitment solutions that bring precision, speed, and scale to the changing world of work. Learn more at www.trueblue.com.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/020ca456d2e48b3c168865fdbd1e7571d186e77e8a4bc01cc6e44502e18e5134.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "TrueBlue Inc.",
+       "primary_domain": "trueblue.com",
+       "professional_network_id": "1237738",
+       "professional_network_url": "https://www.linkedin.com/company/trueblue-inc",
+       "profile_name": "TrueBlue Inc.",
+       "website": "http://www.trueblue.com",
+       "year_founded": 1989
+      },
+      "crustdata_company_id": 682353,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "tjx.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682555,
+       "description": "TJX is the leading off-price apparel and home fashions retailer in the U.S. and worldwide, with four global home offices, seven brands, nearly 4,700 stores in nine countries, and five distinctive branded e-commerce sites. As Associates, we make a difference with our contributions—collaborating in delighting shoppers with hidden treasures.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Retail"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/576c81876972ff0cc0bd29ff0dfe3c74cfc56edc4725af442d79c46977f293a8.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "The TJX Companies, Inc.",
+       "primary_domain": "tjx.com",
+       "professional_network_id": "5121",
+       "professional_network_url": "https://www.linkedin.com/company/tjx",
+       "profile_name": "The TJX Companies, Inc.",
+       "website": "https://jobs.tjx.com/",
+       "year_founded": 1987
+      },
+      "crustdata_company_id": 682555,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "amcor.com",
+        "berryglobal.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682740,
+       "description": "Berry Global, Inc. has merged with Amcor as of April 30, 2025. As a global leader in packaging solutions for consumer and healthcare products, our industry-leading innovation capabilities, global scale and technical expertise help our customers grow and meet the needs of millions of consumers every day. We accelerate the possible by redefining what can be done, constantly anticipating what our customers will need next, rethinking what is scientifically feasible and always helping our customers find the right solution to their challenges.Social Media Community Guidelines  Thank you for being part of our online community and contributing to our discussions by sharing your voice. We’re happy to have you here and are committed to fostering a welcoming, respectful and engaging community. We encourage open conversation and do not pre-screen or moderate comments or messages before they are posted. However, we reserve the right to remove content that violates our community guidelines outlined below.  - Off-topic or clearly misrepresents Amcor - Includes hate speech, discriminatory remarks or any attacks based on someone’s race, ethnicity, gender, religion, nationality or other personal characteristics  - Misleading or deceptive content that promotes fraud or false information - Irrelevant to the conversation, including spam, promotional or trolling- Potentially violates copyright laws and/or any form of intellectual property rights- We appreciate your cooperation in maintaining a positive space for all. Thank you for helping us create a positive and respectful community.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Plastics Manufacturing",
+        "Plastics and Rubber Product Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3957ee83220f1543d82b94a84841f8e85966b5bdf849494919ee068e17399b78.jpg",
+       "markets": [
+        "FRA",
+        "NYSE"
+       ],
+       "name": "Berry Global, Inc.",
+       "primary_domain": "berryglobal.com",
+       "professional_network_id": "11152",
+       "professional_network_url": "https://www.linkedin.com/company/berryglobal",
+       "profile_name": "Berry Global, Inc.",
+       "website": "http://www.berryglobal.com",
+       "year_founded": 1967
+      },
+      "crustdata_company_id": 682740,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "brinksmoney.com",
+        "brinks.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682767,
+       "description": "The Brink’s Company (NYSE:BCO) is a leading global provider of cash and valuables management, digital retail solutions (DRS), and ATM managed services (AMS). Our customers include financial institutions, retailers, government agencies, mints, jewelers and other commercial operations. Our network of operations in 51 countries serves customers in more than 100 countries. For more information, please visit our website at www.brinks.com.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/acb9aff27c36d6de554486e41fe3da00207288b1867e6b5ccb8ec442a1e563bb.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Brink’s Inc",
+       "primary_domain": "brinks.com",
+       "professional_network_id": "281590",
+       "professional_network_url": "https://www.linkedin.com/company/brinks",
+       "profile_name": "Brink’s Inc",
+       "website": "http://www.brinks.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 682767,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "rossstores.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682778,
+       "description": "For the last 40+ years, Ross Stores, Inc. has grown from a six-store chain into an $22.8 billion, Fortune 500 Company. We operate our off-price businesses in a way that keeps costs low so we can pass the savings to our customers. We continue to open new stores and our sales growth has outpaced traditional retailers for the past three years. Ross Dress for Less® has 1,917 stores in 44 states, the District of Columbia, Guam, and Puerto Rico. dd’s DISCOUNTS® has 366 stores in 23 states.Please join our Talent Community to receive the latest updates for your areas of interest, career news, and exciting opportunities at Ross Stores:https://ross.avature.net/talentcommunityAdditional information is available at:www.rossstores.comwww.ddsdiscounts.com",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Retail"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee5063cb6ec837fd4db314f40b0206fa5168da364330a450192a9af8445340b7.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "Ross Stores, Inc.",
+       "primary_domain": "rossstores.com",
+       "professional_network_id": "7032",
+       "professional_network_url": "https://www.linkedin.com/company/ross-stores",
+       "profile_name": "Ross Stores, Inc.",
+       "website": "https://jobs.rossstores.com/",
+       "year_founded": 1982
+      },
+      "crustdata_company_id": 682778,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "dana.com.ar",
+        "dana.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682813,
+       "description": "In a world of constant motion, life is about balance. At Dana, our balanced approach considers the people, products, and planet that sustain us all. For 120 years, we've been powering innovation to move our world. Today, over 25,000 Dana people, in more than 20 countries, advance drive and motion systems, thermal and sealing technologies, and power management innovations. Supporting traditional, hybrid, and EV manufacturers, wherever the road takes us. We're not just adapting to the future of mobility. We're shaping it. Headquartered in Maumee, Ohio, United States — Dana reported sales of $7.7 billion in 2024. We were named among the \"World's Most Ethical Companies 2025” by Ethisphere and as one of \"America's Most Responsible Companies 2025\" by Newsweek. We’re always looking for talented people to join the Dana team. For more, please visit https://jobs.dana.com.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Motor Vehicle Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/336558fed5f39668a337dc5b89172ed28bb5e89defbab536037a9b503d5bff70.jpg",
+       "markets": [
+        "NYSE"
+       ],
+       "name": "Dana Incorporated",
+       "primary_domain": "dana.com",
+       "professional_network_id": "5089",
+       "professional_network_url": "https://www.linkedin.com/company/dana-incorporated",
+       "profile_name": "Dana Incorporated",
+       "website": "https://www.dana.com",
+       "year_founded": 1904
+      },
+      "crustdata_company_id": 682813,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "jbhunt.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 682869,
+       "description": "J.B. Hunt specializes in freight shipping for customers of all sizes. Our mission is to drive long-term value for our people, customers and shareholders while staying focused on our vision to create the most efficient transportation network in North America. Our foundations – People you trust. Technology that empowers. Capacity to deliver. – are what drives our business forward. Through industry-leading solutions and a mode-neutral model, we create exceptional value for customers through a variety of transportation services, including intermodal, dedicated, refrigerated, truckload, less-than-truckload, flatbed, last mile, transload and more. Our J.B. Hunt 360 technology serves as a digital freight marketplace that connects shippers and carriers in one platform that provides access and visibility.",
+       "employee_count_range": "10001+",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d32ef462c7d73e8a2878d17ce5f02f23a3554eb1ff22c9d23914481940a762f5.jpg",
+       "markets": [
+        "NASDAQ"
+       ],
+       "name": "J.B. Hunt Transport Services, Inc.",
+       "primary_domain": "jbhunt.com",
+       "professional_network_id": "164527",
+       "professional_network_url": "https://www.linkedin.com/company/jb-hunt-transport-services-inc",
+       "profile_name": "J.B. Hunt Transport Services, Inc.",
+       "website": "http://www.jbhunt.com",
+       "year_founded": 1961
+      },
+      "crustdata_company_id": 682869,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:53:04.116090+00:00",
+ "status": 200
+}

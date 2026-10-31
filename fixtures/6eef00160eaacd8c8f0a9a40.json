@@ -1,0 +1,32 @@
+{
+ "credits": 0.13,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name"
+  ],
+  "filters": {
+   "field": "experience.employment_details.current.company_id",
+   "type": "=",
+   "value": 897127
+  },
+  "limit": 1
+ },
+ "response": {
+  "next_cursor": "H4sIABaA5WoC_xXMPQrDMAxA4asEzR1kyfJPr1JKkB2bDKWmiTOUkLvXXb8H74TPUbbvvOq-wn0CqxXRmKViqpWjJuvJctGs0S3IhYpPdmQhVnJCkjAYYalBSXJAuE2wt62P18NEx_45oLeurzm34_13lkjXDyLLsNF4AAAA",
+  "profiles": [
+   {
+    "basic_profile": {
+     "name": "Shashank Kumar"
+    },
+    "crustdata_person_id": 19637
+   }
+  ],
+  "remarks": [],
+  "total_count": 3592,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:43:51.016601+00:00",
+ "status": 200
+}

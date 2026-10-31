@@ -1,0 +1,19 @@
+{
+ "credits": 0.0,
+ "endpoint": "/person/identify",
+ "method": "POST",
+ "request": {
+  "emails": [
+   "billing@atlaslogisticsqa.com"
+  ]
+ },
+ "response": {
+  "error": {
+   "message": "You do not have permission to access /person/identify.",
+   "metadata": [],
+   "type": "permission_error"
+  }
+ },
+ "retrieved_at": "2026-10-31T05:52:57.067128+00:00",
+ "status": 403
+}

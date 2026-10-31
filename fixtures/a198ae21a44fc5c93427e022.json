@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "postman.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "postman.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "postman.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 622928,
+       "description": "Postman is the world’s leading API platform. Postman's features simplify each step of building an API and streamline collaboration to help create better APIs—faster. More than 40 million developers and 500,000 organizations across the globe use Postman today.Our customers are doing more and more astounding things with the Postman product every day, and as a result, we are growing rapidly.  Check out our open positions if you’d like to learn more: https://www.postman.com/careers/",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5e6c6f82c2d1fe7b3ac1ceb85c11481009da53b4e048fca86cc9c9d22a5258db.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Postman",
+       "primary_domain": "postman.com",
+       "professional_network_id": "3795851",
+       "professional_network_url": "https://www.linkedin.com/company/postman-platform",
+       "profile_name": "Postman",
+       "website": "https://www.postman.com/",
+       "year_founded": 2014
+      },
+      "crustdata_company_id": 622928,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:47.644904+00:00",
+ "status": 200
+}

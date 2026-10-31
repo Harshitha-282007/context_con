@@ -1,0 +1,54 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "gusto.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "gusto.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "ardius.com",
+        "gusto.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 634921,
+       "description": "Gusto has been growing the small business economy with technology and heart for more than a decade. Launched in 2012 as ZenPayroll, today Gusto serves more than 500,000 businesses nationwide. Each year we process tens of billions of dollars of payroll and provide employee benefits—like health insurance and 401(k) accounts—while helping companies create incredible work places.Through one refreshingly easy, integrated platform, we automate and simplify your payroll, benefits, and HR, all while providing expert support. You and your employees will get the peace of mind you need to do your best work.We offer:▪️ Automated Tax Filing▪️ Comprehensive HR & Benefits▪️ Contractor Support▪️ Integrations & Employee Self-Service▪️ And so much moreWe started Gusto with a simple belief: small businesses are the backbone of the American economy. And they deserve a partner that is committed to making their life better.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/860f1c20ed1b40bb62d022ca9a135c07e7e60916b633cbd0706fa9ded0cf7def.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Gusto",
+       "primary_domain": "gusto.com",
+       "professional_network_id": "2499210",
+       "professional_network_url": "https://www.linkedin.com/company/gustohq",
+       "profile_name": "Gusto",
+       "website": "http://www.gusto.com",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 634921,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:54.202349+00:00",
+ "status": 200
+}

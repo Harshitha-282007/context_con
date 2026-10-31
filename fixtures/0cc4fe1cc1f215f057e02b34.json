@@ -1,0 +1,55 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "razorpay.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "razorpay.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "curlec.com",
+        "bitly.com",
+        "razorpay.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 897127,
+       "description": "Power your finance, grow your business.Razorpay is India’s first full-stack financial solutions company. We are on a mission to enhance the payment experience of over 300 million end consumers. And in doing so, we aim to enable Indian businesses - big and small - accept payments digitally with minimal effort and maximum ease. Razorpay has grown from being a payment gateway provider to a solutions-driven organization boasting of an extensive products suite to accept and disburse payments as well as raise capital and park money. In a nutshell, we fit into every nook and corner where your business touches money. #OutgrowOrdinaryWe identify ourselves as disruptors in the digital payments space and our vision is to power the financial ecosystem for other disruptors. Like attracts like and Razorpay actively looks to partner with established companies and startups that have either broken the glass ceiling in their industry or are set to. The Razorpay Product Suite today comprises verticals, along with Payment Gateway, like Payment Links, Payment Pages, Subscriptions, Smart Collect, Route, Razorpay Capital, RazorpayX, Payroll and Thirdwatch.Razorpay was started in 2014 by two IIT Roorkee alumni, Harshil Mathur and Shashank Kumar. Just a short few years later, Razorpay has evolved into a 800-odd strong organization with some of the best talents in the country helping some of the best companies manage their money movement seamlessly.Certified coolWe are a bunch of spirited, ambitious and fun folks. And no, we’re not saying this ourselves--leading institutions have recognized Razorpay for the high trust and high-performance culture that we maintain. Our strength lies in the people we are and we go to great lengths to nurture a family of coders, designers, sellers, marketers, analysts, writers, runners, photographers, gamers, tinkerers, and above all, people who are dreamers and doers at the same time. Be a part of our exciting journey.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Razorpay",
+       "primary_domain": "razorpay.com",
+       "professional_network_id": "3788927",
+       "professional_network_url": "https://www.linkedin.com/company/razorpay",
+       "profile_name": "Razorpay",
+       "website": "https://bit.ly/razorpay_learnmore",
+       "year_founded": 2014
+      },
+      "crustdata_company_id": 897127,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:49.902857+00:00",
+ "status": 200
+}

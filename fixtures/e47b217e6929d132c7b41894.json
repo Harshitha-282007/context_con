@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "browserstack.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "browserstack.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "browserstack.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 5853,
+       "description": "BrowserStack is the world’s leading software testing platform, powered by AI and trusted by over 50,000 teams, including Amazon, Microsoft, and NVIDIA, to deliver quality software at speed. With a community of over 9 million registered developers and testers, we power 3 million+ tests every day across 21 global data centers.Our platform provides instant access to 30,000+ real devices and browsers, eliminating the need for in-house test infrastructure. BrowserStack supports the entire testing lifecycle with scalable solutions for functional, visual, performance, and accessibility testing, alongside powerful test management and debugging tools. With AI Agents built into key workflows, teams can debug faster, automate smarter, and release with confidence.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "BrowserStack",
+       "primary_domain": "browserstack.com",
+       "professional_network_id": "2553488",
+       "professional_network_url": "https://www.linkedin.com/company/browserstack",
+       "profile_name": "BrowserStack",
+       "website": "http://www.browserstack.com",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 5853,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:43.536507+00:00",
+ "status": 200
+}

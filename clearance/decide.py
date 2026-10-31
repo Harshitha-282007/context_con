@@ -47,11 +47,14 @@ def decide(findings: list[Finding], resolution: Resolution | None, policy: dict)
         reasons=reasons,
         findings=findings,
         unverifiable=gap_ids,
-        what_would_change_this=_what_would_change(gaps),
+        what_would_change_this=_what_would_change(flags, gaps),
     )
 
 
-def _what_would_change(gaps: list[Finding]) -> str:
-    if not gaps:
-        return "Nothing outstanding: every check was evaluated on available evidence."
-    return "Evidence for " + ", ".join(f.rule_id for f in gaps) + " (" + gaps[0].message + ")"
+def _what_would_change(flags: list[Finding], gaps: list[Finding]) -> str:
+    parts = []
+    if flags:
+        parts.append("Out-of-band confirmation from the vendor, by callback to a number in your own records, resolving " + ", ".join(f.rule_id for f in flags))
+    if gaps:
+        parts.append("Evidence for " + ", ".join(f.rule_id for f in gaps) + " (" + gaps[0].message + ")")
+    return "; ".join(parts) + "." if parts else "Nothing outstanding: every check was evaluated on available evidence."

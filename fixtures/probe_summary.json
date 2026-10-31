@@ -1,0 +1,1391 @@
+[
+ {
+  "domain": "browserstack.com",
+  "identify_status": 200,
+  "id": 5853,
+  "confidence": 1.0,
+  "name": "BrowserStack",
+  "enrich_status": 200,
+  "headcount": 1717,
+  "revenue": {
+   "lower_bound_usd": 500000000,
+   "upper_bound_usd": 1000000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-20",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-06",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-29",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 1598,
+  "finance_total": 8,
+  "finance_sample": [
+   "CFO",
+   "Executive Assistant - Global Sales & Finance",
+   "Finance Team",
+   "Senior Lead- Global Reporting Finance",
+   "Sr. Billing & Accounting Specialist"
+  ]
+ },
+ {
+  "domain": "chargebee.com",
+  "identify_status": 200,
+  "id": 622925,
+  "confidence": 1.0,
+  "name": "Chargebee",
+  "enrich_status": 200,
+  "headcount": 1305,
+  "revenue": {
+   "lower_bound_usd": 500000000,
+   "upper_bound_usd": 1000000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-11",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-11",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 1172,
+  "finance_total": 17,
+  "finance_sample": [
+   "Manager - Finance Operations",
+   "Manager - Accounting Operations",
+   "Senior Finance Executive",
+   "Vice President Finance",
+   "Accounting Controller"
+  ]
+ },
+ {
+  "domain": "postman.com",
+  "identify_status": 200,
+  "id": 622928,
+  "confidence": 1.0,
+  "name": "Postman",
+  "enrich_status": 200,
+  "headcount": 3583,
+  "revenue": {
+   "lower_bound_usd": 500000000,
+   "upper_bound_usd": 1000000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-02",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 2217,
+  "finance_total": 15,
+  "finance_sample": [
+   "Revenue Manager (Accounting)",
+   "Senior Accountant, Technical Accounting and Financial Reporting",
+   "Senior Manager Global Finance",
+   "Finance Positions",
+   "Senior Accounting Manager"
+  ]
+ },
+ {
+  "domain": "razorpay.com",
+  "identify_status": 200,
+  "id": 897127,
+  "confidence": 1.0,
+  "name": "Razorpay",
+  "enrich_status": 200,
+  "headcount": 4027,
+  "revenue": {
+   "lower_bound_usd": 500000000,
+   "upper_bound_usd": 1000000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-22",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-22",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 3592,
+  "finance_total": 71,
+  "finance_sample": [
+   "Assistant Manager",
+   "Business Finance Manager",
+   "Analyst Finance operation",
+   "Vice President, Controller",
+   "Manager - Core Finance"
+  ]
+ },
+ {
+  "domain": "retool.com",
+  "identify_status": 200,
+  "id": 633593,
+  "confidence": 1.0,
+  "name": "Retool",
+  "enrich_status": 200,
+  "headcount": 413,
+  "revenue": {
+   "lower_bound_usd": 20000000,
+   "upper_bound_usd": 50000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-09-09",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    },
+    {
+     "date": "2026-10-16",
+     "revenue_lower_bound_usd": 20000000,
+     "revenue_upper_bound_usd": 50000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 397,
+  "finance_total": 8,
+  "finance_sample": [
+   "Director, Revenue Accounting",
+   "VP, Controller",
+   "Corporate Finance Lead",
+   "Senior Corporate Accounting Manager",
+   "Director, Corporate Accounting"
+  ]
+ },
+ {
+  "domain": "gusto.com",
+  "identify_status": 200,
+  "id": 634921,
+  "confidence": 1.0,
+  "name": "Gusto",
+  "enrich_status": 200,
+  "headcount": 4882,
+  "revenue": {
+   "lower_bound_usd": 500000000,
+   "upper_bound_usd": 1000000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-05-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-01",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-09",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-16",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-23",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-09-30",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-07",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-14",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-21",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    },
+    {
+     "date": "2026-10-28",
+     "revenue_lower_bound_usd": 500000000,
+     "revenue_upper_bound_usd": 1000000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 3679,
+  "finance_total": 52,
+  "finance_sample": [
+   "Head of Revenue Accounting",
+   "Platform Accounting Ops Lead",
+   "Procurement | Finance & Business Operations",
+   "US Platform Accounting Analyst",
+   "Director - Platform Accounting & Operations"
+  ]
+ },
+ {
+  "domain": "mintlify.com",
+  "identify_status": 200,
+  "id": 810670,
+  "confidence": 1.0,
+  "name": "Mintlify",
+  "enrich_status": 200,
+  "headcount": 86,
+  "revenue": {
+   "lower_bound_usd": 2500000,
+   "upper_bound_usd": 5000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-09-10",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    },
+    {
+     "date": "2026-10-10",
+     "revenue_lower_bound_usd": 2500000,
+     "revenue_upper_bound_usd": 5000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 85,
+  "finance_total": 1,
+  "finance_sample": [
+   "Head of Finance"
+  ]
+ },
+ {
+  "domain": "serverobotics.com",
+  "identify_status": 200,
+  "id": 628895,
+  "confidence": 1.0,
+  "name": "Serve Robotics",
+  "enrich_status": 200,
+  "headcount": 454,
+  "revenue": {
+   "lower_bound_usd": 10000000,
+   "upper_bound_usd": 20000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-09-09",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-10-09",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 429,
+  "finance_total": 6,
+  "finance_sample": [
+   "Global Corporate Controller",
+   "Assistant Controller",
+   "Accounting Manager",
+   "Senior Accounts Payable Coordinator",
+   "Director, Strategic Finance"
+  ]
+ },
+ {
+  "domain": "crustdata.com",
+  "identify_status": 200,
+  "id": 6036032,
+  "confidence": 1.0,
+  "name": "Crustdata (YC F24)",
+  "enrich_status": 200,
+  "headcount": 47,
+  "revenue": {
+   "lower_bound_usd": 500000,
+   "upper_bound_usd": 1000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-09-10",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    },
+    {
+     "date": "2026-10-10",
+     "revenue_lower_bound_usd": 500000,
+     "revenue_upper_bound_usd": 1000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 54,
+  "finance_total": 1,
+  "finance_sample": [
+   "Accountant"
+  ]
+ },
+ {
+  "domain": "tomocredit.ai",
+  "identify_status": 200,
+  "id": 634576,
+  "confidence": 1.0,
+  "name": "TomoCredit",
+  "enrich_status": 200,
+  "headcount": 21,
+  "revenue": {
+   "lower_bound_usd": 10000000,
+   "upper_bound_usd": 20000000,
+   "timeseries": [
+    {
+     "date": "2025-01-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-02-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-03-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-04-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-05-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-06-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-07-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-08-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-09-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-10-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-11-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2025-12-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-01-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-02-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-03-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-04-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-06-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-07-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-08-01",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-09-09",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    },
+    {
+     "date": "2026-10-09",
+     "revenue_lower_bound_usd": 10000000,
+     "revenue_upper_bound_usd": 20000000
+    }
+   ]
+  },
+  "web_traffic_keys": [
+   "domain_traffic"
+  ],
+  "search_status": 200,
+  "employees_in_graph": 21,
+  "finance_total": 2,
+  "finance_sample": [
+   "Accounting Manager",
+   "VP of Finance & Growth"
+  ]
+ }
+]

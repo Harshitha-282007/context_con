@@ -1,0 +1,776 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Meridian Services"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Meridian Services",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridiansvs.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1901169,
+       "description": "All people want to be independent, be a part of the community, and enjoy a high quality of life. No matter their age, mental or physical capabilities, everyone has the ability to learn, grow, and achieve these goals. We established Meridian Services to help individuals with intellectual disabilities, those with mental health issues and the elderly identify and pursue their hopes and dreams. We provide innovative, compassionate and personalized support and work with people as they achieve the goals that they have set for themselves.We are dedicated to providing services of the highest quality so that people with mental health, intellectual disabilities and physical challenges, as well as those entering their senior years, can live independently, participate in their communities and achieve the best possible lives for themselves. Meridian Services currently serves these individuals and their families in the larger Twin Cities metro counties as well as smaller Minnesota counties across the state.Meridian Services has served people for a thirty eight years in Minnesota. Currently our Case Management Department serves approximately 2,500 elderly, 1,500 people with mental health issues and more than 1,000 persons with intellectual disabilities.  Our organization provides services within 30 residential group homes in Minnesota. Additionally, we provide In Home/SILS/ILS and Respite Services to over 220 persons in the community. We are proud of our history of providing services of the highest quality, a quality that has been recognized by those we serve and for which our company has received international accreditation through CARF.",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Individual and Family Services",
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/11d306374131873acb44580bc17330add4677934e0532738455a017bb3076197.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Services",
+       "primary_domain": "meridiansvs.com",
+       "professional_network_id": "3814887",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-services",
+       "profile_name": "Meridian Services",
+       "website": "http://www.meridiansvs.com/",
+       "year_founded": 1980
+      },
+      "crustdata_company_id": 1901169,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridian-sg.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1922349,
+       "description": "Meridian Services Group (formerly High Bridge Associates and Work Management, Inc.) is a project management consulting and services company.  Its principals have extensive experience supporting both small and large capital projects, decommissioning and closure projects, new build construction projects, operating programs, and maintenance programs in the nuclear industry.  Services offered to clients include- Conceptual engineering- Cost estimating - Project controls support and design - Risk assessments- Due diligence evaluations- Feasibility studies- Readiness assessments- Contract change management and claims- Technical/management assessments- Staff Augmentation",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/00f9448289fafe3de93c1f6e32c5aaae4dce3bcf26ddf93c8e6acdea65b1dce1.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Services Group",
+       "primary_domain": "meridian-sg.com",
+       "professional_network_id": "15653286",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-sg",
+       "profile_name": "Meridian Services Group",
+       "website": "https://meridian-sg.com/",
+       "year_founded": 2003
+      },
+      "crustdata_company_id": 1922349,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2137840,
+       "description": "Software QA. Software as a Service /Web-based software. Online Store. Consulting.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/91b52199183417a92e0cff3f07a0ba2149f53174e9e2febd960e121caef5cdc7.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Zero Meridian Services Inc",
+       "primary_domain": null,
+       "professional_network_id": "4800321",
+       "professional_network_url": "https://www.linkedin.com/company/zero-meridian-services-inc",
+       "profile_name": "Zero Meridian Services Inc",
+       "website": "https://ca.linkedin.com/company/zero-meridian-services-inc",
+       "year_founded": 2012
+      },
+      "crustdata_company_id": 2137840,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianservices.net"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 17195391,
+       "description": "We have established, registered a company with workshop setup under the name and style the “Meridian Services”. As such based on long experience, deep knowledge and technical know how in the instrumentation, we are providing our best services to our clients in the field. While dealing in different technical traders like repair, overhauling and maintenance of multiple Gas chromatographs, CO2 analyzer, MVS, Flow computer, commercial/domestic gas meters, moisture analyzer etc. we have also specialized technical expertise in installation, commissioning, repair and maintenance of gas chromatograph, moisture analyzer and flow computers.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Oil and Gas",
+        "Oil, Gas, and Mining"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/94c928686e7630a520d0d78d6c043c19593b929d7630470ec28878eb3afefa90.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Services Net",
+       "primary_domain": "meridianservices.net",
+       "professional_network_id": "3818294",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-services-net",
+       "profile_name": "Meridian Services Net",
+       "website": "http://www.meridianservices.net",
+       "year_founded": null
+      },
+      "crustdata_company_id": 17195391,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "fifthmeridianservices.ca"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 17384696,
+       "description": "Fifth Meridian Services Ltd. is a CWB W47.1 Division 2 certified welding company serving Calgary and the surrounding areas. We provide mobile and shop welding for everything from small on-site repairs to large-scale structural steel fabrication. Specializing in steel, stainless steel, and aluminum, our B-Pressure and CWB-certified welders deliver top-tier quality with a strong focus on safety, efficiency, and meeting project deadlines. Contact us today for fast quotes and reliable service.",
+       "employee_count_range": "myself only",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/665e7d85980252f2fe9f91418b2e4e64e298d72a3f08c4e43fe5c398f4515d59.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Fifth Meridian Services Ltd.",
+       "primary_domain": "fifthmeridianservices.ca",
+       "professional_network_id": "108148895",
+       "professional_network_url": "https://www.linkedin.com/company/fifth-meridian-services-ltd",
+       "profile_name": "Fifth Meridian Services Ltd.",
+       "website": "http://www.fifthmeridianservices.ca",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 17384696,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "msiaudit.com"
+       ],
+       "company_type": null,
+       "crustdata_company_id": 32509366,
+       "description": null,
+       "employee_count_range": null,
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Services International Limited",
+       "primary_domain": "msiaudit.com",
+       "professional_network_id": "1722347",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-services-international-limited",
+       "profile_name": "Meridian Services International Limited",
+       "website": "http://www.msiaudit.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 32509366,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 74776386,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Blue Meridian Services, LLC",
+       "primary_domain": null,
+       "professional_network_id": "136167328",
+       "professional_network_url": "https://www.linkedin.com/company/blue-meridian-services-llc",
+       "profile_name": "Blue Meridian Services, LLC",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 74776386,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianservices.com.au"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 4555816,
+       "description": "Meridian Services was established in 1981, and has become one of the largest and most reputable licensed Investigation and security companies within Australia. Meridian recently expanded to include a number of additional services, these include asset protection, investigation training and technical services.Meridian are suppliers of choice for a large number of clients within the Private and Public Sector and we pride ourselves on our ability to also offer the same high service to our individual private clients. No job is too big or too small for Meridian.Our wide range of services, coupled with our wealth of experience, highly trained staff and our commitment to our clients, places us in an excellent position to deal with any situation that you or your business may face.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Security and Investigations",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6f1dace11e89ccae38f7b58948a76d4e227db8ac7891486cbae3cbd21c18e829.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Services Pty Ltd",
+       "primary_domain": "meridianservices.com.au",
+       "professional_network_id": "6597770",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-services-pty-ltd",
+       "profile_name": "Meridian Services Pty Ltd",
+       "website": "http://meridianservices.com.au",
+       "year_founded": 1981
+      },
+      "crustdata_company_id": 4555816,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 75035948,
+       "description": null,
+       "employee_count_range": "myself only",
+       "industries": [
+        "Legal Services",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Mobile Meridian Services",
+       "primary_domain": null,
+       "professional_network_id": "143030249",
+       "professional_network_url": "https://www.linkedin.com/company/mobile-meridian-services",
+       "profile_name": "Mobile Meridian Services",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 75035948,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": null,
+       "crustdata_company_id": 13793662,
+       "description": "ORION ASSOCIATES/MERIDIAN SERVICES, INC is a medical practice company based out of 820 LILAC DR, Golden Valley, Minnesota, United States.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Medical Practices",
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ORION ASSOCIATES/MERIDIAN SERVICES, INC",
+       "primary_domain": null,
+       "professional_network_id": "59959059",
+       "professional_network_url": "https://www.linkedin.com/company/orion-associates-meridian-services-inc",
+       "profile_name": "ORION ASSOCIATES/MERIDIAN SERVICES, INC",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 13793662,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": null,
+       "crustdata_company_id": 8170240,
+       "description": "FIRST MERIDIAN SERVICES, INC. DBA SKYPORT is a restaurants company based out of 8231 E PRENTICE AVE, Greenwood Village, Colorado, United States.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Restaurants",
+        "Food and Beverage Services",
+        "Accommodation and Food Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0f957c9a19a71d1f980b184e3d3efc902705f2df16e6737345c9a2bb3ba71f69.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "FIRST MERIDIAN SERVICES, INC. DBA SKYPORT",
+       "primary_domain": null,
+       "professional_network_id": "59445937",
+       "professional_network_url": "https://www.linkedin.com/company/first-meridian-services-inc.-dba-skyport",
+       "profile_name": "FIRST MERIDIAN SERVICES, INC. DBA SKYPORT",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 8170240,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianglobalservices.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 895336,
+       "description": "Meridian VAT solutions solve all known limitations and shortcomings concerning VAT in SAPStandard SAP does not contain sufficient logic to automate tax determination for business with complex VAT flows. This exposes a company to tax compliance risk as a result of systemic weaknesses and manual workaround procedures. Meridian tax solutions revolutionize the approach to automated, compliant VAT determination and reporting processes in SAP. All the required functionality integrates with your SAP system, using standard SAP techniques.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/24903043e695a6055c0042f70c7458c8a25a6721d6c5b4b6ef129d732fb03aa2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Global Services",
+       "primary_domain": "meridianglobalservices.com",
+       "professional_network_id": "303885",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-tax-determination",
+       "profile_name": "Meridian Global Services",
+       "website": "https://www.meridianglobalservices.com/",
+       "year_founded": 1990
+      },
+      "crustdata_company_id": 895336,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridian-hs.org"
+       ],
+       "company_type": "Nonprofit",
+       "crustdata_company_id": 1937118,
+       "description": "Meridian Health Services helps individuals who suffer from substance use disorders.  We use the most advanced, modern therapeutic practices to treat drug and alcohol addiction.  Our success in addiction treatment is based on working with individuals to help them learn to live a balanced lifestyle.  Meridian Health Services is the only treatment facility in Michigan to offer an evidence based treatment curriculum with specialized programming components to treat opiate and poly-substance dependence. Our treatment philosophy is based on the recognition that alcohol and drug addiction is a disease and that abstinence is the best way to manage the condition.  We approach addiction treatment from a wellness perspective, working with the mind, body and spirit as being the key components of learning to live a healthy lifestyle.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Wellness and Fitness Services",
+        "Recreational Facilities",
+        "Entertainment Providers"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/963c1564b1074e591e27ac94c983982fc7eee365f983febcc54dc6312fc98b58.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Health Services",
+       "primary_domain": "meridian-hs.org",
+       "professional_network_id": "5221809",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-health-services",
+       "profile_name": "Meridian Health Services",
+       "website": "http://www.meridian-hs.org",
+       "year_founded": 2014
+      },
+      "crustdata_company_id": 1937118,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "mps-gh.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 9028810,
+       "description": "We are a trend-setting world class container terminal made in Africa with a total commitment to the development of Africa. A pacesetter in efficient container management services, we have proven to all that we stop at nothing to bring nothing but the best.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Maritime Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c74cfcf094a93b959d5e0611db50330e64a70ad5de0aa0d0aef5fb455f3201ed.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Port Services Ghana",
+       "primary_domain": "mps-gh.com",
+       "professional_network_id": "38141505",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-port-services-ghana",
+       "profile_name": "Meridian Port Services Ghana",
+       "website": "http://www.mps-gh.com",
+       "year_founded": 2002
+      },
+      "crustdata_company_id": 9028810,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "hrmdirect.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 1234059,
+       "description": "Meridian Health Services is a progressive healthcare organization, where we specialize in the harmony of the whole person health. By integrating our patients’ physical, mental, and social well being, we are able to provide a comprehensive range of treatments focusing on the broader spectrum of health. This includes not just primary medical care, but also behavioral health and human services. Through the invaluable hard work and dedication of our licensed therapists, behavioral clinicians, registered nurses, and other healthcare professionals, we can offer a proven and well-rounded approach for happier and healthier patients.Our vision is “To be a leader in the integration of physical, mental and social health,” while our mission is “To help make our communities healthier through a focus on whole person health.” For more than 35 years, we have been doing just that, and we are proud to have been professionally recognized with business accolades such as Outstanding Performance In Community Care Settings – Integrated Care Networks and Outstanding Achievement in Care Coordination Specialty Programs – Behavioral Health.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4454769b6607a2a0bae70497b094a761e4556551a4600845fc6d5e13b427ae70.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Health Services Corp.",
+       "primary_domain": "hrmdirect.com",
+       "professional_network_id": "8354137",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-health-services-corp-",
+       "profile_name": "Meridian Health Services Corp.",
+       "website": "http://meridianhs.hrmdirect.com/employment/job-openings.php?search=true&dept=-1&city=-1&state=-1",
+       "year_founded": 1977
+      },
+      "crustdata_company_id": 1234059,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "mps-gh.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 4373796,
+       "description": "We are a trend-setting world class container terminal made in Africa with a total commitment to the development of Africa. A pacesetter in efficient container management services, we have proven to all that we stop at nothing to bring nothing but the best.",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Maritime Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6c19a4ce3e85e646c787cc449692f1e54c51a9254c97542868886d9687a73d37.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Port Services Ltd",
+       "primary_domain": "mps-gh.com",
+       "professional_network_id": "6939583",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-port-services-ltd",
+       "profile_name": "Meridian Port Services Ltd",
+       "website": "http://www.mps-gh.com",
+       "year_founded": 2002
+      },
+      "crustdata_company_id": 4373796,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "1stmeridiancareservices.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2070763,
+       "description": "At 1st Meridian Care Services, we prioritize compassion. Our mission is to provide peace of mind for our clients and their families as they make the transition to compassionate care in the comfort and safety of their own home. Our high quality and caring Clinical Staff, Coordinators, and Placement Agents take the time to listen and truly understand the needs and concerns of our clients and their families.We have 4 areas of our business:1st Meridian Care Services: Provides daily grooming and hygiene needs, assistance with walking, mobility and prescribed exercises, preparation of nutritious meals, transportation to doctor appointments, medication reminders, light housekeeping and homemaker services, and respite care for family1st Meridian Prime Concierge Services: Provides personalized and expert care, tailored to meet the unique healthcare needs of each individual client, through daily interaction with clients.1st Meridian Placement Services: We are more than just a referral agency - we do not just give names and phone numbers for you to call! Our Placement Specialist will help you, your family, and caregivers to discuss concerns and preferences up front. We will provide valuable guidance to help you navigate through every step of the process.1st Meridian Home Health Services: Meridian Home Health is a Joint Commission Accredited and Medicare certified home health agency. We provide expert level care through individualized treatment plans.OFFICE LOCATIONS4545 Murphy Canyon Rd, Suite 204,San Diego, CA 92123-436315125 Ventura Blvd Suite 2-8,Sherman Oaks, CA 91403-330674710 CA-111 N Unit 102,Palm Desert, CA 92260-3820Contact us today: https://www.1stmeridiancareservices.com/pages/san-diego-home-care-home-health-placement-concierge-service",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c5937cdbf004e404c4695e46320250937dc96772bbb1c5fec7e3fd84101f50e4.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "1st Meridian Care Services",
+       "primary_domain": "1stmeridiancareservices.com",
+       "professional_network_id": "3801904",
+       "professional_network_url": "https://www.linkedin.com/company/1stmeridiancareservices",
+       "profile_name": "1st Meridian Care Services",
+       "website": "https://1stmeridiancareservices.com/",
+       "year_founded": 2009
+      },
+      "crustdata_company_id": 2070763,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "situsamc.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 6537103,
+       "description": "Meridian Asset Service is now SitusAMC.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/07ac14bbc8da9b0b14ab11a6a4a4494ad8c6c20d6fabbad655b8a3ce6214105c.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Asset Services",
+       "primary_domain": "situsamc.com",
+       "professional_network_id": "304232",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-asset-services",
+       "profile_name": "Meridian Asset Services",
+       "website": "https://www.situsamc.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 6537103,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianfundservices.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 916345,
+       "description": "Meridian Fund Services Group is an award-winning, independently owned and operated, full-service fund administrator servicing an array of clients, including, but not limited to, those in the alternative investment community managing hedge funds, fund of funds, family offices, private equity funds, and separately managed accounts.Our services include middle and back office services such as portfolio accounting, trade reconciliation and net asset value calculation, as well as investor servicing, financial statement preparation, corporate secretarial and compliance services, fund governance services, directorships, and registered office services. We service funds across all strategies and structures with an experienced and dedicated team, and we service funds domiciled in a variety of jurisdictions, including the United States, Bermuda, the Cayman Islands, and the British Virgin Islands.Meridian was recently named both Best North American Administrator (2012) and Best Offshore Administrator (2013) by Hedgeweek. Meridian was also ranked in the top three administrators in Hedge Funds Review's Service Provider Rankings 2012.Locations:New York |  370 Lexington Ave, Ste 1806, New York, NY 10017 Bermuda |  65 Front Street, 6th Fl, Hamilton HM12, BermudaCanada |  1701 Hollis Street, Ste 1100, Halifax, Nova Scotia, Canada B3J3M8Cayman |  Governors Square, Suite 4-212-1, 23 Lime Tree Bay Ave, West Bay, Grand CaymanMassachusetts |  485 Mass Ave, 3rd Fl, Cambridge, MA 02139",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3524bb2d32b4950c7d6a1232a558899ef3571d781a6025ba504df837979e3a0a.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Fund Services",
+       "primary_domain": "meridianfundservices.com",
+       "professional_network_id": "1092718",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-fund-services",
+       "profile_name": "Meridian Fund Services",
+       "website": "http://meridianfundservices.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 916345,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianfleetservices.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 11771817,
+       "description": "Meridian Fleet Services is a long-term operating partner for independent fleet maintenance businesses across the United States. We invest in the people, systems, and legacies that make great service businesses thrive for generations.We bring permanent capital, deep operational expertise, and a people-centered mindset to every partnership. We seek growth with purpose: protecting what works and building sustainable platforms that empower technicians, delight customers, and endure for decades.Learn more at meridianfleetservices.com",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Holding Companies"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/00a9f679c20c20eb3a37d9d1e964b23a684d3a1afd228dd03dceeb524c52319b.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Fleet Services",
+       "primary_domain": "meridianfleetservices.com",
+       "professional_network_id": "63571367",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-fleet-services",
+       "profile_name": "Meridian Fleet Services",
+       "website": "http://meridianfleetservices.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 11771817,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianpipeline.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1732867,
+       "description": "Meridian Pipeline Services provides turnkey pipeline integrity solutions as a single source solution to address pipeline owner and operator’s needs. From inspection and assessment, to design and installation, our turnkey pipeline integrity and construction services can, improve efficiency and convenience, streamline project management, alleviate delays in pipeline projects, and improve project costs.   Our combination of expertise in all phases of cathodic protection and AC mitigation installation with an informed, consultative approach to comprehensive pipeline integrity and regulatory compliance offer clients fully integrated integrity services backed by specialized knowledge and experience. Meridian Pipeline Services offers turnkey pipeline integrity solutions: Right-of-way clearing Close interval survey and inspection Cathodic protection design and installation AC mitigation design and installation Vacuum excavation services Corrosion and Integrity Services: Inspection/assessment services AC current detection  AC mitigation design and modelling CP design services  Pipeline integrity plans for oil and gas facilities, and industrial plantsInstallation services Construction Services:Pipeline excavationHydrovac servicesDirect assessment anomaly digs Repairs for inline inspection run Cathodic protection installsGalvanic anode and impressed current system installation Conventional, deep well and linear ground bed installations AC mitigation installsTest station installsHydrostatic testingMAOP validation",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Oil and Gas",
+        "Oil, Gas, and Mining"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2b051ac80dbc9586755f542c5c6fccc7ce17b83bd95ac94c6c23e75d6914264d.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Pipeline Services",
+       "primary_domain": "meridianpipeline.com",
+       "professional_network_id": "33202308",
+       "professional_network_url": "https://www.linkedin.com/company/meridianpipeline",
+       "profile_name": "Meridian Pipeline Services",
+       "website": "http://www.meridianpipeline.com",
+       "year_founded": 1989
+      },
+      "crustdata_company_id": 1732867,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianstaffing.info"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 7722879,
+       "description": "We specialize in putting people to work. Our clients trust us to match them with employees who exceed standards. Give us a call today! 205-341-7341",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e2982cf9a56ce1118026fb21cb4ac0f517ae45805c6446adedb59c2b37d2d954.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Staffing Services",
+       "primary_domain": "meridianstaffing.info",
+       "professional_network_id": "11163912",
+       "professional_network_url": "https://www.linkedin.com/company/meridianstaffingservices",
+       "profile_name": "Meridian Staffing Services",
+       "website": "http://Meridianstaffing.info",
+       "year_founded": 2005
+      },
+      "crustdata_company_id": 7722879,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pmesdubai.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 13112862,
+       "description": "Prime Meridian engineering services is an industry leaders in land surveys, with many years of experience in providing quality professional land surveying and mapping services. Topographical and measured building surveys are our core business.  Since 2023 we have developed competitive and flexible surveying techniques which enable us to quickly and efficiently address clients’ budget and deliver the project on time.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Civil Engineering",
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b11b9758a240c7441606de214e09de8f4c14bd93eb4aed86d892f44c7b842d3b.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Prime Meridian Engineering Services",
+       "primary_domain": "pmesdubai.com",
+       "professional_network_id": "103685744",
+       "professional_network_url": "https://www.linkedin.com/company/prime-meridian-engineering-services",
+       "profile_name": "Prime Meridian Engineering Services",
+       "website": "http://Pmesdubai.com",
+       "year_founded": 2023
+      },
+      "crustdata_company_id": 13112862,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridianmechanical.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 6768106,
+       "description": "| Meridian Mechanical Services, LLC. – Modern. Professional. Proficient. || Your Partner To Design, Construct and Maintain Your Facility, For Optimal Efficiency || HVAC – Refrigeration – Plumbing – Medical Gas –  Energy || Construction & Service |",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Facilities Services",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c7d007460f2c3ac9e393795dcb8af85f450b7941bd8cda05742f0a95ab80ebd4.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Mechanical Services",
+       "primary_domain": "meridianmechanical.com",
+       "professional_network_id": "28983431",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-mechanical-services",
+       "profile_name": "Meridian Mechanical Services",
+       "website": "http://meridianmechanical.com",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 6768106,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "meridiangb.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 9069670,
+       "description": "Meridian is a family owned and trusted company, specialising in new builds, extensions, fit out services and much more. We have over 30 years of experience working with household names including the BBC, BP, Warner Music, developers and clients.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9e2ccb8c2fc648cb40243fa89c09d181acb9603ce2a3a4d8a3e2aca241d5fdc0.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Meridian Construction Services",
+       "primary_domain": "meridiangb.com",
+       "professional_network_id": "11514868",
+       "professional_network_url": "https://www.linkedin.com/company/meridian-construction-services",
+       "profile_name": "Meridian Construction Services",
+       "website": "https://meridiangb.com",
+       "year_founded": 2015
+      },
+      "crustdata_company_id": 9069670,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:45:03.588826+00:00",
+ "status": 200
+}

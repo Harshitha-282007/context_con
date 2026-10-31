@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "tomocredit.ai"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "tomocredit.ai",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "tomocredit.ai",
+        "tomocredit.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 634576,
+       "description": "TomoCredit, based in San Francisco, uses AI and machine learning for credit underwriting and loan decisioning. The company builds credit solutions that help consumers access credit and improve their personal finances, while enabling lenders to expand their total addressable market (TAM).",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/90c50e52e6015e433a8d28797bc1f6326e7d12ae911f7a78c8311642935a6e70.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "TomoCredit",
+       "primary_domain": "tomocredit.com",
+       "professional_network_id": "19066932",
+       "professional_network_url": "https://www.linkedin.com/company/tomocredit",
+       "profile_name": "TomoCredit",
+       "website": "https://tomocredit.ai/",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 634576,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:44:03.106341+00:00",
+ "status": 200
+}

@@ -1,0 +1,154 @@
+{
+ "credits": 0.23,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 6036032
+    },
+    {
+     "conditions": [
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "finance"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounts payable"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounting"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "controller"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "CFO"
+      }
+     ],
+     "op": "or"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": null,
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "Accountant",
+     "name": "Niv Galande"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 3796825,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 763567,
+        "company_headcount_range": "10001+",
+        "company_headquarters_country": "",
+        "company_hq_location": "",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/amazon",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/50c0868b767f02f1f5ed3285bbd5b6db93df0ef3c6f00194dba9ed7e337b8f33.jpg",
+        "company_status": "active",
+        "company_type": "Public Company",
+        "company_website": "https://www.aboutamazon.com/",
+        "crustdata_company_id": 6034577,
+        "description": ".",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Pune District, Maharashtra, India"
+        },
+        "name": "Amazon",
+        "position_id": 2519701583,
+        "professional_network_id": "1586",
+        "seniority_level": "Entry Level",
+        "start_date": "2024-11-01T00:00:00",
+        "title": "Accountant",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       },
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 47,
+        "company_headcount_range": "11-50",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "San Francisco, California, United States",
+        "company_hq_location_address_components": [
+         "San Francisco",
+         "San Francisco County",
+         "California",
+         "United States"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/crustdata",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0509e545084ed52d3e2c43a74123d98a745293f7d57967c471357110ad9df896.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://crustdata.com?utm_source=linkedin_bio",
+        "crustdata_company_id": 6036032,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "",
+        "is_default": false,
+        "name": "Crustdata (YC F24)",
+        "position_id": 2514246231,
+        "professional_network_id": "73854007",
+        "seniority_level": "Entry Level",
+        "start_date": "2025-03-01T00:00:00",
+        "title": "Accounting Assistant",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 1,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:44:02.737808+00:00",
+ "status": 200
+}

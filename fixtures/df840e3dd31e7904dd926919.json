@@ -1,0 +1,84 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "summitsolutions.ai"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "summitsolutions.ai",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutions.ai"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 12481088,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9a539a0ea9d6fce25a3cf525c6348f234665f690e4174dd52e35600a8523be9e.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "SaaS Review",
+       "primary_domain": "summitsolutions.ai",
+       "professional_network_id": "99056805",
+       "professional_network_url": "https://www.linkedin.com/company/saaaaaaaaaaaasssssssssss",
+       "profile_name": "SaaS Review",
+       "website": "http://summitsolutions.ai",
+       "year_founded": null
+      },
+      "crustdata_company_id": 12481088,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutions.ai"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 26007927,
+       "description": "At Summit Solutions we help businesses run smarter through strategic consulting and AI-powered automation.We work with business owners who are tired of watching revenue walk out the door because their operations can't keep up with their ambition. Missed opportunities, manualprocesses, and disconnected systems are costing them time, money, and growth.We fix that.Our approach combines hands-on business consulting with custom automation solutions like AI voice agents, workflowintegrations, and intelligent systems which are proven to eliminate bottlenecks, capture every opportunity, and give business owners their time back.Right now our focus is the home service industry. HVAC companies, plumbers, roofers, and contractors represent some of the hardest working business owners in the countryand some of the most underserved when it comes to operational technology. We are changing that.But our mission is bigger than one industry.Wherever business owners are losing time to manual work, missing revenue to slow systems, and sacrificing their personal lives to keep operations running and that is whereSummit Solutions is headed.We are not a software company. We are not a marketing agency. We are an operations and automation partner who sits alongside our clients, understands their business deeply, and builds solutions that create measurable results.If you are a business owner who wants to stop working in your business and start working on it — Summit Solutionswas built for you.Automate Smarter. Grow Faster. Built to Scale.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/338c6dde07dd1579a9de83b118a82703c03c51bfe036158eed4e830246299e73.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions",
+       "primary_domain": "summitsolutions.ai",
+       "professional_network_id": "112077920",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutionsai",
+       "profile_name": "Summit Solutions",
+       "website": "http://summitsolutions.ai",
+       "year_founded": null
+      },
+      "crustdata_company_id": 26007927,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:51:25.832193+00:00",
+ "status": 200
+}

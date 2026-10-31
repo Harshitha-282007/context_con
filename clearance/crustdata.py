@@ -74,7 +74,9 @@ class CrustdataClient:
     def _call(self, method: str, endpoint: str, body: Any) -> ApiResult:
         key = cache_key(method, endpoint, body)
         cached = self._read_fixture(key)
-        if cached is not None:
+        # A saved 403 replays offline so decisions stay deterministic, but online
+        # we re-ask, in case the endpoint has since been enabled on this key.
+        if cached is not None and (cached.ok or cached.status == 404 or self.offline):
             self.credits_replayed += cached.credits
             return cached
         if self.offline:
@@ -120,8 +122,9 @@ class CrustdataClient:
             data = {"unparsed_body": resp.text[:2000]}
         retrieved_at = _now()
         ok = 200 <= status < 300
-        # A 404 is a stable answer ("no data"), so it replays offline too.
-        if ok or status == 404:
+        # 404 and 403 are stable answers, so they replay offline too. Account calls
+        # are never saved: they describe the account, not a vendor.
+        if (ok or status in (403, 404)) and not endpoint.startswith("/account/"):
             self._write_fixture(key, method, endpoint, body, status, credits, retrieved_at, data)
         return ApiResult(
             ok, status, data, credits,

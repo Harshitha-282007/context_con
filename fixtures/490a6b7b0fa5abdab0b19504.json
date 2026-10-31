@@ -1,0 +1,393 @@
+{
+ "credits": 1.15,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 897127
+    },
+    {
+     "conditions": [
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "finance"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounts payable"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounting"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "controller"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "CFO"
+      }
+     ],
+     "op": "or"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": "H4sIABeA5WoC_x3MQQrCMBBG4auUWbuYSf4kjVcRKXEypQsx2KYLEe9udfs-eG967ra-pqVsC50H4hjUCoMNLpuJs5LF2OYiQM2QOd4k6agRNWiw7JmrB_s_S6LTQFtb-_G6YMwA3PVIvfVyn7Ttj58k-XwBYugccHgAAAA=",
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "Assistant Manager",
+     "name": "Sharadkumar L Suryavanshi"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 1462286,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "",
+        "is_default": true,
+        "name": "Razorpay",
+        "position_id": 2767454791,
+        "professional_network_id": "3788927",
+        "seniority_level": "Entry Level Manager",
+        "start_date": "2025-12-01T00:00:00",
+        "title": "Assistant Manager",
+        "years_at_company": "Less than 1 year",
+        "years_at_company_raw": 0
+       },
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "▸ Managed post-onboarding merchant operations merchants, ensuring smooth payment acceptance and settlement processes.\n▸ Own resolution of reconciliation-related queries — the team's highest-priority issue category — by identifying root causes and investigating discrepancies raised by merchant-facing teams. \n▸ Escalate and validate unresolved reconciliation cases with the Recon team, coordinating through to closure to ensure accurate settlement outcomes. \n▸ Validate reconciliation mismatches by comparing Simtrick transaction data against bank/gateway records. \n▸ Managed post-onboarding merchant operations, ensuring smooth payment acceptance and settlement processes. \n▸ Mentored a team of analysts, overseeing daily workflows, task allocation, and performance monitoring.\n▸ Handled merchant escalations related to settlements, refunds, chargebacks, payment failures, and reconciliation mismatches. \n▸ Coordinated with banks, payment gateways, and internal teams (Product, Tech, Risk, Compliance) to resolve operational issues. \n▸ Managed refund and chargeback operations, ensuring timely resolution and compliance with payment network guidelines. \n▸ Implemented process improvements to enhance settlement accuracy, reduce operational exceptions, and improve merchant experience.",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": false,
+        "location": {
+         "raw": "Bengaluru"
+        },
+        "name": "Razorpay",
+        "position_id": 2186707489,
+        "professional_network_id": "3788927",
+        "seniority_level": "Senior",
+        "start_date": "2023-05-01T00:00:00",
+        "title": "Senior Analyst Finance Operations",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 3
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Business Finance Manager",
+     "name": "Jahnavi Bhaskar"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 1499396,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Bengaluru, Karnataka, India"
+        },
+        "name": "Razorpay",
+        "position_id": 2938826628,
+        "professional_network_id": "3788927",
+        "seniority_level": "Entry Level Manager",
+        "start_date": "2025-12-01T00:00:00",
+        "title": "Business Finance Manager",
+        "years_at_company": "Less than 1 year",
+        "years_at_company_raw": 0
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Analyst Finance operation",
+     "name": "Devendra KP"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 1551962,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": false,
+        "location": {
+         "raw": "Bangalore Urban, Karnataka, India"
+        },
+        "name": "Razorpay",
+        "position_id": 2550254115,
+        "professional_network_id": "3788927",
+        "seniority_level": "Entry Level",
+        "start_date": "2025-01-01T00:00:00",
+        "title": "Analyst Finance operation",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       },
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": false,
+        "location": {
+         "raw": "Bangalore Urban, Karnataka, India"
+        },
+        "name": "Razorpay",
+        "position_id": 2551556188,
+        "professional_network_id": "3788927",
+        "seniority_level": "Entry Level",
+        "start_date": "2025-01-01T00:00:00",
+        "title": "Financial Analyst",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Vice President, Controller",
+     "name": "Ashutosh Gupta"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 2502772,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "Global Controller",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Bengaluru"
+        },
+        "name": "Razorpay",
+        "position_id": 2978657467,
+        "professional_network_id": "3788927",
+        "seniority_level": "Vice President",
+        "start_date": "2026-07-01T00:00:00",
+        "title": "Vice President, Controller",
+        "years_at_company": "Less than 1 year",
+        "years_at_company_raw": 0
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Manager - Core Finance",
+     "name": "Priya Kejriwal"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 4894442,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 4027,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "India",
+        "company_hq_location": "Adugodi, Karnataka, India",
+        "company_hq_location_address_components": [],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/razorpay",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0d2f613efbc6acb3f49e7c3cb2208b8759318114858da64712f095f4308d1989.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://bit.ly/razorpay_learnmore",
+        "crustdata_company_id": 897127,
+        "description": "• Leading the finance function for the Engage business portfolio, encompassing PPI, Gift Card Issuance & Distribution, International POS, International Payment Gateway, Loyalty Solutions, SaaS, and Ad Platform businesses\n\n• Partnering with business team on commercial structuring, deal evaluations, providing financial insights to optimize margins, profitability, and long-term business value.\n\n• Working on segment-wise financial performance analysis, margin management , and actionable business intelligence to support proactive decision-making, revenue growth, and cost optimization initiatives.\n\n• Leading statutory, internal, and compliance audits for the entire Engage portfolio, strengthening financial controls, governance frameworks, and regulatory compliance.\n\n• Worked on DRHP preparation, supporting financial due diligence, disclosure requirements, business narratives, and investor readiness initiatives as part of the IPO journey",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Bengaluru"
+        },
+        "name": "Razorpay",
+        "position_id": 2852716763,
+        "professional_network_id": "3788927",
+        "seniority_level": "Entry Level Manager",
+        "start_date": "2025-12-01T00:00:00",
+        "title": "Manager - Core Finance",
+        "years_at_company": "Less than 1 year",
+        "years_at_company_raw": 0
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 71,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:43:51.448376+00:00",
+ "status": 200
+}

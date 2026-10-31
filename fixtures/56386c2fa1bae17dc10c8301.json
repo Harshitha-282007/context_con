@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "serverobotics.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "serverobotics.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "serverobotics.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 628895,
+       "description": "Serve Robotics (NASDAQ: SERV) builds AI-powered, low-emissions delivery robots that move meals across sidewalks, connecting restaurants and customers through local delivery. Spun off from Uber in 2021, Serve now operates as an independent company. We've completed tens of thousands of deliveries for partners including Uber Eats, DoorDash, and Grubhub, and we've grown our fleet to 2,000 robots in multiple U.S. markets.We're building a future where people thrive with robots by their side. Come join us, we're hiring!",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9f84e252d0f9e35c95843303b33eda9313148adb54404d06947be750e9187db5.jpg",
+       "markets": [
+        "PRIVATE",
+        "NASDAQ"
+       ],
+       "name": "Serve Robotics",
+       "primary_domain": "serverobotics.com",
+       "professional_network_id": "72049930",
+       "professional_network_url": "https://www.linkedin.com/company/serverobotics",
+       "profile_name": "Serve Robotics",
+       "website": "https://www.serverobotics.com/",
+       "year_founded": 2021
+      },
+      "crustdata_company_id": 628895,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:59.157915+00:00",
+ "status": 200
+}

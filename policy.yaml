@@ -18,11 +18,16 @@ decision:
 r1:
   max_edit_distance: 2
 
+r2:
+  # /person/identify returns 403 on the event key. When a lookup is denied outright,
+  # the surname search stands in for it. Transient failures stay UNVERIFIABLE.
+  require_email_lookup: false
+
 r3:
   recent_days: 90
 
 r4:
-  allowed_functions: [finance, accounting, operations, administrative, business operations, leadership, owner, founder, executive]
+  allowed_functions: [finance, accounting, accounts, controller, treasury, procurement, operations, administrative, cxo, vice president, owner, founder, chief, president]
 
 r5:
   free_mail_domains: [gmail.com, googlemail.com, yahoo.com, outlook.com, hotmail.com, live.com, icloud.com, aol.com, proton.me, protonmail.com, gmx.com, zoho.com, yandex.com, mail.com, rediffmail.com]
@@ -51,3 +56,6 @@ fx_to_usd:
 credit_limit:               # Illustrative only; never presented as truth.
   per_head_usd: 500
   max_usd: 250000
+
+# Offline replay needs a fixed "today" so tenure checks give the same answer on any day.
+offline_as_of: 2026-10-31

@@ -1,0 +1,22 @@
+From: Marlow Testerson <marlow.testerson@serverobotlcs.com>
+To: ap@ourcompany.example
+Subject: URGENT: updated bank details for invoice INV-7731
+
+Hello,
+
+We have changed our banking partner. Please update our payment details before
+today's payment run and pay the attached invoice to the new account below.
+This is urgent, and please do not call our office as the team is travelling.
+
+Vendor: Serve Robotics
+Invoice: INV-7731
+Description: Field service and maintenance, Q3
+Total: $48,750.00
+New account number: 000123456789
+Website: www.serverobotics.com
+
+Regards,
+Marlow Testerson
+Treasury Manager
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

@@ -1,0 +1,743 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Atlas Logistics"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Atlas Logistics",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlas-logistics.net"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 5279746,
+       "description": "Atlas Logistics, International freight forwarders cover the full spectrum of freight services (by Air or Sea Import & export from wherever you want to wherever you want, Custom Brokerage) by providing full range of solutions to your extensive logistics needs. We offer integrity, expertise and flexibility in providing the best combination between cost, speed and reliability. Atlas is competing in the market by setting new trends through commitment and excellence shown by the team of professionals, who are target oriented and highly innovative in providing the complete logistic solution for everyday business need.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a9d4eeb5450eaa9cf4efb1e61540ce5550efa1f7f18e2e07b4b5de9bb33fac30.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics",
+       "primary_domain": "atlas-logistics.net",
+       "professional_network_id": "249202",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics",
+       "profile_name": "Atlas Logistics",
+       "website": "http://www.atlas-logistics.net",
+       "year_founded": 2006
+      },
+      "crustdata_company_id": 5279746,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogisticsqa.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 25235295,
+       "description": "Atlas Logistics – Transforming Logistics in Qatar and BeyondAt Atlas Logistics, we are committed to reshaping the logistics industry with our expert services in air, sea, and land freight, customs clearance, and multimodal transport. Based in Qatar, we provide businesses with reliable and efficient logistics solutions designed to meet the diverse needs of industries across the globe.Our focus is on delivering precision, timeliness, and clarity in every aspect of the supply chain. Whether it's managing complex shipments, streamlining processes, or ensuring on-time delivery, our goal is to make your logistics experience as smooth and efficient as possible.From local businesses to international clients, we empower companies to keep their operations running without interruption, optimizing their supply chains and driving growth.Follow us to stay updated on the latest logistics trends, industry insights, and how we’re helping businesses succeed through smarter, more effective logistics solutions.#Logistics #FreightForwarding #SupplyChain #Innovation #Qatar",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Freight and Package Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7eb7bdd9f17d6c423eb51a246d448c0f6211ad2cd9bd20b7caf90aa822c9cdbf.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics",
+       "primary_domain": "atlaslogisticsqa.com",
+       "professional_network_id": "104994767",
+       "professional_network_url": "https://www.linkedin.com/company/atlaslogisticsqa",
+       "profile_name": "Atlas Logistics",
+       "website": "http://www.atlaslogisticsqa.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 25235295,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.gr"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 4568329,
+       "description": "Atlas – Your navigator in the world of trade Atlas Logistics offers the entire range of Freight Forwarding, Logistics & Liner Agency Services to our customers and agents for international and worldwide operations. We take care of the collection and the delivery of any kind of goods to and from the five continents with all modes of transport.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Wholesale Import and Export",
+        "Wholesale"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5509c0a94f48c81dcc3aa99aeb0f55d615e04e1aeac6026588f57d3c2bcad936.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics.",
+       "primary_domain": "atlaslogistics.gr",
+       "professional_network_id": "10969373",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-s.a.",
+       "profile_name": "Atlas Logistics.",
+       "website": "http://www.atlaslogistics.gr",
+       "year_founded": 2014
+      },
+      "crustdata_company_id": 4568329,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogisticsindia.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 73982444,
+       "description": "Atlas Logistics - Your Trusted Logistics Partner 🚚✈️🌍At Atlas Logistics, we are dedicated to delivering seamless logistics solutions tailored to your unique needs. With a relentless commitment to excellence, we have become a trusted partner for businesses, ensuring your goods reach their destination efficiently and on time.Our Services:🚛 Transportation Services: We offer a comprehensive range of transportation solutions, to move your goods across borders. We specialize in shipments all over India especially: Tamil Nadu, Bangalore, Hyderabad, Kerala, Maharashtra, Delhi, Punjab, Haryana, Kolkata, Patna, Guwahati, Meghalaya, Manipur, Nagaland. Why Choose Us:✅ Industry Expertise: With years of experience in logistics, we have the knowledge and skills to handle the most complex logistics challenges.🌎 Global Reach: We have a global network of partners and agents, ensuring your cargo reaches any destination, no matter how remote.💼 Customer-Centric Approach: Your success is our priority. We provide personalized, 24/7 support to address your logistics needs promptly.Connect with us today to discover how Atlas Logistics can streamline your logistics operations, reduce costs, and help your business thrive in today's competitive global market. Let's work together to move your business forward.#Logistics #SupplyChain #GlobalShipping #Warehousing #Transportation #Sustainability",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "ATLAS LOGISTICS",
+       "primary_domain": "atlaslogisticsindia.com",
+       "professional_network_id": "96878969",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics99",
+       "profile_name": "ATLAS LOGISTICS",
+       "website": "http://www.atlaslogisticsindia.com",
+       "year_founded": 2019
+      },
+      "crustdata_company_id": 73982444,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 72535802,
+       "description": "Atlas Logistics coordinates, implements, and controls the movement and storage of goods. Founded by professionals with over 3 years of experience in the field, this is a great environment for passionate individuals to gain experience in sales and have above-average salaries.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Atlas Logistics",
+       "primary_domain": null,
+       "professional_network_id": "89861757",
+       "professional_network_url": "https://www.linkedin.com/company/atlaslogistic",
+       "profile_name": "Atlas Logistics",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 72535802,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 67837996,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Atlas Logistics",
+       "primary_domain": null,
+       "professional_network_id": "107661393",
+       "professional_network_url": "https://www.linkedin.com/company/atlaslogisticsbr",
+       "profile_name": "Atlas Logistics",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 67837996,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": null,
+       "crustdata_company_id": 15613172,
+       "description": "ATLAS LOGISTIC is a company based out of 13 Rue de Laubespin, Bruxelles, Belgium.",
+       "employee_count_range": null,
+       "industries": [],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ATLAS LOGISTIC",
+       "primary_domain": null,
+       "professional_network_id": "23902843",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistic",
+       "profile_name": "ATLAS LOGISTIC",
+       "website": "https://www.atlaslogistics.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 15613172,
+      "social_profiles": null
+     },
+     "confidence_score": 0.95
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.com",
+        "atlasvanlines.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1632439,
+       "description": "Atlas Logistics has provided commercial logistics services since 1970. As a division of Atlas World Group (parent company of Atlas Van Lines), our brand is known for quality and attentiveness to customers across every industry we serve. Our partners and associates count on us for fairness, financial stability, and creative thinking to solve problems.",
+       "employee_count_range": "501-1000",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/959926a701e6b95aca56702abf41d27a6e20223634cdfd7d24a9694c525479e9.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics Inc.",
+       "primary_domain": "atlaslogistics.com",
+       "professional_network_id": "9240995",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-inc-",
+       "profile_name": "Atlas Logistics Inc.",
+       "website": "http://atlaslogistics.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 1632439,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.co.in"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 9245439,
+       "description": "Atlas Logistics is most innovative logistics company that reaches out to provide comprehensive logistics solution. The young and dynamic management team at Atlas Logistics contributes greatly with their new thinking by adapting new technology, applying latest and modern methods in the field to help the needs of customers.We constantly strive to develop better, more efficient ways to do business, whether it is by implementing cutting-edge technology, increasing the number of services we provide or expanding our network of branches and warehouses. This dynamic mind-set is reflected in our motto “Reaching Out” and demonstrates a tradition of innovation which is intrinsic to every part of Atlas logistics.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/52d4299f23b3fea758adbb661e6ca4220b20fb24d2d95ff4c0348266b81716a9.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics Pvt. Ltd.",
+       "primary_domain": "atlaslogistics.co.in",
+       "professional_network_id": "3634643",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-pvt-ltd-",
+       "profile_name": "Atlas Logistics Pvt. Ltd.",
+       "website": "http://atlaslogistics.co.in",
+       "year_founded": 1998
+      },
+      "crustdata_company_id": 9245439,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "white-atlas.co.uk"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 30542869,
+       "description": "White Atlas Logistics - Dedicated Time-Critical Transport Across the UK & EuropeWhite Atlas Logistics provides dedicated, time-critical logistics solutions across the UK and Europe, 24/7. From urgent documents and medical consignments to aircraft components, engineering parts, fine art and full pallet loads, every shipment travels on a dedicated vehicle without depot handling.Whether it's a last-minute delivery, high-value shipment, or important client handover, we never share loads or introduce delays - just direct A-to-B, every time.✓ 60-minute collection available nationwide✓ Real-time tracking & instant proof of delivery✓ Fully insured with professional drivers✓ Direct booking with real people you can talk toSupporting organisations across aviation, medical, engineering, legal, fine art and other time-critical sectors throughout the UK and Europe.When deadlines matter, count on us.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8ecb74938b5bb67f96abd08187146afabebc1175be0983d045422c8b4c50c364.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "White Atlas Logistics",
+       "primary_domain": "white-atlas.co.uk",
+       "professional_network_id": "105913930",
+       "professional_network_url": "https://www.linkedin.com/company/white-atlas",
+       "profile_name": "White Atlas Logistics",
+       "website": "http://white-atlas.co.uk",
+       "year_founded": null
+      },
+      "crustdata_company_id": 30542869,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 11945907,
+       "description": "We, Atlas logistics services, are providing Freight Forwarding services in dields of sea freight, air freight, road transportation and rail freight since 1999.International transportation has become a sector which is based on confidence and understanding beyond being merely a forwarding service. Today, we are able to provide our esteemed customers with services adding our years-long experience and our charaterstic service concept to above-said peculiarities.Since its founding, our company has always cared about self-development in every aspect and has aimed to become the \"best\" in everything it does. Our company will keep on developing itself and its operations further in order to be able to provide to our esteemed customers, with best services.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/43f49bbabf73cc734ac41cdaec346fdfac9d98a74dcc7d16106f74512d1655a2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics Services",
+       "primary_domain": null,
+       "professional_network_id": "2807535",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-services",
+       "profile_name": "Atlas Logistics Services",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 11945907,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "naseem.ae"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 4555578,
+       "description": "With highly skilled team of experts and fully equipped technology systems, we cover key shipping lines and trade routes providing the services from collection, through customs to final delivery.* FCL & LCL* Special Equipments* Customs Clearance* Intermodal & Multimodal* Port to Port / Door to Door* Pre-Carriage & On-Carriage* Cross stuffing * Transfer of ownership * Air freight",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e5f779a756332794083dc39afa2eaa336e36af93032b4b2b4886299d38b76b8f.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Naseem Atlas Logistics",
+       "primary_domain": "naseem.ae",
+       "professional_network_id": "82123619",
+       "professional_network_url": "https://www.linkedin.com/company/naseem-atlas-logistics",
+       "profile_name": "Naseem Atlas Logistics",
+       "website": "https://naseem.ae/eng/",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 4555578,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.az"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 74718611,
+       "description": "Atlas Logistics Azerbaijan — beynəlxalq yük daşınmaları və gömrük rəsmiləşdirilməsi üzrə tam xidmət təqdim edən ekspeditor və gömrük broker şirkətidir.Logistika və gömrük sahəsində 10 ildən çox təcrübəyə malik komanda olaraq, yükünüzü etibarlı, sürətli və şəffaf şəkildə təyinat nöqtəsinə çatdırırıq. Sifarişdən çatdırılmayadək bütün proses vahid komandanın məsuliyyətindədir.XİDMƏTLƏRİMİZ✈️ Hava daşımaları — sürətli və təcili yüklər üçün🚢 Dəniz daşımaları — konteyner (FCL/LCL) daşımaları🚚 Quru daşımaları — regional və beynəlxalq marşrutlar📋 Gömrük rəsmiləşdirilməsi — idxal, ixrac və tranzit əməliyyatları📑 Gömrük brokerliyi — bəyannamə tərtibi və dövlət orqanları qarşısında təmsilçilikNİYƏ ATLAS LOGISTICS?• 10+ illik sahə təcrübəsi• Uçdan-uca logistika idarəçiliyi• Şəffaf qiymət və vaxtında məlumatlandırma• İdxal-ixrac əməliyyatlarında etibarlı tərəfdaşlıqFreight forwarding · Customs clearance · Import & Export · Air, Sea & Road freightƏLAQƏ📩 info@atlaslogistics.az📞 +994 10 500 00 96💬 WhatsApp: +994 51 791 00 88🌐 atlaslogistics.az",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Atlas Logistics Azerbaijan",
+       "primary_domain": "atlaslogistics.az",
+       "professional_network_id": "135264367",
+       "professional_network_url": "https://www.linkedin.com/company/atlaslogistics-az",
+       "profile_name": "Atlas Logistics Azerbaijan",
+       "website": "https://atlaslogistics.az/",
+       "year_founded": 2026
+      },
+      "crustdata_company_id": 74718611,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlasintl.com.pk"
+       ],
+       "company_type": null,
+       "crustdata_company_id": 23433214,
+       "description": "ATLAS LOGISTICS INTERNATIONAL is a logistics and supply chain company based out of Pakistan.",
+       "employee_count_range": null,
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ATLAS LOGISTICS INTERNATIONAL",
+       "primary_domain": "atlasintl.com.pk",
+       "professional_network_id": "7144623",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-international",
+       "profile_name": "ATLAS LOGISTICS INTERNATIONAL",
+       "website": "http://atlasintl.com.pk",
+       "year_founded": null
+      },
+      "crustdata_company_id": 23433214,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslog.co"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 11990788,
+       "description": null,
+       "employee_count_range": "11-50",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/17cc60fc432e87f51bfcbfaa994205c82850dbb148cee65b0da55936f834013e.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics Colombia",
+       "primary_domain": "atlaslog.co",
+       "professional_network_id": "89878977",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-colombia",
+       "profile_name": "Atlas Logistics Colombia",
+       "website": "https://www.atlaslog.co/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 11990788,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 66742717,
+       "description": "A Atlas Logistics Mozambique é uma empresa moçambicana especializada em soluções logísticas e serviços corporativos integrados.Actuamos em diversas áreas como logística, papelaria, gráfica & serigrafia, eletrónicos e acessórios, aluguer de viaturas, organização de eventos e serviços de limpeza, oferecendo soluções completas e adaptadas às necessidades de cada cliente.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Freight and Package Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Atlas Logistics Mozambique",
+       "primary_domain": null,
+       "professional_network_id": "109509984",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-mozambique",
+       "profile_name": "Atlas Logistics Mozambique",
+       "website": null,
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 66742717,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 15839893,
+       "description": "En ATLAS LOGISTICS S.A. somos una empresa especializada en transporte marítimo, aéreo y terrestre, ofreciendo servicios logísticos confiables, personalizados y eficientes a nivel nacional e internacional.Conectamos negocios con el mundo, brindando soluciones adaptadas a las necesidades de cada cliente y asegurando el cumplimiento de tiempos, procesos y normativas.Nuestros servicios incluyen:✔️ Transporte internacional (FCL / LCL / aéreo / terrestre)✔️ Almacenamiento y distribución✔️ Gestión aduanera y documentación✔️ Asesoría en comercio exteriorCon presencia en Ecuador y una red de aliados globales, nuestro compromiso es brindar una experiencia logística segura y sin complicaciones.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f19178d6151587401ee6d91b5787e9c9cdca1497d12dcedfd9a84c443bb3e149.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ATLAS LOGISTICS S.A",
+       "primary_domain": null,
+       "professional_network_id": "107567222",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-s-a-oficial",
+       "profile_name": "ATLAS LOGISTICS S.A",
+       "website": null,
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 15839893,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Partnership",
+       "crustdata_company_id": 4382825,
+       "description": "ATLAS LOGISTICS LTD was founded on the concept that there is a better way to provide professional consulting, rehabilitation, construction and management services beyond what the traditional market has to offer. We are committed towards the operational success of our clients and partners.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Facilities Services",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/963b62ca2a5c480fba4539b690802d1c96ee5e9fbcb67f2f3c33ca8283e75f3d.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics Ltd.",
+       "primary_domain": null,
+       "professional_network_id": "10116378",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-ltd-",
+       "profile_name": "Atlas Logistics Ltd.",
+       "website": "http://www.atlaslogisticsltd.com",
+       "year_founded": 2006
+      },
+      "crustdata_company_id": 4382825,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.co.il"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 69960218,
+       "description": "INTERNATIONAL FREIGHT FORWARDING AND SHIPPINGBY AIR SEA AND LANDCUSTOMS CLEARINGPROJECTS HANDLINGDOOR TO DOOR HANDLINGCONSULTING",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "ATLAS LOGISTICS LTD",
+       "primary_domain": "atlaslogistics.co.il",
+       "professional_network_id": "6415588",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-ltd",
+       "profile_name": "ATLAS LOGISTICS LTD",
+       "website": "http://www.atlaslogistics.co.il",
+       "year_founded": 1980
+      },
+      "crustdata_company_id": 69960218,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": null,
+       "crustdata_company_id": 13011497,
+       "description": "ATLAS LOGISTICS LIMITED is a computer software company.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ATLAS LOGISTICS LIMITED",
+       "primary_domain": null,
+       "professional_network_id": "8492832",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-limited",
+       "profile_name": "ATLAS LOGISTICS LIMITED",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 13011497,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "lumenatlaslogistics.com"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 74866075,
+       "description": "At Lumen Atlas Logistics, we believe the most important work in logistics often happens in the background.The patient receives treatment.The clinic stays supplied.The business stays operational.The service continues uninterrupted.Most people never see the logistics behind those outcomes.We do.Lumen Atlas Logistics exists to support the systems that people depend on every day. We provide specialized courier and logistics solutions designed to help organizations maintain access, continuity, and operational readiness.Our focus is not simply transportation.Our focus is helping critical systems remain available when they are needed most.✨ What Makes Lumen Atlas Logistics Different🧩 Logistics designed around operational continuity🏥 Service built to support essential functions🚚 Coordinated transportation solutions📲 Visibility that strengthens decision-making⚡ Responsive execution for critical needs🤝 Partnerships focused on long-term operational supportWe understand that every shipment exists within a larger system. That is why our role is not only to deliver. It is to help ensure that the systems people depend on continue to function without interruption. Because support is not what happens after a problem appears.Support is what prevents the problem from appearing in the first place.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Lumen Atlas Logistics",
+       "primary_domain": "lumenatlaslogistics.com",
+       "professional_network_id": "132753990",
+       "professional_network_url": "https://www.linkedin.com/company/lumen-atlas-logistics",
+       "profile_name": "Lumen Atlas Logistics",
+       "website": "https://www.lumenatlaslogistics.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 74866075,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.co.uk"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1500287,
+       "description": "ATLAS LOGISTICS UK LIMITED is a Logistics and Supply Chain company located in London and Birmingham, England, United Kingdom.  From our London office we handle air export and import, Birmingham sea export, sea import, road freight, project cargo and warehousing.   We are IATA / FIATA accredited, Dangerous Goods and Aviation Security compliant along with licences to handle restricted cargo.   Since our inception in 2009 the core philosophy of the company has been customer service.  We provide a bespoke Logistics solution to our clients. We see ourselves as offering the most flexible service with attention to detail of any of our competitors. Hence from the very first stage of quoting through to shipment arrival at destination (import or export) we ensure a very high level of customer service is offered to you and your customers.  From a small parcel to ship or aircraft charter we can accommodate such enquiries.We are Customs Brokers employing fully trained staff to handle all aspects of import and export procedures.We don't just handle the Customs but we can provide impartial guidance through our consultancy programme, working with you and your client to make the whole process of importing and exporting smoother.At our Birmingham location we have access to a 30,000 square feet warehouse to provide pick, pack, short or long-term storage solutions.  Such services are designed to meet our clients requirement with very flexible costing and terms available.Through our overseas agent affiliations and membership of the WCA,the world’s largest and most powerful network of independent freight forwarders, with over 6,032 member offices in 186 countries around the world, we have a Global reach that very few of our competitors can rival.Check out more at www.atlaslogistics.co.uk or call us on +44 (0) 121 783 6564 for more information",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec1f16b21e6f556792257337b2ea0257299c69039981d8f41f45b401041db824.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics UK Limited",
+       "primary_domain": "atlaslogistics.co.uk",
+       "professional_network_id": "8787460",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-uk-limited",
+       "profile_name": "Atlas Logistics UK Limited",
+       "website": "http://www.atlaslogistics.co.uk",
+       "year_founded": 2009
+      },
+      "crustdata_company_id": 1500287,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 74840344,
+       "description": "MG Atlas Logistics is a company specialized in freight transport, logistics, warehousing, and distribution services. We provide reliable, efficient, and secure transport solutions tailored to the needs of our clients and partners. Our mission is to ensure smooth and high-quality logistics operations while maintaining professionalism, safety, and on-time delivery.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "MG Atlas Logistics",
+       "primary_domain": null,
+       "professional_network_id": "130034315",
+       "professional_network_url": "https://www.linkedin.com/company/mg-atlas-logistics",
+       "profile_name": "MG Atlas Logistics",
+       "website": null,
+       "year_founded": 2026
+      },
+      "crustdata_company_id": 74840344,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogisticsltd.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 68719321,
+       "description": "Fast & Reliable logistics & freight forwarding across EAC and beyond. Import/export, air, sea, ground freight, customs etc...",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Atlas Logistics/Atlas Group Ltd",
+       "primary_domain": "atlaslogisticsltd.com",
+       "professional_network_id": "111715189",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-atlas-group-ltd",
+       "profile_name": "Atlas Logistics/Atlas Group Ltd",
+       "website": "https://atlaslogisticsltd.com/atlas/index.html",
+       "year_founded": 2000
+      },
+      "crustdata_company_id": 68719321,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "atlaslogistics.net"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 30767353,
+       "description": "In the world of logistics, safety , reliability, experience and precise timing is crucial.Our knowledgeable, trained staff will help you moving your, oversize shipments nationwide, ensuring that your shipment arrives on time and in perfect condition.Connect with one of our transportation experts and be confident that your freight is in good hands.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c8d504bd14a538989f621a7a86466d0012ec4ede1971907211b6465287172be4.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Atlas Logistics Group Inc",
+       "primary_domain": "atlaslogistics.net",
+       "professional_network_id": "99121904",
+       "professional_network_url": "https://www.linkedin.com/company/atlas-logistics-group-inc",
+       "profile_name": "Atlas Logistics Group Inc",
+       "website": "http://www.atlaslogistics.net",
+       "year_founded": 2016
+      },
+      "crustdata_company_id": 30767353,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:45:04.939600+00:00",
+ "status": 200
+}

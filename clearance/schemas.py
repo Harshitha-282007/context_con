@@ -24,6 +24,7 @@ class Claim(BaseModel):
     services: Optional[str] = None
     reference: Optional[str] = None
     bank_change: bool = False
+    bank_last4: Optional[str] = None  # Only ever the last four digits.
     urgency_phrases: list[str] = Field(default_factory=list)
 
 
@@ -99,6 +100,7 @@ class PersonCheck(BaseModel):
     status: Literal["FOUND", "NOT_FOUND", "AMBIGUOUS", "UNVERIFIABLE"]
     reason: str = ""
     email_lookup_ran: bool = False
+    email_lookup_unsupported: bool = False  # endpoint denied (403) on this key, not a transient failure
     name_search_ran: bool = False
     person: Optional[PersonProfile] = None
     candidates: list[PersonProfile] = Field(default_factory=list)
@@ -130,6 +132,11 @@ class Draft(BaseModel):
     status: Literal["DRAFT_ONLY", "BLOCKED"] = "DRAFT_ONLY"
 
 
+class Statement(BaseModel):
+    text: str
+    evidence_ids: list[str] = Field(default_factory=list)
+
+
 class CaseResult(BaseModel):
     claim: Claim
     resolution: Optional[Resolution] = None
@@ -141,3 +148,10 @@ class CaseResult(BaseModel):
     ledger: list[Evidence] = Field(default_factory=list)
     drafts: list[Draft] = Field(default_factory=list)
     credits_used: float = 0.0
+    credits_replayed: float = 0.0
+    statements: list[Statement] = Field(default_factory=list)
+    dropped_statements: list[str] = Field(default_factory=list)
+    chain_ok: bool = False
+    callback_pack: list[Statement] = Field(default_factory=list)
+    document_requests: list[str] = Field(default_factory=list)
+    extraction_method: str = "regex"

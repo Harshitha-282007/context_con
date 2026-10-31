@@ -1,0 +1,38 @@
+{
+ "credits": 0.0,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 633593
+    },
+    {
+     "field": "basic_profile.name",
+     "type": "(.)",
+     "value": "Zorvath Quillan"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": null,
+  "profiles": [],
+  "remarks": [],
+  "total_count": 0,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:44:57.553192+00:00",
+ "status": 200
+}

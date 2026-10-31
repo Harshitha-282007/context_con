@@ -1,0 +1,52 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "apex-consulting.it"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "apex-consulting.it",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "apex-consulting.it"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2394052,
+       "description": "Apex Consulting è una società di consulenza strategica e direzionaleApex è il partner in grado di fornire un’assistenza manageriale altamente specializzata e qualificata durante le varie fasi della vita dell’impresa.Il nostro obiettivo è quello di presentarsi ai potenziali clienti, ovvero alle piccole e media imprese che vogliono crescere in modo autonomo e organico, fornendo loro soluzioni concrete",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f0c8d0fdf983ebcf6f4f3864d8b1994ea5d0368cfe8d60748401c1cdbb840413.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Apex Consulting",
+       "primary_domain": "apex-consulting.it",
+       "professional_network_id": "18666634",
+       "professional_network_url": "https://www.linkedin.com/company/apex-consultingbs",
+       "profile_name": "Apex Consulting",
+       "website": "http://www.apex-consulting.it",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 2394052,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:51:22.251490+00:00",
+ "status": 200
+}

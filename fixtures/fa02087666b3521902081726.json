@@ -1,0 +1,42 @@
+{
+ "credits": 0.13,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 633593
+    },
+    {
+     "field": "experience.employment_details.current.title",
+     "type": "(.)",
+     "value": "Controller"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 1
+ },
+ "response": {
+  "next_cursor": "H4sIAFiA5WoC_xXMMQrDMAxA0asEzx0iS5alXqWUYDk2GUpNE2coIXdvuv4H_3CfvazfaUnb4u6DA8rmjSR6NU6IqpSQs9QAgUiKRIQauEAcczSiVNHLyJmLzaw6u9vgtrb26_VAT6wen1fqrafXlNv-_gucPycIpmF3AAAA",
+  "profiles": [
+   {
+    "basic_profile": {
+     "name": "Luke Franklin"
+    },
+    "crustdata_person_id": 3246923
+   }
+  ],
+  "remarks": [],
+  "total_count": 1,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:44:56.408653+00:00",
+ "status": 200
+}

@@ -1,0 +1,17 @@
+From: Quinn Placeholder <billing@atlaslogisticsqa.com>
+To: ap@ourcompany.example
+Subject: Invoice AL-5520, global freight programme
+
+Please remit on receipt.
+
+Vendor: Atlas Logistics
+Invoice: AL-5520
+Description: Global freight and warehousing programme, annual
+Total: $480,000.00
+Website: www.atlaslogisticsqa.com
+
+Regards,
+Quinn Placeholder
+Accounts
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

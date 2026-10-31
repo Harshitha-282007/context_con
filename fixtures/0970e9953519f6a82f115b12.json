@@ -1,0 +1,341 @@
+{
+ "credits": 1.15,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 5853
+    },
+    {
+     "conditions": [
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "finance"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounts payable"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounting"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "controller"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "CFO"
+      }
+     ],
+     "op": "or"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": "H4sIABCA5WoC_xXMMQ7CMAxA0atUnhkS10lsroJQldiJOiAi2nRAiLtT1v-k_4HXUbf3suZ9hesEFBFRzWttxihkGkJOxTNpxNqiGopFnn1zzifl5LJxDCSFtUgVuEyw922cr9tMJIze3c82-siPRfvx_BN_f0umLVt4AAAA",
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "CFO",
+     "name": "Vikash Sureka"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 2766267,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1717,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "Ireland",
+        "company_hq_location": "Dublin, County Dublin, Ireland",
+        "company_hq_location_address_components": [
+         "Dublin",
+         "County Dublin",
+         "Ireland"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "http://www.browserstack.com",
+        "crustdata_company_id": 5853,
+        "description": "Leading Finance, Tax, Legal, Corp Dev, IR, IT, Audit & Corp affairs",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "",
+        "is_default": true,
+        "location": {
+         "raw": "Bengaluru, Karnataka, India"
+        },
+        "name": "BrowserStack",
+        "position_id": 2204554575,
+        "professional_network_id": "2553488",
+        "seniority_level": "CXO",
+        "start_date": "2023-04-01T00:00:00",
+        "title": "CFO",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 3
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Executive Assistant - Global Sales & Finance",
+     "name": "Aarti Castelino"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 34434166,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1717,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "Ireland",
+        "company_hq_location": "Dublin, County Dublin, Ireland",
+        "company_hq_location_address_components": [
+         "Dublin",
+         "County Dublin",
+         "Ireland"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "http://www.browserstack.com",
+        "crustdata_company_id": 5853,
+        "description": "At BrowserStack - the world’s largest software testing platform, powering over two million tests everyday across 14 global data centres. \nIm responsible for acting as the point of contact among senior leaders, executives, employees, clients and other external partners. Managing information flow in a timely and accurate manner. Handling administrative and operational functions in people management.",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Sales",
+        "is_default": true,
+        "location": {
+         "raw": "Mumbai, Maharashtra, India"
+        },
+        "name": "BrowserStack",
+        "position_id": 1809265594,
+        "professional_network_id": "2553488",
+        "seniority_level": "Entry Level",
+        "start_date": "2021-04-01T00:00:00",
+        "title": "Executive Assistant - Global Sales & Finance",
+        "years_at_company": "6 to 10 years",
+        "years_at_company_raw": 5
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Finance Team",
+     "name": "Sudarshan Sarda"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 34442070,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 1717,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "Ireland",
+        "company_hq_location": "Dublin, County Dublin, Ireland",
+        "company_hq_location_address_components": [
+         "Dublin",
+         "County Dublin",
+         "Ireland"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "http://www.browserstack.com",
+        "crustdata_company_id": 5853,
+        "description": "Managing and supervising Global Treasury operations AP, AR, Capex, month close and financial reporting",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Mumbai, Maharashtra, India"
+        },
+        "name": "BrowserStack",
+        "position_id": 1916678590,
+        "professional_network_id": "2553488",
+        "seniority_level": "Entry Level",
+        "start_date": "2022-02-01T00:00:00",
+        "title": "Finance Team",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 4
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Senior Lead- Global Reporting Finance",
+     "name": "Aarushi Kothari"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 34458872,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1717,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "Ireland",
+        "company_hq_location": "Dublin, County Dublin, Ireland",
+        "company_hq_location_address_components": [
+         "Dublin",
+         "County Dublin",
+         "Ireland"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "http://www.browserstack.com",
+        "crustdata_company_id": 5853,
+        "description": "",
+        "employment_type": "Full-time",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Mumbai, Maharashtra, India"
+        },
+        "name": "BrowserStack",
+        "position_id": 2722600407,
+        "professional_network_id": "2553488",
+        "seniority_level": "Senior",
+        "start_date": "2024-10-01T00:00:00",
+        "title": "Senior Lead- Global Reporting Finance",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 2
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Sr. Billing & Accounting Specialist",
+     "name": "Bhavana Jobanputra"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 34498210,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1717,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "Ireland",
+        "company_hq_location": "Dublin, County Dublin, Ireland",
+        "company_hq_location_address_components": [
+         "Dublin",
+         "County Dublin",
+         "Ireland"
+        ],
+        "company_industries": [
+         "Software Development",
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Software Development",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/browserstack",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec528134ec0d870c3f914d86a5e35a3a0e67b13df9469891f226062b66136fb8.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "http://www.browserstack.com",
+        "crustdata_company_id": 5853,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "",
+        "is_default": true,
+        "name": "BrowserStack",
+        "position_id": 1928289862,
+        "professional_network_id": "2553488",
+        "seniority_level": "Entry Level",
+        "start_date": "2022-03-01T00:00:00",
+        "title": "Sr. Billing & Accounting Specialist",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 4
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 8,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:43:45.145657+00:00",
+ "status": 200
+}

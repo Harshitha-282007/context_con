@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "apex-consulting.ai"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "apex-consulting.ai",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "theapexconsulting.com",
+        "apex-consulting.ai"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 2333363,
+       "description": "In a world where everyone uses the same tools, we help you find your GTM alpha – your unique competitive edge. By leveraging unique data signals, AI agents, and custom automation workflows, we build systems your competitors can’t replicate.We live and breathe Go-To-Market Engineering – a structured approach to aligning marketing, sales, and operations through automation, data, and AI. The result? Less manual work, more high-impact activity, and faster, smarter execution.From automating outreach and scoring leads to building dynamic follow-up funnels and ICP-matched lead lists, we eliminate bottlenecks and drive predictable growth without adding headcount.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bd8fa369afd64431ae583339caab97fcd33bca7035bf0a245f1dc72d71a647b3.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "APEX Consulting",
+       "primary_domain": "apex-consulting.ai",
+       "professional_network_id": "91618555",
+       "professional_network_url": "https://www.linkedin.com/company/apexofficial",
+       "profile_name": "APEX Consulting",
+       "website": "https://apex-consulting.ai/",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 2333363,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:51:23.631034+00:00",
+ "status": 200
+}

@@ -91,6 +91,20 @@ def test_r2_cannot_be_hard_when_gate_fails(kwargs):
     assert f.status == "UNVERIFIABLE" and f.severity == "none"
 
 
+def test_r2_denied_email_lookup_uses_name_searches():
+    pc = not_found(email=False)
+    pc.email_lookup_unsupported = True
+    f = r2_person_found(ctx(person_check=pc), POLICY)
+    assert f.status == "FLAG" and "not available on this API key" in f.message
+
+
+def test_r2_denied_email_lookup_can_be_made_strict():
+    pc = not_found(email=False)
+    pc.email_lookup_unsupported = True
+    strict = {**POLICY, "r2": {"require_email_lookup": True}}
+    assert r2_person_found(ctx(person_check=pc), strict).status == "UNVERIFIABLE"
+
+
 def test_r2_ambiguous_person_is_unverifiable():
     pc = PersonCheck(status="AMBIGUOUS", email_lookup_ran=True, name_search_ran=True, employees_found=200)
     assert r2_person_found(ctx(person_check=pc), POLICY).status == "UNVERIFIABLE"

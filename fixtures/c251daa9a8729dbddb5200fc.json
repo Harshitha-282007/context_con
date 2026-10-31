@@ -1,0 +1,40 @@
+{
+ "credits": 0.0,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current",
+   "experience.recently_changed_jobs",
+   "social_handles.professional_network_identifier.profile_url"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 25235295
+    },
+    {
+     "field": "basic_profile.name",
+     "type": "(.)",
+     "value": "Quinn Placeholder"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": null,
+  "profiles": [],
+  "remarks": [],
+  "total_count": 0,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:52:57.574930+00:00",
+ "status": 200
+}

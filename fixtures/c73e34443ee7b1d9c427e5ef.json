@@ -1,0 +1,32 @@
+{
+ "credits": 0.23,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "experience.recently_changed_jobs"
+  ],
+  "filters": {
+   "field": "experience.employment_details.current.company_id",
+   "type": "=",
+   "value": 633593
+  },
+  "limit": 1
+ },
+ "response": {
+  "next_cursor": "H4sIAFmA5WoC_xXMMQ7DIAxA0atEnjuAgRh6laqKjA3KUBU1IUNU9e4l05fe8L_wOcp2LivvK9wnQKdRTOGkwslmqYoUM1nKJYZUhcSHOo9o4oBEhavLBa1BUXZZ4DbB3rY-Xg_rgzfPAb11fi3SjvflLtHvD1kUVmV3AAAA",
+  "profiles": [
+   {
+    "crustdata_person_id": 14540,
+    "experience": {
+     "recently_changed_jobs": false
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 397,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:44:58.013960+00:00",
+ "status": 200
+}

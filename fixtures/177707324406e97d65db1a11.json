@@ -1,0 +1,54 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "mintlify.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "mintlify.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "mintlify.com",
+        "mintlify.link"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 810670,
+       "description": "Knowledge infrastructure for AI. Mintlify powers docs for 20,000+ companies, reaching 100M+ developers a year. When humans or agents need to understand your product, they start with your docs. We make sure they find the right answers. We're hiring in SF at mintlify.com/careers.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2b03488e03204545951cd5d493e149bc0a2edc8b2a0986d6460bb63119295382.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Mintlify",
+       "primary_domain": "mintlify.com",
+       "professional_network_id": "79912175",
+       "professional_network_url": "https://www.linkedin.com/company/mintlify",
+       "profile_name": "Mintlify",
+       "website": "https://mintlify.link/li",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 810670,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:56.753056+00:00",
+ "status": 200
+}

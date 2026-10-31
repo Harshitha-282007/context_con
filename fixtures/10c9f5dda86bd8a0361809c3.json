@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "retool.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "retool.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "retool.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 633593,
+       "description": "Vibe coding made building apps easy. Retool makes them safe to ship.Build apps, workflows, and agents with any AI tool you’d like, then deploy onto one governed runtime with SSO, RBAC, audit logging built in. Connect to the real data your business runs on, in your cloud or self-hosted.Teams like Amazon, Stripe, and DoorDash—part of 10,000+ companies from startups to the Fortune 500—trust Retool to build and govern the software their business runs on.To learn more and start building for free today, visit https://retool.com",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/72f60d0ccad488216922fb784abc89890b49eeed8ab1eca1a0a12c72a68a0620.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Retool",
+       "primary_domain": "retool.com",
+       "professional_network_id": "11869260",
+       "professional_network_url": "https://www.linkedin.com/company/tryretool",
+       "profile_name": "Retool",
+       "website": "https://retool.com/",
+       "year_founded": 2017
+      },
+      "crustdata_company_id": 633593,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:51.837164+00:00",
+ "status": 200
+}

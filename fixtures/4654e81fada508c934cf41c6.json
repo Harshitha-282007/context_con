@@ -1,0 +1,789 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Chargebee"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Chargebee",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebee.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 622925,
+       "description": "Over a decade ago, four friends set out to tackle the growing complexities of SaaS billing. What began as a shared dream quickly evolved into a mission to address the biggest hurdles facing businesses: billing complexity, revenue leakage, and missing or disconnected data to inform pricing decisions.As the world shifted from one-time transactions to ongoing customer relationships, Chargebee emerged as a flexible, agile, and elegant solution to help businesses manage recurring customer relationships and accelerate growth.Today, Chargebee is the billing and monetization platform built for the AI economy.From fast-scaling startups to global enterprises, we help companies capture, optimize, and scale revenue — no matter their GTM strategy or pricing model. Whether you’re experimenting with usage-based pricing, launching AI-powered products, or expanding globally, Chargebee gives you the flexibility and automation to grow with confidence.As the age of AI reshapes how companies deliver and charge for value, we’re excited to shape the future of monetization — one billing breakthrough at a time.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebee",
+       "primary_domain": "chargebee.com",
+       "professional_network_id": "2277385",
+       "professional_network_url": "https://www.linkedin.com/company/chargebee",
+       "profile_name": "Chargebee",
+       "website": "https://www.chargebee.com/",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 622925,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebee.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 638490,
+       "description": "Chargebee Retention (previously Brightback) enables businesses to customize cancellation experiences with offers geared towards continuing the customer relationship and allows businesses to evaluate personalized retention-magnet strategies to minimize voluntary churn and strengthen customer lifetime value.",
+       "employee_count_range": "myself only",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1c31271100f88d7995f25822ea66a0b76480ce0353d5fd1120efd94ec5491534.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebee Retention (Previously Brightback)",
+       "primary_domain": "chargebee.com",
+       "professional_network_id": "18603272",
+       "professional_network_url": "https://www.linkedin.com/company/chargebeeretention",
+       "profile_name": "Chargebee Retention (Previously Brightback)",
+       "website": "https://www.chargebee.com/retention/",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 638490,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2043079,
+       "description": "An obsessive deep dive into AI-native PMF. Ft. interviews with founders, operators, and investors finding the new truths of PMF. Every other Thursday.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6bee8fc7c7012ce870940146204f688c4c2edf223a84cf62e0688438d527ab0e.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "PMF /evals by Chargebee",
+       "primary_domain": null,
+       "professional_network_id": "80891269",
+       "professional_network_url": "https://www.linkedin.com/company/pmfevals",
+       "profile_name": "PMF /evals by Chargebee",
+       "website": "https://pmfevals.substack.com",
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 2043079,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebee.com",
+        "rev-lock.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1042403,
+       "description": "RevRec  is a software solution that automates revenue recognition — compliance, pricing calculations, and clear controls and audit trails. It automates data collection from your current systems and lets you define controls and simplify approvals. RevRec offers meaningful reporting and analysis that give new line of sight from sales through service delivery.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Accounting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8e8b5e871c98cd7a3b7350951327a52353289bb5ed56d248af734003653c40ad.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebee RevRec (Previously RevLock)",
+       "primary_domain": "rev-lock.com",
+       "professional_network_id": "35436945",
+       "professional_network_url": "https://www.linkedin.com/company/chargebeerevrec",
+       "profile_name": "Chargebee RevRec (Previously RevLock)",
+       "website": "https://rev-lock.com",
+       "year_founded": 2017
+      },
+      "crustdata_company_id": 1042403,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebees.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 32629335,
+       "description": "ChargeBees is a leading EV charging solutions provider committed to accelerating the adoption of electric mobility through smart, reliable, and sustainable charging infrastructure.We offer EV charger installation, charging station deployment, commercial charging solutions, and end-to-end support for homes, apartments, offices, hotels, malls, petrol stations, and public spaces.Our mission is to make EV charging accessible, efficient, and future-ready while contributing to a cleaner and greener tomorrow.Our Services⚡ EV Charger Installation🔌 Home Charging Solutions🏢 Commercial EV Charging Stations🚘 Fleet Charging Solutions📍 Public Charging Infrastructure🔧 Maintenance & Support Services🌱 Sustainable Energy SolutionsEV Charging Solutions, EV Charger Installation, Fast Charging Stations, Commercial EV Charging, Home EV Charging, Electric Vehicle Infrastructure, Sustainable Mobility, Green Energy Solutions, Fleet Charging, Smart Charging Technology",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Renewable Energy Power Generation",
+        "Electric Power Generation",
+        "Utilities"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/869e4f81dbcca558b4d78678c1135870349ea0f1cfcfd6ce5d16fe1071013a69.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "CHARGEBEE ENERGIES PRIVATE LIMITED",
+       "primary_domain": "chargebees.com",
+       "professional_network_id": "125413927",
+       "professional_network_url": "https://www.linkedin.com/company/chargebee-energies-private-limited",
+       "profile_name": "CHARGEBEE ENERGIES PRIVATE LIMITED",
+       "website": "https://chargebees.com",
+       "year_founded": 2026
+      },
+      "crustdata_company_id": 32629335,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 16979353,
+       "description": null,
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Higher Education",
+        "Education"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6c5de7a7c0ffc374992af6589e7045c4c6a609e5ff2106c7a4d23e224f94d4e2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebeeda",
+       "primary_domain": null,
+       "professional_network_id": "99834379",
+       "professional_network_url": "https://www.linkedin.com/company/chargebeedawds",
+       "profile_name": "Chargebeeda",
+       "website": "https://www.chargebee.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 16979353,
+      "social_profiles": null
+     },
+     "confidence_score": 0.6
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargedev.co.uk",
+        "zigup.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2461599,
+       "description": "Based in the Midlands but operating nationwide we undertake the design, supply, installation and maintenance of Electric Vehicle charging equipment into domestic, commercial and public space settings.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Renewables & Environment"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/902526b9d229df649f3b142bdfb7d4bc4a70e9a1041940e8b39556e0782fe2f4.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargedEV",
+       "primary_domain": "chargedev.co.uk",
+       "professional_network_id": "4995940",
+       "professional_network_url": "https://www.linkedin.com/company/chargedev",
+       "profile_name": "ChargedEV",
+       "website": "http://www.chargedev.co.uk",
+       "year_founded": 2015
+      },
+      "crustdata_company_id": 2461599,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargenet.lk"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 8485885,
+       "description": "chargeNET is an end-to-end d solution for electric vehicle charging, a unified network that is scalable, efficient and smart, powered by IoT technology. All products are designed and manufactured according to J1772 and CHAdeMO international standards, and is a 100% local solution for B2C and B2B segments. We are on a mission to optimize the infrastructure needed for electric vehicles in Sri Lanka, to make is accessible, economical and inclusive to everyone alike. chargenet was also awarded the prestigious United National World Summit Award 2017 and was recognized as world's top 40 innovators.  chargeNET mobile and cloud based web applications, enable smart monitoring, smart payments and easy station management for a 24-7-365 operation.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Motor Vehicle Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bd61288c6ff45c3da58bcb93bb073428b99d766b5684b45c08a64e381a08ea69.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "chargeNET",
+       "primary_domain": "chargenet.lk",
+       "professional_network_id": "13582025",
+       "professional_network_url": "https://www.linkedin.com/company/chargenet-ev",
+       "profile_name": "chargeNET",
+       "website": "http://www.chargenet.lk/",
+       "year_founded": 2014
+      },
+      "crustdata_company_id": 8485885,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebyte.com",
+        "chargebyte.io"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 894616,
+       "description": "We make charging smart! Bring electric vehicle charging to the next level with our ready-to-use charge controllers for charging stations and electric vehicles.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Appliances, Electrical, and Electronics Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5b0f4d716e33081769cceb497966f9ff7b8fc883285a7a1cccfa8109c3534c21.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "chargebyte",
+       "primary_domain": "chargebyte.com",
+       "professional_network_id": "76523982",
+       "professional_network_url": "https://www.linkedin.com/company/chargebyte",
+       "profile_name": "chargebyte",
+       "website": "https://chargebyte.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 894616,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargejet.in"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 17461420,
+       "description": "ChargeJet Energy Pvt. Ltd. is dedicated to powering India’s shift to sustainable mobility with smart and reliable EV charging solutions.We offer a complete range of AC and DC chargers up to 720 kW, designed for homes, fleets,highways, and commercial use. Our chargers are safe, efficient, and future-ready, backed by IoT enabled technology and user-friendly design.With a strong focus on quality, innovation, and customer trust, ChargeJet is building the infrastructure to drive India’s EV revolution.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Energy Technology"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/40be06c0d2ecc981022f702af4b50c264d186d1706e759167a86bb9604d24b40.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargeJet",
+       "primary_domain": "chargejet.in",
+       "professional_network_id": "82073945",
+       "professional_network_url": "https://www.linkedin.com/company/chargejet",
+       "profile_name": "ChargeJet",
+       "website": "http://www.chargejet.in",
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 17461420,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "changebee.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 3267969,
+       "description": "Systems don’t fail. They drift.Teams don't get stuck because they can't change.They get stuck because they're very good at repeating what once worked.Over time, what once created advantage can become tomorrow's constraint.More activity.More initiatives.More complexity.All action. No progress.That's the problem we work on.We work with leaders building what comes next  - helping teams, functions and businesses transform how they lead, build and grow.It means making better choices about what to preserve, what to change, what to build and what to amplify.Then building the systems and ways of working to make those choices real.The aim is to become more capable, better adapted and more relevant as you grow.Our work draws on 20 years across strategy, transformation, innovation, technology and organisational change, alongside insights from economics, behavioural science and other disciplines.Don’t optimise parts.Reshape the system.",
+       "employee_count_range": "myself only",
+       "industries": [
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f021259219a10a464ce3f8171923282a7c5f39c29af47cab43ccccaee20ced78.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Changebee",
+       "primary_domain": "changebee.com",
+       "professional_network_id": "53402606",
+       "professional_network_url": "https://www.linkedin.com/company/changebeeco",
+       "profile_name": "Changebee",
+       "website": "http://www.changebee.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 3267969,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebox.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 860819,
+       "description": "We charge mobile phones and devices to keep people connected and engaged. Our charging solutions, designed and manufactured in the UK, are built to provide the best charging experience to customers and passengers. Our data-led approach ensures highest service availability through automatic fault detection and prioritisation of fixes. Only ChargeBox provides Charging-as-a-Service (CAAS)Our technology is used in both stay-and-charge furniture solutions as deployed at Heathrow Airport, Porsche, Foot Locker and more as well as our best-in-class locker solutions for permanent or event installations. Many other innovations in service management, cable design, user experience, client experience and other vital factors support these solutions for exceptional performance and lifetime. Our stations and integrated solutions are available for rental and purchase. For more information on what we offer or how we could tailor our technology specifically to your needs, visit our website or email sales@chargebox.com.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Consumer Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/070430fad2bff19381bef1490950751413b128e25fd190b02d9fde81e2c51bf8.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargeBox",
+       "primary_domain": "chargebox.com",
+       "professional_network_id": "1971496",
+       "professional_network_url": "https://www.linkedin.com/company/chargebox",
+       "profile_name": "ChargeBox",
+       "website": "http://www.chargebox.com",
+       "year_founded": 2005
+      },
+      "crustdata_company_id": 860819,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargee.energy"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1198251,
+       "description": "Chargee is an online platform and app for real-time energy insights powered by humans and AI. We help consumers deal with energy generation and consumption in a smarter way. Empowering consumers to contribute to a more sustainable future.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c4366acf0afe6e2998ed3977b58b383ed2881fdcf5850c98dc0a3d6030b925ce.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargee",
+       "primary_domain": "chargee.energy",
+       "professional_network_id": "88952848",
+       "professional_network_url": "https://www.linkedin.com/company/chargee-energy",
+       "profile_name": "Chargee",
+       "website": "https://www.chargee.energy",
+       "year_founded": 2023
+      },
+      "crustdata_company_id": 1198251,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "getchargebot.com",
+        "sust.pro",
+        "livesust.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 3240443,
+       "description": "Our on-the-go power solution solves mobile charging while adding value to your business.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Appliances, Electrical, and Electronics Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/2465f3170f2146ba8fb54ab9bd308772432e8950849ac082ea03d6611d6abf43.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargeBot",
+       "primary_domain": "getchargebot.com",
+       "professional_network_id": "92675957",
+       "professional_network_url": "https://www.linkedin.com/company/sustchargebot",
+       "profile_name": "ChargeBot",
+       "website": "http://www.sust.pro/",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 3240443,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargepe.in"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 4344265,
+       "description": "ChargPe is Building EV Infrastructure in India",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4bac611389b4514d6dcd07ed39c90e5bb64b51a93013bf5b4c2ab88e7074497e.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargePe",
+       "primary_domain": "chargepe.in",
+       "professional_network_id": "101679733",
+       "professional_network_url": "https://www.linkedin.com/company/chargepe",
+       "profile_name": "ChargePe",
+       "website": "https://chargepe.in",
+       "year_founded": null
+      },
+      "crustdata_company_id": 4344265,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargezen.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 841853,
+       "description": "Chargezen is a global technology platform that helps ambitious brands overcome their most important revenue operations and data inter-operability challenges. Serving customers worldwide with RevenueOS, Concierge, Spark!, Alchemy, Checkoutos and Smartytap.we believe that brands should have the best tools to deliver stellar customer experiences; and we work tirelessly to find new, innovative, cost-efficient ways to deliver on this belief.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b05ef95cc2d7fcc2381505d407ec88cbbe0b494b9412cbb9d9b4d46356644686.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargezen",
+       "primary_domain": "chargezen.com",
+       "professional_network_id": "72704752",
+       "professional_network_url": "https://www.linkedin.com/company/chargezen",
+       "profile_name": "Chargezen",
+       "website": "https://chargezen.com",
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 841853,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargeboxnet.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1528059,
+       "description": "ChargeboxNet es una empresa de soluciones de carga para vehículos eléctricos, creemos que todas las personas merecen acceso a una carga confiable y accesible.Nuestra red conecta estaciones ubicadas en puntos estratégicos del país: estaciones de servicio, supermercados, shoppings, hoteles, aeropuertos y espacios públicos.Brindamos soluciones inteligentes para municipios, empresas, consorcios y hogares, permitiendo que más comunidades se sumen al futuro de la movilidad eléctrica.Nuestra app permite localizar, activar, pagar y monitorear cargas de forma simple y segura.⚡ Tecnología, cercanía y compromiso con un futuro más limpio.ChargeboxNet is an electric vehicle charging company that believes everyone deserves access to reliable and affordable EV charging.Our network connects key locations across Argentina—fuel stations, supermarkets, malls, hotels, airports, and public spaces.We provide smart solutions for cities, businesses, residential buildings, and homes, enabling communities to join the electric mobility future.With our app, users can easily locate, activate, pay, and track their charging sessions in real time.⚡ Technology, accessibility, and a commitment to a cleaner future.🌐 www.chargeboxnet.com",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Motor Vehicle Parts Manufacturing",
+        "Transportation Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c4a8dec75a2c2421f0228210e2e997892b1721106939ccb82dcb139553609d04.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebox Net",
+       "primary_domain": "chargeboxnet.com",
+       "professional_network_id": "76268046",
+       "professional_network_url": "https://www.linkedin.com/company/chargeboxnet",
+       "profile_name": "Chargebox Net",
+       "website": "http://chargeboxnet.com/",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 1528059,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargenet.energy"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 4468141,
+       "description": "Plan een introductie / Meet us at: https://calendly.com/chargenet/introductieChargeNet is het nieuwe platform voor vervoerders en verladers om samen meer laadmogelijkheden te creëren en de bestaande laadinfrastructuur kosten-effectiever te gebruiken voor een schaalbare transitie naar elektrisch wegtransport. English:Discover our pioneering peer-to-peer depot-charging network tailored to European logistics providers. Our inclusive network is available to all logistics service providers and their clients, offering a opportunity to all companies to contribute to a zero-emission supply chain. Get involved today for a greener tomorrow.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Truck Transportation",
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b2f59306a65b6c9d653f74122832ad752d34b4e9d63dbd170ad080a0f9268f9c.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargeNet",
+       "primary_domain": "chargenet.energy",
+       "professional_network_id": "98603980",
+       "professional_network_url": "https://www.linkedin.com/company/chargenet-eu",
+       "profile_name": "ChargeNet",
+       "website": "https://chargenet.energy",
+       "year_founded": 2023
+      },
+      "crustdata_company_id": 4468141,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargenetstations.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 633875,
+       "description": "With over 31,000 fast food restaurants in California alone and only 4% of the EV charging infrastructure we’re going to need by 2040, we’ve structured ourselves to use modular solutions to scale rapidly.  Our world-class diversified team with direct domain experience transforms QSR parking lots from cost centers to profit centers while enabling underserved communities to seamlessly extract maximum value from mobility electrification. We have commercial traction on several fronts with revenue and a solid pipeline for rapid growth.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Renewables & Environment"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/abf8affe06ba6dd44e59c5acc5aa6c45547edab18c11a404a197d15b64a6a5ea.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargeNet Stations",
+       "primary_domain": "chargenetstations.com",
+       "professional_network_id": "69028088",
+       "professional_network_url": "https://www.linkedin.com/company/chargenet-stations",
+       "profile_name": "ChargeNet Stations",
+       "website": "https://chargenetstations.com/",
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 633875,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargetek.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 3266504,
+       "description": "Custom and OEM battery charging solutions. Introduction to Chargetek: https://chargetek.com/assets/ctcompanypresentation201706.pdfISO Certification: https://chargetek.com/images/iso_certification_2015.jpg?crc=493730750",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Appliances, Electrical, and Electronics Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ae73ad6cc2a8c0ddc7667f970a48e78221c05891ed0eabdd6b8282e4f0fff75d.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargetek",
+       "primary_domain": "chargetek.com",
+       "professional_network_id": "15745184",
+       "professional_network_url": "https://www.linkedin.com/company/chargetek-inc",
+       "profile_name": "Chargetek",
+       "website": "http://chargetek.com",
+       "year_founded": 1996
+      },
+      "crustdata_company_id": 3266504,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebase.co"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 18891881,
+       "description": "Turn Chargebacks into Revenue Today!No more juggling vendors, integrations, or hidden fees:💥 The Chargeback Killer: Real-time dispute detection the moment a customer flags one. Aautomate refunds to save the transaction, product costs, fees, and your account status.🛡️ Protect & Scale Fearlessly: Stay under the 0.9-1% threshold to keep processors happy. Skip manual hassles and scale without shutdown risks.⚡ Smart Automation at Its Best: End-to-end handling: Match alerts to orders, integrate with Verifi/Ethoca, zero manual work. Customize workflows and notifications in one dashboard.💰 Pricing That Actually Makes Sense: $15-25 per valid alert (network-dependent). Only pay for real value. No setup, minimums, or contracts.  Startup-friendly enterprise power.Already supporting 20K+ merchants and helping reclaim over $200M in lost revenue. Chargebacks won't know what hit 'em.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9e69e1c9616fa5af1841f33f04526481d140bc4d6763dcd3d64a51296ca502bb.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebase",
+       "primary_domain": "chargebase.co",
+       "professional_network_id": "107937231",
+       "professional_network_url": "https://www.linkedin.com/company/getchargebase",
+       "profile_name": "Chargebase",
+       "website": "https://www.chargebase.co/",
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 18891881,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 17488343,
+       "description": "ChargeNet hjälper till med omställningen och elektrifieringen av vårt samhälle med hjälp av hårdvara, mjukvara och tjänster.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Services for Renewable Energy",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f3d0bfcb147e64bfc4c72026b94d5b234b707c0e24c31b4594c8fce8cf2464e0.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "ChargeNet",
+       "primary_domain": null,
+       "professional_network_id": "101561009",
+       "professional_network_url": "https://www.linkedin.com/company/chargenetab",
+       "profile_name": "ChargeNet",
+       "website": null,
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 17488343,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Partnership",
+       "crustdata_company_id": 25275507,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Mobile Computing Software Products",
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/be63d36d31075f1ac50ee4c93289b0758766b6eca2b2b2678fed07b2d797fedf.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "charge.me",
+       "primary_domain": null,
+       "professional_network_id": "107446477",
+       "professional_network_url": "https://www.linkedin.com/company/chargemecom",
+       "profile_name": "charge.me",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 25275507,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargehere.co"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 67827626,
+       "description": "We are driving the global transition to sustainable energy by bridging the gap between advanced hardware and intelligent software. Operating in the heart of the US and UK markets, we provide a seamless, end-to-end EV charging ecosystem designed for the next generation of mobility.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Renewable Energy Equipment Manufacturing",
+        "Engines and Power Transmission Equipment Manufacturing",
+        "Machinery Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "ChargeHere",
+       "primary_domain": "chargehere.co",
+       "professional_network_id": "110153923",
+       "professional_network_url": "https://www.linkedin.com/company/wechargehere",
+       "profile_name": "ChargeHere",
+       "website": "http://www.chargehere.co",
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 67827626,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargetree.co"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 72001224,
+       "description": "At Chargetree, we empower small to medium-sized businesses by automating their accounts receivable and streamlining payment processes. Our platform simplifies your financial operations, enabling faster payments, lower admin costs and better cash flow management with minimal effort through a seamless integration with Xero. Let Chargetree take the hassle out of your financial operations, so you can keep your business moving forward.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Chargetree",
+       "primary_domain": "chargetree.co",
+       "professional_network_id": "78427426",
+       "professional_network_url": "https://www.linkedin.com/company/chargetree",
+       "profile_name": "Chargetree",
+       "website": "https://chargetree.co/book-now",
+       "year_founded": 2023
+      },
+      "crustdata_company_id": 72001224,
+      "social_profiles": null
+     },
+     "confidence_score": 0.4
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:53:38.849698+00:00",
+ "status": 200
+}

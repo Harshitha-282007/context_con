@@ -1,0 +1,771 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Northwind"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Northwind",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindskin.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 810821,
+       "description": "Northwind is a teledermatology start-up changing how chronic skin conditions psoriasis and eczema are treated.We connect patients to specialists in under 12 hours, and provide a tailor-made treatment plan with our proprietary line of clinically tested vegan OTC and Rx  products.  Patients register and go through our digital questionnaire, uploading pictures of their affected skin. In under 12 hours the patient receives their own specialised dermatologist who then decides the correct treatment plan required - with monthly checkpoints where the plan is adjusted based on patient feedback and results. The treatment plan is then created and shipped by our pharmacy and then shipped to the patient the same day, every month, to all 52 states.We are backed by USA’s most prominent early stage VC’s, Global Founders Capital, Y Combinator and Goodwater Capital.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/85d789a0d1921d5e5caef48d01d55c27b057a5df932ee969605e3355b377fae2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind",
+       "primary_domain": "northwindskin.com",
+       "professional_network_id": "19184006",
+       "professional_network_url": "https://www.linkedin.com/company/northwindskin",
+       "profile_name": "Northwind",
+       "website": "https://northwindskin.com/",
+       "year_founded": 2021
+      },
+      "crustdata_company_id": 810821,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwind.al"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 5229696,
+       "description": "NorthWind is the right partner for you. We consider teamwork to be the essential method for career growth. Dedication and determination for high results makes us competitive and coherent in the market. Passion for online marketing, technology and design come together at NorthWind to offer guaranteed success. Our mission is simple: to provide aspiring leaders with the tools, resources, and support they need to succeed. Whether you're a recent graduate just starting your career or a junior manager looking to take the next step, we're here to help you grow and thrive.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Advertising Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5d439530474d2377a033dc427bf81fcb229acd7849a2ca9bdbb99b890f98448d.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NorthWind",
+       "primary_domain": "northwind.al",
+       "professional_network_id": "37258034",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-al",
+       "profile_name": "NorthWind",
+       "website": "https://northwind.al",
+       "year_founded": 2015
+      },
+      "crustdata_company_id": 5229696,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 8027025,
+       "description": "NorthWind Power Development Corporation is the developer and owner of the 51.9 MW Bangui Bay wind project in Bangui, Ilocos Norte. Operational since 2005, the Bangui Bay Wind Farm began an eye-opening trend in the development of renewable enrgy in the country. Since 2015, the company is 68% owned by AC Energy Inc., a 100% owned subsidiary of Ayala Corporation and the balance is held by the original project founders.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Utilities"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c6fae155c11834b532907ba9cc98b6b8a20b3d66463710c1d99eb01e14a204e7.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NorthWind",
+       "primary_domain": null,
+       "professional_network_id": "14488608",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-power",
+       "profile_name": "NorthWind",
+       "website": null,
+       "year_founded": 2005
+      },
+      "crustdata_company_id": 8027025,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwind.us"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 14573178,
+       "description": "Northwind is a local Boise IT team that helps businesses stay secure, supported, and running without technology getting in the way.We partner with organizations across the Treasure Valley to handle day-to-day IT, strengthen security, and plan technology that grows with them. Our approach is simple: be responsive, communicate clearly, and solve problems before they disrupt work. Support should come from people who understand the local business community.We believe good IT should feel reliable, predictable, and easy!",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8f1a3938c12113e928d6558d5e0e594fadfb179f124312c3b2bb710ed723bb99.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind",
+       "primary_domain": "northwind.us",
+       "professional_network_id": "18772469",
+       "professional_network_url": "https://www.linkedin.com/company/northwindboise",
+       "profile_name": "Northwind",
+       "website": "https://www.northwind.us",
+       "year_founded": 1997
+      },
+      "crustdata_company_id": 14573178,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwind.media"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 26331364,
+       "description": "Media production, marketing and AI services for businesses and individuals.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Media Production",
+        "Movies, Videos, and Sound",
+        "Media and Telecommunications",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ec367f10be7d19db0a2fc3fdd01f316c99d499ae5ebfda23e2e81ebb6bbb2350.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NORTHWIND",
+       "primary_domain": "northwind.media",
+       "professional_network_id": "106497549",
+       "professional_network_url": "https://www.linkedin.com/company/nvrthwind",
+       "profile_name": "NORTHWIND",
+       "website": "https://www.northwind.media",
+       "year_founded": null
+      },
+      "crustdata_company_id": 26331364,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindsupply.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 32554708,
+       "description": "We put our artistry and quality into every handmade personalized leather good and accessory offered. We offer a variety of products such as keychains, mouse pads, desk blotters, wine carriers, and more. All items come with a personalization option and we ship most orders in 48 hours or less.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Wholesale"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/29b5a13f322a4cf9c584a550295f6c131db4a8e7270aebbffe5bbfe42655cb81.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind",
+       "primary_domain": "northwindsupply.com",
+       "professional_network_id": "68598667",
+       "professional_network_url": "https://www.linkedin.com/company/northwindsupply",
+       "profile_name": "Northwind",
+       "website": "http://www.northwindsupply.com",
+       "year_founded": 2017
+      },
+      "crustdata_company_id": 32554708,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 23773487,
+       "description": "We provide guidance to healthcare innovators wishing to find a place in the market for their good ideas.  While we support a variety of clientele, we have a strong interest in projects dedicated to improving healthcare in developing countries and territories.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/93785740e3803e2e536d34c23ff568fb7d05ed4e82b6b28f30ff94afb30d672f.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NorthWind",
+       "primary_domain": null,
+       "professional_network_id": "74718142",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-commercialization-consulting",
+       "profile_name": "NorthWind",
+       "website": null,
+       "year_founded": 2021
+      },
+      "crustdata_company_id": 23773487,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindmdr.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 32554707,
+       "description": "Northwind is a one-of-a-kind hospitality destination located in Marina del Rey, where history, design, dining, and unforgettable moments come together aboard a beautifully restored 130-foot historic yacht.Originally built in 1930, Northwind has welcomed distinguished guests throughout its storied past. Today, it has been thoughtfully reimagined as a destination for elevated hospitality while preserving the craftsmanship and character that make the vessel truly unique.At the heart of the brand is the Northwind Experience, an immersive dining journey featuring seasonal menus, handcrafted cocktails, curated events, and panoramic marina views. From intimate dinners and weekend brunches to wine tastings, live entertainment, and exclusive collaborations, every experience is designed to transport guests from the ordinary.Northwind also serves as an extraordinary venue for private celebrations, corporate gatherings, weddings, brand activations, and community events, offering a setting unlike anywhere else in Southern California.More than a yacht, Northwind is a destination where timeless maritime heritage meets contemporary hospitality, creating experiences that guests remember long after they step ashore.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Events Services",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ea3a8e1c50272a0fb21bd8710b506ce14bf1c456e99d13ab116e255bba15cf65.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind",
+       "primary_domain": "northwindmdr.com",
+       "professional_network_id": "108149118",
+       "professional_network_url": "https://www.linkedin.com/company/northwindmdr",
+       "profile_name": "Northwind",
+       "website": "http://www.northwindmdr.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 32554707,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 69016884,
+       "description": null,
+       "employee_count_range": "11-50",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "NorthWind",
+       "primary_domain": null,
+       "professional_network_id": "115847962",
+       "professional_network_url": "https://www.linkedin.com/company/northwindstudio",
+       "profile_name": "NorthWind",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 69016884,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 70669127,
+       "description": "At Northwind, we are dedicated to empowering individuals across India to achieve their financial goals and secure their futures. With a focus on personalized wealth management solutions, our experienced team provides expert guidance and strategic planning tailored to the unique needs of each client. We are committed to delivering comprehensive services that foster long-term financial success. Join us on the journey to financial empowerment and start building a brighter future today.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Northwind",
+       "primary_domain": null,
+       "professional_network_id": "103039692",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-wealth-management",
+       "profile_name": "Northwind",
+       "website": "https://northwind-d4aec.web.app/",
+       "year_founded": 2024
+      },
+      "crustdata_company_id": 70669127,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwind.digital"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 4444991,
+       "description": "At North Wind Digital, we combine expert knowledge of the business domain with advanced software robotics to provide a comprehensive solution for our customers – delivering functional excellence, and implementing the finance function of the future. Want to learn more visit our website https://www.northwind.digital/Or reach us:linkedin Message: north-wind-digitalinfo@northwind.digital",
+       "employee_count_range": "51-200",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6cb75254e99dc39e7545a3b5e81867720390dea31036a1faa3d3403964b738e2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NorthWind Digital",
+       "primary_domain": "northwind.digital",
+       "professional_network_id": "29215006",
+       "professional_network_url": "https://www.linkedin.com/company/north-wind-digital",
+       "profile_name": "NorthWind Digital",
+       "website": "http://www.northwind.digital",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 4444991,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindpartners.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 1003169,
+       "description": "Northwind Partners is a Top 50 Executive Search & Selection Advisory that, since 2005, has collaborated globally with investors, boards, & enterprise leaders to do the following: - Solve real-world leadership & organizational challenges - Select, assess, develop, enhance & shape boards, C-Suite & leadership teams, through best-in-class, integrated solutions, that effectively align with corporate vision & objectives - Perform discrete buy-side human capital diligence and market / target comparative analysis- Invest / Co-Invest with Clients for optimal long-term alignment through affiliate, NorthWind Investments, LLCOur unmatched 99% success rate comes from applying our trademarked SOP, Absolute Alignment, a defined, repeatable framework linking deep industry-specific experience & a relationship-centered approach with a completely transparent platform, & science-based talent optimization diagnostics, analytics, & processes to attain & evaluate balanced datasets encompassing all relevant core & adjacent targets. Our ability to aggregate, judge, advise, & act swiftly upon this diligence helps clients smoothly pass through transition points & positively affects performance through alignment of the right leaders & capabilities with business strategies. The prime concentration of our work is across the business services, manufacturing / industrials & technology sectors. We possess extensive expertise, relationships & involvement in & are uniquely situated as the most active executive advisory at the intersection of Private Equity & Debt & Aerospace, Defense, Government, & Public Sector.With 150 years of collective, direct experience, we serve as trusted consultants who give our clients the confidence to move forward with their plans. Our team has successfully completed hundreds of assignments for clients & had the opportunity to learn from the successes & failures of hundreds of companies. We gladly share the benefits of this experience with clients & candidates.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/26c9670868d120e8fdf0a073a3ad68c908a685dced10fedb9b84575c5d4c4cf0.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NorthWind Partners",
+       "primary_domain": "northwindpartners.com",
+       "professional_network_id": "375264",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-partners",
+       "profile_name": "NorthWind Partners",
+       "website": "http://www.northwindpartners.com",
+       "year_founded": 2005
+      },
+      "crustdata_company_id": 1003169,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwind-group.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1158858,
+       "description": "Northwind Group is a real estate private equity firm headquartered in Manhattan that focuses managing debt funds that originate loans secured by residential, commercial, senior-living and healthcare properties across the US.Northwind was founded in 2008, initially focusing on distressed debt acquisitions as well as on acquiring assets that have been held for long duration by the same ownership, where it recognizes opportunity to implement various value-add strategies. In this capacity Northwind led investments in properties valued at over $2 billion, predominantly in NYC.In 2016, Northwind made a strategic decision to allocate significant capital towards senior-living & healthcare properties and since made debt and equity investments in 300+ properties totaling over 30,000 units of Skilled Nursing, Assisted Living, Independent Living and Memory Care beds located across 20 states. In 2017, Northwind founded its proprietary direct lending platform, providing bridge financing solutions. Northwind originated over $3 billion in loans and currently manages four close-end debt funds with over $2 billion in AUM.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Real Estate",
+        "Real Estate and Equipment Rental Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/dbb9aa2af555e66619520c4ddea33fdd98f09fdae6cda75243aeecef170e7a1e.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Group",
+       "primary_domain": "northwind-group.com",
+       "professional_network_id": "5044885",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-group",
+       "profile_name": "Northwind Group",
+       "website": "http://www.northwind-group.com",
+       "year_founded": 2008
+      },
+      "crustdata_company_id": 1158858,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindeng.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2197579,
+       "description": "For 20 years, Northwind Engineering, LLC (Northwind) has provided design, construction, and environmental remediation services to Federal and commercial clients throughout the United States and internationally. We are committed to excellence in all aspects of project execution, capitalizing on innovative approaches and finding unique solutions to complex challenges.Northwind features multidisciplinary design, project management, safety and quality, craft labor, and heavy equipment operation personnel to complement our $8M+ fleet of in-house heavy equipment and instrumentation.Northwind is a HUBZone-Certified, American Indian, Economically Disadvantaged Woman-Owned Small Business.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/221851bcc61a4476d976057768a2f2fe6065e480ef8ec4dbb6fde280cf9153c4.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Engineering",
+       "primary_domain": "northwindeng.com",
+       "professional_network_id": "1372464",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-engineering-rvflimited",
+       "profile_name": "Northwind Engineering",
+       "website": "http://www.northwindeng.com",
+       "year_founded": 2002
+      },
+      "crustdata_company_id": 2197579,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindresearch.no"
+       ],
+       "company_type": "Nonprofit",
+       "crustdata_company_id": 3703164,
+       "description": "FME NorthWind works to turn wind R&D into a profitable export industry that creates green jobs and respects nature. The research will address the grand science and engineering challenges to realize the full potential of the wind energy sector in a sustainable future.The Centres for Environment-friendly Energy Research (FME) carry out long-term research targeted towards renewable energy, energy efficiency, CCS and social science aspects of energy research. The centres selected for funding must demonstrate the potential for innovation and value creation. Research activities are carried out in close collaboration between research groups, trade and industry, and the public administration, and key tasks include international cooperation and researcher training. The centres are established for a period of maximum eight years (5 + 3). Read more about FMEs at The Research Council of Norway’s website.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Research Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a4ba9a44fdebd07360cad8371fa7c57986c8115f54140d1ad66aab46b32754a7.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "FME NorthWind",
+       "primary_domain": "northwindresearch.no",
+       "professional_network_id": "74006613",
+       "professional_network_url": "https://www.linkedin.com/company/fme-northwind",
+       "profile_name": "FME NorthWind",
+       "website": "https://www.northwindresearch.no/",
+       "year_founded": 2021
+      },
+      "crustdata_company_id": 3703164,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindexteriors.com"
+       ],
+       "company_type": "Self-Employed",
+       "crustdata_company_id": 9366588,
+       "description": "Northwind Exteriors is a Park Ridge–based roofing and siding company built on integrity, craftsmanship, and care. We specialize in residential roof and siding replacements, new construction for custom and high-end builders, and insurance restoration — without the door-knockers or spam calls.As a James Hardie Alliance Elite Contractor (the highest level of certification) and a Malarkey Certified Premium Contractor, we take an educational approach to help homeowners make confident decisions about their homes. From design guidance to expert installation, our focus is always on delivering exceptional quality, communication, and long-lasting results.Northwind Exteriors proudly serves Park Ridge, the North Shore, and the northwest suburbs of Chicago, as well as lake home communities in Lake Geneva and Delavan, WI. We are an active member of the Park Ridge Chamber of Commerce, host of the monthly PREN 5 Networking Group, and strong supporters of local youth sports and community initiatives.With most of our business coming from referrals, Northwind has earned a reputation as one of Chicagoland’s most trusted names in roofing and siding — recognized as the only Chicagoland winner of the James Hardie Alliance Service Excellence Award.🏠 Specialties: Roofing | Siding | James Hardie Fiber Cement | Malarkey Roofing Products | Insurance Restoration | Design Support | New Construction",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b16ca969ea96f1012a32b7207ab84b61d44c3bd5e8baac3f7e79ad53f9ac3bc3.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Exteriors",
+       "primary_domain": "northwindexteriors.com",
+       "professional_network_id": "90395619",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-exteriors",
+       "profile_name": "Northwind Exteriors",
+       "website": "https://northwindexteriors.com/",
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 9366588,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindmarine.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 2638729,
+       "description": "The Northwind Team is focused on building the highest quality aluminum boats that succeed at every mission – fire departments, law enforcement, search and rescue, commercial, research, survey, custom, pleasure, as well as boats for the U.S. Air Force, Army and Navy, and the Mexican Navy. Northwind Marine's welded aluminum boats are quality engineered and built tough for the ultimate in safety, performance, and dependability.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Maritime"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a08e518c904d8fc389dfbbed52dd513154b35366e8dedf3de763ef10d7657a12.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Marine",
+       "primary_domain": "northwindmarine.com",
+       "professional_network_id": "909032",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-marine",
+       "profile_name": "Northwind Marine",
+       "website": "http://www.northwindmarine.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 2638729,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindlaw.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 61478732,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Law Practice",
+        "Legal Services",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Northwind Law",
+       "primary_domain": "northwindlaw.com",
+       "professional_network_id": "111523976",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-law-group",
+       "profile_name": "Northwind Law",
+       "website": "http://www.northwindlaw.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 61478732,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindinc.com"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 4409196,
+       "description": "Manufacturer of conveyors, conveying systems and bagging systems for the food industry.  Full CNC Machine shop on premise including 2 Lasers, CNC Mills, CNC Lathes and CNC Router.  Services include precision welding, mig and tig, cutting and bending.  Precision Machining.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Machinery Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind, Inc.",
+       "primary_domain": "northwindinc.com",
+       "professional_network_id": "1982148",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-inc.",
+       "profile_name": "Northwind, Inc.",
+       "website": "http://www.northwindinc.com",
+       "year_founded": 1994
+      },
+      "crustdata_company_id": 4409196,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northcom.com"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 11819218,
+       "description": "Northwind Communications is an Information  Technology and Services company located in Louisville, Kentucky, United States.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Communications",
+       "primary_domain": "northcom.com",
+       "professional_network_id": "5401607",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-communications",
+       "profile_name": "Northwind Communications",
+       "website": "http://www.northcom.com/",
+       "year_founded": 1994
+      },
+      "crustdata_company_id": 11819218,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": null,
+       "crustdata_company_id": 17550062,
+       "description": "Northwind Dental is a hospital & health care company based out of 3719 E Meridian Loop # B, Wasilla, Alaska, United States.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Dental",
+       "primary_domain": null,
+       "professional_network_id": "4638177",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-dental",
+       "profile_name": "Northwind Dental",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 17550062,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindre.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 3786649,
+       "description": "Northwind Solar is the leading solar, solar + storage, and smart home provider for homeowners, businesses, local governments and farms in central Wisconsin.We specialize in all types of solar electric systems.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Solar Electric Power Generation",
+        "Renewable Energy Power Generation",
+        "Electric Power Generation",
+        "Utilities"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/acde7a0df3880e54f1ce302359ddd96c0383fae03194d5213f5691899e7c691a.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Solar",
+       "primary_domain": "northwindre.com",
+       "professional_network_id": "1896224",
+       "professional_network_url": "https://www.linkedin.com/company/north-wind-renewable-energy",
+       "profile_name": "Northwind Solar",
+       "website": "http://www.northwindre.com",
+       "year_founded": 2007
+      },
+      "crustdata_company_id": 3786649,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 22479132,
+       "description": "Northwind GmbH ist ein Tochterunternehmen der Jiangsu Zhenjiang New Energy Equipment Co., Ltd. (JZNEE) – einem weltweit führenden Anbieter im Bereich der erneuerbaren Energien. Unser Ziel ist es, die Windenergiebranche durch die effiziente Bereitstellung hochwertiger Komponenten zuverlässig zu unterstützen.Als zentrales SCM-Lager und Logistik-Hub mit Sitz in Cuxhaven, Deutschland stellen wir sicher, dass benötigte Bauteile termingerecht kommissioniert, den jeweiligen Qualitätsstandard entsprechend verfügbar sind.Northwind bildet damit die Versorgungsschnittstelle zwischen globaler Produktion und dem Zielmarkt – mit Fokus auf Qualität, Schnelligkeit und nachhaltige Lieferfähigkeit.--Northwind GmbH is a subsidiary of Jiangsu Zhenjiang New Energy Equipment Co., Ltd. (JZNEE) – a global leader in the field of renewable energy.Our mission is to reliably support the wind energy sector by efficiently providing high-quality components.As a central SCM warehouse and logistics hub based in Cuxhaven, Germany, we ensure that required parts are picked on time and made available in accordance with the relevant quality standards.Northwind serves as the supply interface between global production and the target market – with a strong focus on quality, speed, and sustainable delivery performance.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Transportation, Logistics, Supply Chain and Storage"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/7927fadd0af950acd24689d80cb7bf5efcc8f862090a1d26572bf59a301dd4bd.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NORTHWIND GmbH",
+       "primary_domain": null,
+       "professional_network_id": "107466324",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-gmbh",
+       "profile_name": "NORTHWIND GmbH",
+       "website": null,
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 22479132,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindmarketing.com"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 13979516,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Marketing Services",
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/360a89c49ed024fdf5734f871e1ca1bb1e9f34f33c963a94b109adb33e216c69.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind Marketing",
+       "primary_domain": "northwindmarketing.com",
+       "professional_network_id": "105052512",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-marketing",
+       "profile_name": "Northwind Marketing",
+       "website": "http://Www.northwindmarketing.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 13979516,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 17809619,
+       "description": "NorthWind Labs builds AI applications that work in practice. We focus on large language models and how they can be integrated into real workflows, creating tools people can actually use. Alongside our own products, we help organizations design and implement custom LLM solutions — from prototypes to production-ready systems.",
+       "employee_count_range": "myself only",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bc39ff2a3606815164929cbd5355ae82e4544fcf3b9ed128858643855b75e38f.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "NorthWind Labs",
+       "primary_domain": null,
+       "professional_network_id": "108810185",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-labs",
+       "profile_name": "NorthWind Labs",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 17809619,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:45:08.106588+00:00",
+ "status": 200
+}

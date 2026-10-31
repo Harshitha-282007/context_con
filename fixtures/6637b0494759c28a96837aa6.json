@@ -1,0 +1,53 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "crustdata.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "crustdata.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "crustdata.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 6036032,
+       "description": "Power any AI agent in sales, recruitment and investment with the freshest, and grounded web intelligence on people and companies.Crustdata offers the most accurate and token efficient people and company search for your AI agents. It is the only platform providing truly real-time web intelligence to make your AI agents autonomous.Customers use us to build their AI employees on top of us. They build-AI recruiters-AI SDRs-AI marketers-AI investment analyst-AI sales platforms-AI recruiting platforms-AI investment/due diligence platforms-Internal sales or marketing platforms",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/0509e545084ed52d3e2c43a74123d98a745293f7d57967c471357110ad9df896.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Crustdata (YC F24)",
+       "primary_domain": "crustdata.com",
+       "professional_network_id": "73854007",
+       "professional_network_url": "https://www.linkedin.com/company/crustdata",
+       "profile_name": "Crustdata (YC F24)",
+       "website": "https://crustdata.com?utm_source=linkedin_bio",
+       "year_founded": 2024
+      },
+      "crustdata_company_id": 6036032,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:44:01.245392+00:00",
+ "status": 200
+}

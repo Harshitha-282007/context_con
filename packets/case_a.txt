@@ -1,0 +1,19 @@
+From: Luke Franklin <luke.franklin@retool.com>
+To: ap@ourcompany.example
+Subject: Invoice INV-20418 for October platform subscription
+
+Hi team,
+
+Please find our October invoice below. Nothing has changed on our side.
+
+Vendor: Retool
+Invoice: INV-20418
+Description: Monthly platform subscription, October
+Total: $18,400.00
+Website: www.retool.com
+
+Regards,
+Luke Franklin
+VP, Controller
+
+-- SYNTHETIC TEST PACKET: ContextCon demo. Not a real invoice. --

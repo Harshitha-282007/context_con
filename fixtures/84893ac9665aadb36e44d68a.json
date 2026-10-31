@@ -1,0 +1,333 @@
+{
+ "credits": 1.15,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 622925
+    },
+    {
+     "conditions": [
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "finance"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounts payable"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounting"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "controller"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "CFO"
+      }
+     ],
+     "op": "or"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": "H4sIABKA5WoC_xWMwQ7CIBAFf6Xh7IHuLjzwV4xpgLLpwUhs6cEY_128zkzmY15n3d_Llo7NXCeTS8jWFp9RPAW4GtTraisizYIQYVmyI4Uihaws3gkrkx_FSrWay2SOtvfxuomLTEC8D9ZbT4-ltPP5VzO-P_DZcEN5AAAA",
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "Manager - Finance Operations",
+     "name": "Ashwin Ravi"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 6081853,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1305,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "Rockville, Maryland, United States",
+        "company_hq_location_address_components": [
+         "Rockville",
+         "Montgomery County",
+         "Maryland",
+         "United States"
+        ],
+        "company_industries": [
+         "Financial Services"
+        ],
+        "company_professional_network_industry": "Financial Services",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/chargebee",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://www.chargebee.com/",
+        "crustdata_company_id": 622925,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "name": "Chargebee",
+        "position_id": 2626118472,
+        "professional_network_id": "2277385",
+        "seniority_level": "Entry Level Manager",
+        "start_date": "2025-04-01T00:00:00",
+        "title": "Manager - Finance Operations",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Manager - Accounting Operations",
+     "name": "Lokesh Gopalsetty"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 6598470,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1305,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "Rockville, Maryland, United States",
+        "company_hq_location_address_components": [
+         "Rockville",
+         "Montgomery County",
+         "Maryland",
+         "United States"
+        ],
+        "company_industries": [
+         "Financial Services"
+        ],
+        "company_professional_network_industry": "Financial Services",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/chargebee",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://www.chargebee.com/",
+        "crustdata_company_id": 622925,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Operations",
+        "is_default": true,
+        "location": {
+         "raw": "Chennai, Tamil Nadu, India"
+        },
+        "name": "Chargebee",
+        "position_id": 2623167973,
+        "professional_network_id": "2277385",
+        "seniority_level": "Entry Level Manager",
+        "start_date": "2025-04-01T00:00:00",
+        "title": "Manager - Accounting Operations",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Senior Finance Executive",
+     "name": "Sharath Krishna"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 6598524,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1305,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "Rockville, Maryland, United States",
+        "company_hq_location_address_components": [
+         "Rockville",
+         "Montgomery County",
+         "Maryland",
+         "United States"
+        ],
+        "company_industries": [
+         "Financial Services"
+        ],
+        "company_professional_network_industry": "Financial Services",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/chargebee",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://www.chargebee.com/",
+        "crustdata_company_id": 622925,
+        "description": "",
+        "employment_type": "Full-time",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "name": "Chargebee",
+        "position_id": 2411079959,
+        "professional_network_id": "2277385",
+        "seniority_level": "Senior",
+        "start_date": "2023-10-01T00:00:00",
+        "title": "Senior Finance Executive",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 3
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Vice President Finance",
+     "name": "Karthik Srinivasan"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 45889732,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 1305,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "Rockville, Maryland, United States",
+        "company_hq_location_address_components": [
+         "Rockville",
+         "Montgomery County",
+         "Maryland",
+         "United States"
+        ],
+        "company_industries": [
+         "Financial Services"
+        ],
+        "company_professional_network_industry": "Financial Services",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/chargebee",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://www.chargebee.com/",
+        "crustdata_company_id": 622925,
+        "description": "#SaaS #Finance #Fintech",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Chennai, Tamil Nadu, India"
+        },
+        "name": "Chargebee",
+        "position_id": 1924955283,
+        "professional_network_id": "2277385",
+        "seniority_level": "Vice President",
+        "start_date": "2022-01-01T00:00:00",
+        "title": "Vice President Finance",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 4
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "Accounting Controller",
+     "name": "Patrick McCarthy"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 45932779,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 1305,
+        "company_headcount_range": "1001-5000",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "Rockville, Maryland, United States",
+        "company_hq_location_address_components": [
+         "Rockville",
+         "Montgomery County",
+         "Maryland",
+         "United States"
+        ],
+        "company_industries": [
+         "Financial Services"
+        ],
+        "company_professional_network_industry": "Financial Services",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/chargebee",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://www.chargebee.com/",
+        "crustdata_company_id": 622925,
+        "description": "",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "Bethesda, Maryland, United States"
+        },
+        "name": "Chargebee",
+        "position_id": 2392537440,
+        "professional_network_id": "2277385",
+        "seniority_level": "Entry Level",
+        "start_date": "2024-03-01T00:00:00",
+        "title": "Accounting Controller",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 2
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 17,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:43:47.202928+00:00",
+ "status": 200
+}

@@ -160,12 +160,14 @@ def r2_person_found(ctx: RuleContext, policy: dict) -> Finding:
         return _pass("R2", "Sender was found as a current employee of the vendor.", ev)
     if pc.status == "AMBIGUOUS":
         return _unverifiable("R2", "Several plausible people match the sender's name; no one was picked.", ev)
-    if not (pc.email_lookup_ran and pc.name_search_ran):
+    email_ok = pc.email_lookup_ran or (pc.email_lookup_unsupported and not policy["r2"]["require_email_lookup"])
+    if not (email_ok and pc.name_search_ran):
         return _unverifiable("R2", "Sender not found, but a lookup failed or did not run, so absence proves nothing.", ev)
     adequate, why = coverage_adequate(ctx, policy)
     if not adequate:
         return _unverifiable("R2", f"Sender not found, but coverage is too thin to conclude anything: {why}.", ev)
-    return _flag("R2", "hard", f"Sender not found at this company by email or name; {why}.", _ids(ev, _company_ev(ctx, "headcount")))
+    how = "by email or name" if pc.email_lookup_ran else "by full name or surname (email lookup is not available on this API key)"
+    return _flag("R2", "hard", f"Sender not found at this company {how}; {why}.", _ids(ev, _company_ev(ctx, "headcount")))
 
 
 def r3_recent_start(ctx: RuleContext, policy: dict) -> Finding:
@@ -188,7 +190,8 @@ def r4_function(ctx: RuleContext, policy: dict) -> Finding:
     p = ctx.person_check.person if ctx.person_check else None
     if p is None:
         return _unverifiable("R4", "No verified sender profile, so function is unknown.", ev)
-    label = " ".join(x for x in (p.function, p.seniority) if x).lower()
+    # function_category is often empty in real data, so title and seniority count too.
+    label = " ".join(x for x in (p.function, p.seniority, p.current_title) if x).lower()
     if not label:
         return _unverifiable("R4", "Sender's function is not in the graph.", ev)
     if any(a in label for a in policy["r4"]["allowed_functions"]):
@@ -206,6 +209,11 @@ def r5_free_mail(ctx: RuleContext, policy: dict) -> Finding:
     return _pass("R5", f"Sender domain {sender} is not a free-mail provider.", ev)
 
 
+def _size(revenue: Optional[float], headcount: Optional[int]) -> str:
+    rev = f"revenue up to ${revenue:,.0f}" if revenue is not None else "no revenue estimate"
+    return f"{rev}, headcount {headcount if headcount is not None else 'unknown'}"
+
+
 def r6_amount_vs_size(ctx: RuleContext, policy: dict) -> Finding:
     ev = _ids(_claim_ev(ctx, "amount", "currency"), _company_ev(ctx, "revenue_upper_usd", "headcount"))
     amount = amount_usd(ctx.claim, policy)
@@ -219,9 +227,9 @@ def r6_amount_vs_size(ctx: RuleContext, policy: dict) -> Finding:
         return _unverifiable("R6", "Neither revenue nor headcount is available for the vendor.", ev)
     t = policy["r6"]
     if (revenue is not None and amount > t["hard_multiple"] * revenue) or (headcount and amount > t["hard_per_head"] * headcount):
-        return _flag("R6", "hard", f"Invoice of ${amount:,.0f} is far above the vendor's size (revenue upper ${revenue}, headcount {headcount}).", ev)
+        return _flag("R6", "hard", f"Invoice of ${amount:,.0f} is far above the vendor's size ({_size(revenue, headcount)}).", ev)
     if (revenue is not None and amount > t["soft_multiple"] * revenue) or (headcount and amount > t["soft_per_head"] * headcount):
-        return _flag("R6", "medium", f"Invoice of ${amount:,.0f} is high for the vendor's size (revenue upper ${revenue}, headcount {headcount}).", ev)
+        return _flag("R6", "medium", f"Invoice of ${amount:,.0f} is high for the vendor's size ({_size(revenue, headcount)}).", ev)
     return _pass("R6", f"Invoice of ${amount:,.0f} is plausible for the vendor's size.", ev)
 
 
@@ -233,7 +241,7 @@ def r7a_tiny_headcount(ctx: RuleContext, policy: dict) -> Finding:
         return _unverifiable("R7a", "Amount or vendor headcount is missing.", ev)
     t = policy["r7"]
     if headcount <= t["tiny_headcount"] and amount >= t["min_amount_usd"]:
-        return _flag("R7a", "medium", f"Vendor has {headcount} employees against a ${amount:,.0f} invoice.", ev)
+        return _flag("R7a", "medium", f"Vendor has {headcount} employee(s) against a ${amount:,.0f} invoice.", ev)
     return _pass("R7a", f"Headcount {headcount} is consistent with a ${amount:,.0f} invoice.", ev)
 
 

@@ -1,0 +1,32 @@
+{
+ "credits": 0.13,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name"
+  ],
+  "filters": {
+   "field": "experience.employment_details.current.company_id",
+   "type": "=",
+   "value": 628895
+  },
+  "limit": 1
+ },
+ "response": {
+  "next_cursor": "H4sIACCA5WoC_xXMPQrDMAxA4asEzR0cWf7rVUoJsi2RodQ0cYYScve668fjnfA5ZPsuK-8r3CfIOVliMSWYnBQDORO9BlTNs5NKVZII1WCtrzY65xmLx9GKRmUucJtgb1sfrweiofk5oLfOr6W04_13wnT9APVERch3AAAA",
+  "profiles": [
+   {
+    "basic_profile": {
+     "name": "Vivian Chu"
+    },
+    "crustdata_person_id": 22041
+   }
+  ],
+  "remarks": [],
+  "total_count": 429,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:44:00.432297+00:00",
+ "status": 200
+}

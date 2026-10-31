@@ -1,0 +1,51 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "northwindskin.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "northwindskin.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "northwindskin.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 810821,
+       "description": "Northwind is a teledermatology start-up changing how chronic skin conditions psoriasis and eczema are treated.We connect patients to specialists in under 12 hours, and provide a tailor-made treatment plan with our proprietary line of clinically tested vegan OTC and Rx  products.  Patients register and go through our digital questionnaire, uploading pictures of their affected skin. In under 12 hours the patient receives their own specialised dermatologist who then decides the correct treatment plan required - with monthly checkpoints where the plan is adjusted based on patient feedback and results. The treatment plan is then created and shipped by our pharmacy and then shipped to the patient the same day, every month, to all 52 states.We are backed by USA’s most prominent early stage VC’s, Global Founders Capital, Y Combinator and Goodwater Capital.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Hospitals and Health Care"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/85d789a0d1921d5e5caef48d01d55c27b057a5df932ee969605e3355b377fae2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Northwind",
+       "primary_domain": "northwindskin.com",
+       "professional_network_id": "19184006",
+       "professional_network_url": "https://www.linkedin.com/company/northwindskin",
+       "profile_name": "Northwind",
+       "website": "https://northwindskin.com/",
+       "year_founded": 2021
+      },
+      "crustdata_company_id": 810821,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:51:26.674806+00:00",
+ "status": 200
+}

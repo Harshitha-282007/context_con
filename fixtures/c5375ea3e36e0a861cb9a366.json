@@ -1,0 +1,176 @@
+{
+ "credits": 0.46,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name",
+   "basic_profile.current_title",
+   "contact.has_business_email",
+   "experience.employment_details.current"
+  ],
+  "filters": {
+   "conditions": [
+    {
+     "field": "experience.employment_details.current.company_id",
+     "type": "=",
+     "value": 634576
+    },
+    {
+     "conditions": [
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "finance"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounts payable"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "accounting"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "controller"
+      },
+      {
+       "field": "experience.employment_details.current.title",
+       "type": "(.)",
+       "value": "CFO"
+      }
+     ],
+     "op": "or"
+    }
+   ],
+   "op": "and"
+  },
+  "limit": 5
+ },
+ "response": {
+  "next_cursor": null,
+  "profiles": [
+   {
+    "basic_profile": {
+     "current_title": "Accounting Manager",
+     "name": "Ali Al Arabi"
+    },
+    "contact": {
+     "has_business_email": false
+    },
+    "crustdata_person_id": 86810109,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": false,
+        "company_headcount_latest": 21,
+        "company_headcount_range": "51-200",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "San Francisco, California, United States",
+        "company_hq_location_address_components": [
+         "San Francisco",
+         "San Francisco County",
+         "California",
+         "United States"
+        ],
+        "company_industries": [
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Technology, Information and Internet",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/tomocredit",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/90c50e52e6015e433a8d28797bc1f6326e7d12ae911f7a78c8311642935a6e70.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://tomocredit.ai/",
+        "crustdata_company_id": 634576,
+        "description": "",
+        "employment_type": "Full-time",
+        "end_date": null,
+        "function_category": "",
+        "is_default": true,
+        "location": {
+         "raw": "San Francisco, California, United States"
+        },
+        "name": "TomoCredit",
+        "position_id": 2427330953,
+        "professional_network_id": "19066932",
+        "seniority_level": "Entry Level Manager",
+        "start_date": "2024-07-01T00:00:00",
+        "title": "Accounting Manager",
+        "years_at_company": "3 to 5 years",
+        "years_at_company_raw": 2
+       }
+      ]
+     }
+    }
+   },
+   {
+    "basic_profile": {
+     "current_title": "VP of Finance & Growth",
+     "name": "Pauline Chan"
+    },
+    "contact": {
+     "has_business_email": true
+    },
+    "crustdata_person_id": 126568442,
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "business_email_verified": true,
+        "company_headcount_latest": 21,
+        "company_headcount_range": "51-200",
+        "company_headquarters_country": "United States",
+        "company_hq_location": "San Francisco, California, United States",
+        "company_hq_location_address_components": [
+         "San Francisco",
+         "San Francisco County",
+         "California",
+         "United States"
+        ],
+        "company_industries": [
+         "Technology, Information and Internet",
+         "Technology, Information and Media"
+        ],
+        "company_professional_network_industry": "Technology, Information and Internet",
+        "company_professional_network_profile_url": "https://www.linkedin.com/company/tomocredit",
+        "company_profile_picture_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/90c50e52e6015e433a8d28797bc1f6326e7d12ae911f7a78c8311642935a6e70.jpg",
+        "company_status": "active",
+        "company_type": "Privately Held",
+        "company_website": "https://tomocredit.ai/",
+        "crustdata_company_id": 634576,
+        "description": "Lead finance, product, and GTM strategy to drive company vision, roadmap, and long-term growth\nOwn organization-wide planning, forecasting, capital strategy, and operating model design\nDefine strategic frameworks, KPI architecture, and performance insights that shaped product direction and business scaling",
+        "employment_type": "",
+        "end_date": null,
+        "function_category": "Finance",
+        "is_default": true,
+        "location": {
+         "raw": "San Francisco, CA"
+        },
+        "name": "TomoCredit",
+        "position_id": 2768056630,
+        "professional_network_id": "19066932",
+        "seniority_level": "Vice President",
+        "start_date": "2025-01-01T00:00:00",
+        "title": "VP of Finance & Growth",
+        "years_at_company": "1 to 2 years",
+        "years_at_company_raw": 1
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "remarks": [],
+  "total_count": 2,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:44:04.808376+00:00",
+ "status": 200
+}

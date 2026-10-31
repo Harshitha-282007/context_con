@@ -69,10 +69,17 @@ def test_timeouts_degrade_without_raising(tmp_path):
     assert not r.ok and r.error == "Timeout"
 
 
-def test_forbidden_not_retried_or_cached(tmp_path):
-    c = client(tmp_path, FakeResp(403, {"error": {}}))
+def test_forbidden_not_retried_and_replays_only_offline(tmp_path):
+    c = client(tmp_path, FakeResp(403, {"error": {}}), FakeResp(200, [1]))
     r = c.post("/x", {})
-    assert r.status == 403 and not r.ok and not list(tmp_path.glob("*.json"))
+    assert r.status == 403 and not r.ok and len(c._session.calls) == 1
+    assert CrustdataClient(None, tmp_path, offline=True).post("/x", {}).status == 403
+    assert c.post("/x", {}).ok  # online re-asks
+
+
+def test_account_calls_are_not_saved(tmp_path):
+    client(tmp_path, FakeResp(200, {"account": {}})).post("/account/credits", {})
+    assert not list(tmp_path.glob("*.json"))
 
 
 def test_unparseable_body_does_not_crash(tmp_path):

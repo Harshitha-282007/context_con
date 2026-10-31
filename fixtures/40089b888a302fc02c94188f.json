@@ -1,0 +1,32 @@
+{
+ "credits": 0.13,
+ "endpoint": "/person/search",
+ "method": "POST",
+ "request": {
+  "fields": [
+   "basic_profile.name"
+  ],
+  "filters": {
+   "field": "experience.employment_details.current.company_id",
+   "type": "=",
+   "value": 622925
+  },
+  "limit": 1
+ },
+ "response": {
+  "next_cursor": "H4sIABKA5WoC_xXMQQ7CIBAF0Ks0rF2UPzADXsWYBgZIF0ZiSxfGeHfr9i3ex7yOur2XNe2ruU5Gi0QEjQ1COsOH4rk49mKz2pApJ1BpYKqOURkxELJoRpy1tqbmMpm9b-O8bhB2cj9h9JEei_bj-XdrBd8fKNoDBHgAAAA=",
+  "profiles": [
+   {
+    "basic_profile": {
+     "name": "Krish Subramanian"
+    },
+    "crustdata_person_id": 27647
+   }
+  ],
+  "remarks": [],
+  "total_count": 1172,
+  "total_count_relation": null
+ },
+ "retrieved_at": "2026-10-31T05:43:46.736698+00:00",
+ "status": 200
+}

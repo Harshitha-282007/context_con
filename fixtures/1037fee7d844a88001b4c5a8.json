@@ -1,0 +1,771 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Summit Solutions"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Summit Solutions",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summit-me.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 4570115,
+       "description": "We are a group of passionate people whose goal is to innovate a better tomorrow. A new broom in revolutionizing solutions and services, our strength lies in its team of passionate and creative people. We are diversified in our origin, background and traits yet we share the same cultural characteristics and qualities to deliver.We believe that information/digital technology should not be limited with data processing and info display; instead it should also seen as a creative forum and hence we endeavour to perform as \"Innovator\".We proudly, passionately and actively strive to make both Summit and our industry more reflective and inclusive of the society that we serve.Our mission is to champion the revolution of software solutions and services. Our aspiration is to be a world class solution provider offering innovative and robust solutions that maximizes the business value for our clients We work with organizations who have ambitious missions - whether they are in the commercial, social or government sectors. “It is not only business” for us when it comes to our customers. It is a commitment to deliver quality solutions and services. We seek to grow and develop with our experiences on our journey to innovation and endeavor to have solid partnership with our customers as they join us on this journey.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/32b8739abc9db70491adedd2ee2c67aaf3f36af262429f1d2ae56a79173b2c2a.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions",
+       "primary_domain": "summit-me.com",
+       "professional_network_id": "13707247",
+       "professional_network_url": "https://www.linkedin.com/company/summitsolutions-ss",
+       "profile_name": "Summit Solutions",
+       "website": "http://summit-me.com/",
+       "year_founded": 2004
+      },
+      "crustdata_company_id": 4570115,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 14212111,
+       "description": "Specilized in Implementation of a CPM Tool - CONTROL",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Information Services",
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": null,
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions",
+       "primary_domain": null,
+       "professional_network_id": "881794",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions",
+       "profile_name": "Summit Solutions",
+       "website": "http://www.summit-me.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 14212111,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 18987597,
+       "description": "Retired and enjoying life.",
+       "employee_count_range": "myself only",
+       "industries": [
+        "Artists and Writers",
+        "Entertainment Providers"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a053baf4151ca073eca74078a09ab1bf63be4dc99cd147c430dd63473ee04df2.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit-Solutions",
+       "primary_domain": null,
+       "professional_network_id": "9460676",
+       "professional_network_url": "https://www.linkedin.com/company/www-summit-solutions-com",
+       "profile_name": "Summit-Solutions",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 18987597,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutions.ai"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 26007927,
+       "description": "At Summit Solutions we help businesses run smarter through strategic consulting and AI-powered automation.We work with business owners who are tired of watching revenue walk out the door because their operations can't keep up with their ambition. Missed opportunities, manualprocesses, and disconnected systems are costing them time, money, and growth.We fix that.Our approach combines hands-on business consulting with custom automation solutions like AI voice agents, workflowintegrations, and intelligent systems which are proven to eliminate bottlenecks, capture every opportunity, and give business owners their time back.Right now our focus is the home service industry. HVAC companies, plumbers, roofers, and contractors represent some of the hardest working business owners in the countryand some of the most underserved when it comes to operational technology. We are changing that.But our mission is bigger than one industry.Wherever business owners are losing time to manual work, missing revenue to slow systems, and sacrificing their personal lives to keep operations running and that is whereSummit Solutions is headed.We are not a software company. We are not a marketing agency. We are an operations and automation partner who sits alongside our clients, understands their business deeply, and builds solutions that create measurable results.If you are a business owner who wants to stop working in your business and start working on it — Summit Solutionswas built for you.Automate Smarter. Grow Faster. Built to Scale.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Technology, Information and Internet",
+        "Technology, Information and Media"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/338c6dde07dd1579a9de83b118a82703c03c51bfe036158eed4e830246299e73.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions",
+       "primary_domain": "summitsolutions.ai",
+       "professional_network_id": "112077920",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutionsai",
+       "profile_name": "Summit Solutions",
+       "website": "http://summitsolutions.ai",
+       "year_founded": null
+      },
+      "crustdata_company_id": 26007927,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutions.co.za"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 27526135,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT System Custom Software Development",
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/aef75542dd72ae851df5dd185843de884fa89b332f984a75109c33cd86447251.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions",
+       "primary_domain": "summitsolutions.co.za",
+       "professional_network_id": "107619381",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions-sa",
+       "profile_name": "Summit Solutions",
+       "website": "https://summitsolutions.co.za/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 27526135,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutionsusa.online"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 63589442,
+       "description": null,
+       "employee_count_range": "51-200",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "SUMMIT SOLUTIONS",
+       "primary_domain": "summitsolutionsusa.online",
+       "professional_network_id": "108468991",
+       "professional_network_url": "https://www.linkedin.com/company/summit-system-solutions",
+       "profile_name": "SUMMIT SOLUTIONS",
+       "website": "http://summitsolutionsusa.online",
+       "year_founded": null
+      },
+      "crustdata_company_id": 63589442,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitstaffing.co"
+       ],
+       "company_type": "Self-Employed",
+       "crustdata_company_id": 66603467,
+       "description": "Facing challenges in hiring top talent for the  Construction sector? My recruitment agency excels in navigating these tough markets, offering more than just candidate placement. We specialize in enticing top talent away from competitors with opportunities that go beyond the paycheck.What makes us different:• Exclusive Access: Reach candidates not available through other channels.• Strategic Attraction: We market roles to excite candidates, ensuring a perfect match.• Tech-Savvy: With advanced tools like market mapping, we lead in recruitment strategies.• Understanding Needs: Our insight ensures candidates not only fit but excel.• Quick Results: See top candidates in as little as two weeks.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Summit Solutions",
+       "primary_domain": "summitstaffing.co",
+       "professional_network_id": "102598220",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solution",
+       "profile_name": "Summit Solutions",
+       "website": "https://summitstaffing.co/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 66603467,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summsol.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 70761961,
+       "description": "Northwest medical device distributorship specializing  in spinal implants and biologics.  Based in Boise Idaho.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Medical Equipment Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Summit_Solutions",
+       "primary_domain": "summsol.com",
+       "professional_network_id": "10638671",
+       "professional_network_url": "https://www.linkedin.com/company/summit_solutions",
+       "profile_name": "Summit_Solutions",
+       "website": "http://www.summsol.com",
+       "year_founded": 2012
+      },
+      "crustdata_company_id": 70761961,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutionsq.com"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 63611246,
+       "description": "At Summit Solutions, we specialize in delivering high-quality offshoring services to U.S. businesses, helping them scale, optimize, and succeed in today’s fast-paced global market. Based in Amman, Jordan, our team is composed of skilled professionals who are committed to providing cost-effective, reliable, and innovative solutions tailored to your unique business needs.We offer a wide range of services, including sales, customer support, digital marketing, data analytics, software development, and more, all designed to seamlessly integrate with your in-house teams. Our commitment to excellence ensures that we deliver results that not only meet but exceed your expectations.By partnering with Summit Solutions, you gain access to a diverse, talented workforce and flexible offshoring models that will help you increase efficiency, reduce overhead costs, and focus on your core business goals. We are dedicated to building long-term relationships that contribute to your business success and growth.Disclaimer: This organization is currently in the process of formal registration. All engagements will initially be on a freelance or contractual basis until registration is complete.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Outsourcing and Offshoring Consulting",
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Summit Solutions",
+       "primary_domain": "summitsolutionsq.com",
+       "professional_network_id": "106172580",
+       "professional_network_url": "https://www.linkedin.com/company/summitsolutionsq",
+       "profile_name": "Summit Solutions",
+       "website": "http://www.summitsolutionsq.com",
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 63611246,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 72737357,
+       "description": "Summit Solution provides Solar PV & Data Solution Services",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Design Services",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Summit Solutions",
+       "primary_domain": null,
+       "professional_network_id": "83167146",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions-solar",
+       "profile_name": "Summit Solutions",
+       "website": null,
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 72737357,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 64775510,
+       "description": "Summit Solutions blev grundlagt med en klar vision: at levere førsteklasses marketingtjenester, der skaber målbare resultater for vores kunder. Vi forstår, at hver virksomhed er unik, og derfor skræddersyr vi vores løsninger for at imødekomme de specifikke behov og mål for hver af vores kunder.Hos Summit Solutions tilbyder vi en bred vifte af marketingtjenester, der dækker alle aspekter af moderne markedsføring. Vores tjenester omfatter digital marketing, branding, content creation, market research and analysis samt campaign management. Vi hjælper dig med at øge din online synlighed og tiltrække flere kunder gennem SEO, SEM, social media marketing og indholdsstrategier. Vores kreative team udvikler stærke og konsistente brands, der differentierer dig fra dine konkurrenter og opbygger loyalitet blandt dine kunder. Vi skaber engagerende indhold, der fortæller din historie og engagerer din målgruppe, og vi tilbyder dybdegående markedsundersøgelser og analyser, der giver dig indsigt i markedstendenser og konkurrenceforhold. Vi håndterer alle aspekter af dine marketingkampagner fra planlægning til eksekvering og evaluering for at sikre deres succes.Vores team består af erfarne marketingprofessionelle med ekspertise på tværs af forskellige brancher og discipliner. Vi er altid på forkant med de nyeste trends og teknologier inden for markedsføring, så vi kan tilbyde innovative løsninger, der virker. Vi fokuserer på at levere resultater, der gør en forskel for din virksomhed, og vi er engagerede i at opbygge langvarige partnerskaber baseret på tillid og succes.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Marketing Services",
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Summit Solutions",
+       "primary_domain": null,
+       "professional_network_id": "103595047",
+       "professional_network_url": "https://www.linkedin.com/company/summit4solutions",
+       "profile_name": "Summit Solutions",
+       "website": null,
+       "year_founded": 2024
+      },
+      "crustdata_company_id": 64775510,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summit-solutions.be"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 69608143,
+       "description": "IT services for the modern SMB.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Summit Solutions",
+       "primary_domain": "summit-solutions.be",
+       "professional_network_id": "108465897",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions-be",
+       "profile_name": "Summit Solutions",
+       "website": "https://summit-solutions.be",
+       "year_founded": null
+      },
+      "crustdata_company_id": 69608143,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutionscareers.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 3246733,
+       "description": "The Summit Solutions Group is a delivery driven, niche market search firm that specializes in recruiting the most sought after IT, Engineering, Sales and Marketing professionals. We also pride ourselves in having the ability to recruit almost anyone our clients need when given the challenge. Our clients are some of the most successful companies in their respective niche markets along with the up and comers you may not be aware of yet. These great companies specialize in many areas; such as IT Services and Hardware, VAR/Partner Services, Telecom, Manufacturing, Healthcare, Medical Device/Pharmaceutical/Biotech, Consumer Products, Consulting and more.Our core capabilities are based around the over two decades of industry-specific (and position specific) recruiting efforts, progressive networking capabilities and the high level professionals that we collaborate with. We recruit perm and contract employees for clients in any location.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/8a00825e1cef4436feacf5e397cfa58b46fcbebad5ef24853043cfff24cdc916.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions Group",
+       "primary_domain": "summitsolutionscareers.com",
+       "professional_network_id": "1996076",
+       "professional_network_url": "https://www.linkedin.com/company/platinum-placement-services",
+       "profile_name": "Summit Solutions Group",
+       "website": "http://www.summitsolutionscareers.com",
+       "year_founded": 2010
+      },
+      "crustdata_company_id": 3246733,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutions.at"
+       ],
+       "company_type": "Public Company",
+       "crustdata_company_id": 10103897,
+       "description": "Software-Lösungen mit denen Du Zeit sparst. >> Mach, was Du gut kannst! Mach, was Du gerne tust! Mit Leichtigkeit zum Erfolg. Wir kümmern uns um Deinen technischen Kram. <<",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f8a89bdfb5035a4c1a6e911ee9dcd874ad931db59621a8688af2eadcd0ce7afb.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions GmbH",
+       "primary_domain": "summitsolutions.at",
+       "professional_network_id": "49074355",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions-gmbh",
+       "profile_name": "Summit Solutions GmbH",
+       "website": "http://www.summitsolutions.at",
+       "year_founded": null
+      },
+      "crustdata_company_id": 10103897,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutionscorp.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 3953468,
+       "description": "Summit empowers professionals and aspiring digital nomads to earn foreign exchange, achieve financial freedom, and live on their terms. Learn, trade, and profit from anywhere with expert guidance and tools. Let's reach the top together!",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Education"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f8676cccc6526d7f461a3fb0b80ddabe9644a0ce999003180f6a5fbb549a5284.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions Caribbean",
+       "primary_domain": "summitsolutionscorp.com",
+       "professional_network_id": "106198168",
+       "professional_network_url": "https://www.linkedin.com/company/summitsolutionscaribbean",
+       "profile_name": "Summit Solutions Caribbean",
+       "website": "http://summitsolutionscorp.com",
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 3953468,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summit-solutions.no"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 27529264,
+       "description": "We are a Norwegian company with strong roots in the north, working with construction supervision, project management, consulting, and commissioning.Our mission is to deliver high-quality projects through trust, integrity, and close collaboration – while supporting the growth and development of people.What We DoConstruction Supervision - Precision planning, adaptive execution, and uncompromising quality.Project Management - Strategic oversight, stakeholder alignment, and seamless delivery.Consulting Services - Expert guidance that turns complex challenges into actionable solutions.Completion & Commissioning - We support clients through the final and most critical project phases.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/a2a3798eaf5d6ac57a36ce7618deff2a4ab682a71718dce2a778d2126e6d3d30.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions AS",
+       "primary_domain": "summit-solutions.no",
+       "professional_network_id": "109171179",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions-as",
+       "profile_name": "Summit Solutions AS",
+       "website": "http://summit-solutions.no",
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 27529264,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutions.group"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 16981563,
+       "description": "At Summit Solutions Group, we partner with CIOs and technology leaders to drive digital transformation across CRM, AI, and contact center ecosystems. Our team specializes in high-impact consulting and implementation for Salesforce, Five9, Amazon Connect, Twilio, AI, IVA, and omnichannel platforms. We design, deliver, and support integrated, scalable, and future-ready solutions￼.We pride ourselves on solving challenges that others can’t—from complex system integrations to aligning AI tools with real operational KPIs. Our consultants are seasoned enterprise veterans who work shoulder-to-shoulder with your team, ensuring every project is executed with precision, agility, and long-term impact.Whether you’re seeking CRM and Salesforce architecture, AI enablement, or omnichannel contact center optimization, Summit Solutions Group goes above and beyond to make your technology a strategic enabler of business success.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/afabfaf8d24719dac91b6de77b8d5787ca19ecccd61f064108c57bef5223ff96.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions Group",
+       "primary_domain": "summitsolutions.group",
+       "professional_network_id": "108331156",
+       "professional_network_url": "https://www.linkedin.com/company/summitsolutionsgroup",
+       "profile_name": "Summit Solutions Group",
+       "website": "https://www.summitsolutions.group/",
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 16981563,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutionstraining.co.za"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 9534371,
+       "description": "At Summit Solutions, we don’t just teach - we add ongoing value that goes beyond the courses we offer. We assist you with implementing solutions and applying your skills in a relevant way through our ongoing support and consulting.As Data and Reporting Specialists, we use Excel extensively to import, manipulate, and report on Data. As a result, we have experienced first-hand the many frustrations and common pitfalls that people experience daily when working with Excel. Armed with this knowledge and the tools to overcome them, we have created a unique solution-based training program with real-life examples to teach and workshop Excel skills.Our trainers have a combined experience of over 50 years in the fields of Data Management, Reporting, Analysis & Process Automation in MS Excel. They are passionate about helping people and businesses, at all levels, work more effectively & efficiently in MS Excel.We are proud to work with the likes of Toyota, Bidvest, Protea Coin, Fidelity ADT, Africa Sun Soil, and Life Healthcare.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "IT System Training and Support",
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f244c6115855a8fdd33187fddd28656e232b32e82261813cb798cfdecfbe6192.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions Training",
+       "primary_domain": "summitsolutionstraining.co.za",
+       "professional_network_id": "10560285",
+       "professional_network_url": "https://www.linkedin.com/company/summitsolutionssexceltraining",
+       "profile_name": "Summit Solutions Training",
+       "website": "https://www.summitsolutionstraining.co.za/",
+       "year_founded": 2001
+      },
+      "crustdata_company_id": 9534371,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolgroup.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 13788646,
+       "description": "Summit Solutions Group is the mission support arm of the Summit Point Training Facility. As a dedicated US Government contractor, we specialize in delivering comprehensive solutions that ensure operational excellence and mission success. Based in Summit Point, WV, we are a small business with a big impact, committed to providing exceptional training and support services tailored to meet the unique needs of our clients both domestically and internationally.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Government Relations Services",
+        "Advertising Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/126c6c31721bf60761ae8f0a4961b7e88a708fbe3b21cd14635b05a31ff243f7.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions Group",
+       "primary_domain": "summitsolgroup.com",
+       "professional_network_id": "104690712",
+       "professional_network_url": "https://www.linkedin.com/company/summit-sol-group",
+       "profile_name": "Summit Solutions Group",
+       "website": "https://summitsolgroup.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 13788646,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 12855333,
+       "description": "High Summit Solutions is a specialty recruiting firm focusing on the construction vertical of commercial interior contracting, working with $0 to $100M sub-contractors nationwide. We source, recruit and place mid-to-executive level construction professionals in the electrical construction realm, but are not limited to electrical. Our focus is on the placement of Project Engineers, Project Managers, Estimators, Branch Managers, General Managers, Operations Managers, Superintendents, General Superintendents, Vice Presidents, Presidents, COO’s and CEO’s.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/428a89a5d17ae6b7e51285b447e11fc0d66c02980225df590300cffb3c4f5209.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "High Summit Solutions",
+       "primary_domain": null,
+       "professional_network_id": "105948694",
+       "professional_network_url": "https://www.linkedin.com/company/high-summit-solutions",
+       "profile_name": "High Summit Solutions",
+       "website": null,
+       "year_founded": 2025
+      },
+      "crustdata_company_id": 12855333,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "summitsolutionsonline.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 8780578,
+       "description": "Headquartered in Freehold, New Jersey Summit Solutions is a leader in delivering customized fully integrated Human Capital Solutions. Summit employs only \"Best in Class\" professionals who possess a broad range of Human Capital Management methodologies and certifications.Summit Solutions’ customer base includes companies in many business segments: financial services, manufacturing, pharmaceuticals, health care, education, media, municipal/state government, insurance, and more.As part of its commitment to establishing full business partnerships with its clients, Summit Solutions offers a variety Talent Management Solutions including Human Capital Management Consulting Services, Contingent Workforce Management Services (Modeling for both Vendor Management Solutions (VMS) and Managed Service Programs (MSP) related to Staff Augmentation Initiatives), Talent Assessment, Talent Acquisition Modeling, and Business Development Services.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Human Resources"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/515ae17ff7e160a0a4db3b4b8db67af85ed2e47316f68b38650ac0ac7da75570.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Summit Solutions, LLC",
+       "primary_domain": "summitsolutionsonline.com",
+       "professional_network_id": "11209560",
+       "professional_network_url": "https://www.linkedin.com/company/summit-solutions-online-silver-llc",
+       "profile_name": "Summit Solutions, LLC",
+       "website": "http://summitsolutionsonline.com/",
+       "year_founded": 2003
+      },
+      "crustdata_company_id": 8780578,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 66775966,
+       "description": "We provide an end-to-end solution for hosting high-impact virtual summits that connect, engage, and inspire. From customizable event platforms to integrated marketing tools, our service simplifies the process of planning, promoting, and executing virtual conferences, expos, and webinars. Whether you're organizing a corporate event, industry summit, or educational experience, we deliver scalable technology and support to ensure your success — virtually, anywhere.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Virtual Summit Solutions",
+       "primary_domain": null,
+       "professional_network_id": "106432100",
+       "professional_network_url": "https://www.linkedin.com/company/virtual-summit-solutions",
+       "profile_name": "Virtual Summit Solutions",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 66775966,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 25158623,
+       "description": "The leader in expert consulting.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/892c494c144fcffd994b7d17a0320c426df24162969fdc16b39259e063eb892e.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "North Summit Solutions",
+       "primary_domain": null,
+       "professional_network_id": "53239764",
+       "professional_network_url": "https://www.linkedin.com/company/north-summit-solutions",
+       "profile_name": "North Summit Solutions",
+       "website": null,
+       "year_founded": 2020
+      },
+      "crustdata_company_id": 25158623,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "nextsummitsolutions.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 26108245,
+       "description": "Business excellence and value creation consulting and services. AI deployment and training.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/9a11b0da118b526515e3ef0f5ea00685422dc8689fb1b35acbdcbab67cef2a00.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Next Summit Solutions",
+       "primary_domain": "nextsummitsolutions.com",
+       "professional_network_id": "111297133",
+       "professional_network_url": "https://www.linkedin.com/company/next-summit-solutions",
+       "profile_name": "Next Summit Solutions",
+       "website": "https://nextsummitsolutions.com/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 26108245,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "bluesummitsolutions.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 13997783,
+       "description": "Blue Summit is a highly responsive, solutions-oriented, boutique compliance firm. Campaigns are fast paced, demanding, deadline driven entities with little room for error.  As seasoned campaign experts, the team at Blue Summit understands that pace and those demands. With that understanding, we strive to serve as a respite in the midst of the chaos of a campaign.  Each cycle, we limit the number of clients we bring on to allow us to fully invest and focus on the races we tackle.  We have tried and true systems that get you started on the right foot and our methods are easily adapted to meet your campaign’s unique needs.  We want to be your first and last phone call when challenges arise.  Tracie founded Blue Summit Solutions in January of 2019, as she helped Senator Hickenlooper launch his presidential bid.  In the 2022 Cycle, we were thrilled to work with several gubernatorial candidates including Arizona, Colorado, Maryland and Ohio and with the Lieutenant Governor of Nevada.  We were fortunate to spend January 2023 organizing the inaugural celebrations for the re-election of Colorado Governor Jared Polis and the election of Maryland Governor Wes Moore.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Political Organizations",
+        "Civic and Social Organizations",
+        "Consumer Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5ec91c29911e69ae71a99012072471536def729d2c6c990c8219ba53cea04e31.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Blue Summit Solutions",
+       "primary_domain": "bluesummitsolutions.com",
+       "professional_network_id": "96165740",
+       "professional_network_url": "https://www.linkedin.com/company/blue-summit-solutions-llc",
+       "profile_name": "Blue Summit Solutions",
+       "website": "https://www.bluesummitsolutions.com/",
+       "year_founded": 2019
+      },
+      "crustdata_company_id": 13997783,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:45:01.981554+00:00",
+ "status": 200
+}

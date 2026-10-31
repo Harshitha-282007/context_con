@@ -1,0 +1,769 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "names": [
+   "Pinnacle Group"
+  ]
+ },
+ "response": [
+  {
+   "match_type": "name",
+   "matched_on": "Pinnacle Group",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnaclegroup.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1304959,
+       "description": "For over 30 years, Pinnacle Group has been the executive search firm of choice for companies seeking to build their investment teams. We improve the efficiency of the recruiting process and source exceptional candidates from the analyst to principal levels. Our areas of expertise include:• Family Offices• Endowments & Foundations• Private Credit Funds• Secondary Funds• Private Equity Funds• SBIC Funds • Asset Management FirmsAt Pinnacle Group, our relationships with our clients and executive candidates are based on these simple but critical core values:•Trust and Personal Service•Discretion and Confidentiality•Integrity and Consistency•Responsiveness and ProfessionalismWhen you work with Pinnacle Group, you benefit from a unique, targeted approach to recruiting and building your executive team. Partner with us to reach the pinnacle in your business and your career.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/1cbcb3ae7065d2222345512bd6e6a0279791d8bf24dd4abe6b94f1c38440aab5.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": "pinnaclegroup.com",
+       "professional_network_id": "119762",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-international",
+       "profile_name": "Pinnacle Group",
+       "website": "http://www.pinnaclegroup.com",
+       "year_founded": 1988
+      },
+      "crustdata_company_id": 1304959,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "gpinnacle.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1470552,
+       "description": "Grupo Pinnacle tem uma trajetória de mais de 25 anos no mercado audiovisual. Nossa história começou como \"Pinnacle Home\", uma área de suporte e serviços da marca Pinnacle Systems, que logo expandiu suas atividades para a Argentina e, em seguida, para as principais capitais do Brasil e a cidade do México.Quando a Pinnacle Systems foi vendida para AVID, nosso CEO, Ricardo Lopez, assumiu a marca e a transformou em PinnacleBroadcast. Desde então, nos consolidamos como distribuidores de grandes marcas do mercado audiovisual, como Blackmagic Design, E-Image, Hollyland, AIDA Imaging, Kiloview, Meike , Fujifilm, Yololiv, SKB Cases, Telikou, Media5, entre outras.Oferecemos suporte e assistência técnica oficiais para todas essas marcas, o que fortalece nossa presença no mercado local e entrega mais segurança para nossas revendas e usuários. Além disso, participamos das principais feiras e exposições nacionais e internacionais e produzimos eventos próprios, como o \"Pinnacle Show\", onde compartilhamos conhecimento, expertise e as mais recentes tendências do mercado audiovisual.Estamos comprometidos em oferecer sempre o melhor para nossos clientes e parceiros, trabalhando com transparência, inovação e excelência em todas as nossas atividades.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Wholesale Import and Export",
+        "Wholesale"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/bd5732bb2600f5f68626689f3263c8f7a58430a109764583ce7b935e5f8013b9.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": "gpinnacle.com",
+       "professional_network_id": "3774227",
+       "professional_network_url": "https://www.linkedin.com/company/gpinnacle-oficial",
+       "profile_name": "Pinnacle Group",
+       "website": "https://linktr.ee/grupopinnacleoficial",
+       "year_founded": 2002
+      },
+      "crustdata_company_id": 1470552,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 8982613,
+       "description": "Where Brands Meet Impact.At Pinnacle Group, we specialize in delivering high-impact BTL solutions that transform ideas into powerful brand experiences.We partner with ambitious brands to create strategic activations, seamless events, and execution-driven campaigns that don’t just look good — they perform.With deep industry expertise and strong operational capabilities, we ensure every detail is managed with precision, speed, and excellence.⸻What We Do• Event Management• Brand Activations• Roadshows & Experiential Campaigns• Exhibitions & Conferences• Branding & Production• Printing & Fabrication• Promotional Solutions⸻Why Pinnacle?✔ Strategic thinking before execution✔ Speed without compromising quality✔ Strong production & on-ground management✔ Result-oriented BTL executionWe don’t just execute projects.We build brand moments that drive engagement, visibility, and measurable impact.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Advertising Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/15454ef6f52ea1f07bda60a36b27085f523d4edbde3d96b018f7ae8e49cec82b.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": null,
+       "professional_network_id": "85637936",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-eg",
+       "profile_name": "Pinnacle Group",
+       "website": "https://web.whatsapp.com/",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 8982613,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinn.group"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 21995380,
+       "description": "We introduce opportunities at the request of certified investment individuals, families, institutions, and professional companies globally and help them achieve their wealth goals, always with a standard of excellence and guided by our core values.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Investment Management",
+        "Capital Markets",
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/b9880106fbe631697d32b57079493c65d821cb71d6da8f023eb78b8be0997398.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": "pinn.group",
+       "professional_network_id": "91177693",
+       "professional_network_url": "https://www.linkedin.com/company/pinn-group",
+       "profile_name": "Pinnacle Group",
+       "website": "https://pinn.group/",
+       "year_founded": null
+      },
+      "crustdata_company_id": 21995380,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Public Company",
+       "crustdata_company_id": 9144857,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Public Relations and Communications Services",
+        "Advertising Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/3b83f0330df695867a34cb0644278ae4f3948d87945ea1c03f1db8391dba9b1a.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": null,
+       "professional_network_id": "91681110",
+       "professional_network_url": "https://www.linkedin.com/company/pinnaclegroupint",
+       "profile_name": "Pinnacle Group",
+       "website": "http://pinnaclegroup.com",
+       "year_founded": 1988
+      },
+      "crustdata_company_id": 9144857,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 9148201,
+       "description": "Pinnacle Group is a Small Independent Import & Export organization, Continuing to develop business by exploring areas in demand Throughout South Asia. Focusing on Health & Beauty, Food & Drinks, Electronics, Jewellery Decorative Art, Ornaments, and Various Other General Products.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Import & Export"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/26641ae67f758ef668bde089a08fae5889bf19941f6e7b5bd26f6def59c7258f.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": null,
+       "professional_network_id": "11688028",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group",
+       "profile_name": "Pinnacle Group",
+       "website": "https://www.linkedin.com/company/pinnacle-group/",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 9148201,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "nriproperty.uk"
+       ],
+       "company_type": "Self-Employed",
+       "crustdata_company_id": 96779707,
+       "description": "Pinnacle Group – NRI Property Services is a trusted partner for Non-Resident Indians seeking reliable property solutions in India.We help NRIs manage their property-related needs from anywhere in the world. Our services include property buying and selling assistance, property management, tenant and rental support, documentation coordination, property verification, and guidance throughout the transaction process.With a focus on transparency, professionalism, and personalised service, we aim to make property ownership and management in India simple, secure, and hassle-free.Your property in India deserves trusted care—wherever you live.UK NRI PORTAL : nriproperty.ukUSA/CA NRI PORTAL : nriproperty.caEurope NRI PORTAL : nriproperty.eu",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Real Estate",
+        "Real Estate and Equipment Rental Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Pinnacle Group",
+       "primary_domain": "nriproperty.uk",
+       "professional_network_id": "143559004",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-nri-property-services",
+       "profile_name": "Pinnacle Group",
+       "website": "https://www.nriproperty.uk",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 96779707,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnaclegroup.com.tr"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 73436856,
+       "description": "Pinnacle is a leading provider of industry leading Jump Form technology for high-rise building construction. We specialise in designing and manufacturing innovative Jump Forms, Jump Form equipment and also provide rental, sales, and consulting services for our clients.",
+       "employee_count_range": "201-500",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Pinnacle Group",
+       "primary_domain": "pinnaclegroup.com.tr",
+       "professional_network_id": "99296015",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-1",
+       "profile_name": "Pinnacle Group",
+       "website": "https://pinnaclegroup.com.tr/",
+       "year_founded": 2023
+      },
+      "crustdata_company_id": 73436856,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnaclegroupglobal.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 74581402,
+       "description": null,
+       "employee_count_range": "2-10",
+       "industries": [
+        "Wholesale Import and Export",
+        "Wholesale"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Pinnacle Group",
+       "primary_domain": "pinnaclegroupglobal.com",
+       "professional_network_id": "124053913",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-global",
+       "profile_name": "Pinnacle Group",
+       "website": "https://pinnaclegroupglobal.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 74581402,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "shorewayconstruction.ca"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 28258289,
+       "description": "Shoreway Construction excels in new build projects for both residential and commercial spaces, showcasing a diverse skill set across multiple trades with a specialization in finishing. With multiple crews, we tackle projects of any size, emphasizing quality and expertise in every endeavor.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/6988dcd169e3221385b7cc72b180e895363e077fda60d12d5aab8bbdff7443ce.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group",
+       "primary_domain": "shorewayconstruction.ca",
+       "professional_network_id": "101077447",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-homes",
+       "profile_name": "Pinnacle Group",
+       "website": "https://shorewayconstruction.ca/",
+       "year_founded": 2018
+      },
+      "crustdata_company_id": 28258289,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 60091834,
+       "description": null,
+       "employee_count_range": "51-200",
+       "industries": [
+        "Real Estate",
+        "Real Estate and Equipment Rental Services"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Pinnacle Group",
+       "primary_domain": null,
+       "professional_network_id": "102303753",
+       "professional_network_url": "https://www.linkedin.com/company/pinnaclegroupindia",
+       "profile_name": "Pinnacle Group",
+       "website": "https://www.pinnaclegroup.in",
+       "year_founded": null
+      },
+      "crustdata_company_id": 60091834,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Partnership",
+       "crustdata_company_id": 64103115,
+       "description": null,
+       "employee_count_range": "11-50",
+       "industries": [
+        "Paper and Forest Product Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Pinnacle Group",
+       "primary_domain": null,
+       "professional_network_id": "108900295",
+       "professional_network_url": "https://www.linkedin.com/company/pinnaclegroupforestry",
+       "profile_name": "Pinnacle Group",
+       "website": null,
+       "year_founded": null
+      },
+      "crustdata_company_id": 64103115,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnaclefibres.com"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 66913608,
+       "description": null,
+       "employee_count_range": "11-50",
+       "industries": [
+        "Paper and Forest Product Manufacturing",
+        "Manufacturing"
+       ],
+       "logo_permalink": null,
+       "markets": [],
+       "name": "Pinnacle Group",
+       "primary_domain": "pinnaclefibres.com",
+       "professional_network_id": "108904311",
+       "professional_network_url": "https://www.linkedin.com/company/pinnaclegrouppaper",
+       "profile_name": "Pinnacle Group",
+       "website": "http://www.pinnaclefibres.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 66913608,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "ptrglobal.com",
+        "pinnacle1.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1258810,
+       "description": "Pinnacle Group is a leading provider of information technology and workforce solutions. Pinnacle Group includes Pinnacle Technical Resources, Inc., its flagship information technology staffing and consulting services provider; Pinnacle MSP, a managed services provider; Pinnacle Payrolling, a payrolling and independent contractor compliance provider; Pinnacle Canada, which provides staffing, MSP and payrolling services in Canada. Pinnacle Group has become one of the largest providers in its industry, with over 5000 professionals providing services across the U.S. and Canada. For more information visit http://www.pinnacle1.com Apply online now at http://www.pinnacle1.com/careers/",
+       "employee_count_range": "5001-10000",
+       "industries": [
+        "IT Services and IT Consulting",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/ee2957b1d428562d4a42a1b64ddb3da86f8d09009c5c718bc845ec63f89bb52f.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group, Inc.",
+       "primary_domain": "pinnacle1.com",
+       "professional_network_id": "11067",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-technical-resources",
+       "profile_name": "Pinnacle Group, Inc.",
+       "website": "http://www.pinnacle1.com/",
+       "year_founded": 1996
+      },
+      "crustdata_company_id": 1258810,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnacleservicefamilies.co.uk",
+        "pinnacleworkplace.co.uk",
+        "pinnaclegroup.co.uk"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1165837,
+       "description": "We are a community-facing, people-first business that delivers, manages, and maintains communities and places where people live, work, learn and play. This includes a portfolio of 70,000+ mixed-tenure homes and, 160+ schools as well as open spaces, public and private buildings, retail, distribution centres and manufacturing.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Real Estate",
+        "Real Estate and Equipment Rental Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/33905de07aa73adbd28b6b08936e0c279ca6e022df44a913f2d7aedccda63902.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group Limited",
+       "primary_domain": "pinnaclegroup.co.uk",
+       "professional_network_id": "10067944",
+       "professional_network_url": "https://www.linkedin.com/company/pinnaclegrp",
+       "profile_name": "Pinnacle Group Limited",
+       "website": "http://www.pinnaclegroup.co.uk",
+       "year_founded": 1994
+      },
+      "crustdata_company_id": 1165837,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnacleifs.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 904332,
+       "description": "ANYONE CAN OFFER; NOT JUST ANYONE CAN IMPLEMENT.In an increasingly commodified marketplace, there’s less value to selling a thing and far more value in its implementation. Anyone can promise you a successful outcome. But only a few will commit to getting you there.Our number one focus is to maximize your business by utilizing leverage and mitigating risk. In order to begin that process, we simply look at your book of business in the way that is most natural to an advisor. And with a nationwide sales support network, you always have direct access to a Pinnacle team member that can turn your business opportunities into action.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e712c56aa6396aa5887a77e7c2e5d3da3a292c1e6c17f5fdefc8039d8da3fb30.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "The Pinnacle Group",
+       "primary_domain": "pinnacleifs.com",
+       "professional_network_id": "1828499",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle_ifs",
+       "profile_name": "The Pinnacle Group",
+       "website": "https://pinnacleifs.com",
+       "year_founded": 2007
+      },
+      "crustdata_company_id": 904332,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnacle-group.com.au"
+       ],
+       "company_type": "Sole Proprietorship",
+       "crustdata_company_id": 4432395,
+       "description": "Established in 2005, Pinnacle Group Australia is a leading-edge management consulting firm that provides strategy, organisation alignment and leadership development services that drive peak performance.We work with clients across a diverse range of industries with a focus on the following key sectors – health, education, human and community services, corporate and government. In collaboration with our clients, we design strategy that results in better decision making, mitigated risk, increased productivity and superior performance. Our experienced team possess strong economic and commercial acumen, analytical rigour and real-life business expertise from a range of sectors and disciplines. Given effective strategy can only be delivered through people, our trained and experienced consultants create people-orientated solutions that unlock individual performance, optimise teams, and transform organisational capability. We believe in working in partnership with our clients to produce positive social impact. We strive to build a more prosperous, innovative and meaningful future in which people, organisations and the community can thrive. As a values-based firm, we work to foster the same qualities within our own business. We recruit people who are passionate and motivated about creating enduring impact, are committed to maintaining a vibrant, stimulating and healthy workplace, and who seek to support the communities in which we live and minimise our impact on the environment.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/f22d60e998be9195a72756b5b620df3df027bd17e51ad3a3e070e574c3383dcf.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group Australia",
+       "primary_domain": "pinnacle-group.com.au",
+       "professional_network_id": "3100457",
+       "professional_network_url": "https://www.linkedin.com/company/pinnaclegroup",
+       "profile_name": "Pinnacle Group Australia",
+       "website": "http://www.pinnacle-group.com.au",
+       "year_founded": 2005
+      },
+      "crustdata_company_id": 4432395,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "mpgstaff.com"
+       ],
+       "company_type": "Partnership",
+       "crustdata_company_id": 6449002,
+       "description": "Morgan Pinnacle Group (MPG) | Strategic Talent PlacementCEO doesn’t stand for Chief Everything Officer.At MPG, we connect entrepreneurs and growing businesses with top-tier, US-based talent, from executive support to high-impact leadership roles, giving you the time and space to focus on what really matters.Delegate like a boss. Hire like a leader.Our US-based talent are productivity partners and strategic operators who keep your day moving, your priorities clear, and your business goals on track. From inbox and calendar management to operations, marketing, financial leadership, and beyond, we help you build the right team so you can scale confidently.Concierge-level hiring, without the hiring hassle.Whether you’re engaging flexible fractional support or making a key direct hire, MPG simplifies the process. We handle sourcing, vetting, onboarding, payroll and benefits for fractional roles, and structured placement for leadership hires, so you can focus on running your business.Tailored, not transactional.We don’t rely on algorithms or resume blasts. Every MPG match is thoughtfully selected to fit your work style, pace, and culture. Our talent are U.S.-based, highly vetted, and ready to contribute at a high level.Support and leadership that grows with you.Your business evolves. Your team should too. From scalable support to C-suite and specialized placements, MPG helps you build with intention.Looking to join the MPG team?Our fractional talent are W-2 employees, not contractors, which means benefits eligibility, professional development, and a team that has your back. For direct placements, we partner with established businesses seeking strong leaders and high performers ready to make an impact.📍 US-Based Talent📈 Fractional & Direct Hire Solutions💼 Executive Support to C-Suite🤝 Long-Term Strategic Partnerships🔑 Hiring Done RightReady to reclaim your time and build your bench?Visit mpgstaff.com or message us to get started.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Staffing and Recruiting",
+        "Administrative and Support Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/d2e23c5ab3c46b5e26876cd2f3b8311779d4991fa3f24470d0ed114f826ef78b.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Morgan Pinnacle Group",
+       "primary_domain": "mpgstaff.com",
+       "professional_network_id": "106691168",
+       "professional_network_url": "https://www.linkedin.com/company/morgan-pinnacle-group",
+       "profile_name": "Morgan Pinnacle Group",
+       "website": "http://www.mpgstaff.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 6449002,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 13993522,
+       "description": "Somos especialistas en tecnología audiovisual y transmisiones en vivo. Nuestro equipo altamente capacitado está comprometido en brindarle soluciones personalizadas y confiables. Trabajamos con marcas reconocidas mundialmente para garantizar el rendimiento de nuestros proyectos. Además, en Pinnacle Group, ofrecemos integración e implementación de servicios audiovisuales de alta calidad, asegurando que cada detalle de su proyecto se ejecute con precisión y profesionalismo. Con nosotros, sus ideas se transforman en experiencias visuales y sonoras excepcionales.",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Wholesale Import and Export",
+        "Wholesale"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/c0407f4ff40c4c14bb7ba7526a673e62056dd64d86802b24831ea4f661bf1f9b.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group Argentina",
+       "primary_domain": null,
+       "professional_network_id": "92541903",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-ar",
+       "profile_name": "Pinnacle Group Argentina",
+       "website": "https://linktr.ee/gpinnacle_oficial_ar",
+       "year_founded": null
+      },
+      "crustdata_company_id": 13993522,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "thepinnacle.net"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1869641,
+       "description": "We provide state-of-the-art, strategic solutions for the full range of our client's employee benefits needs. We create and deliver benefits solutions that optimize value and inspire employee commitment. Our full-service benefits consulting firm provides employee benefits programs and human resources consulting, as well as premiere retirement plans through our Securities services arm.Call us at (757) 463-8000",
+       "employee_count_range": "11-50",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/e7165767862b9ae59ba9bc2a29949107e7eec4d5e8a1343c28c5655e06177c74.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "The Pinnacle Group",
+       "primary_domain": "thepinnacle.net",
+       "professional_network_id": "794943",
+       "professional_network_url": "https://www.linkedin.com/company/the-pinnacle-group_2",
+       "profile_name": "The Pinnacle Group",
+       "website": "http://www.thepinnacle.net",
+       "year_founded": 1989
+      },
+      "crustdata_company_id": 1869641,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "jbpinnacle.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 6726959,
+       "description": "JB Pinnacle specializes in concrete specialties such as slipform barrier, flatwork, walls and bridges, across Louisiana, Texas, and Oklahoma. We deliver high-quality infrastructure with precision, reliability, and a proven team.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/4bece72cb939c6bc648681fa6cc35743da328d67340a373c245b5e2c4e45bdfb.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "JB Pinnacle Group",
+       "primary_domain": "jbpinnacle.com",
+       "professional_network_id": "107137801",
+       "professional_network_url": "https://www.linkedin.com/company/jbpinnacle",
+       "profile_name": "JB Pinnacle Group",
+       "website": "http://jbpinnacle.com",
+       "year_founded": null
+      },
+      "crustdata_company_id": 6726959,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "jobstore.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 22754456,
+       "description": "Pinnacle Homes Sdn. Bhd. is a niche property developer focusing on developments of high end integrated commercial developments and boutique residential developments.  The Company has established the prestigious ISO 9001: 2015 Quality Management System in Property Development and Construction Management.In line with our business expansion, we invite dynamic and committed individual to join our Group of Companies.WHY JOIN US?We are a fast growing company, with a solid track record.  We believe strongly in creating a win and win environment for our staff where they can fully develop their skills whilst actively contributing to the company’s performance.Opportunities for career advancements within the company are excellentGood benefits and remunerations.",
+       "employee_count_range": "51-200",
+       "industries": [
+        "Real Estate",
+        "Real Estate and Equipment Rental Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/21ebb176e2650b04ee1475ba4d00d69723d7c6036e197e54d3c95304b1ddc9fe.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group Malaysia",
+       "primary_domain": "jobstore.com",
+       "professional_network_id": "91343042",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-malaysia",
+       "profile_name": "Pinnacle Group Malaysia",
+       "website": "https://www.jobstore.com/my/companies/124068-0/pinnacle-homes-sdn-bhd",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 22754456,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "lynchpinnacle.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 1692739,
+       "description": "Lynch Pinnacle Group is a nationally recognized advisory services firm specializing in developing leadership strategies to build intelligence, credibility, and success for high-profile, iconic capital campaigns, national initiatives, and special projects in both the public and private sectors.We combine unmatched insight, powerful connections and proprietary data technology to solve the toughest marketing challenges for leaders of non-profits, businesses looking to raise capital and public agencies looking for public sector partners. Leaders count on our proven strategies to make powerful connections we leverage to create opportunities others cannot.From securing major donors to support a nonprofit’s capital campaign, to attracting corporations to expand into new, untapped markets—our firm forges partnerships that deliver results.",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/5cf28e24a9b995c4216de705b1f493d37e522b13ede72903bcd4fe6f5da93fde.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Lynch Pinnacle Group",
+       "primary_domain": "lynchpinnacle.com",
+       "professional_network_id": "11217764",
+       "professional_network_url": "https://www.linkedin.com/company/lynch-pinnacle-group",
+       "profile_name": "Lynch Pinnacle Group",
+       "website": "https://www.lynchpinnacle.com/",
+       "year_founded": 2017
+      },
+      "crustdata_company_id": 1692739,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "pinnaclerenovations.ca"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 6354339,
+       "description": "The Pinnacle DifferenceMaking your home... your Family’s Haven...One of the most significant realizations that the staff and ownership of the Pinnacle Group have come to understand over the past many years; is that a successful home renovation cannot be viewed just as designs, materials, tools and wonderful ‘before & after’ photos. The Pinnacle slogan states that home...is a haven for families; and for good reason. From the perspective of the Pinnacle Group, there’s nothing quite like coming home to an environment that makes you feel comfortable, relaxed and secure. However, a sense of apathy towards our clients, or the renovation process, cannot produce those surroundings...it takes a level of team-passion often difficult to find in our beautiful city. Through constant reflection...and improvements in all areas of our client experience, the ownership and staff of the Pinnacle Group strive to help our clients attain a certain level of ‘Arrival’. Not just by assembling a skilled team of professionals focused on crafting an estate-level home, but by truly partnering with the most important team member of all...our valued customer. Finally...Pinnacle takes great pleasure in being able to build those dream surroundings for you our valued client. Imagine for a moment...if your journey home was one of anticipating the comfort, security and beauty of your new surroundings. As you step inside your front entrance...we’d like to say, “Welcome to the Pinnacle Difference.” New Company website! Visit us at: www.pinnaclerenovations.ca",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Construction"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/903e9c050198b2bf94e3a30c50cb853cde88b4b755224c45fb02304e618f5c31.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Pinnacle Group Renovations",
+       "primary_domain": "pinnaclerenovations.ca",
+       "professional_network_id": "467884",
+       "professional_network_url": "https://www.linkedin.com/company/pinnacle-group-renovations-by-design-ltd.",
+       "profile_name": "Pinnacle Group Renovations",
+       "website": "https://www.pinnaclerenovations.ca",
+       "year_founded": 1998
+      },
+      "crustdata_company_id": 6354339,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    },
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "thepinnaclegroup.io"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 13570970,
+       "description": "Insightful. Intuitive. Accomplished",
+       "employee_count_range": "2-10",
+       "industries": [
+        "Business Consulting and Services",
+        "Professional Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/846997c2fffe4fca85f482152fd652740a14c52c3dc6c55f82b0c83503b23a89.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "The Pinnacle Group",
+       "primary_domain": "thepinnaclegroup.io",
+       "professional_network_id": "107116094",
+       "professional_network_url": "https://www.linkedin.com/company/thepinnaclegroupio",
+       "profile_name": "The Pinnacle Group",
+       "website": "http://www.thepinnaclegroup.io",
+       "year_founded": 2022
+      },
+      "crustdata_company_id": 13570970,
+      "social_profiles": null
+     },
+     "confidence_score": 0.8
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:45:06.568730+00:00",
+ "status": 200
+}

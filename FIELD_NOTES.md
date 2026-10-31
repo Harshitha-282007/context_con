@@ -1,19 +1,44 @@
 # Crustdata field notes
 
-Status: **from the docs only. Nothing below is confirmed by a real call yet.** The probe (`scripts/probe.py`) confirms or corrects these.
+Confirmed by real calls on 31 Oct 2026 unless marked. Raw responses are in `fixtures/`.
 
-## Answers to PRD §19 from the docs
+## Key access (`GET /account/endpoints`, free)
 
-| Question | Answer from docs |
-|---|---|
-| Email lookup body | **Differs from the PRD.** `/person/enrich` accepts only `professional_network_profile_urls`. Reverse lookup is `POST /person/identify` with `{"emails": [...]}` (`business_emails` returns 400). Enabled per account, so it may return 403. |
-| Credit costs | Company Identify free; Company Enrich 2 per record; Person Identify 1 per match (unmatched free); Person Search 0.03 per result plus premium groups (`experience` is premium, price in `/account/endpoints`); Person Enrich 1+. Every response carries `X-Credits-Used`. |
-| Watcher enabled? | Unknown. Check the `GET /account/endpoints` response (free). |
+| Endpoint | Status | Effect on Clearance |
+|---|---|---|
+| `/company/identify`, `/company/enrich` | enabled | Used as planned |
+| `/person/search` | enabled | Sender check and callback contacts |
+| `/person/identify` | **403** | No email reverse lookup; see R2 in the README |
+| `/person/contact/enrich` | disabled | No addresses; drafts use `.invalid` and defer to vendor records |
+| Live person search and enrich | disabled | Not used |
+| `/watch/*` | not listed | Watcher (P2) cut |
 
-## Documented shapes
+## Coverage probe (10 vendors): all usable
 
-- **Company Identify / Enrich:** top-level array of `{matched_on, match_type, matches: [{confidence_score, company_data}]}`. No match is 200 with `matches: []`; also handle 404. Enrich `fields` defaults to `basic_info` only.
-- **Enrich sections:** `headcount.total`, `headcount.growth_percent.six_months`, `revenue.estimated.{lower_bound_usd, upper_bound_usd}`, `web_traffic` (per-domain `monthly_visitors`, exact path to confirm), `locations.headquarters`, `basic_info.{primary_domain, all_domains}`.
-- **Person Search:** `{filters, fields, sorts, limit, cursor}`, returning `total_count` and `next_cursor`. Employer filter: `experience.employment_details.current.company_id`. Operators include `=`, `in`, `(.)` (all words), `[.]` (phrase); there is no `contains`. `=>` and `=<`, not `>=`.
-- **Person Identify email matching caveat:** an address not on file can match *by the name in the address at the company that owns the domain*, with `confidence_score` 0.5–1.0. A low score is not proof of identity; treat it accordingly in `people.py`.
-- **Access-gated field:** `experience.recently_changed_jobs` returns 403 in `fields` without access, so request it separately and treat denial as missing data.
+| Domain | Headcount | Employees in graph | Finance staff found |
+|---|---|---|---|
+| browserstack.com | 1717 | 1598 | 8 |
+| chargebee.com | 1305 | 1172 | 17 |
+| postman.com | 3583 | 2217 | 15 |
+| razorpay.com | 4027 | 3592 | 71 |
+| retool.com | 413 | 397 | 8 |
+| gusto.com | 4882 | 3679 | 52 |
+| mintlify.com | 86 | 85 | 1 |
+| serverobotics.com | 454 | 429 | 6 |
+| crustdata.com | 47 | 54 | 1 |
+| tomocredit.ai | 21 | 21 | 2 |
+
+All resolved by domain with confidence 1.0. **Decision:** no shift to an "UNVERIFIABLE-first" framing. Demo vendors are Retool (A), Serve Robotics (B, has an AP coordinator to call), Atlas Logistics QA (C) and the name "Apex Consulting" (D, 25 matches, identify returns at most 25).
+
+## Real shapes (differ from or add to the docs)
+
+- **Revenue** is at `revenue.estimated.{lower_bound_usd, upper_bound_usd}`, with a `timeseries` alongside. Bands are wide (500M to 1B is common) and sometimes 0.
+- **Web traffic** is at `web_traffic.domain_traffic.<domain>.monthly_visitors`. A value of `0.0` appears for small companies and may mean untracked.
+- **Person search** returns `profiles`, `next_cursor`, `total_count`, `total_count_relation`, `remarks`.
+- **`function_category`** is often an empty string (18 of 50 roles sampled), so R4 also reads title and seniority. `seniority_level` can mislead: one "Global Corporate Controller" is labelled "Entry Level".
+- **`experience.recently_changed_jobs`** is accessible on this key, though the docs call it gated.
+- **Name-based identify** often gives many candidates at confidence 1.0, so confidence alone cannot disambiguate.
+
+## Costs seen
+
+Identify is free. Enrich is 2 credits. Person search with `experience` is 0.23 per result (0.13 with name only at limit 1); a search with 0 results is free. A full run costs about 3.5 credits. Exploration used about 45 credits in total.

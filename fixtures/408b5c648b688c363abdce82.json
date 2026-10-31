@@ -1,0 +1,51 @@
+{
+ "credits": 0.0,
+ "endpoint": "/company/identify",
+ "method": "POST",
+ "request": {
+  "domains": [
+   "chargebee.com"
+  ],
+  "exact_match": true
+ },
+ "response": [
+  {
+   "match_type": "domain",
+   "matched_on": "chargebee.com",
+   "matches": [
+    {
+     "company_data": {
+      "basic_info": {
+       "all_domains": [
+        "chargebee.com"
+       ],
+       "company_type": "Privately Held",
+       "crustdata_company_id": 622925,
+       "description": "Over a decade ago, four friends set out to tackle the growing complexities of SaaS billing. What began as a shared dream quickly evolved into a mission to address the biggest hurdles facing businesses: billing complexity, revenue leakage, and missing or disconnected data to inform pricing decisions.As the world shifted from one-time transactions to ongoing customer relationships, Chargebee emerged as a flexible, agile, and elegant solution to help businesses manage recurring customer relationships and accelerate growth.Today, Chargebee is the billing and monetization platform built for the AI economy.From fast-scaling startups to global enterprises, we help companies capture, optimize, and scale revenue — no matter their GTM strategy or pricing model. Whether you’re experimenting with usage-based pricing, launching AI-powered products, or expanding globally, Chargebee gives you the flexibility and automation to grow with confidence.As the age of AI reshapes how companies deliver and charge for value, we’re excited to shape the future of monetization — one billing breakthrough at a time.",
+       "employee_count_range": "1001-5000",
+       "industries": [
+        "Financial Services"
+       ],
+       "logo_permalink": "https://crustdata-media.s3.us-east-2.amazonaws.com/company/840edd222d92d75f389e0a4565bb61d4ba1a3ab66d746c2104ce1b6247ff6268.jpg",
+       "markets": [
+        "PRIVATE"
+       ],
+       "name": "Chargebee",
+       "primary_domain": "chargebee.com",
+       "professional_network_id": "2277385",
+       "professional_network_url": "https://www.linkedin.com/company/chargebee",
+       "profile_name": "Chargebee",
+       "website": "https://www.chargebee.com/",
+       "year_founded": 2011
+      },
+      "crustdata_company_id": 622925,
+      "social_profiles": null
+     },
+     "confidence_score": 1.0
+    }
+   ]
+  }
+ ],
+ "retrieved_at": "2026-10-31T05:43:45.591902+00:00",
+ "status": 200
+}
