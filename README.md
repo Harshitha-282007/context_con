@@ -61,6 +61,8 @@ To allow replies to whoever emailed the mailbox, add `SEND_TO_SENDER=true`. The 
 
 Leave both out to keep sending off, which is what the event rules require for real outside people. Mail goes out through Gmail's SMTP server using the same app password; set `SMTP_HOST` and `SMTP_PORT` for other providers. To verify a held request, call the vendor using your own records instead of replying. Replies are new messages with a `Re:` subject, so they may not join the original thread.
 
+**Simulated verification:** on a flagged email with a verified draft, **Send verification (simulated)** delivers that draft to an address in `SEND_ALLOWLIST`, labelled with the person Crustdata identified. The vendor contact is never emailed: the event rules forbid it, and `/person/contact/enrich` is not enabled on the event key, so the graph gives a name and role but no address.
+
 ### Storage
 
 Mail and verdicts are saved so they survive a refresh. By default they go to a git-ignored SQLite file in `data/`. To use Supabase instead, run [supabase/schema.sql](supabase/schema.sql) once in the Supabase SQL editor and add these to `.env`:

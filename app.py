@@ -20,7 +20,7 @@ from clearance.live import SyncReport, sync_and_scan
 from clearance.mailbox import MailItem, item_from_text, mailbox_settings, sample_inbox
 from clearance.outbound import (
     detected_sender, needs_hold_acknowledgement, record_sent, recipients_for, reply_to_sender_enabled,
-    send_allowlist, send_mail, sent_log, smtp_settings,
+    send_allowlist, send_mail, sent_log, simulated_verification, smtp_settings,
 )
 from clearance.pipeline import run_case
 from clearance.report import mask, offline_warning, person_names, to_markdown
@@ -247,6 +247,27 @@ def render_compose(item: MailItem, result: CaseResult | None) -> None:
             st.caption(f"Sent to {shown} at {entry['at'][:16].replace('T', ' ')} UTC: {plain(entry['subject'], 80)}")
 
 
+def render_simulated_send(draft, names: list[str]) -> None:
+    """Delivers the draft to a test address only, to show the flow without contacting a vendor."""
+    allowed = send_allowlist()
+    if draft.status != "DRAFT_ONLY" or not draft.recipients:
+        return
+    st.markdown("**Simulated send**")
+    if not allowed:
+        st.caption("Add SEND_ALLOWLIST with your test address to .env and restart to deliver this draft to yourself. No vendor is contacted.")
+        return
+    to = st.selectbox("Test address", allowed, key=f"sim-to-{draft.id}", format_func=(lambda a: mask(a, [])) if masked else None)
+    st.caption("Goes only to this test address, labelled as simulated. The vendor contact is not emailed, because the event rules do not allow it and this key has no contact addresses.")
+    if st.button("Send verification (simulated)", key=f"sim-{draft.id}"):
+        subject, body = simulated_verification(draft, (lambda s: mask(s, names)) if masked else (lambda s: s))
+        outcome = send_mail(smtp_settings(), allowed, to, subject, body, True)
+        if outcome.ok:
+            record_sent(store, state["selected"], to, subject)
+            st.success("Sent to your test address. Check that inbox.")
+        else:
+            st.error(outcome.error)
+
+
 def render_result(result: CaseResult) -> None:
     names = person_names(result) if masked else []
     show = (lambda s: escaped(mask(s, names))) if masked else escaped
@@ -322,6 +343,7 @@ def render_result(result: CaseResult) -> None:
             st.code(mask(text, names) if masked else text, language=None, wrap_lines=True)
             for c in draft.checks:
                 st.markdown(f"{'✅' if c['passed'] else '❌'} {c['check']}")
+            render_simulated_send(draft, names)
         if not (result.callback_pack or result.drafts or result.document_requests or result.contact_search_error):
             st.write("Nothing to do: this request was approved.")
     st.caption("Bank accounts are not verified. Profile data can lag. These are risk findings, not accusations.")

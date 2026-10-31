@@ -13,9 +13,10 @@ import smtplib
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from email.message import EmailMessage
-from typing import Optional
+from typing import Callable, Optional
 
 from .extract import extract_regex
+from .schemas import Draft
 from .store import Store
 
 ADDRESS = re.compile(r"[^@\s,;<>]+@[^@\s,;<>]+\.[^@\s,;<>]+")
@@ -91,6 +92,19 @@ def send_mail(settings: Optional[dict], allowlist: list[str], to: str, subject: 
     except (smtplib.SMTPException, OSError):  # Server text can echo account details, so it is not shown.
         return SendResult(False, "The message could not be sent. Check your connection and SMTP settings.")
     return SendResult(True)
+
+
+def simulated_verification(draft: Draft, show: Callable[[str], str] = lambda s: s) -> tuple[str, str]:
+    """The verification draft, labelled for delivery to a test address. No vendor is contacted."""
+    primary = draft.recipients[0]
+    body = "\n".join([
+        "SIMULATED: this went to a test address. No vendor or vendor employee was contacted.",
+        f"In production, a person would approve this for: {primary.name}, {primary.rationale}.",
+        "-" * 40,
+        "",
+        draft.body,
+    ])
+    return f"[SIMULATED] {draft.subject}", show(body)
 
 
 def _key(mail_id: str) -> str:

@@ -222,3 +222,26 @@ def test_sending_is_off_without_an_allowlist(app):
     assert not app.exception
     assert not any(b.label == "Send email" for b in app.button)
     assert any("Sending is off" in c.value for c in app.caption)
+
+
+def open_hero_email(app):
+    label_button(app, "Scan").click().run()
+    next(b for b in app.button if b.key and b.key.startswith("mail-") and "INV-7731" in b.label).click().run()
+
+
+def test_simulated_send_needs_a_test_address(app):
+    open_hero_email(app)
+    assert not app.exception
+    assert not any("simulated" in b.label for b in app.button)
+    assert any("SEND_ALLOWLIST" in c.value and "No vendor" in c.value for c in app.caption)
+
+
+def test_simulated_send_appears_with_a_test_address(monkeypatch, tmp_path):
+    for key in ("ANTHROPIC_API_KEY", "IMAP_HOST", "IMAP_USER", "IMAP_PASSWORD", "SUPABASE_URL", "SUPABASE_SERVICE_KEY", "SEND_TO_SENDER"):
+        monkeypatch.delenv(key, raising=False)
+    monkeypatch.setenv("CLEARANCE_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SEND_ALLOWLIST", "test@x.example")
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
+    open_hero_email(app)
+    assert not app.exception
+    assert any(b.label == "Send verification (simulated)" for b in app.button)

@@ -5,7 +5,7 @@ import pytest
 
 from clearance.outbound import (
     detected_sender, needs_hold_acknowledgement, recipients_for, record_sent, reply_to_sender_enabled,
-    send_allowlist, send_mail, sent_log, smtp_settings,
+    send_allowlist, send_mail, sent_log, simulated_verification, smtp_settings,
 )
 from clearance.store import SqliteStore
 
@@ -163,3 +163,25 @@ def test_blocked_network_says_so():
     FakeSmtp.fail = TimeoutError("timed out")
     result = send()
     assert not result.ok and "network" in result.error and FakeSmtp.sent == []
+
+
+def make_draft():
+    from clearance.schemas import Draft, Recipient
+    return Draft(id="d1", recipients=[Recipient(name="Pat Vendor", rationale="AP Coordinator at Acme", evidence_ids=["E1"])],
+                 subject="Confirming a payment request for Acme", body="Hello Pat,\n\nPlease confirm.")
+
+
+def test_simulated_message_is_labelled_and_names_the_intended_person():
+    subject, body = simulated_verification(make_draft())
+    assert subject.startswith("[SIMULATED]") and "No vendor" in body
+    assert "Pat Vendor, AP Coordinator at Acme" in body and "Please confirm." in body
+
+
+def test_simulated_message_can_be_masked():
+    _, body = simulated_verification(make_draft(), lambda s: s.replace("Pat Vendor", "P*** V***").replace("Hello Pat", "Hello P***"))
+    assert "Pat" not in body
+
+
+def test_simulated_send_cannot_reach_the_vendor_contact():
+    subject, body = simulated_verification(make_draft())
+    assert not send("pat@acme.example", subject, body).ok and FakeSmtp.sent == []
