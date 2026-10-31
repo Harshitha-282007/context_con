@@ -191,3 +191,17 @@ def test_mailbox_failure_keeps_position_for_a_retry(store):
         raise OSError("down")
     report = sync_and_scan(store, SETTINGS, checker(), True, 100, imap_class=boom)
     assert "reach the mail server" in report.error and store.meta("last_uid") == "7"
+
+
+@pytest.mark.parametrize("line,last4", [
+    ("New account number: 000123456789", "6789"),
+    ("Account No. 50100998877665", "7665"),
+    ("Account #: 12345678", "5678"),
+    ("A/C No: 987654321", "4321"),
+    ("new IBAN: DE89 3704 0044 0532 0130 00", "3000"),
+    ("Subject: Bank Account Update - Invoice INV-2026-2081", None),
+    ("Your account manager will call about order 12345678", None),
+    ("Bank account details changed, invoice 20262081", None),
+])
+def test_bank_digits_need_a_real_account_label(line, last4):
+    assert extract_regex(line).bank_last4 == last4

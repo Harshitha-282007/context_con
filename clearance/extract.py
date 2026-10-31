@@ -112,7 +112,8 @@ def _claimed_domain(text: str) -> Optional[str]:
 
 
 def _bank_last4(text: str) -> Optional[str]:
-    m = re.search(r"(?:account|acct|iban)[^\n]{0,25}?[:#]?\s*([A-Z]{0,4}[\d \-]{6,})", text, re.I)
+    # Needs a real account label: "Account Update - Invoice INV-2026-2081" holds no account number.
+    m = re.search(r"(?:account\s*(?:number|no\.?|num|#|:)|acct\s*(?:number|no\.?|num|#|:)?|a/c(?:\s*(?:number|no\.?))?|iban)\s*[:#\-]?\s*([A-Z]{0,4}\d[\d \-]{5,})", text, re.I)
     if not m:
         return None
     digits = re.sub(r"\D", "", m.group(1))
