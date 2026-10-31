@@ -16,7 +16,8 @@ from email.message import EmailMessage
 from typing import Callable, Optional
 
 from .extract import extract_regex
-from .schemas import Draft
+from .outreach import _safe_reference
+from .schemas import Claim, Draft
 from .store import Store
 
 ADDRESS = re.compile(r"[^@\s,;<>]+@[^@\s,;<>]+\.[^@\s,;<>]+")
@@ -92,6 +93,23 @@ def send_mail(settings: Optional[dict], allowlist: list[str], to: str, subject: 
     except (smtplib.SMTPException, OSError):  # Server text can echo account details, so it is not shown.
         return SendResult(False, "The message could not be sent. Check your connection and SMTP settings.")
     return SendResult(True)
+
+
+def neutral_reply(claim: Claim) -> str:
+    """A reply for mail with no verified draft. Uses checked facts and gives away no finding."""
+    reference = _safe_reference(claim.reference)
+    subject = f"invoice {reference}" if reference else "your payment request"
+    amount = f" for {claim.currency} {claim.amount:,.2f}" if claim.amount is not None and claim.currency else ""
+    needed = ["Your company's legal name and website"]
+    if claim.amount is None or not reference:
+        needed.append("A copy of the invoice, showing the invoice number, amount and currency")
+    needed.append("The purchase order or contract this relates to")
+    items = "\n".join(f"- {n}" for n in needed)
+    return (
+        f"Hello,\n\nWe received your message about {subject}{amount}. "
+        f"Before we can process it, we need to complete our standard vendor checks.\n\n"
+        f"Please send us:\n{items}\n\nThank you,\nAccounts Payable"
+    )
 
 
 def simulated_verification(draft: Draft, show: Callable[[str], str] = lambda s: s) -> tuple[str, str]:

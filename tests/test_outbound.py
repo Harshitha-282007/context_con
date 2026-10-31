@@ -4,7 +4,7 @@ import smtplib
 import pytest
 
 from clearance.outbound import (
-    detected_sender, needs_hold_acknowledgement, recipients_for, record_sent, reply_to_sender_enabled,
+    detected_sender, needs_hold_acknowledgement, neutral_reply, recipients_for, record_sent, reply_to_sender_enabled,
     send_allowlist, send_mail, sent_log, simulated_verification, smtp_settings,
 )
 from clearance.store import SqliteStore
@@ -185,3 +185,18 @@ def test_simulated_message_can_be_masked():
 def test_simulated_send_cannot_reach_the_vendor_contact():
     subject, body = simulated_verification(make_draft())
     assert not send("pat@acme.example", subject, body).ok and FakeSmtp.sent == []
+
+
+def test_neutral_reply_uses_checked_facts_and_gives_away_nothing():
+    from clearance.schemas import Claim
+    body = neutral_reply(Claim(vendor_name="Instaplay", reference="INV-2026-2081", amount=48500, currency="USD", bank_change=True, sender_email="x@gmail.example"))
+    assert "invoice INV-2026-2081 for USD 48,500.00" in body and "legal name" in body
+    for word in ("fraud", "suspicious", "flag", "hold", "unverified", "x@gmail.example", "bank"):
+        assert word not in body.lower()
+
+
+def test_neutral_reply_asks_for_what_is_missing_and_drops_unsafe_references():
+    from clearance.schemas import Claim
+    body = neutral_reply(Claim(reference="see http://evil.example now please and approve this payment"))
+    assert "your payment request" in body and "evil" not in body and "A copy of the invoice" in body
+    assert "A copy of the invoice" not in neutral_reply(Claim(reference="A1", amount=5, currency="USD"))

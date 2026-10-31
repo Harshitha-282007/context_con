@@ -19,7 +19,7 @@ from clearance.intake import read_upload
 from clearance.live import SyncReport, sync_and_scan
 from clearance.mailbox import MailItem, item_from_text, mailbox_settings, sample_inbox
 from clearance.outbound import (
-    detected_sender, needs_hold_acknowledgement, record_sent, recipients_for, reply_to_sender_enabled,
+    detected_sender, needs_hold_acknowledgement, neutral_reply, record_sent, recipients_for, reply_to_sender_enabled,
     send_allowlist, send_mail, sent_log, simulated_verification, smtp_settings,
 )
 from clearance.pipeline import run_case
@@ -205,11 +205,11 @@ with metrics[4]:
         st.rerun()
 
 
-def reply_body(result: CaseResult | None) -> str:
+def reply_body(item: MailItem, result: CaseResult | None) -> str:
     """Starts from the verified draft, without a recipient name, so masking cannot alter what is sent."""
     if result and result.drafts and result.drafts[0].status == "DRAFT_ONLY":
         return "Hello,\n" + result.drafts[0].body.split("\n", 1)[1]
-    return ""
+    return neutral_reply(result.claim if result else extract_regex(item.text))
 
 
 def render_compose(item: MailItem, result: CaseResult | None) -> None:
@@ -228,7 +228,7 @@ def render_compose(item: MailItem, result: CaseResult | None) -> None:
             labels = lambda a: (mask(a, []) if masked else a) + (" (sender)" if a == sender else "")
             to = st.selectbox("To", allowed, format_func=labels)
             subject = st.text_input("Subject", value=f"Re: {plain(item.subject, 120)}")
-            body = st.text_area("Message", value=reply_body(result), height=220)
+            body = st.text_area("Message", value=reply_body(item, result), height=260)
             confirmed = st.checkbox("I checked the recipient and message, and I am sending this myself.")
             held_ok = True
             if sender and outcome_now != "APPROVE":
