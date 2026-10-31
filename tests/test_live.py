@@ -369,3 +369,9 @@ def test_evidence_links_to_the_raw_response(tmp_path):
     linked = [e for e in r.ledger if e.raw_ref and e.field_path == "headcount.total"]
     saved = read_saved(linked[0].raw_ref, FIXTURES_DIR)
     assert saved["response"][0]["matches"][0]["company_data"]["headcount"]["total"] == linked[0].value
+
+
+def test_older_saved_verdicts_still_load_without_raw_links():
+    from clearance.schemas import CaseResult
+    r = CaseResult.model_validate({"claim": {}, "ledger": [{"id": "E001", "retrieved_at": "t", "prev_hash": "0", "hash": "1"}]})
+    assert r.ledger[0].raw_ref is None

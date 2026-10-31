@@ -269,8 +269,9 @@ def redact(node):
 def render_raw_sources(ledger: dict) -> None:
     refs = {}
     for record in ledger.values():
-        if record.raw_ref and record.endpoint:
-            refs.setdefault(record.raw_ref, record)
+        raw_ref = getattr(record, "raw_ref", None)  # Older saved verdicts have no link.
+        if raw_ref and record.endpoint:
+            refs.setdefault(raw_ref, record)
     if not refs:
         return
     st.markdown("**Where did this come from?**")
