@@ -173,9 +173,9 @@ def test_forwarded_item_shows_the_innermost_sender():
 def test_private_runs_replay_public_data_but_write_privately(tmp_path):
     public, private = tmp_path / "public", tmp_path / "private"
     public.mkdir()
-    CrustdataClient("k", public, session=type("S", (), {"post": lambda self, *a, **k: type("R", (), {"status_code": 200, "headers": {}, "json": lambda s: [1], "text": ""})()})()).post("/x", {"n": 1})
+    CrustdataClient("k", public, session=type("S", (), {"post": lambda self, *a, **k: type("R", (), {"status_code": 200, "headers": {}, "json": lambda s: [1], "text": ""})()})()).post("/company/x", {"n": 1})
     client = CrustdataClient(None, private, replay_dirs=(public,))
-    assert client.post("/x", {"n": 1}).data == [1]
+    assert client.post("/company/x", {"n": 1}).data == [1]
     assert not private.exists() or not list(private.glob("*.json"))
 
 
@@ -245,3 +245,36 @@ def test_simulated_send_appears_with_a_test_address(monkeypatch, tmp_path):
     open_hero_email(app)
     assert not app.exception
     assert any(b.label == "Send verification (simulated)" for b in app.button)
+
+
+def _saved(folder, endpoint, retrieved_at="2026-10-31T00:00:00+00:00"):
+    import json as js
+    from clearance.crustdata import cache_key
+    folder.mkdir(exist_ok=True)
+    (folder / f"{cache_key('POST', endpoint, {})}.json").write_text(js.dumps({"status": 200, "endpoint": endpoint, "response": "saved", "credits": 0, "retrieved_at": retrieved_at}))
+
+
+def test_real_checks_never_read_pseudonymized_people(tmp_path):
+    public = tmp_path / "public"
+    _saved(public, "/person/search")
+    _saved(public, "/company/enrich")
+    client = CrustdataClient(None, tmp_path / "private", replay_dirs=(public,))
+    assert client.post("/company/enrich", {}).data == "saved"
+    assert not client.post("/person/search", {}).ok
+
+
+def test_offline_samples_still_replay_people(tmp_path):
+    _saved(tmp_path, "/person/search")
+    assert CrustdataClient(None, tmp_path, offline=True).post("/person/search", {}).data == "saved"
+
+
+def test_old_answers_expire_for_live_checks(tmp_path):
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc)
+    _saved(tmp_path, "/person/search", (now - timedelta(hours=2)).isoformat())
+    assert CrustdataClient(None, tmp_path, expire=True).post("/person/search", {}).data == "saved"
+    _saved(tmp_path, "/person/search", (now - timedelta(days=2)).isoformat())
+    assert not CrustdataClient(None, tmp_path, expire=True).post("/person/search", {}).ok
+    assert CrustdataClient(None, tmp_path).post("/person/search", {}).data == "saved"
+    _saved(tmp_path, "/company/enrich", (now - timedelta(days=3)).isoformat())
+    assert CrustdataClient(None, tmp_path, expire=True).post("/company/enrich", {}).data == "saved"

@@ -9,7 +9,7 @@ import hashlib
 import json
 import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Callable, Optional
 
@@ -18,6 +18,8 @@ import requests
 BASE_URL = "https://api.crustdata.com"
 API_VERSION = "2025-11-01"
 RETRYABLE = {429, 500, 502, 503, 504}
+COMPANY_MAX_AGE = timedelta(days=7)  # Firmographics move slowly.
+PERSON_MAX_AGE = timedelta(days=1)  # Who works where should be fresh for a payment decision.
 
 
 ERROR_TEXT = {
@@ -69,10 +71,12 @@ class CrustdataClient:
         session: Any = None,
         sleep: Callable[[float], None] = time.sleep,
         replay_dirs: tuple[Path, ...] = (),
+        expire: bool = False,
     ):
         self._api_key = api_key
         self.fixtures_dir = Path(fixtures_dir)
-        self.replay_dirs = tuple(Path(d) for d in replay_dirs)  # read-only extra caches
+        self.replay_dirs = tuple(Path(d) for d in replay_dirs)  # read-only, company data only
+        self.expire = expire  # live checks refresh old answers; offline replay never does
         self.offline = offline
         self.credit_cap = credit_cap
         self.timeout = timeout
@@ -171,12 +175,18 @@ class CrustdataClient:
         return self.fixtures_dir / f"{key}.json"
 
     def _read_fixture(self, key: str) -> Optional[ApiResult]:
-        path = next((p for p in (self._fixture_path(key), *(d / f"{key}.json" for d in self.replay_dirs)) if p.exists()), None)
+        paths = [(self._fixture_path(key), False), *((d / f"{key}.json", True) for d in self.replay_dirs)]
+        path, shared = next(((p, s) for p, s in paths if p.exists()), (None, False))
         if path is None:
             return None
         try:
             rec = json.loads(path.read_text())
             status = rec["status"]
+            # Shared fixtures hold pseudonymized people, so a real check must never read them for a person.
+            if shared and not rec["endpoint"].startswith("/company/"):
+                return None
+            if self.expire and self._is_stale(rec):
+                return None
             ok = 200 <= status < 300
             return ApiResult(
                 ok, status, rec["response"], float(rec.get("credits", 0)), True,
@@ -185,6 +195,15 @@ class CrustdataClient:
             )
         except (ValueError, KeyError, TypeError):
             return None  # A corrupt fixture behaves like a cache miss.
+
+    @staticmethod
+    def _is_stale(rec: dict) -> bool:
+        max_age = COMPANY_MAX_AGE if rec["endpoint"].startswith("/company/") else PERSON_MAX_AGE
+        try:
+            age = datetime.now(timezone.utc) - datetime.fromisoformat(rec.get("retrieved_at", ""))
+        except ValueError:
+            return True
+        return age > max_age
 
     def _write_fixture(self, key, method, endpoint, body, status, credits, retrieved_at, data) -> None:
         self.fixtures_dir.mkdir(parents=True, exist_ok=True)

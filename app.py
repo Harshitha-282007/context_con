@@ -13,6 +13,7 @@ import streamlit as st
 
 from clearance.config import FIXTURES_DIR, OUTBOX_DIR, PRIVATE_FIXTURES_DIR, ROOT, credit_cap, crustdata_api_key, daily_credit_limit, load_policy
 from clearance.crustdata import CrustdataClient
+from clearance.draft_llm import contextual_reply
 from clearance.extract import extract_regex
 from clearance.handoff import ACTIONS, apply_action, write_case
 from clearance.intake import read_upload
@@ -90,7 +91,7 @@ def check(item: MailItem, replay_samples: bool) -> CaseResult:
     if offline:
         client = CrustdataClient(None, FIXTURES_DIR, offline=True)
     else:
-        client = CrustdataClient(crustdata_api_key(), PRIVATE_FIXTURES_DIR, credit_cap=credit_cap(), replay_dirs=(FIXTURES_DIR,))
+        client = CrustdataClient(crustdata_api_key(), PRIVATE_FIXTURES_DIR, credit_cap=credit_cap(), replay_dirs=(FIXTURES_DIR,), expire=True)
     return run_case(item.text, client, policy, as_of, case_id=item.id, outbox=OUTBOX_DIR)
 
 
@@ -206,10 +207,17 @@ with metrics[4]:
 
 
 def reply_body(item: MailItem, result: CaseResult | None) -> str:
-    """Starts from the verified draft, without a recipient name, so masking cannot alter what is sent."""
-    if result and result.drafts and result.drafts[0].status == "DRAFT_ONLY":
-        return "Hello,\n" + result.drafts[0].body.split("\n", 1)[1]
-    return neutral_reply(result.claim if result else extract_regex(item.text))
+    """Written once per email from its checked fields, then reused, so Groq is not called again."""
+    key = f"reply:{item.id}"
+    saved = store.meta(key)
+    if saved:
+        return saved
+    claim = result.claim if result else extract_regex(item.text)
+    written = contextual_reply(claim, item.subject)
+    if written:
+        store.set_meta(key, written)
+        return written
+    return neutral_reply(claim)
 
 
 def render_compose(item: MailItem, result: CaseResult | None) -> None:

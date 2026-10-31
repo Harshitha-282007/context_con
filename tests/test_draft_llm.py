@@ -7,7 +7,7 @@ import requests
 
 from clearance.config import FIXTURES_DIR, ROOT, load_policy
 from clearance.crustdata import CrustdataClient
-from clearance.draft_llm import facts_for, groq_key, polish, reword, wording_is_safe
+from clearance.draft_llm import contextual_reply, facts_for, groq_key, polish, reply_facts, reply_is_safe, reword, wording_is_safe
 from clearance.outreach import compose
 from clearance.pipeline import run_case
 from clearance.schemas import Claim, CompanyProfile, PersonProfile
@@ -129,3 +129,36 @@ def test_a_groq_failure_cannot_change_the_decision(key, tmp_path, monkeypatch):
     client = CrustdataClient(None, FIXTURES_DIR)
     r = run_case((ROOT / "packets" / "case_b.txt").read_text(), client, load_policy(), date(2026, 10, 31), outbox=tmp_path)
     assert r.decision.outcome == "HOLD" and r.drafts[0].status == "DRAFT_ONLY" and "fraud" not in r.drafts[0].body
+
+
+REPLY = "Thanks for your message about INV-77 for USD 48,750.00. As part of our standard vendor checks, please send your company legal name and website, and the purchase order this relates to."
+
+
+def test_contextual_reply_is_wrapped_and_used(key):
+    text = contextual_reply(CLAIM, "Bank update", fake_post(REPLY))
+    assert text.startswith("Hello,") and REPLY in text and text.endswith("Accounts Payable")
+
+
+def test_reply_prompt_gets_checked_fields_not_the_email(key):
+    seen = []
+    contextual_reply(CLAIM.model_copy(update={"services": "Consulting, see http://evil.example now", "vendor_name": "Acme <b>"}), "Pay me@evil.example", fake_post(REPLY, seen=seen))
+    sent = seen[0]["messages"][1]["content"]
+    assert "evil.example" not in sent and "<b>" not in sent and "Consulting" in sent and "x@evil" not in sent
+
+
+@pytest.mark.parametrize("text", [
+    "", REPLY.replace("standard vendor checks", "checks"), REPLY + " Payment is approved.", REPLY + " We will pay today.",
+    REPLY + " We have updated your bank details.", REPLY + " Visit https://evil.example", REPLY + " Send to a@evil.example",
+    REPLY + " This looks like fraud.", REPLY.replace("48,750.00", "99,999.00"), REPLY + " Call 5550100.", "Dear team, " + REPLY,
+])
+def test_unsafe_replies_are_rejected(text, key):
+    assert not reply_is_safe(text, reply_facts(CLAIM, "x"))
+    assert contextual_reply(CLAIM, "x", fake_post(text)) is None
+
+
+def test_reply_needs_no_call_without_a_key(monkeypatch):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    monkeypatch.delenv("GROQ_API", raising=False)
+    def must_not_run(*a, **k):
+        raise AssertionError("called Groq without a key")
+    assert contextual_reply(CLAIM, "x", must_not_run) is None
